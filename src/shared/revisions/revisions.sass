@@ -19,13 +19,21 @@ $white: #fff
     &:hover
       cursor: pointer
 
-  &__text
-    @extend h1
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    color: $white
+    span
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 25px
+      height: 5px
+      background-color: $white
+
+      &:nth-child(1)
+        top: 25px
+        left: 25%
+        transform: translate(1px, -3px) rotate(90deg)
+
+      &:nth-child(2)
+        transform: translate(-50%, -50%)
 
   &__form
     iframe

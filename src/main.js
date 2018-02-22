@@ -5,7 +5,7 @@ import App from './base/app'
 import router from './router'
 import VeeValidate from 'vee-validate'
 import store from './shared/store'
-import VueCookies from 'vue-cookies'
+// import VueCookies from 'vue-cookies'
 import * as customFilters from './shared/filters/filters'
 // import VueParallaxJs from 'vue-parallax-js'
 // import VueScrollTo from 'vue-scrollto'
@@ -34,7 +34,7 @@ Vue.use(VeeValidate)
 //   y: true
 // })
 // Vue.use(VueWaypoint)
-Vue.use(VueCookies)
+// Vue.use(VueCookies)
 
 /* eslint-disable no-new */
 new Vue({

@@ -2,15 +2,15 @@
 
 # Table of Contents
 1. [Simple Build Setup](#setup)
-2. [Folder Tree Structure](#folder)
-3. [Component Structure](#third-example)
-4. [Information For Requests](#requests)
+2. [Documentation Getting Started](#documentation)
+3. [Folder Tree Structure](#folder)
+4. [Component Structure](#third-example)
+5. [Information For Requests](#requests)
 
 ### TODOS:
   <ol>
     <li>Add wordfence to the backend</li>
     <li>Add Above the fold and below the fold asyc lazy loading</li>
-    <li>NPM For Component library</li>
     <li>Ortho Chat | Google Analytics | Facebook Pixel</li>
   </ol>  
 
@@ -36,112 +36,19 @@ Technologies
 ``` bash
 # install dependencies
 npm install
-
 # serve with hot reload at localhost:8080
 npm run dev
 npm start
-
 # build for production with minification
 npm run build
-
 # build for production and view the bundle analyzer report
 npm run build --report
-
 # run unit tests
 npm run unit
-
 # run e2e tests
 npm run e2e
-
 # run all tests
 npm test
-```
-
-## Folder Tree Structure <a id='folder' />
-
-To make website update you will only want to work in the src folder.
-
-```
-+------------------------
-+ src
-+   | assets  
-+       | fonts
-+            | - vendor
-+       | icons
-+           | - icon
-+       | images
-+           | - image
-+       | vendor
-+           | - vendor
-+   | base
-+       | - app.vue
-+       | - app.pug
-+   | components
-+       | - form
-+           | - form.pug
-+           | - form.vue
-+           | - form.sass
-+       | - icon
-+           | - icon.pug
-+           | - icon.vue
-+           | - icon.sass
-+   | pages
-+       | - home
-+           | - home.pug
-+           | - home.vue
-+           | - home.sass
-+   | router
-+       | - index.js
-+   | sass
-+       | - base
-+           | - base.sass
-+       | - units
-+       | - utilities
-+       | - vendors
-+   | shared
-+       | - api
-+       | - filters
-+       | - store
-+       | - templates
-+   - main.js
-+   - main.sass
-+------------------------
-```
-
-## Component Structure and Naming Convention <a id='component' />
-
-We have been using a name spacing naming convention in Pug with a BEM styling for Sass. Below is a piece of pug that can be reused.
-
-Pug File
-```pug
-.pages-home
-  .pages-home__bg
-    .pages-home__container
-      .pages-home__body
-        .pages-home__title
-          | Title
-        .pages-home__text
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-```
-
-Sass File
-```sass
-.pages-home
-  &__bg
-    background: black
-
-  &__container
-    @extend .container-fluid
-
-  &__body
-    @extend .col-sm-6
-    @extend .col-sm-offset-6
-
-  &__title
-    @extend h3
-
-  &__text
-    @extend %p1      
 ```
 
 
@@ -178,7 +85,7 @@ Sass File
     // NOTE: This will change per new project
 
     const api = () => {
-      return document.location.hostname === 'localhost' ? route : document.location.protocol + route
+      return document.location.hostname === 'localhost' || document.location.href.indexOf('roostertest3') > -1 ? route : document.location.protocol + '/wp-json'
     }
 
     export default api()
@@ -226,12 +133,107 @@ Sass File
       - Turn on automatic core updates
   6. Update this readme's for future requests section  
 
-## Getting a new project started
+## Getting a new project started <a id='documentation' />
 
   1. Create Wordpress Backend via Blog Vault
       - You will be using {{ new project name }}.roostertest3.com
   2. Change API endpoint in api.js file
       - You will be updating your api to {{ new project name }}.roostertest3.com/wp-json
+
+## Documentation
+
+#### How to Get Component connected from WordPress to front end      
+
+Steps:
+  - Created component template in front end code
+    - You will need to create a new directory in the components folder
+      - Ex: form => form-contact
+    - You will then need to create the 3 files
+      - form-contact.vue
+      - form-contact.pug
+      - form-contact.sass
+    - Next you will need to import the vue file into the parent component
+    - Here you can pass the props set by the parent
+      - You can refer to this from the props object in the parent
+      - Props will be the content that is sent from wordpress
+      - These will be build with Advanced Custom fields
+
+#### Documentation for Advanced Custom field and other necessary dependencies
+
+  - https://vuejs.org
+  - https://www.advancedcustomfields.com/
+
+## Folder Tree Structure <a id='folder' />
+
+To make website update you will only want to work in the src folder.
+
+```
++------------------------
++ src
++   | assets  
++   | base
++   | components
++       | - form
++           | - form.pug
++           | - form.vue
++           | - form.sass
++   | pages
++       | - home
++           | - home.pug
++           | - home.vue
++           | - home.sass
++   | router
++       | - index.js
++   | sass
++       | - base
++           | - base.sass
++       | - units
++       | - utilities
++       | - vendors
++   | shared
++       | - api
++       | - filters
++       | - store
++       | - templates
++   - main.js
++   - main.sass
++------------------------
+```
+
+## Component Structure and Naming Convention <a id='component' />
+
+### Example namespace convention
+
+#### Global -> Page Level -> Section Level
+#### Slider -> About Us -> Testimonials
+
+We have been using a name spacing naming convention in Pug with a BEM styling for Sass. Below is a piece of pug that can be reused.
+
+Pug File
+```pug
+.custom-home-intro
+  .custom-home-intro__bg
+    .custom-home-intro__container
+      .custom-home-intro__body
+        .custom-home-intro__title
+          | Title
+        .custom-home-intro__text
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+```
+
+Sass File
+```sass
+.pages-home
+  &__bg
+    background: $black
+
+  &__container
+    @extend .container-fluid
+
+  &__body
+    @extend .col-sm-6
+    @extend .col-sm-offset-6  
+```      
 
 ## Information For Requests <a id='requests' />
 
