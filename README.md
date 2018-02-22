@@ -9,7 +9,6 @@
 ### TODOS:
   <ol>
     <li>Add wordfence to the backend</li>
-    <li>Add Find and Replace plugin for webpack to deal with changing from development to production</li>
     <li>Add Above the fold and below the fold asyc lazy loading</li>
     <li>NPM For Component library</li>
     <li>Ortho Chat | Google Analytics | Facebook Pixel</li>
