@@ -6,6 +6,7 @@
 3. [Folder Tree Structure](#folder)
 4. [Component Structure](#third-example)
 5. [Information For Requests](#requests)
+6. [Security](#security)
 
 ### TODOS:
   <ol>
@@ -238,6 +239,18 @@ Sass File
 ## Information For Requests <a id='requests' />
 
 This section is dedicated to the request team. Please share any information that the request team may need while making updates to this site. For example if you are using an api endpoint for the menu. Please write down the necessary steps someone would need to take to make updates to the menu.
+
+
+## Security - What you need to do to make WordPress more secure <a id='security' />
+
+  1. If you would like to access the Appearance Editor, you will need to goto the wp-config.php file in the root directory. This has been disable to to not allow people to inject php code to our core themes. If you notice a hack on the build you will need to update the theme to the most up to date version on github.
+
+  2. We have also disabled PHP scripts - in order to add anything server side you will need to allow PHP scripts. You will update this in the .htaccess file in the root directory on the server. DO NOT edit the .htaccess file on the github account. This is just a version and is not used in production.
+
+  3. We have added a login to access the wp-admin page. This is just an extra layer of protection from the server. You will still be using the normal Screen Name and Password.
+
+   
+
 
 
 

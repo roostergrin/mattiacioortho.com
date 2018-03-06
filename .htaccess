@@ -1,5 +1,6 @@
 # 1 Week
 Header set Cache-Control "max-age=604800, public, must-revalidate"
+Options -Indexes
 
 <IfModule mod_deflate.c>
   # Compress HTML, CSS, JavaScript, Text, XML and fonts
@@ -36,6 +37,13 @@ Header set Cache-Control "max-age=604800, public, must-revalidate"
   BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
   Header append Vary User-Agent
 </IfModule>
+
+# Block WordPress xmlrpc.php requests
+<Files xmlrpc.php>
+order deny,allow
+deny from all
+allow from 69.181.69.240
+</Files>
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
