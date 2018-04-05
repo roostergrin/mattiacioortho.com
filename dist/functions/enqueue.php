@@ -27,11 +27,11 @@ add_action( 'rest_api_init', function () {
 function my_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
-            background-image: url(/wp-content/uploads/login-logo.svg);
-			height:150px;
-			width:320px;
-			background-size: 320px 150px;
-			background-repeat: no-repeat;
+          background-image: url(/wp-content/uploads/login-logo.svg);
+					height:150px;
+					width:320px;
+					background-size: 320px 150px;
+					background-repeat: no-repeat;
         }
     </style>
 <?php }
