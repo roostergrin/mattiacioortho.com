@@ -3,6 +3,7 @@
 /**
  * Remove wysiwyg editor for pages post types
  */
+
 add_action( 'init', 'remove_wysiwyg_editor' );
 
 function remove_wysiwyg_editor () {
