@@ -27,7 +27,7 @@ add_action( 'rest_api_init', function () {
 function my_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
-          background-image: url(/static/rg-logo-rooster-purple-01-1.png);
+          background-image: url(/static/login-logo.svg);
 					height:150px;
 					width:320px;
 					background-size: 320px 150px;
