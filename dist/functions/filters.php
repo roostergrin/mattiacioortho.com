@@ -1,6 +1,6 @@
 <?php
 
-define( 'UPLOADS', ''.'static' );
+// define( 'UPLOADS', ''.'static' );
 define( 'ACF_TO_REST_API_REQUEST_VERSION', 3 );
 
 remove_filter('the_content', 'wpautop');
