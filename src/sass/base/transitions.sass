@@ -1,0 +1,30 @@
+// -- Transition Styles -- //
+
+// modal / drawer transition
+.fade-in
+  backface-visibility: hidden
+
+  &-enter-active,
+  &-leave-active
+    transition: all .45s ease-in-out
+
+  &-enter,
+  &-leave-to
+    opacity: 0
+
+// nav-tablet slide down
+.slide-in
+  backface-visibility: hidden
+
+  &-enter,
+  &-leave-to
+    transform: translateY(-76%)
+    opacity: 0
+
+  &-enter-to,
+  &-leave
+    transform: translateY(0)
+
+  &-enter-active,
+  &-leave-active
+    transition: all .45s ease-in-out

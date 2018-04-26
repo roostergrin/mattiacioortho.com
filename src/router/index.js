@@ -9,6 +9,9 @@ import Mattacio from '@/pages/mattiacio-difference/mattiacio-difference'
 import NewPatients from '@/pages/new-patients/new-patients'
 import Treatments from '@/pages/treatments/treatments'
 
+// remove
+import Style from '@/pages/style-guide/style-guide'
+
 Vue.use(VueRouter)
 
 const scrollBehavior = function (to, from, savedPosition) {
@@ -78,6 +81,11 @@ const router = new VueRouter({
       name: 'Contact Us',
       navigation: true,
       component: ContactUs
+    },
+    {
+      path: '/style',
+      navigation: false,
+      component: Style
     },
     {
       path: '/*',

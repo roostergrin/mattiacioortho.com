@@ -1,5 +1,93 @@
+//== Variables ==//
+
+// Colors
+$black: #222
+$grey: #dadada
+$pale-grey: #f7f7f7
+$white: #fff
+
+$slate-grey: #5c6470
+$brownish: #85766f
+$blue: #078dc2
+$turquoise: #01b3bf
+$light-blue: #dfeef5
+$pale-blue: #f8fbfd
+
+//shadows
+$shadow: 0 2px 5px 1px rgba($black, 0.11)
+
+// Fonts
+$avenir: 'AvenirNext-Regular', Helvetica, sans-serif
+$lato: 'Lato', sans-serif
+
+//break-points
+$break-lg: 1180px
+$break-md: 880px
+$break-sm: 581px
+
+//body styles
 body
+  margin: 0
+  line-height: 1.45
+  color: $black
+  font-family: $lato
   font-size: 16px
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
 
 *
   box-sizing: border-box
+
+.body-stop
+  overflow: hidden
+
+.order-last
+  order: 2
+
+.slide-in
+  @include animation-fade-up
+
+// Typography
+h1,
+h2,
+h3
+  margin: 0
+  text-transform: uppercase
+  line-height: 1.36
+  font-family: $avenir
+
+h1
+  letter-spacing: 5px
+  color: $blue
+  font-size: 64px
+  font-weight: 900
+
+  &.h1-option
+    color: $pale-blue
+
+h2
+  letter-spacing: 2.7px
+  font-size: 40px
+  font-weight: 400
+
+  &.h2-option
+    color: $white
+
+h3
+  letter-spacing: 2px
+  color: $blue
+  font-size: 18px
+  font-weight: 700
+
+  &.h3-option
+    color: $black
+
+p
+  margin: 0
+
+a
+  text-decoration: none
+  color: $black
+
+pre
+  margin: 0   

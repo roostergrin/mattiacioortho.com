@@ -1,0 +1,88 @@
+.style-guide
+  &__logo
+    margin: 0 auto
+    width: 265px
+    height: auto
+
+  &__ig
+    border: 1px solid $black
+    border-radius: 50%
+    padding: 10px
+    width: 45px
+    height: 45px
+
+    .ig-phil
+      fill: $black
+      stroke: $white
+      stroke-width: 3px
+
+    .ig-dot
+      fill: $white
+
+  &__button-main
+    display: block
+    position: relative
+    transition: all .35s ease-in-out
+    border: 1px solid $turquoise
+    border-radius: 30px
+    cursor: pointer
+    padding: 6px 0
+    width: 100%
+    max-width: 297px
+    overflow: hidden
+    text-align: center
+
+    span
+      display: inline-block
+      transition: color .35s ease-in-out
+      letter-spacing: 2px
+      font-family: $avenir
+      font-size: 16px
+      font-weight: 600
+      // vertical-align: middle
+
+    &-icon
+      display: inline-block
+      transition: all .55s ease-in-out
+      margin-left: 20px
+      border-radius: 50%
+      box-shadow: 0 2px 4px 0 rgba($black, .33)
+      width: 34px
+      height: 34px
+      vertical-align: middle
+
+      svg
+        fill: $turquoise
+
+    &:after
+      position: absolute
+      top: -270px
+      left: -30px
+      transform: scale(.01)
+      transition: all .35s ease-in-out
+      z-index: -1
+      border-radius: 50%
+      background: $turquoise
+      width: calc(297px * 2)
+      height: calc(297px * 2)
+      content: ''
+      transform-origin: center center
+
+    &:hover
+      transition: all .35s ease-in-out
+      box-shadow: 0 2px 4px 0 rgba($black, .33)
+
+      span
+        transition: color .35s ease-in-out
+        color: $white
+
+      &:after
+        transform: scale(1)
+        transition: all .35s ease-in-out
+
+      .style-guide__button-main-icon
+        transition: all .35s ease-in-out
+        box-shadow: none
+
+    &:active
+      box-shadow: none   
