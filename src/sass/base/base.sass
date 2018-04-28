@@ -7,6 +7,7 @@ $pale-grey: #f7f7f7
 $white: #fff
 
 $slate-grey: #5c6470
+$blue-grey: #8ea8bd
 $brownish: #85766f
 $blue: #078dc2
 $turquoise: #01b3bf
@@ -15,6 +16,7 @@ $pale-blue: #f8fbfd
 
 //shadows
 $shadow: 0 2px 5px 1px rgba($black, 0.11)
+$shadow-blue: 0 2px 8px 2px rgba(#147df7, 0.6), 0 -2px 8px 2px rgba(#147df7, 0.6)
 
 // Fonts
 $avenir: 'AvenirNext-Regular', Helvetica, sans-serif
@@ -90,4 +92,65 @@ a
   color: $black
 
 pre
-  margin: 0   
+  margin: 0
+
+// Spinner
+.spinner
+  @include spinner
+
+// Waypoint
+//sass-lint:disable-all
+
+.waypoint
+  .vue-waypoint__waypoint__collider
+      height: 1px !important
+      z-index: 1 !important
+
+// sass-lint:enable-all
+
+// -- Grid -- //
+
+//Grid classes
+.flex
+  display: flex
+  flex-direction: row
+
+.flex-center
+  justify-content: center
+
+.flex-between
+  justify-content: space-between
+
+.flex-around
+  justify-content: space-around
+
+.align-center
+  align-items: center
+
+// .flex-container-full
+//   transition: all .35s ease-in-out
+//   margin: 0 auto
+//   width: 100%
+//   max-width: $break-xl
+//
+//   @media screen and (max-width: $break-xl + 30px)
+//     transition: all .35s ease-in-out
+//     padding: 0 30px
+
+.flex-container-lg
+  margin: 0 auto
+  width: 100%
+  max-width: $break-lg
+
+  @media screen and (max-width: $break-lg + 60px)
+    padding: 0 30px
+
+.flex-container-md
+  margin: 0 auto
+  width: 100%
+  max-width: $break-md
+
+.flex-container-sm
+  margin: 0 auto
+  width: 100%
+  max-width: $break-sm

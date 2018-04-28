@@ -1,88 +1,255 @@
 .style-guide
+  padding-bottom: 5rem
+
   &__logo
     margin: 0 auto
     width: 265px
     height: auto
 
-  &__ig
-    border: 1px solid $black
+  &__container
+    @extend .flex-container-lg
+
+  &__row
+    display: flex
+    justify-content: space-between
+
+  &__icon-row
+    display: flex
+    margin-left: -10px
+    background: $brownish
+    padding: 10px
+
+  &__fb,
+  &__envelope,
+  &__goog,
+  &__phone
+    transition: border .25s ease-in-out
+    margin-right: 10px
+    border: 1px solid $white
     border-radius: 50%
     padding: 10px
     width: 45px
     height: 45px
 
+    svg
+      transition: all .25s ease-in-out
+      fill: $white
+
+    &:hover
+      transition: border .25s ease-in-out
+      border: 1px solid $turquoise
+
+      svg
+        transition: all .25s ease-in-out
+        fill: $turquoise
+
+  &__fb
+    padding: 8px 14px 10px
+    width: 45px
+    height: 45px
+
+  &__goog
+    padding: 9px 6px
+
+    svg
+      margin-left: 4px
+
+  &__envelope
+    padding: 12px 6px
+
+  &__ig
+    transition: all .25s ease-in-out
+    border: 1px solid $white
+    border-radius: 50%
+    padding: 10px
+    width: 45px
+    height: 45px
+
+
     .ig-phil
-      fill: $black
-      stroke: $white
+      transition: fill .25s ease-in-out
+      fill: none
+      stroke: $brownish
       stroke-width: 3px
 
     .ig-dot
+      fill: $brownish
+
+    svg
+      transition: fill .25s ease-in-out
       fill: $white
 
+    &:hover
+      transition: all .25s ease-in-out
+      border: 1px solid $turquoise
+
+      .ig-phil
+        transition: all .25s ease-in-out
+        fill: $turquoise
+
+      svg
+        transition: fill .25s ease-in-out
+        fill: $turquoise
+
+
   &__button-main
-    display: block
-    position: relative
-    transition: all .35s ease-in-out
-    border: 1px solid $turquoise
-    border-radius: 30px
-    cursor: pointer
-    padding: 6px 0
-    width: 100%
-    max-width: 297px
-    overflow: hidden
-    text-align: center
+    @include button-circle-phil(297px, $black, $white, .35s, 1px, $turquoise, 30px, 6px 0, 34px, -270px, -30px)
+    max-height: 48px
 
     span
-      display: inline-block
-      transition: color .35s ease-in-out
       letter-spacing: 2px
       font-family: $avenir
       font-size: 16px
       font-weight: 600
-      // vertical-align: middle
 
     &-icon
-      display: inline-block
+      // extended transition wait for circle to collapse
       transition: all .55s ease-in-out
-      margin-left: 20px
       border-radius: 50%
       box-shadow: 0 2px 4px 0 rgba($black, .33)
-      width: 34px
-      height: 34px
-      vertical-align: middle
 
       svg
-        fill: $turquoise
-
-    &:after
-      position: absolute
-      top: -270px
-      left: -30px
-      transform: scale(.01)
-      transition: all .35s ease-in-out
-      z-index: -1
-      border-radius: 50%
-      background: $turquoise
-      width: calc(297px * 2)
-      height: calc(297px * 2)
-      content: ''
-      transform-origin: center center
+        .line
+          fill: $white
 
     &:hover
-      transition: all .35s ease-in-out
-      box-shadow: 0 2px 4px 0 rgba($black, .33)
-
-      span
-        transition: color .35s ease-in-out
-        color: $white
-
-      &:after
-        transform: scale(1)
-        transition: all .35s ease-in-out
-
+      // quickly remove box-shadow
       .style-guide__button-main-icon
-        transition: all .35s ease-in-out
+        transition: box-shadow .15s ease-in-out
         box-shadow: none
 
     &:active
-      box-shadow: none   
+      box-shadow: none
+
+  &__menu-container
+    display: flex
+    align-items: center
+
+  &__menu
+    margin-right: 1rem
+    text-transform: uppercase
+    font-size: 18px
+
+  &__hamburger
+    @include circle-hamburger-cross($black, $black, 36%, 60%, .25s)
+
+  &__icons
+    display: flex
+
+  &__icon
+    &-outer
+      position: relative
+      transition: all .3s ease-in-out
+      border-radius: 50%
+      background: $turquoise
+      width: 60px
+      height: 60px
+
+      &:not(:last-child)
+        margin-right: 10px
+
+      &.disabled
+        background: lighten($blue-grey, 15)
+
+        &:hover
+          box-shadow: $shadow-blue
+          background: $turquoise
+          cursor: pointer
+
+          .style-guide__icon-inner
+            background: $blue
+
+      &.active
+        box-shadow: $shadow-blue
+
+    &-inner
+      display: inline-block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      transition: all .3s ease-in-out
+      border-radius: 50%
+      background: $blue
+      width: 52px
+      height: 52px
+
+      &.disabled
+        background: $blue-grey
+
+    &-wrapper
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 35px
+      height: 35px
+
+      svg
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        // width: 100%
+        // height: 100%
+        fill: $white
+
+      &.kite
+        transform: translate(-50%, -50%) rotate(-45deg)
+        padding: 4px
+
+      &.ribbon
+        padding: 5px
+
+      &.smile
+        svg
+          width: 90%
+          height: 90%
+
+      &.star
+        padding: 2px
+
+  &__content-wrapper
+    position: relative
+    margin-top: 2rem
+    margin-bottom: 5rem
+
+  &__shape
+    position: absolute
+    z-index: -1
+    background: $pale-blue
+    width: 100%
+    height: 50vw
+
+    svg
+      height: 100%
+      font-size: 0
+
+  &__text-container
+    @extend .flex-container-lg
+    display: flex
+    justify-content: space-between
+    width: 100%
+    height: 50vw
+
+  &__text
+    display: flex
+    justify-content: flex-start
+    // width: 25%
+
+    h2
+      @extend .h2-option
+      align-self: center
+      width: 25%
+
+  &__right-container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 3rem
+    width: 70%
+
+    .item
+      margin-bottom: 2rem
+      background: orangered
+      width: 45%

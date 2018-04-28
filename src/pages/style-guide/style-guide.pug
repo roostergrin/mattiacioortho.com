@@ -9,13 +9,77 @@
       h3 Header 3
       h3.h3-option Header 3.b
       
+      <br/>
+      
       p This is paragraph text. It is the text style that is in paragraphs 
       p and is all throughout the page in paragraphs.
+      <br>
       
-      Icon.style-guide__ig(name='ig')
+      .style-guide__icon-row
+        Icon.style-guide__envelope(name='envelope')
+        Icon.style-guide__fb(name='fb')
+        Icon.style-guide__goog(name='goog')
+        Icon.style-guide__phone(name='phone')
+        Icon.style-guide__ig(name='ig')
+      <br>  
       
       .style-guide__button-main
         span Make an Appointment
-        Icon.style-guide__button-main-icon(name='arrow')
+        Icon.style-guide__button-main-icon(name='arrow')  
+      <br>
       
+      .style-guide__row
+        
+        .style-guide__menu-container
+          .style-guide__menu
+            | MENU
+          .style-guide__hamburger(@click='active = !active', :class='{"style-guide__hamburger--active": active}')
+            span
+            span
+        
+        .style-guide__icons
+          .style-guide__icon-outer
+            .style-guide__icon-inner
+              Icon.style-guide__icon-wrapper.smile(name='smile')
+          .style-guide__icon-outer.disabled
+            .style-guide__icon-inner.disabled
+              Icon.style-guide__icon-wrapper(name='community')
+          .style-guide__icon-outer.active
+            .style-guide__icon-inner
+              Icon.style-guide__icon-wrapper(name='graduation')
+          .style-guide__icon-outer
+            .style-guide__icon-inner
+              Icon.style-guide__icon-wrapper.kite(name='kite')
+          .style-guide__icon-outer
+            .style-guide__icon-inner
+              Icon.style-guide__icon-wrapper(name='party')
+          .style-guide__icon-outer
+            .style-guide__icon-inner
+              Icon.style-guide__icon-wrapper.ribbon(name='ribbon')
+          .style-guide__icon-outer
+            .style-guide__icon-inner
+              Icon.style-guide__icon-wrapper(name='technology')                             
+          .style-guide__icon-outer
+            .style-guide__icon-inner
+              Icon.style-guide__icon-wrapper(name='bowtie')
+          .style-guide__icon-outer
+            .style-guide__icon-inner
+              Icon.style-guide__icon-wrapper(name='couch-plant')
+          .style-guide__icon-outer
+            .style-guide__icon-inner
+              Icon.style-guide__icon-wrapper.star(name='star')
+          .style-guide__icon-outer
+            .style-guide__icon-inner
+              Icon.style-guide__icon-wrapper(name='shield')     
       
+  .style-guide__content-wrapper
+    .style-guide__shape(v-html='svg')
+    .style-guide__text-container
+      .style-guide__text
+        h2 Why Not
+      .style-guide__right-container
+        .item
+        .item
+        .item
+        .item
+        .item        
