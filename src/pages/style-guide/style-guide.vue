@@ -1,7 +1,9 @@
 <template lang='pug' src='./style-guide.pug'></template>
 
 <script>
+import Header from 'components/header/header'
 import Icon from 'components/icon/icon'
+
 export default {
   data () {
     return {
@@ -14,6 +16,7 @@ export default {
     }
   },
   components: {
+    Header,
     Icon
   }
 }

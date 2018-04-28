@@ -38,7 +38,8 @@ const router = new VueRouter({
     {
       path: '/',
       name: 'Home',
-      navigation: true,
+      navigation: false,
+      mobile: true,
       component: Home
     },
     {
@@ -58,6 +59,7 @@ const router = new VueRouter({
     {
       path: '/treatments',
       name: 'Treatments',
+      url: 'static/treatments.jpg',
       navigation: true,
       component: Treatments,
       children: []
@@ -65,7 +67,7 @@ const router = new VueRouter({
     {
       path: '/mattiacio-difference',
       name: 'Mattacio Difference',
-      navigation: true,
+      navigation: false,
       component: Mattacio,
       children: []
     },
@@ -84,7 +86,8 @@ const router = new VueRouter({
     },
     {
       path: '/style',
-      navigation: false,
+      name: 'Style',
+      navigation: true,
       component: Style
     },
     {
