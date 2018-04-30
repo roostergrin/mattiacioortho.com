@@ -4,13 +4,13 @@
 
   &__container
     @extend .flex-container-lg
+    display: flex
     position: absolute
     top: 50%
     left: 50%
-    transform: translate(-50%, -50%)
-    display: flex
-    justify-content: space-between
     flex-wrap: wrap
+    justify-content: center
+    transform: translate(-50%, -50%)
 
   // &__link-container
   //
@@ -18,16 +18,22 @@
   //   height:
 
   &__link
-    background: honeydew
-    transition: transform .35s ease-in-out
     display: flex
+    transition: transform .35s ease-in-out
     margin-bottom: 1rem
+    background: honeydew
+    background-position: right top
+    background-size: cover
     // needs to be 100vw / 3? add to :style attr on $el
     width: 360px
     height: 200px
-    background-size: cover
-    background-position: right top
+    // display: none
+
+    &:not(:first-child),
+    &:not(:nth-child(4))
+      margin-left: 15px
 
     &.router-link-active
+      display: inline-block
+      // transform: matrix(4, 0, 0, 4, 0, 40)
       transition: transform .35s ease-in-out
-      transform: matrix(4,0,0,4,-410,180)
