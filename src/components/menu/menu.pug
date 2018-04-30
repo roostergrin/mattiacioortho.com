@@ -1,0 +1,4 @@
+.menu
+  .menu__overlay
+  .menu__container
+    router-link.menu__link(v-for='link in links', v-if='link.navigation', :to='link.path', :style="{backgroundImage: 'url(' + link.url + ')'}") {{ link.name }}
