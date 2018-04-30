@@ -2,6 +2,7 @@
 
 <script>
 import Loader from 'components/loader/loader'
+import Header from 'components/header/header'
 
 export default {
   name: 'treatments',
@@ -14,7 +15,8 @@ export default {
     }
   },
   components: {
-    Loader
+    Loader,
+    Header
   }
 }
 </script>

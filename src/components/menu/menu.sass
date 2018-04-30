@@ -3,7 +3,7 @@
   height: 100%
 
   &__container
-    @extend .flex-container-md
+    @extend .flex-container-lg
     position: absolute
     top: 50%
     left: 50%
@@ -22,11 +22,12 @@
     transition: transform .35s ease-in-out
     display: flex
     margin-bottom: 1rem
-    width: calc(100vw / 4)
+    // needs to be 100vw / 3? add to :style attr on $el
+    width: 360px
     height: 200px
     background-size: cover
     background-position: right top
 
     &.router-link-active
       transition: transform .35s ease-in-out
-      transform: matrix(4,0,0,4,-300,-40)
+      transform: matrix(4,0,0,4,-410,180)
