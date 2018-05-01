@@ -103,7 +103,7 @@
       font-weight: 600
 
     &-icon
-      // extended transition wait for circle to collapse
+      // extended shadow transition to wait for circle to collapse
       transition: all .55s ease-in-out
       border-radius: 50%
       box-shadow: 0 2px 4px 0 rgba($black, .33)
@@ -113,7 +113,7 @@
           fill: $white
 
     &:hover
-      // quickly remove box-shadow
+      // quickly remove box-shadow as bg expands
       .style-guide__button-main-icon
         transition: box-shadow .15s ease-in-out
         box-shadow: none

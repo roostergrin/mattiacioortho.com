@@ -1,4 +1,12 @@
 .menu
   .menu__overlay
   .menu__container
-    router-link.menu__link(v-for='(link, i) in links', v-if='link.navigation', :to='link.path', :style="{backgroundImage: 'url(' + link.url + ')'}", :key='i') {{ link.name }}
+    .menu__link(
+      v-for='(link, i) in links'
+      v-if='link.navigation'
+      :style="{backgroundImage: 'url(' + link.url + ')'}"
+      :key='i'
+      :class='{"active": $route.name  === link.name && !$store.state.menu}'
+      v-on:click='closeMenu(link.path)' ) 
+      | {{ link.name }}
+      //- Prevent default -> apply classes -> goto route

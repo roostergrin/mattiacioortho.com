@@ -1,0 +1,31 @@
+.nav-desktop
+  position: fixed
+  z-index: 9
+  padding: 1rem 0
+  width: 100%
+  color: $white
+
+  &__container
+    @extend .flex-container-lg
+    @extend .flex
+    @extend .flex-between
+    align-items: center
+
+  &__logo
+    width: 265px
+    height: 65px
+
+    svg
+      fill: $white
+
+  &__menu-container
+    display: flex
+    align-items: center
+
+  &__menu
+    margin-right: 1rem
+    text-transform: uppercase
+    font-size: 18px
+
+  &__hamburger
+    @include circle-hamburger-cross($white, $white, 36%, 60%, .25s)

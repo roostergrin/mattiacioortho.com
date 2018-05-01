@@ -2,6 +2,7 @@
 
 <script>
 // components
+import Header from 'components/header/header'
 import Navigation from 'components/navigation/navigation'
 import Revisions from 'revisions'
 
@@ -14,6 +15,7 @@ export default {
     this.$store.dispatch('VIEW_TYPES', 0)
     this.$store.dispatch('VIEW_SHOWMODAL', false)
     this.$store.dispatch('VIEW_MODALCONTENT', false)
+    this.$store.dispatch('VIEW_MENU', false)
   },
   computed: {
     props () {
@@ -21,6 +23,7 @@ export default {
     }
   },
   components: {
+    Header,
     Navigation,
     Revisions
   },

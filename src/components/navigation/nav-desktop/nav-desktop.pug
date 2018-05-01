@@ -1,2 +1,15 @@
-.nav-desktop
-  | NAV
+.nav-desktop(v-if='props')
+  .nav-desktop__container
+    .nav-desktop__item
+      .nav-desktop__dropdown
+        | GET IN TOUCH
+    .nav-desktop__item
+      Icon.nav-desktop__logo(name='matt_logo-01')
+    .nav-desktop__item
+      .nav-desktop__menu-container
+        .nav-desktop__menu
+          | MENU
+        .nav-desktop__hamburger(@click='toggleMenu', :class='{"nav-desktop__hamburger--active": $store.state.menu}')
+          span
+          span
+          
