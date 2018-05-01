@@ -11,28 +11,46 @@
     flex-wrap: wrap
     justify-content: center
     transform: translate(-50%, -50%)
+    padding: 1rem
+    max-width: none
 
-  // &__link-container
-  //
-  //   width: calc(100vw / 4)
-  //   height:
+  &__link-container
+    display: flex
+    transition: all .35s ease-in-out
+    padding: 15px
+
+    &.active
+      transition: all .35s ease-in-out
+      padding: 0
+
+      &:first-child
+        transform: translate(100%, 50%) matrix(4, 0, 0, 4, 0, 0)
+
+      &:nth-child(2)
+        transform: translate(0, 50%) matrix(4, 0, 0, 4, 0, 0)
+
+      &:nth-child(3)
+        transform: translate(-100%, 50%) matrix(4, 0, 0, 4, 0, 0)
+
+      &:nth-child(4)
+        transform: translate(100%, -50%) matrix(4, 0, 0, 4, 0, 0)
+
+      &:nth-child(5)
+        transform: translate(0, -50%) matrix(4, 0, 0, 4, 0, 0)
+
+      &:nth-child(6)
+        transform: translate(-100%, -50%) matrix(4, 0, 0, 4, 0, 0)
+
 
   &__link
-    display: flex
     transition: transform .35s ease-in-out
-    margin-bottom: 1rem
-    background: honeydew
+
+    background: $slate-grey
+    background-repeat: no-repeat
     background-position: right top
     background-size: cover
     // needs to be 100vw / 3? add to :style attr on $el
-    width: 360px
-    height: 200px
+    width: 100%
+    height: 100%
+    // min-height: rem-calc(200px)
     // display: none
-
-    &:not(:first-child),
-    &:not(:nth-child(4))
-      margin-left: 15px
-
-    &.active
-      transform: matrix(4, 0, 0, 4, -380, 100)
-      transition: transform .35s ease-in-out
