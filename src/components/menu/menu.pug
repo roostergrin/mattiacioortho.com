@@ -1,14 +1,18 @@
 .menu
   .menu__overlay
   .menu__container
-    .menu__link-container(
+    .menu__link-wrapper(
       v-for='(link, i) in links'
       :key='i'
       v-if='link.navigation'
       :style="styleObject"
-      :class='{"active": $route.name  === link.name && !$store.state.menu}')
-      .menu__link(
-        v-on:click='closeMenu(link.path)'
-        :style="{backgroundImage: 'url(' + link.url + ')'}") 
-        | {{ link.name }}
-      //- Prevent default -> apply classes -> goto route
+      :class='{"active": $route.name  === link.name && !$store.state.menu, "menu__link-wrapper--current": $route.name === link.name, "not-active": $route.name  != link.name && $store.state.menu}'
+      )
+      .menu__link-container(
+        :class='{"menu__link-container--disabled": !$store.state.menu}'
+        :style="{backgroundImage: 'url(' + link.url + ')'}"
+        ) 
+        .menu__link-overlay
+        .menu__link(
+          v-on:click='closeMenu(link.path)') {{ link.name }}
+      

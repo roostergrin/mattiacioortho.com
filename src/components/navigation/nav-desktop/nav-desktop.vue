@@ -16,7 +16,6 @@ export default {
   mixins: [ openModal ],
   methods: {
     toggleMenu () {
-      console.log(this.$store.state.menu)
       this.$store.state.menu ? this.$store.dispatch('VIEW_MENU', false) : this.$store.dispatch('VIEW_MENU', true)
     }
   }

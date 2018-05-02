@@ -11,46 +11,114 @@
     flex-wrap: wrap
     justify-content: center
     transform: translate(-50%, -50%)
+    // remove max-width to not break wrap at higher widths
     padding: 1rem
     max-width: none
 
   &__link-container
-    display: flex
-    transition: all .35s ease-in-out
-    padding: 15px
-
-    &.active
-      transition: all .35s ease-in-out
-      padding: 0
-
-      &:first-child
-        transform: translate(100%, 50%) matrix(4, 0, 0, 4, 0, 0)
-
-      &:nth-child(2)
-        transform: translate(0, 50%) matrix(4, 0, 0, 4, 0, 0)
-
-      &:nth-child(3)
-        transform: translate(-100%, 50%) matrix(4, 0, 0, 4, 0, 0)
-
-      &:nth-child(4)
-        transform: translate(100%, -50%) matrix(4, 0, 0, 4, 0, 0)
-
-      &:nth-child(5)
-        transform: translate(0, -50%) matrix(4, 0, 0, 4, 0, 0)
-
-      &:nth-child(6)
-        transform: translate(-100%, -50%) matrix(4, 0, 0, 4, 0, 0)
-
-
-  &__link
-    transition: transform .35s ease-in-out
-
+    position: relative
+    transition: transform .55s ease-in-out, opacity .35s ease-in-out
     background: $slate-grey
     background-repeat: no-repeat
     background-position: right top
     background-size: cover
-    // needs to be 100vw / 3? add to :style attr on $el
     width: 100%
     height: 100%
-    // min-height: rem-calc(200px)
-    // display: none
+
+    &--disabled
+      pointer-events: none
+
+    .menu__link-wrapper &
+      opacity: 1
+
+      // animation: fad .35s ease-in-out forwards
+      //
+      // @keyframes fad
+      //   0%
+      //     opacity: 0
+      //   100%
+      //     opacity: 1
+
+    .menu__link-wrapper--current &
+      opacity: 1
+
+  &__link-overlay
+    position: absolute
+    top: 0
+    left: 0
+    transition: opacity .25s ease-in-out .85s
+    opacity: 1
+    background: rgba($black, .35)
+    width: 100%
+    height: 100%
+
+  &__link
+    position: relative
+    transition: opacity .25s ease-in-out .85s
+    opacity: 1
+    margin-left: 2rem
+    border-bottom: 1px solid $white
+    cursor: pointer
+    padding-top: 1.5rem
+    padding-bottom: 8px
+    text-transform: uppercase
+    color: $white
+    font-size: 20px
+    font-weight: 600
+
+    &:hover
+      transition: color .35s ease-in-out
+      color: lighten($blue, 50)
+
+  &__link-wrapper
+    display: flex
+    position: relative
+    transition: transform .85s cubic-bezier(.51, .92, .24, 1), padding .25s ease-in-out .85s
+    padding: .5rem
+
+    &--current
+      z-index: 9
+
+    &.not-active
+      opacity: 0
+      animation: fad .35s ease-in-out forwards .85s
+
+      @keyframes fad
+        0%
+          opacity: 0
+        100%
+          opacity: 1
+
+    &.active
+      transition: padding .35s ease-in-out, transform .65s ease-in-out .35s
+      padding: 0
+      // opacity: 1
+      pointer-events: none
+
+      .menu__link,
+      .menu__link-overlay
+        transition: opacity .35s ease-in-out
+        opacity: 0
+
+      &:first-child
+        transform: translate(100%, 50%) matrix(4, 0, 0, 4, 0, 0)
+
+
+      &:nth-child(2)
+        transform: translate(0, 50%) matrix(4, 0, 0, 4, 0, 0)
+
+
+      &:nth-child(3)
+        transform: translate(-100%, 50%) matrix(4, 0, 0, 4, 0, 0)
+
+
+      &:nth-child(4)
+        transform: translate(100%, -50%) matrix(4, 0, 0, 4, 0, 0)
+
+
+      &:nth-child(5)
+        transform: translate(0, -50%) matrix(4, 0, 0, 4, 0, 0)
+
+
+      &:nth-child(6)
+        transform: translate(-100%, -50%) matrix(4, 0, 0, 4, 0, 0)
