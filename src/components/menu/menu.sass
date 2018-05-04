@@ -11,8 +11,8 @@
     flex-wrap: wrap
     justify-content: center
     transform: translate(-50%, -50%)
-    // remove max-width to not break wrap at higher widths
     padding: 1rem
+    // remove max-width to not break wrap at higher widths
     max-width: none
 
   &__link-container
@@ -30,14 +30,6 @@
 
     .menu__link-wrapper &
       opacity: 1
-
-      // animation: fad .35s ease-in-out forwards
-      //
-      // @keyframes fad
-      //   0%
-      //     opacity: 0
-      //   100%
-      //     opacity: 1
 
     .menu__link-wrapper--current &
       opacity: 1
@@ -59,7 +51,7 @@
     margin-left: 2rem
     border-bottom: 1px solid $white
     cursor: pointer
-    padding-top: 1.5rem
+    padding-top: 1rem
     padding-bottom: 8px
     text-transform: uppercase
     color: $white
@@ -68,7 +60,9 @@
 
     &:hover
       transition: color .35s ease-in-out
-      color: lighten($blue, 50)
+      //sass-lint:disable-all
+      color: lighten($blue, 40)
+      // sass-lint:enable-all
 
   &__link-wrapper
     display: flex
@@ -80,8 +74,8 @@
       z-index: 9
 
     &.not-active
-      opacity: 0
       animation: fad .35s ease-in-out forwards .85s
+      opacity: 0
 
       @keyframes fad
         0%
@@ -96,7 +90,8 @@
       pointer-events: none
 
       .menu__link,
-      .menu__link-overlay
+      .menu__link-overlay,
+      .menu__submenu
         transition: opacity .35s ease-in-out
         opacity: 0
 
@@ -122,3 +117,103 @@
 
       &:nth-child(6)
         transform: translate(-100%, -50%) matrix(4, 0, 0, 4, 0, 0)
+
+  &__submenu
+    @extend .flex
+    position: relative
+    flex-direction: column
+    transition: opacity .25s ease-in-out 1.15s
+    margin-left: 2rem
+    padding-top: .5rem
+
+    &-link
+      transition: color .35s ease-in-out
+      color: $white
+      font-size: 18px
+
+      &:hover
+        transition: color .35s ease-in-out
+        //sass-lint:disable-all
+        color: lighten($blue, 40)
+        // sass-lint:enable-all
+
+  &__social-links
+    @extend .flex-container-lg
+    @extend .flex
+    @extend .flex-center
+    position: absolute
+    top: 90%
+    right: 50%
+    left: 50%
+    transform: translateX(-50%)
+    transition: opacity .25s ease-in-out
+    opacity: 0
+
+    &.active
+      transition: opacity .35s ease-in-out 1.2s
+      opacity: 1
+
+  &__social-link
+    // position: relative
+    transition: border .25s ease-in-out
+    margin-right: 1rem
+    border: 1px solid $white
+    border-radius: 50%
+    width: 45px
+    height: 45px
+
+    svg
+      transition: all .25s ease-in-out
+      fill: $white
+
+    &:hover
+      transition: border .25s ease-in-out
+      border: 1px solid $turquoise
+
+      svg
+        transition: all .25s ease-in-out
+        fill: $turquoise
+
+  &__phone
+    padding: 8px
+
+  &__mail
+    padding: 12px 6px
+
+  &__facebook
+    margin-left: -1px
+    padding: 6px 14px 9px
+    width: 45px
+    height: 45px
+
+  &__goog
+    padding: 9px 6px
+
+    svg
+      margin-left: 4px
+
+  &__ig
+    padding: 10px
+
+    .ig-phil
+      transition: fill .25s ease-in-out
+      fill: none
+      stroke: $blue
+      stroke-width: 3px
+
+    .ig-dot
+      fill: $blue
+
+    svg
+      transition: fill .25s ease-in-out
+      fill: $white
+
+    &:hover
+
+      .ig-phil
+        transition: all .25s ease-in-out
+        fill: $turquoise
+
+      svg
+        transition: fill .25s ease-in-out
+        fill: $turquoise

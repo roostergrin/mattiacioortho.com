@@ -1,6 +1,7 @@
 <template lang='pug' src='./menu.pug'></template>
 
 <script>
+import Icon from 'components/icon/icon'
 
 export default {
   data () {
@@ -12,6 +13,9 @@ export default {
   computed: {
     links () {
       return this.$router.options.routes
+    },
+    props () {
+      return this.$store.state.app.information
     },
     classList () {
       return {
@@ -26,8 +30,10 @@ export default {
     }
   },
   mounted () {
-    console.log(this.$router.options.routes.url)
     window.addEventListener('resize', this.myEventHandler)
+  },
+  components: {
+    Icon
   },
   methods: {
     closeMenu (e) {

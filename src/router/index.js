@@ -62,7 +62,24 @@ const router = new VueRouter({
       url: 'static/treatments.jpg',
       navigation: true,
       component: Treatments,
-      children: []
+      children: [
+        {
+          path: '/treatments#invisalign',
+          label: 'Invisalign'
+        },
+        {
+          path: '/treatments#damon',
+          label: 'Damon Braces'
+        },
+        {
+          path: '/treatments#7up',
+          label: '7 & Up Child Evaluation'
+        },
+        {
+          path: '/treatments#adults',
+          label: 'Adult Orthodontics'
+        }
+      ]
     },
     {
       path: '/mattiacio-difference',

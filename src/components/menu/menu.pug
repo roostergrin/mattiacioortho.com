@@ -1,4 +1,4 @@
-.menu
+.menu(v-if='props')
   .menu__overlay
   .menu__container
     .menu__link-wrapper(
@@ -15,4 +15,13 @@
         .menu__link-overlay
         .menu__link(
           v-on:click='closeMenu(link.path)') {{ link.name }}
-      
+        .menu__submenu(v-if='link.children')
+          router-link.menu__submenu-link(
+            v-for='(item, i) in link.children'
+            v-html='item.label'
+            :to='item.path',
+            :key='i')
+  .menu__social-links(:class='{"active": $store.state.menu}')
+    a.menu__social-link(v-for='(link, i) in props.acf.social_links', :href='link.href' target='_blank')
+      Icon(:name='link.icon', :class='"menu__" + link.label')
+              
