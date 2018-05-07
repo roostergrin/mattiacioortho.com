@@ -1,2 +1,4 @@
 .header
   Menu
+  transition(name='fade-in')
+    HomeHero(v-show='$route.path === "/" && !$store.state.menu')
