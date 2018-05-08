@@ -1,12 +1,24 @@
 .nav-desktop(v-if='props')
   .nav-desktop__container
     .nav-desktop__item
-      .nav-desktop__dropdown
+      .nav-desktop__dropdown(:class='{"nav-desktop__dropdown--active": $store.state.menu}', @click='dropdown')
         span GET IN TOUCH
-        Icon.nav-desktop__dropdown-icon(name='triangle')
+        Icon.nav-desktop__dropdown-icon(name='triangle', :class='{"nav-desktop__dropdown-icon--open": open}')
+        transition(name='fade-in')
+          .nav-desktop__dropdown-container(v-show='open')
+            a.nav-desktop__dropdown-phone(href='tel:1-585-742-1050')
+              Icon.nav-desktop__phone(name='phone')
+              p 585. 742. 1050
+            a.nav-desktop__dropdown-map(href='https://www.google.com/maps/place/Mattiacio+Orthodontics/@42.9665843,-77.3534923,17z/data=!3m1!4b1!4m5!3m4!1s0x89d12fb6e7f19f17:0x5c3c945acb061003!8m2!3d42.9665804!4d-77.3513036?hl=en-US' target='_blank')
+              Icon.nav-desktop__map(name='location')
+              p MAP  
+            a.nav-desktop__dropdown-email(href='mailto:info@mattiacioortho.com')
+              Icon.nav-desktop__email(name='envelope')
+              p EMAIL US
+    
     .nav-desktop__item
       .nav-desktop__logo-container(@click='closeMenu')
-        Icon.nav-desktop__logo(name='matt_logo-01')
+        Icon.nav-desktop__logo(name='matt_logo-01', :class='{"nav-desktop__logo--active": $store.state.menu}')
     .nav-desktop__item
       .nav-desktop__menu-container
         .nav-desktop__menu(@click='toggleMenu')

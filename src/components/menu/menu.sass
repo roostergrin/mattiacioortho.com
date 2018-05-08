@@ -26,6 +26,10 @@
     &--white
       color: $pale-blue
 
+  &__link-video
+    position: absolute
+    width: 100%
+
   &__link-container
     position: relative
     transition: transform .55s ease-in-out, opacity .35s ease-in-out
@@ -35,6 +39,7 @@
     background-size: cover
     width: 100%
     height: 100%
+    overflow: hidden
 
     &--disabled
       pointer-events: none
@@ -107,6 +112,14 @@
         transition: opacity .35s ease-in-out
         opacity: 0
 
+      .menu__link-expanded-overlay
+        position: absolute
+        top: 0
+        transition: background .35s ease-in-out
+        background: linear-gradient(180deg, rgba($black, .25), transparent)
+        width: 100%
+        height: 100%
+
       &:first-child
         transform: translate(100%, 50%) matrix(4, 0, 0, 4, 0, 0)
 
@@ -129,6 +142,14 @@
 
       &:nth-child(6)
         transform: translate(-100%, -50%) matrix(4, 0, 0, 4, 0, 0)
+
+  &__link-expanded-overlay
+    position: absolute
+    transition: background .35s ease-in-out
+    background: linear-gradient(180deg, rgba($black, .25), transparent)
+    width: 100%
+    height: 100%
+
 
   &__submenu
     @extend .flex

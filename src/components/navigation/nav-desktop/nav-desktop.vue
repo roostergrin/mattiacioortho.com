@@ -5,6 +5,11 @@ import Icon from 'components/icon/icon'
 import { openModal } from '@/methods'
 
 export default {
+  data () {
+    return {
+      open: false
+    }
+  },
   computed: {
     props () {
       return this.$store.state.app.information
@@ -23,6 +28,9 @@ export default {
         this.$store.dispatch('VIEW_MENU', false)
       }
       this.$router.push('/')
+    },
+    dropdown () {
+      this.open = !this.open
     }
   }
 }

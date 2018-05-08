@@ -54,6 +54,7 @@ const router = new VueRouter({
       name: 'New Patients',
       navigation: true,
       component: NewPatients,
+      url: 'static/new-pats.jpg',
       children: []
     },
     {
@@ -86,6 +87,7 @@ const router = new VueRouter({
       name: 'Mattacio Difference',
       navigation: false,
       component: Mattacio,
+      url: 'static/matt-diff-bg.jpg',
       children: []
     },
     {
@@ -93,18 +95,21 @@ const router = new VueRouter({
       name: 'Invisalign',
       navigation: true,
       component: Invisalign,
+      url: 'static/invisalign.jpg',
       children: []
     },
     {
       path: '/contact-us',
       name: 'Contact Us',
       navigation: true,
+      url: 'static/contact.jpg',
       component: ContactUs
     },
     {
       path: '/style',
       name: 'Style',
       navigation: true,
+      url: 'static/matt-diff-bg.jpg',
       component: Style
     },
     {

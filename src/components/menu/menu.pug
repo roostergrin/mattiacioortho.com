@@ -10,11 +10,27 @@
       :style="styleObject"
       :class='{"active": $route.name  === link.name && !$store.state.menu, "menu__link-wrapper--current": $route.name === link.name, "not-active": $route.name  != link.name && $store.state.menu}'
       )
+      .menu__link-container(v-if='link.name === "About Us"')
+        video.menu__link-video(loop muted autoplay)
+          source(src='static/mattiacio_hero_compressed.mp4' type='video/mp4')
+        .menu__link-overlay
+        .menu__link-expanded-overlay  
+        .menu__link(
+          v-on:click='closeMenu(link.path)') {{ link.name }}
+        .menu__submenu(v-if='link.children')
+          router-link.menu__submenu-link(
+            v-for='(item, i) in link.children'
+            v-html='item.label'
+            :to='item.path'
+            :key='i')
+      
       .menu__link-container(
+        v-if='link.name != "About Us"'
         :class='{"menu__link-container--disabled": !$store.state.menu}'
         :style="{backgroundImage: 'url(' + link.url + ')'}"
         ) 
         .menu__link-overlay
+        .menu__link-expanded-overlay
         .menu__link(
           v-on:click='closeMenu(link.path)') {{ link.name }}
         .menu__submenu(v-if='link.children')
