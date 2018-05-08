@@ -1,6 +1,8 @@
 <template lang='pug' src='./home-hero.pug'></template>
 
 <script>
+import Icon from 'components/icon/icon'
+
 export default {
   computed: {
     classList () {
@@ -8,6 +10,9 @@ export default {
         'active': this.$store.state.menu
       }
     }
+  },
+  components: {
+    Icon
   }
 }
 </script>

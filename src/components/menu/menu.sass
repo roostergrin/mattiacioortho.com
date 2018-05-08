@@ -15,6 +15,17 @@
     // remove max-width to not break wrap at higher widths
     max-width: none
 
+  &__overlay
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 10
+
+  &__title
+    &--white
+      color: $pale-blue
+
   &__link-container
     position: relative
     transition: transform .55s ease-in-out, opacity .35s ease-in-out
@@ -68,7 +79,7 @@
   &__link-wrapper
     display: flex
     position: relative
-    transition: transform .85s cubic-bezier(.51, .92, .24, 1), padding .25s ease-in-out .85s
+    transition: transform .85s cubic-bezier(.51, .92, .24, 1) .35s, padding .25s ease-in-out .85s
     padding: .5rem
 
     &--current

@@ -1,6 +1,6 @@
 .nav-desktop
   position: fixed
-  z-index: 9
+  z-index: 99
   padding: 1rem 0
   width: 100%
   color: $white
@@ -29,3 +29,23 @@
 
   &__hamburger
     @include circle-hamburger-cross($white, $white, 36%, 60%, .25s)
+
+  &__dropdown
+    display: flex
+
+    span
+      align-self: center
+      margin-right: 1rem
+      font-size: 18px
+
+    &-icon
+      border: 1px solid $white
+      border-radius: 50%
+      padding: 10px 0 10px 6px
+      width: 40px
+      height: 40px
+
+      svg
+        width: 100%
+        height: 100%
+        fill: $white

@@ -6,7 +6,7 @@
 
   &-enter-active,
   &-leave-active
-    transition: all .65s ease-in-out
+    transition: all .45s ease-in-out
 
   &-enter,
   &-leave-to
@@ -28,3 +28,40 @@
   &-enter-active,
   &-leave-active
     transition: all .45s ease-in-out
+
+.home-fade
+  backface-visibility: hidden
+
+  &-enter-active
+    transition-property: opacity
+    transition-duration: .35s
+    transition-timing-function: ease-in-out
+
+  &-leave-active
+    transition-delay: .35s
+    transition-property: opacity
+    transition-duration: .65s
+
+  &-enter,
+  &-leave-active
+    opacity: 0
+
+.title-fade
+  backface-visibility: hidden
+
+  &-enter-active
+    transition-property: opacity, transform
+    transition-duration: .45s
+    transition-delay: .75s
+    transition-timing-function: ease-in-out
+
+  &-leave-active
+    transition-duration: .25s
+    transition-property: opacity
+
+  &-enter,
+  &-leave-active
+    opacity: 0
+
+  &-enter
+    transform: translate(0, 15%)

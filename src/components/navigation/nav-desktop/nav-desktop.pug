@@ -2,13 +2,14 @@
   .nav-desktop__container
     .nav-desktop__item
       .nav-desktop__dropdown
-        | GET IN TOUCH
+        span GET IN TOUCH
+        Icon.nav-desktop__dropdown-icon(name='triangle')
     .nav-desktop__item
-      router-link(to='/').nav-desktop__logo-container
+      .nav-desktop__logo-container(@click='closeMenu')
         Icon.nav-desktop__logo(name='matt_logo-01')
     .nav-desktop__item
       .nav-desktop__menu-container
-        .nav-desktop__menu
+        .nav-desktop__menu(@click='toggleMenu')
           | MENU
         .nav-desktop__hamburger(@click='toggleMenu', :class='{"nav-desktop__hamburger--active": $store.state.menu}')
           span

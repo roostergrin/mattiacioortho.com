@@ -4,4 +4,6 @@
     video.home-hero__video(loop muted autoplay)
       source.home-hero__source(src='static/mattiacio_hero_compressed.mp4' type='video/mp4')
       | Your browser does not support video.
-  .home-hero__appt      
+  .home-hero__appt(:class='{active: $store.state.menu}')
+    span Make an Appointment
+    Icon.home-hero__appt-icon(name='arrow') 

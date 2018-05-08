@@ -17,6 +17,12 @@ export default {
   methods: {
     toggleMenu () {
       this.$store.state.menu ? this.$store.dispatch('VIEW_MENU', false) : this.$store.dispatch('VIEW_MENU', true)
+    },
+    closeMenu () {
+      if (this.$store.state.menu) {
+        this.$store.dispatch('VIEW_MENU', false)
+      }
+      this.$router.push('/')
     }
   }
 }
