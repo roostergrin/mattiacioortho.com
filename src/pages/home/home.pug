@@ -1,4 +1,4 @@
 .pages-home
   div(v-if='props')
-    h1 Home Page
+    Welcome(:props='props.acf.custom_welcome')
     pre {{ props }}
