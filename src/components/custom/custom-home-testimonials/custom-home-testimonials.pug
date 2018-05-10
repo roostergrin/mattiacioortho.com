@@ -1,0 +1,24 @@
+.custom-home-testimonials
+  .custom-home-testimonials__container
+    .custom-home-testimonials__title(v-html='props.title')
+    .custom-home-testimonials__icon-outer
+      .custom-home-testimonials__icon-inner
+        Icon.custom-home-testimonials__icon(name='smile')  
+
+    swiper.custom-home-testimonials__slider(:options='swiperOption')
+      swiperSlide.custom-home-testimonials__slide(v-for='(slide, i) in props.testimonials', :key='i')
+        .custom-home-testimonials__slide-text(v-html='slide.text')
+        .custom-home-testimonials__slide-author
+          | {{ slide.author }}
+      .custom-home-testimonials__pagination(slot="pagination")
+      .custom-home-testimonials__next(slot="button-next")
+        Icon(name='arrow-01')
+      .custom-home-testimonials__prev(slot="button-prev")
+        Icon(name='arrow-01')
+          
+    .custom-home-testimonials__video-container
+      .custom-home-testimonials__video-play-btn(@click='openVideo')
+        Icon.custom-home-testimonials__play-btn-icon(name='triangle')
+      .custom-home-testimonials__thumb(:style="{backgroundImage: 'url(' + props.video_thumb + ')'}")
+      //- video.custom-home-testimonials__video(ref='video')
+      //-   source(:src='props.video' type='video/mp4')      

@@ -8,6 +8,8 @@ import store from './shared/store'
 import * as customFilters from './shared/filters/filters'
 import VueScrollTo from 'vue-scrollto'
 import VueWaypoint from 'vue-waypoint'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
 
 // Vue config
 Vue.config.productionTip = false
@@ -31,6 +33,7 @@ Vue.use(VueScrollTo, {
   y: true
 })
 Vue.use(VueWaypoint)
+Vue.use(VueAwesomeSwiper)
 
 /* eslint-disable no-new */
 new Vue({

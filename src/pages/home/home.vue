@@ -2,6 +2,7 @@
 
 <script>
 import Loader from 'components/loader/loader'
+import Testimonials from 'components/custom/custom-home-testimonials/custom-home-testimonials'
 import Welcome from 'components/custom/custom-home-welcome/custom-home-welcome'
 import Why from 'components/custom/custom-home-why/custom-home-why'
 
@@ -17,6 +18,7 @@ export default {
   },
   components: {
     Loader,
+    Testimonials,
     Welcome,
     Why
   }
