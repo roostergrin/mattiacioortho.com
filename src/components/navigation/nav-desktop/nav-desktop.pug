@@ -1,4 +1,4 @@
-.nav-desktop(v-if='props')
+.nav-desktop(v-if='props', :class='{"nav-desktop--scrolling": $store.state.nav}')
   .nav-desktop__container
     .nav-desktop__item
       .nav-desktop__dropdown(:class='{"nav-desktop__dropdown--active": $store.state.menu}', @click='dropdown')

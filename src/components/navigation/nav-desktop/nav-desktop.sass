@@ -1,5 +1,6 @@
 .nav-desktop
   position: fixed
+  transition: background .35s ease-in-out
   z-index: 99
   padding: 1rem 0
   width: 100%
@@ -119,3 +120,13 @@
     height: 20px
     font-size: 14px
     fill: $white
+
+  &--scrolling
+    transition: background .35s ease-in-out
+    // border-bottom: 1px solid $pale-grey
+    background: rgba($blue, .95)
+    // color: $black
+
+    .nav-desktop__logo
+      transform: scale(.8)
+      transition: transform .35s ease-in-out
