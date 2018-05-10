@@ -3,6 +3,7 @@
 <script>
 import Loader from 'components/loader/loader'
 import Welcome from 'components/custom/custom-home-welcome/custom-home-welcome'
+import Why from 'components/custom/custom-home-why/custom-home-why'
 
 export default {
   name: 'home',
@@ -16,7 +17,8 @@ export default {
   },
   components: {
     Loader,
-    Welcome
+    Welcome,
+    Why
   }
 }
 </script>

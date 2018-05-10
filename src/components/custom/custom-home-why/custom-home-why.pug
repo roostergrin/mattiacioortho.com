@@ -1,0 +1,10 @@
+.custom-home-why
+  .custom-home-why__wrapper
+    .custom-home-why__shape(v-html='shape')
+    .custom-home-why__container
+      .custom-home-why__left
+        h2 {{ props.title}}
+      .custom-home-why__right
+        .custom-home-why__item(v-for='(card, i) in props.cards', :key='i')
+          .custom-home-why__card-title(v-html='card.title')
+          .custom-home-why__card-texr(v-html='card.text')    
