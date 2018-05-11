@@ -1,0 +1,108 @@
+.custom-home-retainers
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  padding-bottom: 2.2rem
+
+  &__container
+    padding-top: rem-calc(115px)
+    text-align: center
+
+  &__title
+    @extend h2
+    color: $blue
+
+  &__subtitle
+    @extend h3
+    margin: 1.4rem auto 0
+    width: 100%
+    max-width: 532px
+    color: $black
+
+  &__row
+    @extend .flex
+    @extend .flex-between
+    margin-top: 2.2rem
+    background-position: center
+    width: 100%
+    height: inherit
+
+  &__left,
+  &__right
+    background-repeat: no-repeat
+    background-size: cover
+    width: 50%
+    height: 439px
+
+  &__left
+    background-position: center
+
+  &__right
+    background-position: right
+
+  &__lifetime-content
+    margin-top: 10%
+    margin-left: 8%
+    width: 100%
+    max-width: 362px
+
+  &__lifetime-title
+    text-transform: uppercase
+    line-height: 1.14
+    color: $turquoise
+    font-size: 44px
+    font-weight: 900
+
+  &__lifetime-subtitle
+    margin-top: 12px
+    text-transform: uppercase
+    line-height: 1.14
+    letter-spacing: .2px
+    color: $white
+    font-family: $avenir
+    font-size: 20px
+    font-weight: 600
+
+  &__bottom-container
+    @extend .flex-container-lg
+    @extend .flex
+    justify-content: flex-end
+    width: 100%
+    height: 409px
+
+  &__bottom-content
+    align-self: center
+    width: 100%
+    max-width: 458px
+
+  &__bottom-subtitle
+    text-transform: uppercase
+    line-height: 1.14
+    letter-spacing: .2px
+    color: $dark-blue
+    font-family: $avenir
+    font-size: 20px
+    font-weight: 600
+
+  &__bottom-headline
+    margin: 12px 0 2rem
+    text-transform: uppercase
+    line-height: 1.14
+    color: $white
+    font-size: 47px
+    font-weight: 900
+
+  &__bottom-cta-btn
+    display: block
+    border-radius: 5px
+    background: $sea-foam
+    cursor: pointer
+    padding: 1rem 2rem
+    width: 100%
+    max-width: 430px
+    height: 60px
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 3px
+    color: $white
+    font-weight: 700

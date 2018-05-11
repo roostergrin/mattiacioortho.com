@@ -1,0 +1,17 @@
+.custom-home-retainers(:style="{backgroundImage: 'url(' + props.bg_img + ')'}")
+  .custom-home-retainers__container
+    .custom-home-retainers__title(v-html='props.title')
+    .custom-home-retainers__subtitle(v-html='props.subtitle')
+  .custom-home-retainers__row
+    .custom-home-retainers__left(:style="{backgroundImage: 'url(' + props.lifetime.left_img + ')'}")
+    .custom-home-retainers__right(:style="{backgroundImage: 'url(' + props.lifetime.right_img + ')'}")
+      .custom-home-retainers__lifetime-content
+        .custom-home-retainers__lifetime-title(v-html='props.lifetime.title') 
+        .custom-home-retainers__lifetime-subtitle(v-html='props.lifetime.subtitle')
+  .custom-home-retainers__row(:style="{backgroundImage: 'url(' + props.bottom.bg_img + ')'}")
+    .custom-home-retainers__bottom-container
+      .custom-home-retainers__bottom-content
+        .custom-home-retainers__bottom-subtitle(v-html='props.bottom.title')
+        .custom-home-retainers__bottom-headline(v-html='props.bottom.headline')
+        a.custom-home-retainers__bottom-cta-btn
+          span {{props.bottom.cta_btn}}
