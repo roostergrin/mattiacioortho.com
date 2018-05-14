@@ -16,6 +16,9 @@
     padding-top: 40px
     padding-bottom: 30px
 
+    @media screen and (max-width: $break-md)
+      flex-direction: column
+
   &__item
     @extend .flex
     @extend .flex-center
@@ -24,8 +27,20 @@
     &:first-child
       justify-content: flex-start
 
+      @media screen and (max-width: $break-md)
+        justify-content: center
+        order: 1
+        margin-top: 1rem
+        width: 100%
+
     &:last-child
       justify-content: flex-end
+
+      @media screen and (max-width: $break-md)
+        justify-content: center
+        order: 2
+        margin-top: 1rem
+        width: 100%
 
   &__patient-login
     transition: all .35s ease-in-out
@@ -141,7 +156,8 @@
     @extend .flex
     @extend .align-center
     flex-direction: column
-    padding: 1rem 0 2rem
+    padding-top: 1rem
+    padding-bottom: 2rem
     text-align: center
 
   &__phone,
@@ -157,4 +173,9 @@
 
   &__roostergrin
     align-self: flex-end
+    color: $slate-grey
     font-size: 11px
+
+    @media screen and (max-width: $break-md)
+      align-self: center
+      margin-top: 2rem

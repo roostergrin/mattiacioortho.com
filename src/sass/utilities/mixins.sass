@@ -322,14 +322,16 @@
     content: ''
     transform-origin: center center
 
-  &:hover
-    transition: all $duration ease-in-out
-    box-shadow: 0 2px 4px 0 rgba($black, .33)
 
-    span
-      transition: color $duration ease-in-out
-      color: $color2
-
-    &:after
-      transform: scale(1)
+  @media (hover: hover)
+    &:hover
       transition: all $duration ease-in-out
+      box-shadow: 0 2px 4px 0 rgba($black, .33)
+
+      span
+        transition: color $duration ease-in-out
+        color: $color2
+
+      &:after
+        transform: scale(1)
+        transition: all $duration ease-in-out

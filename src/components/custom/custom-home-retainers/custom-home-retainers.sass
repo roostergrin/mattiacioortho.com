@@ -12,6 +12,9 @@
     @extend h2
     color: $blue
 
+    @media screen and (max-width: $break-sm)
+      padding: 0 20px
+
   &__subtitle
     @extend h3
     margin: 1.4rem auto 0
@@ -19,13 +22,25 @@
     max-width: 532px
     color: $black
 
+    @media screen and (max-width: $break-sm)
+      padding: 0 20px
+
   &__row
     @extend .flex
     @extend .flex-between
     margin-top: 2.2rem
+    background-repeat: no-repeat
     background-position: center
+    background-size: cover
     width: 100%
     height: inherit
+
+    @media screen and (max-width: $break-md)
+      background-position: 60%
+
+    @media screen and (max-width: $break-sm)
+      flex-direction: column
+      background-position: 90%
 
   &__left,
   &__right
@@ -34,11 +49,30 @@
     width: 50%
     height: 439px
 
+    @media screen and (max-width: $break-sm)
+      width: 100%
+
   &__left
     background-position: center
 
+    @media screen and (max-width: 1025px)
+      background-position: 40%
+
+    @media screen and (max-width: $break-md)
+      margin-bottom: 2rem
+      height: 330px
+
+    @media screen and (max-width: $break-sm)
+      height: 300px
+
   &__right
     background-position: right
+
+    @media screen and (max-width: $break-lg)
+      background-position: 50%
+
+    @media screen and (max-width: $break-md)
+      height: 330px
 
   &__lifetime-content
     margin-top: 10%
@@ -46,12 +80,18 @@
     width: 100%
     max-width: 362px
 
+    @media screen and (max-width: $break-md)
+      width: 80%
+
   &__lifetime-title
     text-transform: uppercase
     line-height: 1.14
     color: $turquoise
     font-size: 44px
     font-weight: 900
+
+    @media screen and (max-width: $break-md)
+      font-size: 40px
 
   &__lifetime-subtitle
     margin-top: 12px
@@ -63,6 +103,9 @@
     font-size: 20px
     font-weight: 600
 
+    @media screen and (max-width: $break-md)
+      font-size: 18px
+
   &__bottom-container
     @extend .flex-container-lg
     @extend .flex
@@ -70,10 +113,19 @@
     width: 100%
     height: 409px
 
+    @media screen and (max-width: $break-md)
+      height: 330px
+
+    @media screen and (max-width: 350px)
+      height: 400px
+
   &__bottom-content
     align-self: center
     width: 100%
     max-width: 458px
+
+    @media screen and (max-width: $break-md)
+      max-width: 375px
 
   &__bottom-subtitle
     text-transform: uppercase
@@ -84,6 +136,9 @@
     font-size: 20px
     font-weight: 600
 
+    @media screen and (max-width: $break-sm)
+      text-align: center
+
   &__bottom-headline
     margin: 12px 0 2rem
     text-transform: uppercase
@@ -91,6 +146,12 @@
     color: $white
     font-size: 47px
     font-weight: 900
+
+    @media screen and (max-width: $break-md)
+      font-size: 40px
+
+    @media screen and (max-width: $break-sm)
+      text-align: center
 
   &__bottom-cta-btn
     display: block
@@ -106,3 +167,12 @@
     letter-spacing: 3px
     color: $white
     font-weight: 700
+
+    @media screen and (max-width: $break-md)
+      max-width: 330px
+
+    @media screen and (max-width: $break-sm)
+      margin: 0 auto
+
+    @media screen and (max-width: 350px)
+      padding: 1rem 0
