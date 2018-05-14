@@ -1,0 +1,160 @@
+.footer
+  position: relative
+  background: $brownish
+  color: $white
+
+  &__top
+    border-bottom: 1px solid $slate-grey
+
+  &__container
+    @extend .flex-container-lg
+
+  &__top-row
+    @extend .flex
+    @extend .flex-between
+    @extend .align-center
+    padding-top: 40px
+    padding-bottom: 30px
+
+  &__item
+    @extend .flex
+    @extend .flex-center
+    flex: 1
+
+    &:first-child
+      justify-content: flex-start
+
+    &:last-child
+      justify-content: flex-end
+
+  &__patient-login
+    transition: all .35s ease-in-out
+    border: 1px solid $white
+    border-radius: 30px
+    cursor: pointer
+    padding: 6px 0
+    width: 100%
+    max-width: 183px
+    height: 40px
+    text-align: center
+    color: $white
+
+    span
+      position: relative
+      transition: color .35s ease-in-out
+      z-index: 2
+      letter-spacing: 2px
+      font-family: $avenir
+      font-size: 16px
+
+    &:hover
+      background: $white
+
+      span
+        color: $brownish
+
+  &__rewards
+    @include button-circle-phil(249px, $white, $white, .35s, 1px, $white, 30px, 4px, 30px, -225px, -40px)
+    height: 40px
+
+    span
+      position: relative
+      z-index: 2
+      letter-spacing: 2px
+      font-family: $avenir
+      font-size: 16px
+
+    &:after
+      z-index: 0
+
+    &-icon
+      position: relative
+      // extended shadow transition to wait for circle to collapse
+      transition: all .55s ease-in-out
+      z-index: 1
+      border-radius: 50%
+      box-shadow: 0 2px 4px 0 rgba($black, .33)
+
+      svg
+        .line
+          fill: $dark-blue
+
+    &:hover
+      // quickly remove box-shadow as bg expands
+      .footer__rewards-icon
+        transition: box-shadow .15s ease-in-out
+        box-shadow: none
+
+      span
+        color: $brownish
+
+  &__icons
+    @extend .flex
+    justify-content: space-around
+
+  &__icon
+    // transition: all .35s ease-in-out
+    border: 1px solid $white
+    border-radius: 50%
+    width: 40px
+    height: 40px
+    fill: $white
+
+    &:not(:last-child)
+      margin-right: 13px
+
+    &:hover
+      background: $white
+      fill: $brownish
+
+      .ig-phil
+        stroke: $white
+
+      .ig-dot
+        fill: $white
+
+  &__mail
+    padding: 10px 5px
+
+  &__facebook
+    padding: 6px 12px 8px
+
+  &__goog
+    padding: 7px 4px
+
+    svg
+      margin-left: 4px
+
+  &__ig
+    padding: 8px
+
+    .ig-phil
+      fill: none
+      stroke: $brownish
+      stroke-width: 3px
+
+    .ig-dot
+      fill: $brownish
+
+  &__bottom
+    @extend .flex-container-lg
+    @extend .flex
+    @extend .align-center
+    flex-direction: column
+    padding: 1rem 0 2rem
+    text-align: center
+
+  &__phone,
+  &__address
+    color: $white
+    font-size: 14px
+
+    &:hover
+      text-decoration: underline
+
+  &__phone
+    margin-bottom: 7px
+
+  &__roostergrin
+    align-self: flex-end
+    font-size: 11px
