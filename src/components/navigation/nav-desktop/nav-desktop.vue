@@ -21,11 +21,29 @@ export default {
   mixins: [ openModal ],
   methods: {
     toggleMenu () {
-      this.$store.state.menu ? this.$store.dispatch('VIEW_MENU', false) : this.$store.dispatch('VIEW_MENU', true)
+      let menuOpen = this.$store.state.menu
+      let menuClosed = !this.$store.state.menu
+
+      if (menuOpen) {
+        this.$store.dispatch('VIEW_MENU', false)
+        document.body.classList.remove('body-stop')
+      }
+      if (menuClosed && this.$store.state.nav) {
+        setTimeout(() => {
+          this.$store.dispatch('VIEW_MENU', true)
+          document.body.classList.add('body-stop')
+        }, 750)
+      }
+      if (menuClosed && !this.$store.state.nav) {
+        this.$store.dispatch('VIEW_MENU', true)
+        document.body.classList.add('body-stop')
+      }
+      // this.$store.state.menu && this.$store.state.nav ? this.$store.dispatch('VIEW_MENU', false) : setTimeout(() => { this.$store.dispatch('VIEW_MENU', true) }, 750)
     },
     closeMenu () {
       if (this.$store.state.menu) {
         this.$store.dispatch('VIEW_MENU', false)
+        document.body.classList.remove('body-stop')
       }
       this.$router.push('/')
     },

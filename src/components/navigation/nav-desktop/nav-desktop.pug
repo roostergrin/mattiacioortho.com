@@ -20,10 +20,10 @@
       .nav-desktop__logo-container(@click='closeMenu')
         Icon.nav-desktop__logo(name='matt_logo-01', :class='{"nav-desktop__logo--active": $store.state.menu}')
     .nav-desktop__item
-      .nav-desktop__menu-container
-        .nav-desktop__menu(@click='toggleMenu')
+      .nav-desktop__menu-container(@click='toggleMenu' v-scroll-to='{el: "#head", container: "body", duration: 750, easing: "ease-in-out", x: false, y: true}')
+        .nav-desktop__menu
           | MENU
-        .nav-desktop__hamburger(@click='toggleMenu', :class='{"nav-desktop__hamburger--active": $store.state.menu}')
+        .nav-desktop__hamburger(:class='{"nav-desktop__hamburger--active": $store.state.menu}')
           span
           span
           

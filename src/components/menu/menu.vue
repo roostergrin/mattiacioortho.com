@@ -38,6 +38,7 @@ export default {
   methods: {
     closeMenu (e) {
       this.$store.state.menu ? this.$store.dispatch('VIEW_MENU', false) : this.$store.dispatch('VIEW_MENU', true)
+      document.body.classList.remove('body-stop')
       this.$router.push(e)
     },
     myEventHandler (e) {
