@@ -65,3 +65,24 @@
 
   &-enter
     transform: translate(0, 15%)
+
+// meet dr tab animation
+
+.transition-meet-dr
+  backface-visibility: hidden
+
+  &-enter-active
+    transition: all .35s ease-in-out .25s
+
+  &-leave-active
+    transition: all .35s ease-in-out
+
+  &-enter,
+  &-leave-to
+    opacity: 0
+
+  &-leave-to
+    transform: translate(-50%, -65%)
+
+  &-enter
+    transform: translate(-50%, -35%)

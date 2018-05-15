@@ -1,0 +1,70 @@
+.custom-about-team
+  background: $pale-blue
+  padding-top: rem-calc(86px)
+  padding-bottom: rem-calc(54px)
+
+  &__container
+    @extend .flex-container-md
+
+  &__title
+    @extend h2
+    margin-bottom: rem-calc(53px)
+    text-align: center
+
+  &__icon-outer
+    position: relative
+    transition: all .3s ease-in-out
+    border-radius: 50%
+    background: $turquoise
+    width: 60px
+    height: 60px
+
+  &__icon-inner
+    display: inline-block
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    transition: all .3s ease-in-out
+    border-radius: 50%
+    background: $blue
+    width: 52px
+    height: 52px
+
+  &__icon
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 35px
+    height: 35px
+    fill: $white
+
+    &--ribbon
+      transform: translate(-50%, -70%)
+      padding: 5px 5.5px 6px
+
+  &__row
+    @extend .flex
+    flex-direction: column
+
+  &__item
+    @extend .flex
+    @extend .align-center
+    width: 100%
+    max-width: 690px
+
+    &:not(:last-child)
+      margin-bottom: 2rem
+
+    &:nth-child(2)
+      align-self: flex-end
+
+  &__icon-wrapper
+    margin-right: 2rem
+
+  &__image
+    margin-top: rem-calc(71px)
+    width: 100%
+    max-width: 880px
+    height: 430px

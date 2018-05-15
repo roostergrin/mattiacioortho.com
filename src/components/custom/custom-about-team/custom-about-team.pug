@@ -1,0 +1,11 @@
+.custom-about-team#meet-team
+  .custom-about-team__container
+    .custom-about-team__title(v-html='props.title')
+    .custom-about-team__row
+      .custom-about-team__item(v-for='(content, i) in props.content', :key='i')
+        .custom-about-team__icon-wrapper
+          .custom-about-team__icon-outer
+            .custom-about-team__icon-inner
+              Icon.custom-about-team__icon(:name='content.label', :class='"custom-about-team__icon--" + content.label')
+        .custom-about-team__text(v-html='content.text')
+    .custom-about-team__image(:style="{backgroundImage: 'url(' + props.img + ')'}")            
