@@ -1,0 +1,19 @@
+.custom-about-office
+  .custom-about-office__container
+    .custom-about-office__title(v-html='props.title')
+    .custom-about-office__row  
+      .custom-about-office__left
+        swiper.custom-about-office__slider(:options='swiperOption')
+          swiperSlide.custom-about-office__slide(
+          v-for='(slide, i) in props.slides'
+          :key='i'
+          :style="{backgroundImage: 'url(' + slide.url + ')'}"
+          )
+          .custom-about-office__pagination(slot='pagination')
+          .custom-about-office__next(slot='button-next')
+            Icon(name='arrow-01')
+          .custom-about-office__prev(slot='button-prev')
+            Icon(name='arrow-01')
+      .custom-about-office__right
+        .custom-about-office__content(v-html='props.content')            
+        

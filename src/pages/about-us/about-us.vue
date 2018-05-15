@@ -4,6 +4,7 @@
 import Loader from 'components/loader/loader'
 import MeetDr from 'components/custom/custom-about-meet-dr/custom-about-meet-dr'
 import MeetTeam from 'components/custom/custom-about-team/custom-about-team'
+import Office from 'components/custom/custom-about-office/custom-about-office'
 
 export default {
   name: 'about-us',
@@ -18,7 +19,8 @@ export default {
   components: {
     Loader,
     MeetDr,
-    MeetTeam
+    MeetTeam,
+    Office
   }
 }
 </script>

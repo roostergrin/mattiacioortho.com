@@ -1,0 +1,56 @@
+.custom-about-office
+  padding-top: rem-calc(103px)
+  padding-bottom: rem-calc(70px)
+
+  &__container
+    @extend .flex-container-lg
+
+  &__title
+    @extend h2
+    margin-bottom: rem-calc(81px)
+    text-align: center
+
+  &__row
+    @extend .flex
+    @extend .flex-between
+
+  &__left
+    width: 56%
+
+  &__right
+    width: 31%
+    align-self: center
+
+  &__slide
+    height: 440px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+
+  &__next,
+  &__prev
+    width: 1.3rem
+    position: absolute
+    bottom: 0
+    fill: $blue-grey
+
+  &__next
+    right: 32%
+
+  &__prev
+    left: 32%
+    transform: rotateY(180deg)
+
+  &__pagination
+    padding: 1rem 0 .4rem
+    text-align: center
+
+    .swiper-pagination-bullet
+      opacity: 1
+      border: 1px solid $blue-grey !important
+      background: transparent !important
+      width: 10px !important
+      height: 10px !important
+
+      &-active
+        background: rgba($blue-grey, .7) !important
