@@ -15,8 +15,16 @@ export default {
         slidesOffsetBefore: 500,
         centeredSlides: false,
         spaceBetween: 0,
-        speed: 850,
+        speed: 1000,
         loop: true,
+        breakpoints: {
+          1180: {
+            slidesOffsetBefore: 550
+          },
+          880: {
+            slidesOffsetBefore: 0
+          }
+        },
         navigation: {
           nextEl: '.custom-about-office__next',
           prevEl: '.custom-about-office__prev'

@@ -3,6 +3,9 @@
   padding-top: rem-calc(86px)
   padding-bottom: rem-calc(54px)
 
+  @media screen and (max-width: $break-sm)
+    padding-top: 4rem
+
   &__container
     @extend .flex-container-md
 
@@ -13,6 +16,9 @@
     @extend h2
     margin-bottom: rem-calc(53px)
     text-align: center
+
+    @media screen and (max-width: $break-sm)
+      margin-bottom: 2rem
 
   &__icon-outer
     position: relative
@@ -63,8 +69,19 @@
     &:nth-child(2)
       align-self: flex-end
 
+    @media screen and (max-width: $break-sm)
+      flex-direction: column
+
   &__icon-wrapper
     margin-right: 2rem
+
+    @media screen and (max-width: $break-sm)
+      margin-right: 0
+      margin-bottom: 1rem
+
+  &__text
+    @media screen and (max-width: $break-sm)
+      text-align: center
 
   &__image
     margin-top: rem-calc(71px)
@@ -74,3 +91,11 @@
     width: 100%
     max-width: 880px
     height: 35vw
+
+    @media screen and (min-width: 1920px)
+      background-size: cover
+      height: 431px
+
+    @media screen and (max-width: $break-sm)
+      background-size: cover
+      height: 230px

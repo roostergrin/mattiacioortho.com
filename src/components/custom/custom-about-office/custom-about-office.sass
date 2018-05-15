@@ -2,6 +2,9 @@
   padding-top: rem-calc(103px)
   padding-bottom: rem-calc(70px)
 
+  @media screen and (max-width: $break-sm)
+    padding-top: 4rem
+
   &__container
     @extend .flex-container-lg
 
@@ -10,20 +13,39 @@
     margin-bottom: rem-calc(81px)
     text-align: center
 
+    @media screen and (max-width: $break-sm)
+      margin-bottom: 2rem
+
   &__row
     @extend .flex
     @extend .flex-between
 
+    @media screen and (max-width: 1000px)
+      flex-direction: column-reverse
+
   &__left
     width: 56%
+
+    @media screen and (max-width: 1000px)
+      margin: 2.5rem auto
+      width: 90%
+
+    @media screen and (max-width: $break-sm)
+      width: 100%
 
   &__right
     align-self: center
     width: 31%
 
+    @media screen and (max-width: 1000px)
+      width: 80%
+
+    @media screen and (max-width: $break-md)
+      text-align: center
+
   &__slide
     transform: scale(.7)
-    transition: all .85s ease-out
+    transition: all 1s ease-out
     z-index: -1
     background-repeat: no-repeat
     background-position: center
@@ -35,8 +57,36 @@
       transform: translate(0, -10%) scale(.8)
       filter: blur(2px)
 
+      @media screen and (max-width: 1000px)
+        transform: translate(10%, -10%) scale(.9)
+
+      @media screen and (max-width: $break-md)
+        transform: translate(0, 0) scale(.9)
+
     &--active
       transform: translateX(-68%) scale(.9)
+
+      @media screen and (max-width: $break-lg)
+        transform: translateX(-88%) scale(.9)
+
+      @media screen and (max-width: 1000px)
+        transform: translateX(-70%) scale(.9)
+
+      @media screen and (max-width: $break-md)
+        transform: translateX(0) scale(.9)
+
+    @media screen and (max-width: $break-lg)
+      height: 400px
+
+    @media screen and (max-width: 1000px)
+      height: 440px
+
+    @media screen and (max-width: $break-md)
+      transform: scale(.9)
+
+    @media screen and (max-width: $break-sm)
+      height: 270px
+
 
   &__next,
   &__prev
@@ -48,9 +98,15 @@
   &__next
     right: 32%
 
+    @media screen and (max-width: $break-sm)
+      right: 10%
+
   &__prev
     left: 32%
     transform: rotateY(180deg)
+
+    @media screen and (max-width: $break-sm)
+      left: 10%
 
   &__pagination
     padding: 1rem 0 .4rem

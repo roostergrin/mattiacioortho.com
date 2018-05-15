@@ -8,6 +8,10 @@
     @extend .flex
     @extend .flex-between
 
+    @media screen and (max-width: 690px)
+      flex-direction: column-reverse
+      // height: inherit
+
   &__title
     @extend h2
     padding: rem-calc(80px) 0
@@ -17,6 +21,9 @@
     @extend .flex
     @extend .flex-between
     width: 50%
+
+    @media screen and (max-width: 690px)
+      width: 100%
 
   &__tab-container
     @extend .flex
@@ -28,6 +35,10 @@
     position: relative
     width: 72.5%
     height: 100%
+
+    @media screen and (max-width: 690px)
+      margin-top: 3rem
+      height: 400px
 
   &__content-container
     position: absolute
@@ -53,6 +64,12 @@
     background-size: cover
     width: 43%
     height: 352px
+
+    @media screen and (max-width: $break-md)
+      background-position: 75%
+
+    @media screen and (max-width: 690px)
+      width: 100%
 
   &__icon-outer
     position: relative
@@ -99,3 +116,6 @@
     color: $turquoise
     font-family: $avenir
     font-size: 18px
+
+    @media screen and (max-width: 400px)
+      letter-spacing: 7px
