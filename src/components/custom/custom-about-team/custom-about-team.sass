@@ -6,6 +6,9 @@
   &__container
     @extend .flex-container-md
 
+    @media screen and (max-width: $break-md + 60px)
+      padding: 0 30px
+
   &__title
     @extend h2
     margin-bottom: rem-calc(53px)
@@ -65,6 +68,9 @@
 
   &__image
     margin-top: rem-calc(71px)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
     width: 100%
     max-width: 880px
-    height: 430px
+    height: 35vw
