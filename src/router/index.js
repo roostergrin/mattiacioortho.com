@@ -49,12 +49,20 @@ const router = new VueRouter({
       component: AboutUs,
       children: [
         {
-          path: '/about-us#meet-dr',
-          label: 'Meet Dr. Mattiacio'
+          path: '/about-us',
+          label: 'Meet Dr. Mattiacio',
+          target: '#meet-dr',
+          name: 'About Us'
         },
         {
-          path: '/about-us#meet-team',
-          label: 'Meet the Team'
+          path: '/about-us',
+          label: 'Meet the Team',
+          target: '#meet-team'
+        },
+        {
+          path: '/about-us',
+          label: 'Office Tour',
+          target: '#office'
         }
       ]
     },
@@ -74,8 +82,11 @@ const router = new VueRouter({
       component: Treatments,
       children: [
         {
-          path: '/treatments#invisalign',
-          label: 'Invisalign'
+          path: '/treatments',
+          label: 'Invisalign',
+          target: '#invisalign',
+          name: 'Treatments'
+
         },
         {
           path: '/treatments#damon',

@@ -37,9 +37,12 @@ export default {
   },
   methods: {
     closeMenu (e) {
+      let options = { offset: -90 }
       this.$store.state.menu ? this.$store.dispatch('VIEW_MENU', false) : this.$store.dispatch('VIEW_MENU', true)
       document.body.classList.remove('body-stop')
-      this.$router.push(e)
+      this.$router.push(e.path)
+      // wait for animation to finish before scrolling to element
+      setTimeout(() => { this.$scrollTo(e.target, options) }, 1300)
     },
     myEventHandler (e) {
       this.styleWidth = e.target.innerWidth
