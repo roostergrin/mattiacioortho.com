@@ -1,0 +1,22 @@
+.custom-about-meet-dr#meet-dr
+  .custom-about-meet-dr__container
+    .custom-about-meet-dr__title(v-html='props.title')
+    .custom-about-meet-dr__row
+      .custom-about-meet-dr__left
+        .custom-about-meet-dr__tab-container
+          .custom-about-meet-dr__tab(
+            v-for='(tab, i) in props.tabs'
+            :key='i'
+            :class='{"custom-about-meet-dr__tab--active": i === $store.state.types}'
+            @click='showContent(i)'
+            @mouseover='showContent(i)')
+            .custom-about-meet-dr__icon-outer
+              .custom-about-meet-dr__icon-inner
+                Icon.custom-about-meet-dr__icon(:name='tab.label', :class='"custom-about-meet-dr__icon--" + tab.label')
+        .custom-about-meet-dr__content-container(
+          v-for='(content, i) in props.content'
+          :key='i'
+          v-show='i === $store.state.types')
+          .custom-about-meet-dr__content-title(v-html='content.title')
+          .custom-about-meet-dr__content-text(v-html='content.text')
+      .custom-about-meet-dr__right(:style="{backgroundImage: 'url(' + props.img + ')'}")      
