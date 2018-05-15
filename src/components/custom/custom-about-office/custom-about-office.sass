@@ -18,20 +18,31 @@
     width: 56%
 
   &__right
-    width: 31%
     align-self: center
+    width: 31%
 
   &__slide
-    height: 440px
-    background-size: cover
+    transform: scale(.7)
+    transition: all .85s ease-out
+    z-index: -1
     background-repeat: no-repeat
     background-position: center
+    background-size: cover
+    width: 100% !important
+    height: 440px
+
+    &--prev
+      transform: translate(0, -10%) scale(.8)
+      filter: blur(2px)
+
+    &--active
+      transform: translateX(-68%) scale(.9)
 
   &__next,
   &__prev
-    width: 1.3rem
     position: absolute
     bottom: 0
+    width: 1.3rem
     fill: $blue-grey
 
   &__next

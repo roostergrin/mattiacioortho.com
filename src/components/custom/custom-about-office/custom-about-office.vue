@@ -9,10 +9,14 @@ export default {
     return {
       swiperOption: {
         slidesPerView: 1,
+        slideActiveClass: 'custom-about-office__slide--active',
+        slideNextClass: 'custom-about-office__slide--next',
+        slidePrevClass: 'custom-about-office__slide--prev',
+        slidesOffsetBefore: 500,
         centeredSlides: false,
         spaceBetween: 0,
-        speed: 700,
-        loop: false,
+        speed: 850,
+        loop: true,
         navigation: {
           nextEl: '.custom-about-office__next',
           prevEl: '.custom-about-office__prev'
