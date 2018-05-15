@@ -3,6 +3,7 @@
 <script>
 import Loader from 'components/loader/loader'
 import MeetDr from 'components/custom/custom-about-meet-dr/custom-about-meet-dr'
+import MeetTeam from 'components/custom/custom-about-team/custom-about-team'
 
 export default {
   name: 'about-us',
@@ -16,7 +17,8 @@ export default {
   },
   components: {
     Loader,
-    MeetDr
+    MeetDr,
+    MeetTeam
   }
 }
 </script>
