@@ -99,8 +99,9 @@ const router = new VueRouter({
           target: '#seven-up'
         },
         {
-          path: '/treatments#adults',
-          label: 'Adult Orthodontics'
+          path: '/treatments',
+          label: 'Adult Orthodontics',
+          target: '#adults'
         }
       ]
     },

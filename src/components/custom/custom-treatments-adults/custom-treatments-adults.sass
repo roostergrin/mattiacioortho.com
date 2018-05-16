@@ -1,0 +1,78 @@
+.custom-treatments-adults
+
+  &__wrapper
+    position: relative
+    height: 790px
+
+  &__shape
+    position: absolute
+    z-index: -1
+    background: $pale-blue
+    width: 100%
+    height: 100%
+    overflow: hidden
+
+    svg
+      position: absolute
+      height: 100%
+
+      .curve-fill
+        fill: $sea-foam !important
+
+  &__container
+    @extend .flex-container-lg
+    @extend .flex
+    @extend .flex-between
+    width: 100%
+    height: 100%
+
+  &__left
+    @extend .flex
+
+    h2
+      @extend .h2-option
+      align-self: center
+      width: 25%
+
+  &__right
+    @extend .flex
+    @extend .flex-between
+    flex-direction: column
+    margin: 50px 0
+    width: 71%
+
+  &__card
+    @extend .flex
+    @extend .flex-between
+    border-radius: 20px
+    box-shadow: $shadow
+    background: $white
+    padding: 22px 34px 34px 22px
+    max-width: 770px
+    min-height: 210px
+
+    &:nth-child(2)
+      align-self: flex-end
+
+  &__card-right
+    align-self: flex-end
+    width: 87%
+
+  &__icon-outer
+    @extend .icon-outer
+
+  &__icon-inner
+    @extend .icon-inner
+
+  &__icon
+    @extend .icon
+
+    &--bowtie
+      padding: 8px 1px
+
+    &--star
+      padding: 3px
+
+  &__card-title
+    @extend h3
+    margin-bottom: 1rem

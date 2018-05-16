@@ -1,0 +1,18 @@
+.custom-treatments-adults#adults
+  .custom-treatments-adults__wrapper
+    .custom-treatments-adults__shape(v-html='shape')
+    .custom-treatments-adults__container
+      .custom-treatments-adults__left
+        h2 {{ props.title }}
+      .custom-treatments-adults__right
+        .custom-treatments-adults__card(
+          v-for='(card, i) in props.cards'
+          :key='i'
+          )
+          .custom-treatments-adults__card-left
+            .custom-treatments-adults__icon-outer
+              .custom-treatments-adults__icon-inner
+                Icon.custom-treatments-adults__icon(:name='card.label', :class="'custom-treatments-adults__icon--' + card.label")
+          .custom-treatments-adults__card-right
+            .custom-treatments-adults__card-title(v-html='card.title')
+            .custom-treatments-adults__card-text(v-html='card.text')            
