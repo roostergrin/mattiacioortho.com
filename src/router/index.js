@@ -89,8 +89,9 @@ const router = new VueRouter({
 
         },
         {
-          path: '/treatments#damon',
-          label: 'Damon Braces'
+          path: '/treatments',
+          label: 'Damon Braces',
+          target: '#damon'
         },
         {
           path: '/treatments#7up',
