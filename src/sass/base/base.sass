@@ -97,6 +97,36 @@ a
 pre
   margin: 0
 
+// icons
+.icon-outer
+  position: relative
+  transition: all .3s ease-in-out
+  border-radius: 50%
+  background: $turquoise
+  width: 60px
+  height: 60px
+
+.icon-inner
+  display: inline-block
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  transition: all .3s ease-in-out
+  border-radius: 50%
+  background: $blue
+  width: 52px
+  height: 52px
+
+.icon
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  width: 35px
+  height: 35px
+  fill: $white
+
 // Spinner
 .spinner
   @include spinner

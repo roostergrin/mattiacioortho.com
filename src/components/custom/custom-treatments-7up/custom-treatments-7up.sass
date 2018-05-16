@@ -1,0 +1,76 @@
+.custom-treatments-7up
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  padding-top: rem-calc(87px)
+  padding-bottom: rem-calc(100px)
+  height: inherit
+
+  &__container
+    @extend .flex-container-lg
+
+  &__title
+    @extend h2
+    margin-bottom: 2rem
+
+  &__text
+    @extend h3
+    @extend .flex-container-sm
+    margin-bottom: rem-calc(47px)
+
+  &__title,
+  &__text
+    text-align: center
+
+  &__row
+    @extend .flex
+    @extend .flex-between
+    @extend .align-center
+    margin-bottom: rem-calc(70px)
+
+  &__left,
+  &__right
+    width: 48.5%
+
+  &__right
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    height: 300px
+
+  &__icon-outer
+    @extend .icon-outer
+
+  &__icon-inner
+    @extend .icon-inner
+
+  &__icon
+    @extend .icon
+    padding: 5px 0
+    width: 42px
+
+  &__subtitle
+    @extend h3
+    margin-top: 23px
+
+  &__header
+    color: $dark-blue
+    font-family: $avenir
+    font-weight: 600
+
+  &__list
+    margin-bottom: 3rem
+    padding-left: 20px
+
+  &__read-more
+    border-radius: 20px
+    background: $blue
+    padding: 7px 52px
+    width: 100%
+    max-width: 201px
+    height: 40px
+    text-align: center
+    color: $white
+    font-family: $avenir
+    font-size: 18px
+    font-weight: 600

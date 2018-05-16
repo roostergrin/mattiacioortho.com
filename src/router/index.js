@@ -94,8 +94,9 @@ const router = new VueRouter({
           target: '#damon'
         },
         {
-          path: '/treatments#7up',
-          label: '7 & Up Child Evaluation'
+          path: '/treatments',
+          label: '7 & Up Child Evaluation',
+          target: '#seven-up'
         },
         {
           path: '/treatments#adults',

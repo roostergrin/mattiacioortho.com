@@ -4,6 +4,7 @@
 import Damon from 'components/custom/custom-treatments-damon/custom-treatments-damon'
 import Invisalign from 'components/custom/custom-treatments-invisalign/custom-treatments-invisalign'
 import Loader from 'components/loader/loader'
+import SevenUp from 'components/custom/custom-treatments-7up/custom-treatments-7up'
 
 export default {
   name: 'treatments',
@@ -18,7 +19,8 @@ export default {
   components: {
     Damon,
     Invisalign,
-    Loader
+    Loader,
+    SevenUp
   }
 }
 </script>

@@ -1,0 +1,19 @@
+.custom-treatments-7up(:style="{backgroundImage: 'url(' + props.bg_img + ')'}")#seven-up
+  .custom-treatments-7up__container
+    .custom-treatments-7up__title(v-html='props.title')
+    .custom-treatments-7up__text(v-html='props.text')
+    .custom-treatments-7up__row
+      .custom-treatments-7up__left
+        .custom-treatments-7up__icon-outer
+          .custom-treatments-7up__icon-inner
+            Icon.custom-treatments-7up__icon(name='faces')
+        .custom-treatments-7up__subtitle(v-html='props.top.subtitle')
+        .custom-treatments-7up__top-text(v-html='props.top.text')      
+      .custom-treatments-7up__right(:style="{backgroundImage: 'url(' + props.top.img + ')'}")
+    .custom-treatments-7up__row
+      .custom-treatments-7up__left
+        .custom-treatments-7up__header(v-html='props.bottom.header')
+        .custom-treatments-7up__bottom-text(v-html='props.bottom.text')
+        a.custom-treatments-7up__read-more(href='#')
+          | Read More
+      .custom-treatments-7up__right(:style="{backgroundImage: 'url(' + props.bottom.img + ')'}")
