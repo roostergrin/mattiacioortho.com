@@ -1,0 +1,49 @@
+.custom-treatments-damon
+  position: relative
+  background: $sea-foam
+  height: 100%
+
+  &__img
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    width: 400px
+    height: 767px
+
+  &__container
+    position: absolute
+    top: 57px
+    left: 50%
+    transform: translateX(-50%)
+    width: 100%
+    max-width: 812px
+    text-align: center
+
+  &__title
+    @extend h2
+    @extend .h2-option
+
+  &__text
+    margin: 2rem auto 56px
+    width: 100%
+    max-width: 565px
+    color: $white
+
+
+  &__cards
+    @extend .flex
+    @extend .flex-between
+
+  &__card
+    border-radius: 20px
+    background: $white
+    padding: rem-calc(80px) 50px 60px
+    width: 42%
+
+  &__card-text
+    text-align: left
+
+  &__logo
+    margin: 0 auto 1rem
+    width: 220px
+    height: auto

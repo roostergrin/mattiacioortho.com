@@ -1,0 +1,10 @@
+.custom-treatments-damon
+  .custom-treatments-damon__img(:style="{backgroundImage: 'url(' + props.img + ')'}")
+  .custom-treatments-damon__container
+    .custom-treatments-damon__title(v-html='props.title')
+    .custom-treatments-damon__text(v-html='props.text')
+    .custom-treatments-damon__cards
+      .custom-treatments-damon__card(v-for='(card, i) in props.cards', :key='i')
+        Icon.custom-treatments-damon__logo(:name='card.logo')
+        .custom-treatments-damon__card-text(v-html='card.text')
+  
