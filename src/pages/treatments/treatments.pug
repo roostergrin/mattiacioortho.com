@@ -1,5 +1,5 @@
 .page-treatments
   Loader(v-if='loading')
   div(v-if='props && !loading')
-    h1 Treatments Page
+    Invisalign(:props='props.acf.custom_invisalign')
     pre {{ props }}

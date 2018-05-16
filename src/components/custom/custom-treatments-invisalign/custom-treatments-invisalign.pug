@@ -1,0 +1,11 @@
+.custom-treatments-invisalign#invisalign
+  .custom-treatments-invisalign__container
+    .custom-treatments-invisalign__title(v-html='props.title')
+    .custom-treatments-invisalign__row
+      .custom-treatments-invisalign__left
+        Icon.custom-treatments-invisalign__logo(name='invisalign')
+        .custom-treatments-invisalign__text(v-html='props.text')
+        a.custom-treatments-invisalign__read-more(:href='props.href' target='_blank')
+          | Read More
+      .custom-treatments-invisalign__right(:style="{backgroundImage: 'url(' + props.img + ')'}")
+  
