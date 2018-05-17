@@ -3,7 +3,7 @@
   height: 123px
 
   @media screen and (max-width: $break-md)
-    height: 200px
+    height: 250px
 
   &__container
     @extend .flex
@@ -24,6 +24,10 @@
     color: $white
     font-size: 24px
 
+    @media screen and (max-width: $break-md)
+      margin-right: 0
+      text-align: center
+
   &__phone
     transition: all .35s ease-in-out
     border: 1px solid $white
@@ -38,6 +42,10 @@
     font-family: $avenir
     font-size: 20px
 
-    &:hover
-      background: $white
-      color: $blue
+    @media (hover: hover)
+      &:hover
+        background: $white
+        color: $blue
+
+    @media screen and (max-width: $break-md)
+      margin-top: 2rem
