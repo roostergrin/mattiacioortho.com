@@ -4,6 +4,7 @@
 // components
 import Footer from 'components/footer/footer'
 import Header from 'components/header/header'
+import Modal from 'components/modal/modal'
 import Navigation from 'components/navigation/navigation'
 import Revisions from 'revisions'
 
@@ -26,6 +27,7 @@ export default {
   components: {
     Footer,
     Header,
+    Modal,
     Navigation,
     Revisions
   },

@@ -1,0 +1,89 @@
+.modal
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  opacity: 1
+  z-index: 999
+  background: rgba($black, 0.6)
+  height: 100vh
+
+  &__overlay
+    position: absolute
+    z-index: 9
+    width: 100%
+    height: 100%
+
+  &__container
+    @include animation-modal-zoom
+    position: relative
+    opacity: 0
+    z-index: 10
+    margin: 0 auto
+    margin-top: 2%
+    box-shadow: $shadow
+    background: $white
+    width: 100%
+    max-width: 697px
+    height: calc(100vh - 10%)
+    overflow-Y: scroll
+
+    @media screen and (max-width: $break-sm)
+      width: 85%
+
+  &__content
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translate(-50%, 0)
+    animation: fade .35s ease-in-out forwards
+    animation-delay: .75s
+    opacity: 0
+    background-color: $white
+    padding-bottom: 50px
+    width: 100%
+    height: 100%
+    overflow: auto
+
+    @keyframes fade
+      from
+        opacity: 0
+      100%
+        opacity: 1
+
+    @media screen and (max-width: $break-sm)
+      width: 90%
+
+  &__title
+    margin-bottom: 30px
+    text-align: center
+    text-transform: uppercase
+    color: $blue
+    font-size: 28px
+    font-weight: 600
+
+  &__close
+    position: absolute
+    top: 30px
+    right: 30px
+    z-index: 3
+    cursor: pointer
+    width: 22px
+    height: 22px
+
+    // @media(max-width: 500px)
+    //   top: 20px
+    //   right: 50px
+
+    span
+      display: block
+      position: absolute
+      background-color: $black
+      width: 100%
+      height: 2px
+
+      &:first-child
+        transform: rotate(45deg)
+      &:last-child
+        transform: rotate(-45deg)

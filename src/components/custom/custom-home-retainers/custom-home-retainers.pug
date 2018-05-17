@@ -13,5 +13,5 @@
       .custom-home-retainers__bottom-content
         .custom-home-retainers__bottom-subtitle(v-html='props.bottom.title')
         .custom-home-retainers__bottom-headline(v-html='props.bottom.headline')
-        a.custom-home-retainers__bottom-cta-btn
+        .custom-home-retainers__bottom-cta-btn(@click='openModal')
           span {{props.bottom.cta_btn}}

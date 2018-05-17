@@ -155,6 +155,7 @@
 
   &__bottom-cta-btn
     display: block
+    transition: all .4s ease-in-out
     border-radius: 5px
     background: $sea-foam
     cursor: pointer
@@ -167,6 +168,13 @@
     letter-spacing: 3px
     color: $white
     font-weight: 700
+
+    @media (hover: hover)
+      &:hover
+        box-shadow: $shadow
+
+    &:active
+      box-shadow: none   
 
     @media screen and (max-width: $break-md)
       max-width: 330px
