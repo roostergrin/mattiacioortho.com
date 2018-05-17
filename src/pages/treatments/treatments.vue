@@ -3,6 +3,7 @@
 <script>
 import Adults from 'components/custom/custom-treatments-adults/custom-treatments-adults'
 import Damon from 'components/custom/custom-treatments-damon/custom-treatments-damon'
+import Divider from 'components/divider/divider'
 import Invisalign from 'components/custom/custom-treatments-invisalign/custom-treatments-invisalign'
 import Loader from 'components/loader/loader'
 import SevenUp from 'components/custom/custom-treatments-7up/custom-treatments-7up'
@@ -19,6 +20,7 @@ export default {
   },
   components: {
     Adults,
+    Divider,
     Damon,
     Invisalign,
     Loader,

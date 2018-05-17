@@ -5,11 +5,31 @@
 
   &__img
     position: relative
+    transition: width .25s ease-in-out
     background-repeat: no-repeat
     background-position: center
     background-size: cover
     width: 400px
-    height: 767px
+    height: 100%
+    min-height: 767px
+
+    @media screen and (max-width: 1330px)
+      width: 350px
+
+    @media screen and (max-width: 1250px)
+      width: 300px
+
+    @media screen and (max-width: 1250px)
+      width: 220px
+
+    @media screen and (max-width: $break-md)
+      opacity: 0
+
+    @media screen and (max-width: 767px)
+      height: 1020px
+
+    @media screen and (max-width: $break-sm)
+      height: 1280px  
 
   &__mask
     position: absolute
@@ -27,6 +47,9 @@
     max-width: 812px
     text-align: center
 
+    @media screen and (max-width: $break-md)
+      padding: 0 30px
+
   &__title
     @extend h2
     @extend .h2-option
@@ -42,6 +65,9 @@
     @extend .flex
     @extend .flex-between
 
+    @media screen and (max-width: 767px)
+      flex-direction: column
+
   &__card
     border-radius: 20px
     box-shadow: $shadow
@@ -49,10 +75,15 @@
     padding: rem-calc(80px) 50px 60px
     width: 43.5%
 
+    @media screen and (max-width: 767px)
+      margin-bottom: 2rem
+      width: 100%
+
   &__card-text
     text-align: left
 
   &__logo
     margin: 0 auto 2rem
-    width: 220px
+    width: 100%
+    max-width: 220px
     height: auto

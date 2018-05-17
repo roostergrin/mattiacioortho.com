@@ -38,6 +38,7 @@
     margin-bottom: 3rem
 
   &__read-more
+    transition: color .35s ease-in-out, box-shadow .35s ease-in-out
     border-radius: 20px
     background: $blue
     padding: 7px 52px
@@ -49,6 +50,11 @@
     font-family: $avenir
     font-size: 18px
     font-weight: 600
+
+    @media (hover: hover)
+      &:hover
+        box-shadow: $shadow
+        color: $light-turquoise
 
     @media screen and (max-width: $break-md)
       position: absolute
