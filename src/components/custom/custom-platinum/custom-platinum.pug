@@ -1,0 +1,23 @@
+.custom-platinum(v-if='props')
+  .custom-platinum__container
+    .custom-platinum__header(:style="{backgroundImage: 'url(' + props.acf.platinum.header_img + ')'}")
+      .custom-platinum__icon-outer
+        .custom-platinum__icon-inner
+          Icon.custom-platinum__icon.custom-platinum__icon--shield(name='shield')
+      .custom-platinum__text(v-html='props.acf.platinum.text')
+    .custom-platinum__table
+      .custom-platinum__table-header
+        .custom-platinum__table-head-left(v-html='props.acf.platinum.table_head')
+        .custom-platinum__table-head-right
+          .custom-platinum__r-four-el-head
+            | r4l
+          .custom-platinum__platinum-head
+            | r4l platinum
+      .custom-platinum__rows-container
+        .custom-platinum__row(v-for='(row, i) in props.acf.platinum.rows')
+          .custom-platinum__row-text(v-html='row.text')
+          .custom-platinum__r-four-el(v-if='row.r_four_el')
+            Icon.custom-platinum__r-four-check(name='check')
+          .custom-platinum__platinum(v-if='row.platinum')
+            Icon.custom-platinum__platinum-check(name='check')              
+              

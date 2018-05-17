@@ -1,14 +1,14 @@
 <template lang='pug' src='./modal.pug'></template>
 
 <script>
-// import Form from 'components/form/form'
+import Platinum from 'components/custom/custom-platinum/custom-platinum'
 import { closeModal } from '@/methods'
 
 export default {
   props: ['data'],
   mixins: [closeModal],
   components: {
-    // Form
+    Platinum
   }
 }
 </script>
