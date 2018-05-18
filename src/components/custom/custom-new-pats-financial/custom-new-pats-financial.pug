@@ -1,0 +1,17 @@
+.custom-new-pats-financial#financial
+  .custom-new-pats-financial__img(:style="{backgroundImage: 'url(' + props.bg_img + ')'}")
+    Icon.custom-new-pats-financial__mask(name='mask')
+  .custom-new-pats-financial__title(v-html='props.title')
+  .custom-new-pats-financial__container
+    .custom-new-pats-financial__content
+      .custom-new-pats-financial__row(
+        v-for='(item, i) in props.info'
+        :key='i'
+        )
+        .custom-new-pats-financial__left
+          .custom-new-pats-financial__icon-outer
+            .custom-new-pats-financial__icon-inner
+              Icon.custom-new-pats-financial__icon(:name='item.icon', :class="'custom-new-pats-financial__icon--' + item.icon")
+        .custom-new-pats-financial__right
+          .custom-new-pats-financial__heading(v-html='item.heading')
+          .custom-new-pats-financial__text(v-html='item.text')            
