@@ -72,7 +72,24 @@ const router = new VueRouter({
       navigation: true,
       component: NewPatients,
       url: 'static/new-pats.jpg',
-      children: []
+      children: [
+        {
+          path: '/new-patients',
+          label: 'Your First Visit',
+          target: '#first',
+          name: 'New Patients'
+        },
+        {
+          path: '/new-patients',
+          label: 'Financial Info',
+          target: '#financial'
+        },
+        {
+          path: '/new-patients',
+          label: 'Patient Forms',
+          target: '#forms'
+        }
+      ]
     },
     {
       path: '/treatments',

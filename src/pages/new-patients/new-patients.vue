@@ -1,6 +1,7 @@
 <template lang='pug' src='./new-patients.pug'></template>
 
 <script>
+import First from 'components/custom/custom-new-pats-first/custom-new-pats-first'
 import Loader from 'components/loader/loader'
 
 export default {
@@ -14,6 +15,7 @@ export default {
     }
   },
   components: {
+    First,
     Loader
   }
 }
