@@ -5,6 +5,7 @@ import Divider from 'components/divider/divider'
 import Financial from 'components/custom/custom-new-pats-financial/custom-new-pats-financial'
 import First from 'components/custom/custom-new-pats-first/custom-new-pats-first'
 import Loader from 'components/loader/loader'
+import Patients from 'components/custom/custom-new-pats-patients/custom-new-pats-patients'
 
 export default {
   name: 'new-patients',
@@ -20,7 +21,8 @@ export default {
     Divider,
     Financial,
     First,
-    Loader
+    Loader,
+    Patients
   }
 }
 </script>

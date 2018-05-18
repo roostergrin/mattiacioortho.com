@@ -1,0 +1,89 @@
+.custom-new-pats-patients
+  padding-top: rem-calc(116px)
+  padding-bottom: rem-calc(86px)
+
+  &__container
+    @extend .flex-container-lg
+
+  &__title
+    @extend h2
+    margin-bottom: 4rem
+    text-align: center
+
+  &__row
+    @extend .flex
+    @extend .flex-between
+
+    @media screen and (max-width: $break-md)
+      flex-direction: column-reverse
+
+  &__left
+    @extend .flex
+    @extend .flex-between
+    flex-direction: column
+    width: 50%
+
+    @media screen and (max-width: $break-lg)
+      padding-right: 1rem
+
+    @media screen and (max-width: $break-md)
+      padding-right: 0
+      width: 100%
+      height: 350px
+
+    @media screen and (max-width: $break-sm)
+      height: 400px
+
+  &__adult,
+  &__child
+    display: block
+    transition: all .35s ease-in-out
+    border: 1px solid $blue
+    border-radius: 30px
+    padding: 11px 34px 9px
+    width: 100%
+    max-width: 330px
+    height: 50px
+    text-align: center
+    letter-spacing: 3px
+    color: $blue
+    font-family: $avenir
+    font-size: 18px
+    font-weight: 400
+
+    @media (hover: hover)
+      &:hover
+        background: $blue
+        color: $white
+
+    @media screen and (max-width: 400px)
+      padding: 14px 14px 9px
+      font-size: 14px
+
+  &__adult
+    margin-bottom: 1.2rem
+
+  &__buttons
+    @media screen and (max-width: $break-md)
+      margin: 0 auto
+
+  &__privacy
+    color: $blue
+
+  &__blue
+    color: $blue
+
+  &__right
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    width: 100%
+    max-width: 504px
+    height: 336px
+
+    @media screen and (max-width: $break-md)
+      align-self: center
+      margin-bottom: 2rem
+
+    @media screen and (max-width: $break-sm)
+      height: 220px  
