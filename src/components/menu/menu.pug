@@ -1,7 +1,10 @@
 .menu(v-if='props')
   .menu__overlay
     transition(name='title-fade')
-      h1.menu__title(v-if='!$store.state.menu && $route.path != "/"', :class='{"menu__title--white": $route.name === "Treatments"}') {{ $route.name }}
+      h1.menu__title(
+        v-if='!$store.state.menu && $route.path != "/"'
+        :class='{"menu__title--white": $route.name === "Treatments"}'
+        ) {{ $route.name }}
   .menu__container
     .menu__link-wrapper(
       v-for='(link, i) in links'
