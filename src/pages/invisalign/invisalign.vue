@@ -2,6 +2,7 @@
 
 <script>
 import Loader from 'components/loader/loader'
+import Sections from 'components/custom/custom-invisalign-sections/custom-invisalign-sections'
 
 export default {
   name: 'invisalign',
@@ -14,7 +15,8 @@ export default {
     }
   },
   components: {
-    Loader
+    Loader,
+    Sections
   }
 }
 </script>

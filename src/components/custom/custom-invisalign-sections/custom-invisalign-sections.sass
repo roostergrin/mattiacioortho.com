@@ -1,0 +1,56 @@
+.custom-invisalign-sections
+  padding-top: rem-calc(27px)
+
+  &__section
+    padding-top: rem-calc(67px)
+    padding-bottom: rem-calc(87px)
+
+    &:nth-child(2)
+      background: $blue
+      color: $white
+
+    &:nth-child(3)
+      .custom-invisalign-sections__right
+        margin-top: -280px
+        width: 366px
+        height: 555px
+
+      .custom-invisalign-sections__left
+        align-self: flex-start
+
+    &:nth-child(4)
+      background: $light-blue
+
+  &__container
+    @extend .flex-container-lg
+
+  &__title
+    @extend h2
+    margin-bottom: 6rem
+    text-align: center
+
+  &__row
+    @extend .flex
+    @extend .flex-between
+    @extend .align-center
+    margin-top: 3rem
+
+  &__left
+    width: 50%
+
+  &__icon-invisalign-teen
+    margin-bottom: 1.4rem
+    width: 100%
+    max-width: 360px
+
+  &__right
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    width: 100%
+    max-width: 505px
+    height: 366px
+    // overflow: visible
+
+    &--order-first
+      order: -1

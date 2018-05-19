@@ -136,7 +136,29 @@ const router = new VueRouter({
       navigation: true,
       component: Invisalign,
       url: 'static/invisalign.jpg',
-      children: []
+      children: [
+        {
+          path: '/invisalign',
+          label: 'Invisalign Experience',
+          target: '#section-0',
+          name: 'Invisalign'
+        },
+        {
+          path: '/invisalign',
+          label: 'iTero Scanner',
+          target: '#section-1'
+        },
+        {
+          path: '/invisalign',
+          label: 'Acceledent',
+          target: '#section-2'
+        },
+        {
+          path: '/invisalign',
+          label: 'Invisalign Teen',
+          target: '#section-3'
+        }
+      ]
     },
     {
       path: '/contact-us',

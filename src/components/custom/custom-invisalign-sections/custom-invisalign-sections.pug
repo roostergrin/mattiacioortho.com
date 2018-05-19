@@ -1,0 +1,20 @@
+.custom-invisalign-sections
+  .custom-invisalign-sections__section(
+    v-for='(section, i) in props'
+    :key='i'
+    :id="'section-' + i"
+    )
+    .custom-invisalign-sections__container
+      .custom-invisalign-sections__title(v-html='section.title')
+      .custom-invisalign-sections__row
+        .custom-invisalign-sections__left
+          Icon.custom-invisalign-sections(
+            v-if='section.icon'
+            :name='section.icon'
+            :class="'custom-invisalign-sections__icon-' + section.icon")
+          .custom-invisalign-sections__text(v-html='section.text')
+        .custom-invisalign-sections__right(
+          :style="{backgroundImage: 'url(' + section.img + ')'}"
+          :class='{"custom-invisalign-sections__right--order-first": section.img_left}'
+          )            
+  
