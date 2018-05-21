@@ -1,6 +1,7 @@
 <template lang='pug' src='./contact-us.pug'></template>
 
 <script>
+import Header from 'components/custom/custom-contact-header/custom-contact-header'
 import Loader from 'components/loader/loader'
 
 export default {
@@ -14,6 +15,7 @@ export default {
     }
   },
   components: {
+    Header,
     Loader
   }
 }
