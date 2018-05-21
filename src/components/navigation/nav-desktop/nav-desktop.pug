@@ -6,13 +6,13 @@
         Icon.nav-desktop__dropdown-icon(name='triangle', :class='{"nav-desktop__dropdown-icon--open": open}')
         transition(name='fade-in')
           .nav-desktop__dropdown-container(v-show='open')
-            a.nav-desktop__dropdown-phone(href='tel:1-585-742-1050')
+            a.nav-desktop__dropdown-phone(:href='props.acf.phone.href')
               Icon.nav-desktop__phone(name='phone')
-              p 585. 742. 1050
-            a.nav-desktop__dropdown-map(href='https://www.google.com/maps/place/Mattiacio+Orthodontics/@42.9665843,-77.3534923,17z/data=!3m1!4b1!4m5!3m4!1s0x89d12fb6e7f19f17:0x5c3c945acb061003!8m2!3d42.9665804!4d-77.3513036?hl=en-US' target='_blank')
+              p {{props.acf.phone.label}}
+            a.nav-desktop__dropdown-map(:href='props.acf.address.href' target='_blank')
               Icon.nav-desktop__map(name='location')
               p MAP  
-            a.nav-desktop__dropdown-email(href='mailto:info@mattiacioortho.com')
+            a.nav-desktop__dropdown-email(:href='props.acf.social_links[1].href')
               Icon.nav-desktop__email(name='envelope')
               p EMAIL US
     

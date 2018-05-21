@@ -24,8 +24,8 @@ export default {
     },
     styleObject () {
       return {
-        width: (this.styleWidth / 4) + 'px',
-        height: (this.styleHeight / 4) + 'px'
+        width: (this.styleWidth / 3.5) + 'px',
+        height: (this.styleHeight / 3.5) + 'px'
       }
     }
   },

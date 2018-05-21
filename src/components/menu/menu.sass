@@ -85,7 +85,7 @@
     display: flex
     position: relative
     // transition z-index to delay current class being removed - avoids thumbs displaying while fading
-    transition: transform .85s cubic-bezier(.51, .92, .24, 1) .35s, padding .25s ease-in-out .85s, z-index .35s linear .85s
+    transition: transform .85s cubic-bezier(.51, .92, .24, 1) .35s, padding .25s ease-in-out .85s, z-index .35s linear .55s
     z-index: 1
     padding: .5rem
 
@@ -124,27 +124,27 @@
 
       // where the magic happens transform 4x large, and translate to center before expanding
       &:first-child
-        transform: translate(100%, 50%) matrix(4, 0, 0, 4, 0, 0)
+        transform: translate(100%, 50%) matrix(3.51, 0, 0, 3.51, 0, 0)
 
 
       &:nth-child(2)
-        transform: translate(0, 50%) matrix(4, 0, 0, 4, 0, 0)
+        transform: translate(0, 50%) matrix(3.51, 0, 0, 3.51, 0, 0)
 
 
       &:nth-child(3)
-        transform: translate(-100%, 50%) matrix(4, 0, 0, 4, 0, 0)
+        transform: translate(-100%, 50%) matrix(3.51, 0, 0, 3.51, 0, 0)
 
 
       &:nth-child(4)
-        transform: translate(100%, -50%) matrix(4, 0, 0, 4, 0, 0)
+        transform: translate(100%, -50%) matrix(3.51, 0, 0, 3.51, 0, 0)
 
 
       &:nth-child(5)
-        transform: translate(0, -50%) matrix(4, 0, 0, 4, 0, 0)
+        transform: translate(0, -50%) matrix(3.51, 0, 0, 3.51, 0, 0)
 
 
       &:nth-child(6)
-        transform: translate(-100%, -50%) matrix(4, 0, 0, 4, 0, 0)
+        transform: translate(-100%, -50%) matrix(3.51, 0, 0, 3.51, 0, 0)
 
   &__link-expanded-overlay
     position: absolute
@@ -159,6 +159,7 @@
     flex-direction: column
     transition: opacity .25s ease-in-out 1.15s
     margin-left: 2rem
+    cursor: pointer
     padding-top: .5rem
 
     &-link
@@ -172,6 +173,19 @@
         //sass-lint:disable-all
         color: lighten($blue, 40)
         // sass-lint:enable-all
+
+      @media screen and (max-height: 580px)
+        &:nth-child(4)
+          display: none
+
+      @media screen and (max-height: 520px)
+        &:nth-child(3),
+        &:nth-child(4)
+          display: none
+
+      @media screen and (max-height: 462px)
+        display: none
+
 
   &__social-links
     @extend .flex-container-lg
@@ -202,13 +216,13 @@
       transition: all .25s ease-in-out
       fill: $white
 
-    &:hover
-      transition: border .25s ease-in-out
-      border: 1px solid $turquoise
-
-      svg
-        transition: all .25s ease-in-out
-        fill: $turquoise
+    // &:hover
+    //   transition: border .25s ease-in-out
+    //   border: 1px solid $turquoise
+    //
+    //   svg
+    //     transition: all .25s ease-in-out
+    //     fill: $turquoise
 
   &__phone
     padding: 8px
@@ -244,12 +258,12 @@
       transition: fill .25s ease-in-out
       fill: $white
 
-    &:hover
-
-      .ig-phil
-        transition: all .25s ease-in-out
-        fill: $turquoise
-
-      svg
-        transition: fill .25s ease-in-out
-        fill: $turquoise
+    // &:hover
+    //
+    //   .ig-phil
+    //     transition: all .25s ease-in-out
+    //     fill: $turquoise
+    //
+    //   svg
+    //     transition: fill .25s ease-in-out
+    //     fill: $turquoise
