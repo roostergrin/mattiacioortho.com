@@ -9,7 +9,9 @@ import {
   VIEW_TYPES,
   VIEW_SHOWMODAL,
   VIEW_MODALCONTENT,
-  VIEW_MENU
+  VIEW_MENU,
+  VIEW_VIDEO,
+  VIEW_THANKS
 } from './mutation-types'
 
 const actions = {
@@ -66,6 +68,12 @@ const actions = {
   },
   VIEW_MENU ({ commit }, data) {
     commit(VIEW_MENU, data)
+  },
+  VIEW_VIDEO ({ commit }, data) {
+    commit(VIEW_VIDEO, data)
+  },
+  VIEW_THANKS ({ commit }, data) {
+    commit(VIEW_THANKS, data)
   }
 }
 

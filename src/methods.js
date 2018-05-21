@@ -1,8 +1,13 @@
 export const openModal = {
   methods: {
-    openModal () {
-      this.$store.dispatch('VIEW_SHOWMODAL', true)
-      document.body.classList.add('body-stop')
+    openModal (i) {
+      if (i === 1) {
+        this.$store.dispatch('VIEW_THANKS', true)
+      }
+      if (i === 2) {
+        this.$store.dispatch('VIEW_SHOWMODAL', true)
+        document.body.classList.add('body-stop')
+      }
     }
   }
 }

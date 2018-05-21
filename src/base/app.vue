@@ -18,6 +18,8 @@ export default {
     this.$store.dispatch('VIEW_SHOWMODAL', false)
     this.$store.dispatch('VIEW_MODALCONTENT', false)
     this.$store.dispatch('VIEW_MENU', false)
+    this.$store.dispatch('VIEW_VIDEO', false)
+    this.$store.dispatch('VIEW_THANKS', false)
   },
   computed: {
     props () {

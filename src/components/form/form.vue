@@ -41,7 +41,7 @@ export default {
       })
       .then(res => {
         this.formSubmitted = false
-        this.openModal()
+        this.openModal(1)
         setTimeout(() => {
           this.$el.children[0].reset()
         }, 500)
