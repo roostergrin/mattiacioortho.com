@@ -1,6 +1,7 @@
 <template lang='pug' src='./contact-us.pug'></template>
 
 <script>
+import FormSection from 'components/custom/custom-contact-form-section/custom-contact-form-section'
 import Header from 'components/custom/custom-contact-header/custom-contact-header'
 import Loader from 'components/loader/loader'
 
@@ -15,6 +16,7 @@ export default {
     }
   },
   components: {
+    FormSection,
     Header,
     Loader
   }

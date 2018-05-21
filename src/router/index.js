@@ -125,7 +125,7 @@ const router = new VueRouter({
     {
       path: '/mattiacio-difference',
       name: 'Mattacio Difference',
-      navigation: false,
+      navigation: true,
       component: Mattacio,
       url: 'static/matt-diff-bg.jpg',
       children: []
@@ -170,7 +170,7 @@ const router = new VueRouter({
     {
       path: '/style',
       name: 'Style',
-      navigation: true,
+      navigation: false,
       url: 'static/matt-diff-bg.jpg',
       component: Style
     },

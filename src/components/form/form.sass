@@ -1,9 +1,6 @@
 .contact-form
-  @extend .flex-container-md
-  margin: 80px auto 180px
-
-  @media screen and (max-width: $break-md)
-    padding: 0 30px
+  position: relative
+  padding-bottom: 50px
 
   &__error-container
     height: 20px
@@ -38,14 +35,26 @@
 
   &__submit-button
     // @extend .button-main
+    transition: background .35s ease-in-out, color .35s ease-in-out, border .35s ease-in-out
+    border: 1px solid transparent
+    border-radius: 20px
     background: $blue
+    // width: 100%
+    width: 280px
+    height: 40px
+    letter-spacing: 3px
+    color: $white
+    font-family: $avenir
+    font-weight: 600
 
     &:disabled
       background: $pale-grey
 
     &:disabled,
     &:hover
+      border: 1px solid $blue
       background: $pale-grey
+      color: $blue
 
   &__input--radio
     width: 28px
@@ -88,7 +97,9 @@
     height: 28px
 
   &__button-group
+    @extend .clearfix
     position: absolute
+    bottom: 0
 
   &__spinner
     @extend .spinner
