@@ -18,7 +18,8 @@ const store = new Vuex.Store({
     menu: {},
     loading: true,
     video: {},
-    thanks: {}
+    thanks: {},
+    tabs: {}
   },
   mutations: mutations,
   actions: actions

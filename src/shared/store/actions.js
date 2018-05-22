@@ -11,7 +11,8 @@ import {
   VIEW_MODALCONTENT,
   VIEW_MENU,
   VIEW_VIDEO,
-  VIEW_THANKS
+  VIEW_THANKS,
+  VIEW_TABS
 } from './mutation-types'
 
 const actions = {
@@ -74,6 +75,9 @@ const actions = {
   },
   VIEW_THANKS ({ commit }, data) {
     commit(VIEW_THANKS, data)
+  },
+  VIEW_TABS ({ commit }, data) {
+    commit(VIEW_TABS, data)
   }
 }
 

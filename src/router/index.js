@@ -5,7 +5,7 @@ import AboutUs from '@/pages/about-us/about-us'
 import ContactUs from '@/pages/contact-us/contact-us'
 import Home from '@/pages/home/home'
 import Invisalign from '@/pages/invisalign/invisalign'
-import Mattacio from '@/pages/mattiacio-difference/mattiacio-difference'
+import Mattiacio from '@/pages/mattiacio-difference/mattiacio-difference'
 import NewPatients from '@/pages/new-patients/new-patients'
 import Treatments from '@/pages/treatments/treatments'
 
@@ -103,7 +103,6 @@ const router = new VueRouter({
           label: 'Invisalign',
           target: '#invisalign',
           name: 'Treatments'
-
         },
         {
           path: '/treatments',
@@ -124,11 +123,18 @@ const router = new VueRouter({
     },
     {
       path: '/mattiacio-difference',
-      name: 'Mattacio Difference',
+      name: 'Mattiacio Difference',
       navigation: true,
-      component: Mattacio,
+      component: Mattiacio,
       url: 'static/matt-diff-bg.jpg',
-      children: []
+      children: [
+        {
+          path: '/mattiacio-difference',
+          label: 'What Sets Us Apart',
+          target: '#what',
+          name: 'Mattiacio Difference'
+        }
+      ]
     },
     {
       path: '/invisalign',

@@ -1,0 +1,33 @@
+.custom-mattiacio-what#what
+  .custom-mattiacio-what__container
+    .custom-mattiacio-what__title(v-html='props.title')
+    .custom-mattiacio-what__row
+      .custom-mattiacio-what__left
+        .custom-mattiacio-what__tab-container
+          .custom-mattiacio-what__tab(
+            v-for='(tab, i) in props.tabs'
+            :key='i'
+            :class='{"custom-mattiacio-what__tab--active": i === $store.state.tabs}'
+            @click='showContent(i)'
+            @mouseover='showContent(i)'
+            )
+            .custom-mattiacio-what__icon-outer
+              .custom-mattiacio-what__icon-inner
+                Icon.custom-mattiacio-what__icon(
+                  :name='tab.label'
+                  :class='"custom-mattiacio-what__icon--" + tab.label'
+                  )
+        transition-group.custom-mattiacio-what__content-wrapper(name='transition-meet-dr', tag='div')
+          .custom-mattiacio-what__content-container(
+            v-for='(content, i in props.content'
+            :key='i'
+            v-show='i === $store.state.tabs'
+            )
+            .custom-mattiacio-what__content-title(v-html='content.title')
+            .custom-mattiacio-what__content-text(v-html='content.text')
+      .custom-mattiacio-what__right
+        .custom-mattiacio-what__right-images(
+          v-for='(img, i) in props.images'
+          :key='i'
+          :style="{backgroundImage: 'url(' + img.url + ')'}"
+          )        

@@ -1,0 +1,137 @@
+.custom-mattiacio-what
+  padding-bottom: rem-calc(80px)
+
+  &__container
+    @extend .flex-container-lg
+
+  &__row
+    @extend .flex
+    @extend .flex-between
+    @extend .align-center
+    flex-direction: column
+
+    @media screen and (max-width: 690px)
+      flex-direction: column-reverse
+      // height: inherit
+
+  &__title
+    @extend h2
+    padding: rem-calc(80px) 0
+    text-align: center
+
+  &__left
+    @extend .flex
+    @extend .flex-between
+    flex-direction: column
+    width: 75%
+
+    @media screen and (max-width: 690px)
+      width: 100%
+
+  &__tab-container
+    @extend .flex
+    @extend .flex-between
+    // flex-direction: column
+    width: 100%
+    height: 75px
+
+  &__content-wrapper
+    position: relative
+    margin: 0 auto
+    width: 72.5%
+    height: 500px
+
+    @media screen and (max-width: 690px)
+      margin-top: 3rem
+      height: 400px
+
+  &__content-container
+    position: absolute
+    top: 45%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 100%
+
+  &__tab
+    cursor: pointer
+
+    &--active
+      .custom-mattiacio-what__icon-outer
+        box-shadow: $shadow-blue
+        background: $turquoise
+
+      .custom-mattiacio-what__icon-inner
+        background: $blue
+
+  &__right
+    @extend .flex
+    @extend .flex-between
+    width: 100%
+    height: 100%
+
+  &__right-images
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    width: 32%
+    // max-width: 200px
+    height: 252px
+
+    @media screen and (max-width: $break-md)
+      background-position: 75%
+
+    @media screen and (max-width: 690px)
+      width: 100%
+
+  &__icon-outer
+    position: relative
+    transition: all .3s ease-in-out
+    border-radius: 50%
+    background: lighten($blue-grey, 15)
+    width: 60px
+    height: 60px
+
+  &__icon-inner
+    display: inline-block
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    transition: all .3s ease-in-out
+    border-radius: 50%
+    background: $blue-grey
+    width: 52px
+    height: 52px
+
+  &__icon
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 35px
+    height: 35px
+    fill: $white
+
+    // &--graduation
+    //   transform: translate(-50%, -30%)
+    //
+    &--personal
+      stroke: $white
+
+    &--community
+      transform: translate(-50%, -40%)
+    //
+    // &--kite
+    //   transform: translate(-50%, -50%) rotate(-30deg)
+    //   padding: 0 4px
+
+  &__content-title
+    margin-bottom: rem-calc(40px)
+    text-transform: uppercase
+    letter-spacing: 9px
+    color: $turquoise
+    font-family: $avenir
+    font-size: 18px
+
+    @media screen and (max-width: 400px)
+      letter-spacing: 7px

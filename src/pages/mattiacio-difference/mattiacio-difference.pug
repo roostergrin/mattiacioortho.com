@@ -1,5 +1,5 @@
 .page-mattiacio-difference
   Loader(v-if='loading')
   div(v-if='props && !loading')
-    h1 Mattacio Difference Page
-    pre {{ props }}
+    What(:props='props.acf.custom_what')
+    Divider
