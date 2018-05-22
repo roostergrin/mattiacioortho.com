@@ -8,6 +8,10 @@ export const openModal = {
         this.$store.dispatch('VIEW_SHOWMODAL', true)
         document.body.classList.add('body-stop')
       }
+      if (i === 3) {
+        this.$store.dispatch('VIEW_VIDEO', true)
+        document.body.classList.add('body-stop')
+      }
     }
   }
 }

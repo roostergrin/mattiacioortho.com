@@ -17,8 +17,8 @@
         Icon(name='arrow-01')
           
     .custom-home-testimonials__video-container
-      .custom-home-testimonials__video-play-btn(@click='openVideo')
+      .custom-home-testimonials__video-play-btn(@click='openModal(3)')
         Icon.custom-home-testimonials__play-btn-icon(name='triangle')
       .custom-home-testimonials__thumb(:style="{backgroundImage: 'url(' + props.video_thumb + ')'}")
-      //- video.custom-home-testimonials__video(ref='video')
-      //-   source(:src='props.video' type='video/mp4')      
+      transition(name='fade-in')
+        Video(v-show='$store.state.video', :props='props.video')

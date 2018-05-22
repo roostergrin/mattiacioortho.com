@@ -1,0 +1,10 @@
+.video-modal
+  .video-modal__overlay(@click='closeVideo')
+    .video-modal__container
+      .video-modal__close(@click='closeVideo')
+        span
+        span
+      .video-modal__content
+        video.video-modal__video(controls)
+          source(:src='props' type='video/mp4')
+          | Your browser does not support video.

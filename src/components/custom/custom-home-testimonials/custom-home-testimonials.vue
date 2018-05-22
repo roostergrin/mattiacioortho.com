@@ -2,6 +2,9 @@
 
 <script>
 import Icon from 'components/icon/icon'
+import Video from 'components/modal/video-modal/video-modal'
+
+import { openModal } from '@/methods'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
 export default {
@@ -27,15 +30,12 @@ export default {
     }
   },
   props: ['props'],
+  mixins: [openModal],
   components: {
     Icon,
     swiper,
-    swiperSlide
-  },
-  methods: {
-    openVideo () {
-      console.log('click')
-    }
+    swiperSlide,
+    Video
   }
 }
 </script>
