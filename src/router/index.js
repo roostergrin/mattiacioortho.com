@@ -171,7 +171,17 @@ const router = new VueRouter({
       name: 'Contact Us',
       navigation: true,
       url: 'static/contact.jpg',
-      component: ContactUs
+      component: ContactUs,
+      children: [
+        {
+          item: 'Rewards Center',
+          path: 'https://www.mattiacioortho.com/fun-zone/rewards-center/'
+        },
+        {
+          item: 'Patient Login',
+          path: 'https://www.mytlink.net/TlinkDotNet/Patient/login.aspx?tpract=520945'
+        }
+      ]
     },
     {
       path: '/style',

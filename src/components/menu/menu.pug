@@ -42,6 +42,12 @@
             v-html='item.label'
             v-on:click='closeMenu(item)'
             :key='i')
+          a.menu__submenu-link(
+            v-if='link.name === "Contact Us"'
+            v-for='(item, i) in link.children'
+            :href='item.path'
+            target='_blank'
+            ) {{item.item}}
   .menu__social-links(:class='{"active": $store.state.menu}')
     a.menu__social-link(v-for='(link, i) in props.acf.social_links', :href='link.href' target='_blank')
       Icon(:name='link.icon', :class='"menu__" + link.label')
