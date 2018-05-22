@@ -4,6 +4,7 @@
 import FormSection from 'components/custom/custom-contact-form-section/custom-contact-form-section'
 import Header from 'components/custom/custom-contact-header/custom-contact-header'
 import Loader from 'components/loader/loader'
+import Thanks from 'components/modal/modal-thanks/modal-thanks'
 
 export default {
   name: 'contact-us',
@@ -18,7 +19,8 @@ export default {
   components: {
     FormSection,
     Header,
-    Loader
+    Loader,
+    Thanks
   }
 }
 </script>

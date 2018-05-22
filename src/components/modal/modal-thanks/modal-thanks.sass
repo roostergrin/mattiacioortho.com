@@ -25,8 +25,8 @@
     box-shadow: $shadow
     background: $white
     width: 100%
-    max-width: 697px
-    height: calc(100vh - 15%)
+    max-width: 550px
+    height: calc(100vh - 40%)
     overflow-Y: scroll
 
     @media screen and (max-width: $break-sm)
@@ -55,14 +55,6 @@
     @media screen and (max-width: $break-sm)
       width: 90%
 
-  &__title
-    margin-bottom: 30px
-    text-align: center
-    text-transform: uppercase
-    color: $blue
-    font-size: 28px
-    font-weight: 600
-
   &__close
     position: absolute
     top: 30px
@@ -83,3 +75,19 @@
         transform: rotate(45deg)
       &:last-child
         transform: rotate(-45deg)
+
+  &__logo-container
+    background: $blue
+    padding: 1rem 0
+    width: 100%
+    fill: $white
+
+  &__logo
+    margin: 0 auto
+    width: 280px
+
+  &__text
+    margin: 80px auto 0
+    width: 100%
+    max-width: 580px
+    text-align: center

@@ -3,3 +3,5 @@
   div(v-if='props && !loading')
     Header(:props='props.acf.custom_header')
     FormSection(:props='props.acf.custom_form')
+    transition(name='fade-in')
+      Thanks(v-show='$store.state.thanks')
