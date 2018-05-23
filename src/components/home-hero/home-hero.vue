@@ -13,6 +13,11 @@ export default {
   },
   components: {
     Icon
+  },
+  methods: {
+    makeAppt () {
+      this.$router.push('/contact-us#form')
+    }
   }
 }
 </script>

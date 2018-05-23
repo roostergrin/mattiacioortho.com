@@ -175,7 +175,7 @@ const router = new VueRouter({
       children: [
         {
           item: 'Rewards Center',
-          path: 'https://www.mattiacioortho.com/fun-zone/rewards-center/'
+          path: 'https://mattiacio-orthodontics-farmington-2.patientrewardshub.com/'
         },
         {
           item: 'Patient Login',
