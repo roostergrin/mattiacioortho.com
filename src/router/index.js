@@ -39,7 +39,7 @@ const router = new VueRouter({
       path: '/',
       name: 'Home',
       navigation: false,
-      mobile: true,
+      mobile: false,
       component: Home
     },
     {

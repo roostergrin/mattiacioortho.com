@@ -38,7 +38,6 @@ export default {
         this.$store.dispatch('VIEW_MENU', true)
         document.body.classList.add('body-stop')
       }
-      // this.$store.state.menu && this.$store.state.nav ? this.$store.dispatch('VIEW_MENU', false) : setTimeout(() => { this.$store.dispatch('VIEW_MENU', true) }, 750)
     },
     closeMenu () {
       if (this.$store.state.menu) {

@@ -1,5 +1,6 @@
 #head.header(:class="{'header--home': $route.path === '/' && !$store.state.menu}")
   v-waypoint.header__waypoint(@waypoint-out='scrollOut', @waypoint-in='scrollIn')
-  Menu
+  Menu.header__menu--desktop
   transition(name='home-fade')
     HomeHero(v-show='$route.path === "/" && !$store.state.menu')
+  HeroMobile

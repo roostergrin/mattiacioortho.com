@@ -1,4 +1,6 @@
 .home-hero
+  @media screen and (max-width: $break-md - 1)
+    display: none
 
   &__overlay
     position: absolute
@@ -21,7 +23,6 @@
   &__video
     width: 100%
     object-fit: cover
-    // width: 100%
 
   &__appt
     @include button-circle-phil(297px, $white, $white, .35s, 1px, $turquoise, 30px, 6px 0, 34px, -270px, -30px)

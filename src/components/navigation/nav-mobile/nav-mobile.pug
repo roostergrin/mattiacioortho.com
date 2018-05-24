@@ -1,2 +1,29 @@
-.nav-mobile
-  | MOBILE
+.nav-mobile(v-if='props', :class='{"nav-mobile--scrolling": $store.state.nav}')
+  .nav-mobile__container
+    .nav-mobile__item
+      router-link.nav-mobile__logo-container(to='/', v-on:click.native='closeDrawer')
+        Icon.nav-mobile__logo(name='matt_logo-01')
+    .nav-mobile__item
+      .nav-mobile__menu-container(@click='toggleMenu')
+        .nav-mobile__hamburger(:class='{"nav-mobile__hamburger--active": active}')
+          span
+          span   
+    
+    transition.nav-mobile__drawer-transition(name='fade-in')        
+        .nav-mobile__drawer(v-show='active', @click='closeDrawer')
+          .nav-mobile__drawer-container(@click='closeDrawer')
+            .nav-mobile__links      
+              span.nav-mobile__link(v-for='nav in links', v-if='nav.navigation || nav.mobile')
+                router-link(:to='nav.path')
+                  | {{ nav.name }}
+            .nav-mobile__bottom      
+              .nav-mobile__button-group
+                  a.nav-mobile__rewards(:href='props.acf.links.rewards', target='_blank') Rewards Center
+                  a.nav-mobile__login(:href='props.acf.links.login', target='_blank') Patient Login
+              .nav-mobile__icon-row
+                a.nav-mobile__icon-wrapper(
+                  v-for='(link, i) in props.acf.social_links'
+                  :key='i'
+                  :href='link.href'
+                  target='_blank')
+                  Icon.nav-mobile__icon(:name='link.icon', :class='"nav-mobile__" + link.label')      

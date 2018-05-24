@@ -6,10 +6,24 @@
   height: 100vh
   overflow: hidden
 
+  @media screen and (max-width: $break-md - 1)
+    height: 80vh
+
+  @media screen and (max-width: $break-sm)
+    height: 50vh
+
   &--home
     height: 52.25vw
+
+    @media screen and (max-width: $break-md - 1)
+      height: 80vh
 
   &__waypoint
     @extend .waypoint
     position: absolute
     top: 40%
+
+  &__menu
+    &--desktop
+      @media screen and (max-width: $break-md - 1)
+        display: none !important

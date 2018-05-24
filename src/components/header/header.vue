@@ -1,6 +1,7 @@
 <template lang='pug' src='./header.pug'></template>
 
 <script>
+import HeroMobile from 'components/hero-mobile/hero-mobile'
 import HomeHero from 'components/home-hero/home-hero'
 import Menu from 'components/menu/menu'
 
@@ -11,6 +12,7 @@ export default {
     }
   },
   components: {
+    HeroMobile,
     HomeHero,
     Menu
   },
