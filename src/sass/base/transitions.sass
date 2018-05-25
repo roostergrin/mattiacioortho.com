@@ -84,5 +84,11 @@
   &-leave-to
     transform: translate(-50%, -65%)
 
+    @media screen and (max-width: $break-sm)
+      transform: translate(-50%, -15%)
+
   &-enter
     transform: translate(-50%, -35%)
+
+    @media screen and (max-width: $break-sm)
+      transform: translate(-50%, 15%)
