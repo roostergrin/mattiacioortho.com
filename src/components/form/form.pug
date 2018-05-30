@@ -16,7 +16,7 @@
       input.contact-form__input(
         name='phone'
         v-model='phone'
-        v-validate='{required: true, regex: /^[2-9]\\d{2}-\\d{3}-\\d{4}$/}'
+        v-validate='{required: true, regex: /^\\D?(\\d{3})\\D?\\D?(\\d{3})\\D?(\\d{4})$/}'
         :class="{ 'input': true, 'contact-form__input--error': errors.has('phone') }"
         type='phone'
         placeholder='Phone')
@@ -68,3 +68,4 @@
       button.contact-form__submit-button(type='submit', :disabled='formSubmitted') 
         span Submit
       .contact-form__spinner(v-if='formSubmitted')
+        span Sending

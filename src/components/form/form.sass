@@ -47,8 +47,6 @@
     font-family: $avenir
     font-weight: 600
 
-    &:disabled
-      background: $pale-grey
 
     &:disabled,
     &:hover
@@ -56,6 +54,11 @@
       background: $pale-grey
       color: $blue
 
+    &:disabled
+
+      span
+        visibility: hidden
+      
   &__input--radio
     width: 28px
     height: 28px
