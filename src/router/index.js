@@ -156,7 +156,7 @@ const router = new VueRouter({
         },
         {
           path: '/invisalign',
-          label: 'Acceledent',
+          label: 'VPro5',
           target: '#section-2'
         },
         {
