@@ -15,6 +15,16 @@
         width: 366px
         height: 555px
 
+        @media screen and (max-width: 1023px)
+          margin-top: -80px
+          width: 266px
+          height: 430px
+
+        @media screen and (max-width: 750px)
+          margin-top: 0
+          width: 150px
+          height: 230px
+
       .custom-invisalign-sections__left
         align-self: flex-start
 
@@ -29,14 +39,26 @@
     margin-bottom: 6rem
     text-align: center
 
+    @media screen and (max-width: 750px)
+      margin-bottom: 3rem
+
   &__row
     @extend .flex
     @extend .flex-between
     @extend .align-center
     margin-top: 3rem
 
+    @media screen and (max-width: 750px)
+      flex-direction: column-reverse
+
   &__left
     width: 50%
+
+    @media screen and (max-width: 1100px)
+      width: 47%
+
+    @media screen and (max-width: 750px)
+      width: 100%
 
   &__icon-invisalign-teen
     margin-bottom: 1.4rem
@@ -47,10 +69,20 @@
     background-repeat: no-repeat
     background-position: center
     background-size: cover
-    width: 100%
+    width: 50%
     max-width: 505px
     height: 366px
     // overflow: visible
 
+    @media screen and (max-width: 750px)
+      margin-bottom: 2rem
+      width: 100%
+      max-width: 350px
+      height: 250px
+
+
     &--order-first
       order: -1
+
+      @media screen and (max-width: 750px)
+        order: 0
