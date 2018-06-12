@@ -6,6 +6,6 @@
     .custom-treatments-damon__text(v-html='props.text')
     .custom-treatments-damon__cards
       .custom-treatments-damon__card(v-for='(card, i) in props.cards', :key='i')
-        Icon.custom-treatments-damon__logo(:name='card.logo')
+        .custom-treatments-damon__logo(:style="{backgroundImage: 'url(' + card.logo + ')'}")
         .custom-treatments-damon__card-text(v-html='card.text')
   
