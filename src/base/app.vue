@@ -4,6 +4,7 @@
 // components
 import Footer from 'components/footer/footer'
 import Header from 'components/header/header'
+import Loader from 'components/loader/loader'
 import Modal from 'components/modal/modal'
 import Navigation from 'components/navigation/navigation'
 import Revisions from 'revisions'
@@ -25,11 +26,15 @@ export default {
   computed: {
     props () {
       return this.$store.state
+    },
+    loading () {
+      return this.$store.state.loading
     }
   },
   components: {
     Footer,
     Header,
+    Loader,
     Modal,
     Navigation,
     Revisions
