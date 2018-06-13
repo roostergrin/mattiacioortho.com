@@ -1,9 +1,9 @@
-import { GET_PAGES, GET_APP, VIEW_NAV, VIEW_BODY, VIEW_TYPES, VIEW_SHOWMODAL, VIEW_MODALCONTENT, VIEW_MENU, VIEW_VIDEO, VIEW_THANKS, VIEW_TABS } from './mutation-types.js'
+import { GET_PAGES, GET_APP, VIEW_NAV, VIEW_BODY, VIEW_TYPES, VIEW_SHOWMODAL, VIEW_MODALCONTENT, VIEW_MENU, VIEW_VIDEO, VIEW_THANKS, VIEW_TABS, LOADING } from './mutation-types.js'
 
 const mutations = {
   [GET_PAGES] (state, data) {
     state.pages = data
-    state.loading = false
+    // state.loading = false
   },
   // [GET_BLOG] (state, data) {
   //   state.blog = data
@@ -11,6 +11,9 @@ const mutations = {
   //   state.blog.current_page.number = 1
   //   state.loading = false
   // },
+  [LOADING] (state, data) {
+    state.loading = data
+  },
   [GET_APP] (state, data) {
     state.app = data
   },

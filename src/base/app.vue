@@ -22,13 +22,11 @@ export default {
     this.$store.dispatch('VIEW_THANKS', false)
     this.$store.dispatch('VIEW_TYPES', 0)
     this.$store.dispatch('VIEW_VIDEO', false)
+    this.$store.dispatch('LOADING', true)
   },
   computed: {
     props () {
       return this.$store.state
-    },
-    loading () {
-      return this.$store.state.loading
     }
   },
   components: {

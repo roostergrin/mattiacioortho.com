@@ -35,6 +35,16 @@ Vue.use(VueScrollTo, {
 Vue.use(VueWaypoint)
 Vue.use(VueAwesomeSwiper)
 
+Vue.directive('load-directive', {
+  bind (el) {
+    console.log('connected')
+    el.addEventListener('loadeddata', function () {
+      store.dispatch('LOADING', false)
+      console.log('dataLoaded', store)
+    }, false)
+  }
+})
+
 /* eslint-disable no-new */
 new Vue({
   router,

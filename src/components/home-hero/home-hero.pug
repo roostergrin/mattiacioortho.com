@@ -1,7 +1,7 @@
 .home-hero(v-if='props')
   .home-hero__overlay
   .home-hero__container
-    video.home-hero__video(loop muted autoplay)
+    video.home-hero__video(loop muted autoplay v-load-directive='')
       source.home-hero__source(:src='props.acf.hero_video' type='video/mp4', :poster='props.acf.poster')
       | Your browser does not support video.
   .home-hero__appt(:class='{active: $store.state.menu}', @click='makeAppt')

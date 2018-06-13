@@ -11,6 +11,11 @@ export default {
       scroll: false
     }
   },
+  computed: {
+    props () {
+      return this.$store.state.app.information
+    }
+  },
   components: {
     HeroMobile,
     HomeHero,

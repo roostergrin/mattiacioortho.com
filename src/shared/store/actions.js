@@ -12,7 +12,8 @@ import {
   VIEW_MENU,
   VIEW_VIDEO,
   VIEW_THANKS,
-  VIEW_TABS
+  VIEW_TABS,
+  LOADING
 } from './mutation-types'
 
 const actions = {
@@ -52,6 +53,9 @@ const actions = {
   //     }
   //   })()
   // },
+  LOADING ({ commit }, data) {
+    commit(LOADING, data)
+  },
   VIEW_NAV ({ commit }, data) {
     commit(VIEW_NAV, data)
   },
