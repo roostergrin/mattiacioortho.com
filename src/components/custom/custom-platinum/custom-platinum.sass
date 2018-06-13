@@ -16,6 +16,8 @@
   &__icon
     @extend .icon
 
+  // Don't ever do this. It's why we have display: table
+
   &__text,
   &__r-four-el-head,
   &__platinum-head
@@ -44,6 +46,9 @@
     flex: 1
     padding: 10.5px 34px
 
+    @media screen and (max-width: $break-sm)
+      padding: 10.5px
+
   &__r-four-el-head,
   &__r-four-check
     background: $turquoise
@@ -58,6 +63,9 @@
     color: $dark-blue
     font-family: $avenir
     font-weight: 600
+
+    @media screen and (max-width: $break-sm)
+      padding-left: .5rem
 
   &__row
     @extend .flex
@@ -83,6 +91,8 @@
     width: 100%
     max-width: calc(475px - 3rem)
 
+    @media screen and (max-width: $break-sm)
+      max-width: 100%
 
   &__r-four-el,
   &__platinum
@@ -90,3 +100,6 @@
     width: 100%
     max-width: 134px
     height: 100%
+
+    @media screen and (max-width: $break-sm)
+      max-width: 90px
