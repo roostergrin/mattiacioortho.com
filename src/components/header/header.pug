@@ -1,4 +1,4 @@
-#head.header(:class="{'header--home': $route.path === '/' && !$store.state.menu}")
+#head.header(:class="{'header--home': $route.path === '/' && !$store.state.menu}", v-if='props')
   v-waypoint.header__waypoint(@waypoint-out='scrollOut', @waypoint-in='scrollIn')
   Menu.header__menu--desktop
   transition(name='home-fade')
