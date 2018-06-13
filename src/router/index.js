@@ -71,7 +71,7 @@ const router = new VueRouter({
       name: 'New Patients',
       navigation: true,
       component: NewPatients,
-      url: 'static/new-pats.jpg',
+      url: '/static/new-pats.jpg',
       children: [
         {
           path: '/new-patients',
@@ -94,7 +94,7 @@ const router = new VueRouter({
     {
       path: '/treatments',
       name: 'Treatments',
-      url: 'static/treatments.jpg',
+      url: '/static/treatments.jpg',
       navigation: true,
       component: Treatments,
       children: [
@@ -126,7 +126,7 @@ const router = new VueRouter({
       name: 'Mattiacio Difference',
       navigation: true,
       component: Mattiacio,
-      url: 'static/matt-diff-bg.jpg',
+      url: '/static/matt-diff-bg.jpg',
       children: [
         {
           path: '/mattiacio-difference',
@@ -141,7 +141,7 @@ const router = new VueRouter({
       name: 'Invisalign',
       navigation: true,
       component: Invisalign,
-      url: 'static/invisalign.jpg',
+      url: '/static/invisalign.jpg',
       children: [
         {
           path: '/invisalign',
@@ -170,7 +170,7 @@ const router = new VueRouter({
       path: '/contact-us',
       name: 'Contact Us',
       navigation: true,
-      url: 'static/contact.jpg',
+      url: '/static/contact.jpg',
       component: ContactUs,
       children: [
         {
@@ -187,7 +187,7 @@ const router = new VueRouter({
       path: '/style',
       name: 'Style',
       navigation: false,
-      url: 'static/matt-diff-bg.jpg',
+      url: '/static/matt-diff-bg.jpg',
       component: Style
     },
     {

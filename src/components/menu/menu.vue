@@ -47,6 +47,9 @@ export default {
     myEventHandler (e) {
       this.styleWidth = e.target.innerWidth
       this.styleHeight = e.target.innerHeight
+    },
+    makeAppt () {
+      this.$router.push('/contact-us#form')
     }
   }
 }

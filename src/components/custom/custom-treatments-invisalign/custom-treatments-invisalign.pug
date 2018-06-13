@@ -5,7 +5,8 @@
       .custom-treatments-invisalign__left
         Icon.custom-treatments-invisalign__logo(name='invisalign')
         .custom-treatments-invisalign__text(v-html='props.text')
-        a.custom-treatments-invisalign__read-more(:href='props.href' target='_blank')
+        router-link.custom-treatments-invisalign__read-more(to='/invisalign#section-0')
+          //- 
           | Read More
       .custom-treatments-invisalign__right(:style="{backgroundImage: 'url(' + props.img + ')'}")
   

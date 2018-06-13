@@ -23,6 +23,7 @@
     z-index: 10
 
   &__title
+    @extend h1
     &--white
       color: $pale-blue
 
@@ -269,3 +270,59 @@
     //   svg
     //     transition: fill .25s ease-in-out
     //     fill: $turquoise
+
+  &__appt
+    @include button-circle-phil(297px, $white, $white, .35s, 1px, $turquoise, 30px, 6px 0, 34px, -270px, -30px)
+    position: absolute
+    top: 100%
+    left: 50%
+    transform: translate(-50%, 100%)
+    transition: opacity .25s ease-in-out
+    opacity: 0
+    z-index: 11
+    max-height: 48px
+    pointer-events: none
+
+    span
+      letter-spacing: 2px
+      font-family: $avenir
+      font-size: 16px
+      font-weight: 600
+
+    &-icon
+      // extended shadow transition to wait for circle to collapse
+      transition: all .55s ease-in-out
+      border-radius: 50%
+      box-shadow: 0 2px 4px 0 rgba($black, .33)
+
+      svg
+        .line
+          fill: $white
+
+    &:hover
+      // quickly remove box-shadow as bg expands
+      .menu__appt-icon
+        transition: box-shadow .15s ease-in-out
+        box-shadow: none
+
+    &:active
+      box-shadow: none
+
+    &--is-visible
+      transition: opacity .35s ease-in-out 1.3s
+      opacity: 1
+      pointer-events: auto
+
+    &--white
+      border: 1px solid $white
+
+      &:after
+        background: $blue
+
+      @media (hover: hover)
+        &:hover
+          border: 1px solid $blue
+
+      .menu__appt-icon
+        svg
+          fill: $blue

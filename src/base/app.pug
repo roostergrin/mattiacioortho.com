@@ -2,8 +2,9 @@
   Loader(v-show='loading && !$store.state.body')
   div(v-if='props && !loading')
     Navigation
-    Header  
-    router-view
+    Header
+    transition(name='fade-in')  
+      router-view
     transition(name='fade-in')
       Modal(v-show='$store.state.showModal')
     Footer
