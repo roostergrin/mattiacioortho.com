@@ -6,8 +6,11 @@
         Icon.nav-desktop__dropdown-icon(name='triangle', :class='{"nav-desktop__dropdown-icon--open": open}')
         transition(name='fade-in')
           .nav-desktop__dropdown-container(v-show='open')
-            a.nav-desktop__dropdown-phone(:href='props.acf.phone.href')
+            a.nav-desktop__dropdown-phone(:href='props.acf.social_links[1].href')
               Icon.nav-desktop__phone(name='phone')
+              p 585. 742. 1050  
+            a.nav-desktop__dropdown-phone-emergency(:href='props.acf.phone.href')
+              Icon.nav-desktop__phone-emergency(name='bandaid')
               p {{props.acf.phone.label}}
             a.nav-desktop__dropdown-map(:href='props.acf.address.href' target='_blank')
               Icon.nav-desktop__map(name='location')
