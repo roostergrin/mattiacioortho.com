@@ -58,7 +58,7 @@
 
       span
         visibility: hidden
-      
+
   &__input--radio
     width: 28px
     height: 28px
@@ -108,3 +108,12 @@
     @extend .spinner
     top: 10%
     z-index: 2
+
+    span
+      position: absolute
+      top: 1.2px
+      left: -10%
+      animation: fade .15s ease-in-out
+      letter-spacing: 2px
+      color: $blue
+      font-weight: bold

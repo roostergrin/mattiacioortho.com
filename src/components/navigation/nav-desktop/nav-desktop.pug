@@ -6,7 +6,7 @@
         Icon.nav-desktop__dropdown-icon(name='triangle', :class='{"nav-desktop__dropdown-icon--open": open}')
         transition(name='fade-in')
           .nav-desktop__dropdown-container(v-show='open')
-            a.nav-desktop__dropdown-phone(:href='props.acf.social_links[1].href')
+            a.nav-desktop__dropdown-phone(:href='props.acf.social_links[0].href')
               Icon.nav-desktop__phone(name='phone')
               p 585. 742. 1050  
             a.nav-desktop__dropdown-phone-emergency(:href='props.acf.phone.href')
@@ -20,7 +20,7 @@
               p EMAIL US
     
     .nav-desktop__item
-      .nav-desktop__logo-container(@click='closeMenu')
+      .nav-desktop__logo-container(@click='closeMenu' v-scroll-to='{el: "#head", container: "body", duration: 750, easing: "ease-in-out", x: false, y: true}')
         Icon.nav-desktop__logo(name='matt_logo-01', :class='{"nav-desktop__logo--active": $store.state.menu}')
     .nav-desktop__item
       .nav-desktop__menu-container(@click='toggleMenu' v-scroll-to='{el: "#head", container: "body", duration: 750, easing: "ease-in-out", x: false, y: true}')

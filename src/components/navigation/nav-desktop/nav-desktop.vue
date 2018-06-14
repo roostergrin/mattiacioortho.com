@@ -28,6 +28,7 @@ export default {
         this.$store.dispatch('VIEW_MENU', false)
         document.body.classList.remove('body-stop')
       }
+      // if menu is closed and not at the top of the pg - scroll to top
       if (menuClosed && this.$store.state.nav) {
         setTimeout(() => {
           this.$store.dispatch('VIEW_MENU', true)
@@ -43,8 +44,12 @@ export default {
       if (this.$store.state.menu) {
         this.$store.dispatch('VIEW_MENU', false)
         document.body.classList.remove('body-stop')
+        this.$router.push('/')
       }
-      this.$router.push('/')
+      // scroll to top before fade
+      if (!this.$store.state.menu) {
+        setTimeout(() => { this.$router.push('/') }, 750)
+      }
     },
     dropdown () {
       this.open = !this.open
