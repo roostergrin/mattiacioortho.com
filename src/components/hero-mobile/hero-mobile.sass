@@ -13,7 +13,7 @@
       background: rgba($black, .25)
 
   &__home
-    background-position: 78%
+    background-position: 70%
     background-size: cover
     width: 100%
     height: 80vh
@@ -77,3 +77,51 @@
     .hero-mobile__contact &
       top: 40%
       font-size: 24px
+
+  &__appt
+    // @include button-circle-phil(297px, $white, $white, .35s, 1px, $turquoise, 30px, 6px 0, 34px, -270px, -30px)
+    position: absolute
+    bottom: 10%
+    left: 50%
+    transform: translate(-50%, -50%)
+    transition: opacity .35s ease-in-out
+    z-index: 11
+    border: 1px solid $turquoise
+    border-radius: 24px
+    box-shadow: 0 2px 4px 0 rgba($black, .33)
+    background: $turquoise
+    padding: 6px 0
+    width: 100%
+    max-width: 287px
+    max-height: 48px
+    text-align: center
+
+    span
+      letter-spacing: 2px
+      color: $white
+      font-family: $avenir
+      font-size: 16px
+      font-weight: 600
+
+    &-icon
+      // extended shadow transition to wait for circle to collapse
+      transition: all .55s ease-in-out
+      border-radius: 50%
+      box-shadow: 0 2px 4px 0 rgba($black, .33)
+
+      svg
+        .line
+          fill: $white
+
+    &:hover
+      // quickly remove box-shadow as bg expands
+      .home-mobile__appt-icon
+        transition: box-shadow .15s ease-in-out
+        box-shadow: none
+
+    &:active
+      box-shadow: none
+
+    &.active
+      transition: opacity .35s ease-in-out
+      opacity: 0
