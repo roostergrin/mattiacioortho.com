@@ -113,12 +113,13 @@ const router = new VueRouter({
           path: '/treatments',
           label: '7 & Up Child Evaluation',
           target: '#seven-up'
-        },
-        {
-          path: '/treatments',
-          label: 'Adult Orthodontics',
-          target: '#adults'
         }
+        // ,
+        // {
+        //   path: '/treatments',
+        //   label: 'Adult Orthodontics',
+        //   target: '#adults'
+        // }
       ]
     },
     {
