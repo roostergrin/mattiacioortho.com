@@ -1,9 +1,11 @@
 <template lang='pug' src='./contact-us.pug'></template>
 
 <script>
+import Divider from 'components/divider/divider'
 import FormSection from 'components/custom/custom-contact-form-section/custom-contact-form-section'
 import Header from 'components/custom/custom-contact-header/custom-contact-header'
 import Loader from 'components/loader/loader'
+import SponsorSection from 'components/custom/custom-contact-sponsor-section/custom-contact-sponsor-section'
 import Thanks from 'components/modal/modal-thanks/modal-thanks'
 
 export default {
@@ -17,9 +19,11 @@ export default {
     }
   },
   components: {
+    Divider,
     FormSection,
     Header,
     Loader,
+    SponsorSection,
     Thanks
   }
 }
