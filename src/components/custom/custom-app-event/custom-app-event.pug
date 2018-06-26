@@ -1,0 +1,9 @@
+.custom-app-event(v-if='props', :style="{backgroundImage: 'url(' + props.acf.event.bg_img + ')'}")
+  .custom-app-event__overlay
+  .custom-app-event__container
+    .custom-app-event__title(v-html='props.acf.event.title')
+    .custom-app-event__subtitle(v-html='props.acf.event.subtitle')
+    .custom-app-event__content(v-html='props.acf.event.content')
+    .custom-app-event__btn
+      | Register Today
+  

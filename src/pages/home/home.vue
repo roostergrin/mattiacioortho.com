@@ -1,6 +1,7 @@
 <template lang='pug' src='./home.pug'></template>
 
 <script>
+import FunEvent from 'components/custom/custom-app-event/custom-app-event'
 import Loader from 'components/loader/loader'
 import Retainers from 'components/custom/custom-home-retainers/custom-home-retainers'
 import Testimonials from 'components/custom/custom-home-testimonials/custom-home-testimonials'
@@ -18,6 +19,7 @@ export default {
     }
   },
   components: {
+    FunEvent,
     Loader,
     Retainers,
     Testimonials,
