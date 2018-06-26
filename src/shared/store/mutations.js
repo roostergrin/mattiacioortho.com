@@ -1,4 +1,4 @@
-import { GET_PAGES, GET_APP, VIEW_NAV, VIEW_BODY, VIEW_TYPES, VIEW_SHOWMODAL, VIEW_MODALCONTENT, VIEW_MENU, VIEW_VIDEO, VIEW_THANKS, VIEW_TABS, LOADING } from './mutation-types.js'
+import { GET_PAGES, GET_APP, VIEW_NAV, VIEW_BODY, VIEW_TYPES, VIEW_SHOWMODAL, VIEW_MODALCONTENT, VIEW_MENU, VIEW_VIDEO, VIEW_THANKS, VIEW_TABS, VIEW_EVENT, LOADING } from './mutation-types.js'
 
 const mutations = {
   [GET_PAGES] (state, data) {
@@ -43,6 +43,9 @@ const mutations = {
   },
   [VIEW_TABS] (state, data) {
     state.tabs = data
+  },
+  [VIEW_EVENT] (state, data) {
+    state.funEvent = data
   }
 }
 

@@ -13,6 +13,7 @@ import {
   VIEW_VIDEO,
   VIEW_THANKS,
   VIEW_TABS,
+  VIEW_EVENT,
   LOADING
 } from './mutation-types'
 
@@ -82,6 +83,9 @@ const actions = {
   },
   VIEW_TABS ({ commit }, data) {
     commit(VIEW_TABS, data)
+  },
+  VIEW_EVENT ({ commit }, data) {
+    commit(VIEW_EVENT, data)
   }
 }
 

@@ -4,6 +4,6 @@
     .custom-app-event__title(v-html='props.acf.event.title')
     .custom-app-event__subtitle(v-html='props.acf.event.subtitle')
     .custom-app-event__content(v-html='props.acf.event.content')
-    .custom-app-event__btn
+    .custom-app-event__btn(@click='openModal(4)')
       | Register Today
   

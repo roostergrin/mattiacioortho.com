@@ -2,6 +2,7 @@
 
 <script>
 // components
+import EventModal from 'components/modal/event-modal/event-modal'
 import Footer from 'components/footer/footer'
 import Header from 'components/header/header'
 import Loader from 'components/loader/loader'
@@ -22,7 +23,9 @@ export default {
     this.$store.dispatch('VIEW_THANKS', false)
     this.$store.dispatch('VIEW_TYPES', 0)
     this.$store.dispatch('VIEW_VIDEO', false)
+    this.$store.dispatch('VIEW_EVENT', false)
     this.$store.dispatch('LOADING', true)
+    console.log(this.$store.state)
   },
   computed: {
     props () {
@@ -30,6 +33,7 @@ export default {
     }
   },
   components: {
+    EventModal,
     Footer,
     Header,
     Loader,

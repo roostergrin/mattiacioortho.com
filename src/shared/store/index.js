@@ -19,6 +19,7 @@ const store = new Vuex.Store({
     loading: true,
     video: {},
     thanks: {},
+    funEvent: {},
     tabs: {}
   },
   mutations: mutations,
