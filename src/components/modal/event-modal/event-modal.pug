@@ -1,8 +1,10 @@
-.event-modal
+.event-modal(v-if='props')
   .event-modal__overlay(@click='closeModal(2)')
   .event-modal__container
     .event-modal__close(@click='closeModal(2)')
       span
       span
     .event-modal__content
-      | I'm modal Content
+      .event-modal__text(v-html='props.acf.event_modal.content')
+      .event-modal__form-container  
+        EventForm

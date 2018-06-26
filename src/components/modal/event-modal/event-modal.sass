@@ -24,12 +24,13 @@
     margin-top: 2%
     box-shadow: $shadow
     background: $white
+    padding-bottom: 1rem
     width: 100%
     max-width: 697px
     height: calc(100vh - 10%)
     overflow-Y: scroll
 
-    @media screen and (max-width: $break-sm)
+    @media screen and (max-width: 697px + 60px)
       width: 95%
 
   &__content
@@ -41,10 +42,11 @@
     animation-delay: .75s
     opacity: 0
     background-color: $white
-    // padding-bottom: 50px
+    padding: 1.5rem
     width: 100%
-    height: 100%
+    height: 92%
     overflow: auto
+    text-align: center
 
     @keyframes fade
       from
@@ -54,6 +56,9 @@
 
     // @media screen and (max-width: $break-sm)
     //   width: 90%
+
+    p
+      margin-bottom: 1rem
 
   &__close
     position: absolute
@@ -67,7 +72,7 @@
     span
       display: block
       position: absolute
-      background-color: $white
+      background-color: $blue
       width: 100%
       height: 2px
 
@@ -75,3 +80,13 @@
         transform: rotate(45deg)
       &:last-child
         transform: rotate(-45deg)
+
+  &__form-container
+    margin: 0 auto
+    width: 85%
+
+    @media screen and (max-width: 650px)
+      width: 100%
+
+  &__alert
+    text-decoration: underline

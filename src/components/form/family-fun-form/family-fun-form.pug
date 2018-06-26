@@ -1,0 +1,94 @@
+.family-fun-form
+  form.family-fun-form__form(@submit.prevent='validate', method='post')
+    
+    .family-fun-form__group
+      input.family-fun-form__input(
+        name='full-name'
+        v-model='fullName'
+        v-validate="'required|alpha_spaces'"
+        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('full-name') }"
+        type='text'
+        placeholder='Your Name')
+      .family-fun-form__error-container  
+        span(v-show="errors.has('full-name')") Your name is required.
+
+    .family-fun-form__group
+      input.family-fun-form__input(
+        name='phone'
+        v-model='phone'
+        v-validate='{regex: /^\\D?(\\d{3})\\D?\\D?(\\d{3})\\D?(\\d{4})$/}'
+        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('phone') }"
+        type='phone'
+        placeholder='Phone')
+      .family-fun-form__error-container
+        span(v-show="errors.has('phone')") Valid phone number is required.  
+
+    .family-fun-form__group
+      input.family-fun-form__input(
+        name='email'
+        v-model='email'
+        v-validate="'email'"
+        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('email') }"
+        placeholder='Email Address')
+      .family-fun-form__error-container  
+        span(v-show="errors.has('email')") Phone or Email is required.
+        
+    .family-fun-form__group-container
+      .family-fun-form__group-inline
+        input.family-fun-form__input(
+          name='family-members'
+          v-model='familyMembers'
+          type='text'
+          placeholder="No. of Family Members")
+        .family-fun-form__error-container
+          
+      .family-fun-form__group-inline
+        p Which Days Will you be Attending?
+        .family-fun-form__radio-group 
+          input.family-fun-form__input--radio(
+            name='days'
+            v-model='days'
+            value='July 19th'
+            type='radio')
+          span.family-fun-form__radio-overlay
+          label.family-fun-form__label 7/19
+        .family-fun-form__radio-group   
+          input.family-fun-form__input--radio(
+            name='days'
+            v-model='days'
+            value='8/23'
+            type='radio')
+          span.family-fun-form__radio-overlay
+          label.family-fun-form__label 8/23
+        .family-fun-form__radio-group   
+          input.family-fun-form__input--radio(
+            name='days'
+            v-model='days'
+            value='Both'
+            type='radio')
+          span.family-fun-form__radio-overlay
+          label.family-fun-form__label Both Days        
+        
+    .family-fun-form__group
+      input.family-fun-form__input(
+        name='guest-name'
+        v-model='guestName'
+        type='text'
+        placeholder='Guest Name (optional)')
+      .family-fun-form__error-container
+        
+    .family-fun-form__group
+      input.family-fun-form__input(
+        name='guest-email'
+        v-model='guestEmail'
+        v-validate="'email'"
+        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('guest-email') }"
+        placeholder='Guest Email (optional)')
+      .family-fun-form__error-container  
+        span(v-show="errors.has('guest-email')") Phone or Email is required.
+
+    .family-fun-form__button-group
+      button.family-fun-form__submit-button(type='submit', :disabled='formSubmitted') 
+        span Submit
+      .family-fun-form__spinner(v-if='formSubmitted')
+        span Sending

@@ -15,6 +15,7 @@
     .sponsor-form__group
       input.sponsor-form__input(
         name='patient-name'
+        type='text'
         v-model='patientName'
         placeholder="Patient's Name")
       .sponsor-form__error-container  
@@ -24,8 +25,9 @@
         name='contact-info'
         v-model='contactInfo'
         v-validate="'required'"
+        type='text'
         :class="{ 'input': true, 'sponsor-form__input--error': errors.has('contact-info') }"
-        placeholder='Email Address')
+        placeholder='Email or Phone')
       .sponsor-form__error-container  
         span(v-show="errors.has('contac-info')") Phone or Email is required.
         
@@ -33,6 +35,7 @@
       input.sponsor-form__input(
         name='event-name'
         v-model='eventName'
+        type='text'
         placeholder="Event")
       .sponsor-form__error-container
         
@@ -48,6 +51,7 @@
       input.sponsor-form__input(
         name='cause'
         v-model='cause'
+        type='text'
         placeholder="Cause/Nature of organization")
       .sponsor-form__error-container
         
@@ -55,6 +59,7 @@
       input.sponsor-form__input(
         name='website'
         v-model='website'
+        type='text'
         placeholder="Website Associated with the Event/School/Foundation")
       .sponsor-form__error-container                
         
