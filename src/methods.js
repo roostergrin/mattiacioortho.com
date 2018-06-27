@@ -15,7 +15,6 @@ export const openModal = {
       if (i === 4) {
         this.$store.dispatch('VIEW_EVENT', true)
         document.body.classList.add('body-stop')
-        console.log(this.$store.state.funEvent)
       }
     }
   }

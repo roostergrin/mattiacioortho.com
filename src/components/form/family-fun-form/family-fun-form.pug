@@ -31,7 +31,7 @@
         :class="{ 'input': true, 'family-fun-form__input--error': errors.has('email') }"
         placeholder='Email Address')
       .family-fun-form__error-container  
-        span(v-show="errors.has('email')") Phone or Email is required.
+        span(v-show="errors.has('email')") Valid Email is required.
         
     .family-fun-form__group-container
       .family-fun-form__group-inline
@@ -85,7 +85,7 @@
         :class="{ 'input': true, 'family-fun-form__input--error': errors.has('guest-email') }"
         placeholder='Guest Email (optional)')
       .family-fun-form__error-container  
-        span(v-show="errors.has('guest-email')") Phone or Email is required.
+        span(v-show="errors.has('guest-email')") Valid Email is required.
 
     .family-fun-form__button-group
       button.family-fun-form__submit-button(type='submit', :disabled='formSubmitted') 
