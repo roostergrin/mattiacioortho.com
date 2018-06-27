@@ -28,6 +28,7 @@ export const closeModal = {
         document.body.classList.remove('body-stop')
       }
       if (i === 2) {
+        console.log('hello')
         this.$store.dispatch('VIEW_EVENT', false)
         document.body.classList.remove('body-stop')
       }

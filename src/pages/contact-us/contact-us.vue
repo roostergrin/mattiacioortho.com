@@ -7,7 +7,6 @@ import FunEvent from 'components/custom/custom-app-event/custom-app-event'
 import Header from 'components/custom/custom-contact-header/custom-contact-header'
 import Loader from 'components/loader/loader'
 import SponsorSection from 'components/custom/custom-contact-sponsor-section/custom-contact-sponsor-section'
-import Thanks from 'components/modal/modal-thanks/modal-thanks'
 
 export default {
   name: 'contact-us',
@@ -25,8 +24,7 @@ export default {
     FormSection,
     Header,
     Loader,
-    SponsorSection,
-    Thanks
+    SponsorSection
   }
 }
 </script>

@@ -3,7 +3,7 @@
 <script>
 import api from 'api'
 import axios from 'axios'
-import { openModal } from '@/methods'
+import { openModal, closeModal } from '@/methods'
 
 export default {
   data: () => {
@@ -19,7 +19,7 @@ export default {
       formSubmitted: false
     }
   },
-  mixins: [openModal],
+  mixins: [openModal, closeModal],
   methods: {
     validate () {
       this.$validator.validateAll()
@@ -45,10 +45,11 @@ export default {
       })
       .then(res => {
         this.formSubmitted = false
-        // this.openModal(1)
         setTimeout(() => {
           this.$el.children[0].reset()
         }, 500)
+        this.closeModal(2)
+        this.openModal(1)
       })
       .catch(e => { console.log(e) })
     }

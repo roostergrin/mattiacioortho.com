@@ -8,7 +8,7 @@ import Header from 'components/header/header'
 import Loader from 'components/loader/loader'
 import Modal from 'components/modal/modal'
 import Navigation from 'components/navigation/navigation'
-import Revisions from 'revisions'
+import Thanks from 'components/modal/modal-thanks/modal-thanks'
 
 export default {
   created () {
@@ -25,7 +25,6 @@ export default {
     this.$store.dispatch('VIEW_VIDEO', false)
     this.$store.dispatch('VIEW_EVENT', false)
     this.$store.dispatch('LOADING', true)
-    console.log(this.$store.state)
   },
   computed: {
     props () {
@@ -39,7 +38,7 @@ export default {
     Loader,
     Modal,
     Navigation,
-    Revisions
+    Thanks
   },
   name: 'app'
 }
