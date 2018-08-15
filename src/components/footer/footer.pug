@@ -20,9 +20,9 @@ footer.footer(v-if='props')
             Icon.footer__rewards-icon(name='arrow') 
     
   .footer__bottom
-    .footer__phone
-      |Call or text us anytime
     a.footer__phone(:href='props.acf.social_links[0].href')
+      | Call or text us anytime
+      br
       | 585. 742. 1050
     a.footer__address(v-html='props.acf.address.text', :href='props.acf.address.href', target='_blank')
     .footer__roostergrin
