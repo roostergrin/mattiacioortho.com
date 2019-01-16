@@ -62,5 +62,7 @@
     <a href="http://www.boldchat.com" title="Live Chat Software" target="_blank"><img alt="Live Chat Software" src="https://vms.boldchat.com/aid/438176494458224912/bc.vmi?wdid=435787954676086530&amp;vr=&amp;vn=&amp;vi=&amp;ve=&amp;vp=&amp;curl=" border="0" width="1" height="1" /></a>
   </noscript>
   <!-- /BoldChat Visitor Monitor HTML v5.00 -->
+  <!-- OpenChair Code -->
+  <div id="openchair-widget" data-token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmlnaW4iOiJodHRwczovL3d3dy5tYXR0aWFjaW9vcnRoby5jb20vIiwicHJhY3RpY2VfaWQiOjI2NH0.7FL-3j1krhim7MPEOwuCVGLfpVLpuOQSoPXgM0ejnM4" data-hidebutton="true" > </div> <script src="https://openchair.threadcommunication.com" async></script>
 </body>
 </html>
