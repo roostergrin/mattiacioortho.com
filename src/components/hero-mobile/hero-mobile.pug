@@ -5,7 +5,7 @@
     :style="{backgroundImage: 'url(static/home-mobile.jpg)'}"
     )
     .hero-mobile__appt(@click='makeAppt')
-      span Make an Appointment
+      span Schedule Consultation
   .hero-mobile__about-us(
     v-show='$route.path === "/about-us"',
     :style="{backgroundImage: 'url(static/about-mobile-bg.jpg)'}"
@@ -36,4 +36,4 @@
     :style="{backgroundImage: 'url(static/contact.jpg)'}"
     )
     .hero-mobile__title {{ $route.name }}
-  
+
