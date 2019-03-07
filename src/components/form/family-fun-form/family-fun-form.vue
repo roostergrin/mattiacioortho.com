@@ -11,12 +11,11 @@ export default {
       fullName: '',
       phone: '',
       email: '',
-      familyMembers: '',
-      days: '',
-      guestName: '',
-      guestEmail: '',
+      yourGrade: '',
+      gender: '',
       postUrl: api + '/rg-mail/v1/family-fun',
-      formSubmitted: false
+      formSubmitted: false,
+      selected: 'null'
     }
   },
   mixins: [openModal, closeModal],
@@ -36,12 +35,11 @@ export default {
       this.formSubmitted = true
       axios.post(this.postUrl, {
         fullName: this.fullName,
-        patientName: this.phone,
-        contactInfo: this.email,
-        eventName: this.familyMembers,
-        date: this.days,
-        cause: this.guestName,
-        website: this.guestEmail
+        phone: this.phone,
+        email: this.email,
+        yourGrade: this.yourGrade,
+        gender: this.gender,
+        selected: this.selected
       })
       .then(res => {
         this.formSubmitted = false

@@ -88,12 +88,11 @@ function rg_serve_route_family_fun () {
 
   $message = '<html><body>';
   $message .= '<p><h4><strong>Form Submission by: </strong></h4>' . $data['fullName'] . '</p>';
-  $message .= '<p><h4><strong>Phone: </strong></h4>' . $data['patientName'] . '</p>';
-  $message .= '<p><h4><strong>Email: </strong></h4>' . $data['contactInfo'] . '</p>';
-  $message .= '<p><h4><strong>No. of Family Members:</strong></h4> ' . $data['eventName'] . '</p>';
-  $message .= '<p><h4><strong>Dates:</strong></h4> ' . $data['date'] . '</p>';
-  $message .= '<p><h4><strong>Guest Name:</strong></h4> ' . $data['cause'] . '</p>';
-  $message .= '<p><h4><strong>Guest Email:</strong></h4> ' . $data['website'] . '</p>';
+  $message .= '<p><h4><strong>Phone: </strong></h4>' . $data['phone'] . '</p>';
+  $message .= '<p><h4><strong>Email: </strong></h4>' . $data['email'] . '</p>';
+  $message .= '<p><h4><strong>Grade:</strong></h4> ' . $data['yourGrade'] . '</p>';
+  $message .= '<p><h4><strong>Gender:</strong></h4> ' . $data['gender'] . '</p>';
+  $message .= '<p><h4><strong>Date Attending:</strong></h4> ' . $data['selected'] . '</p>';
   $message .= '</body></html>';
 
   $sent_message = wp_mail($to, $subject, $message, $headers);

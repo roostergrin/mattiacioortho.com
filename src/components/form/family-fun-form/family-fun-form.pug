@@ -1,6 +1,6 @@
 .family-fun-form
   form.family-fun-form__form(@submit.prevent='validate', method='post')
-    
+
     .family-fun-form__group
       input.family-fun-form__input(
         name='full-name'
@@ -21,7 +21,7 @@
         type='phone'
         placeholder='Phone')
       .family-fun-form__error-container
-        span(v-show="errors.has('phone')") Valid phone number is required.  
+        span(v-show="errors.has('phone')") Valid phone number is required.
 
     .family-fun-form__group
       input.family-fun-form__input(
@@ -30,62 +30,83 @@
         v-validate="'email'"
         :class="{ 'input': true, 'family-fun-form__input--error': errors.has('email') }"
         placeholder='Email Address')
-      .family-fun-form__error-container  
-        span(v-show="errors.has('email')") Valid Email is required.
-        
-    .family-fun-form__group-container
-      .family-fun-form__group-inline
-        input.family-fun-form__input(
-          name='family-members'
-          v-model='familyMembers'
-          type='text'
-          placeholder="No. of Family Members")
-        .family-fun-form__error-container
-          
-      .family-fun-form__group-inline
-        p Which Days Will you be Attending?
-        .family-fun-form__radio-group 
-          input.family-fun-form__input--radio(
-            name='days'
-            v-model='days'
-            value='July 19th'
-            type='radio')
-          span.family-fun-form__radio-overlay
-          label.family-fun-form__label 7/19
-        .family-fun-form__radio-group   
-          input.family-fun-form__input--radio(
-            name='days'
-            v-model='days'
-            value='8/23'
-            type='radio')
-          span.family-fun-form__radio-overlay
-          label.family-fun-form__label 8/23
-        .family-fun-form__radio-group   
-          input.family-fun-form__input--radio(
-            name='days'
-            v-model='days'
-            value='Both'
-            type='radio')
-          span.family-fun-form__radio-overlay
-          label.family-fun-form__label Both Days        
-        
-    .family-fun-form__group
-      input.family-fun-form__input(
-        name='guest-name'
-        v-model='guestName'
-        type='text'
-        placeholder='Guest Name (optional)')
       .family-fun-form__error-container
-        
+        span(v-show="errors.has('email')") Valid Email is required.
+
+      .family-fun-form__group
+        input.family-fun-form__input(
+          name='your-grade'
+          v-model='yourGrade'
+          v-validate="'required|alpha_spaces'"
+          :class="{ 'input': true, 'family-fun-form__input--error': errors.has('your-grade') }"
+          type='text'
+          placeholder='Your Grade')
+        .family-fun-form__error-container  
+          span(v-show="errors.has('your-grade')") Your grade is required.
+
+      .family-fun-form__group-inline
+          p Male/Female?
+          .family-fun-form__radio-group
+            input.family-fun-form__input--radio(
+              name='gender'
+              v-model='gender'
+              value='Male'
+              type='radio')
+            span.family-fun-form__radio-overlay
+            label.family-fun-form__label Male
+          .family-fun-form__radio-group
+            input.family-fun-form__input--radio(
+              name='gender'
+              v-model='gender'
+              value='Female'
+              type='radio')
+            span.family-fun-form__radio-overlay
+            label.family-fun-form__label Female
+
+    .family-fun-form__group-inline-center
+      p Which Day Will you be Attending?
     .family-fun-form__group
-      input.family-fun-form__input(
-        name='guest-email'
-        v-model='guestEmail'
-        v-validate="'email'"
-        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('guest-email') }"
-        placeholder='Guest Email (optional)')
-      .family-fun-form__error-container  
-        span(v-show="errors.has('guest-email')") Valid Email is required.
+      select.family-fun-form__input(
+        name='selected'
+        v-model='selected'
+        type='selected'
+        required=''
+        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('selected') }")
+        option(
+          selected=''
+          disabled=''
+          :value='null'
+          :class="{ 'input': true, 'family-fun-form__input--error': errors.has('selected') }")
+          option.family-fun-form__label Please Select One
+        option(
+          value='Saturday April 6th | Victor youth LAX boys and girls | k2 9:00am')
+          option.family-fun-form__label Saturday April 6th | Victor youth LAX boys and girls | k2 9:00am
+        option(
+          value='Saturday April 6th | Victor youth LAX boys and girls | 3rd - 4th 9:45am')
+          option.family-fun-form__label Saturday April 6th | Victor youth LAX boys and girls | 3rd - 4th 9:45am
+        option(
+          value='Saturday April 6th | Victor youth LAX boys and girls | 5th - 6th 10:30am')
+          option.family-fun-form__label Saturday April 6th | Victor youth LAX boys and girls | 5th - 6th 10:30am
+        option(
+          value='Saturday April 6th | Canandaigua Boys and girls youth LAX  | k2 11:15am')
+          option.family-fun-form__label Saturday April 6th | Canandaigua Boys and girls youth LAX  | k2 11:15am
+        option(
+          value='Saturday April 6th | Canandaigua Boys and girls youth LAX  | 3rd - 4th 12:00am')
+          option.family-fun-form__label Saturday April 6th | Canandaigua Boys and girls youth LAX  | 3rd - 4th 12:00am
+        option(
+          value='Saturday April 6th | Canandaigua Boys and girls youth LAX  | 5th - 6th 12:30am')
+          option.family-fun-form__label Saturday April 6th | Canandaigua Boys and girls youth LAX  | 5th - 6th 12:30am
+        option(
+          value='Monday April 8th | Midlakes Youth LAX | k-6th 5:30pm')
+          option.family-fun-form__label Monday April 8th | Midlakes Youth LAX | k-6th 5:30pm
+        option(
+          value='Monday April 8th | Pen Yann Youth Lax Girls | k-6th 6:15pm')
+          option.family-fun-form__label Monday April 8th | Pen Yann Youth Lax Girls | k-6th 6:15pm
+        option(
+          value='Tuesday April 9th | BH Pride youth LAX | k-6th 5:30pm')
+          option.family-fun-form__label Tuesday April 9th | BH Pride youth LAX | k-6th 5:30pm
+      .family-fun-form__error-container
+        span(v-show="errors.has('selected')") Valid date is required.
 
     .family-fun-form__button-group
       button.family-fun-form__submit-button(type='submit', :disabled='formSubmitted') 

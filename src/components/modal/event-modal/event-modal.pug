@@ -6,5 +6,8 @@
       span
     .event-modal__content
       .event-modal__text(v-html='props.acf.event_modal.content')
+      .event-modal__logos-container
+        .event-modal__logos(v-for='(props, i) in props.acf.event_modal.logo_container', :key='i')
+          .event-modal__logo(:style="{backgroundImage: 'url(' + props.logo + ')'}")
       .event-modal__form-container  
         EventForm
