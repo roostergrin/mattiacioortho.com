@@ -8,6 +8,7 @@ import Invisalign from '@/pages/invisalign/invisalign'
 import Mattiacio from '@/pages/mattiacio-difference/mattiacio-difference'
 import NewPatients from '@/pages/new-patients/new-patients'
 import Treatments from '@/pages/treatments/treatments'
+import FamilyFunEvent from '@/pages/family-fun-event/family-fun-event'
 
 // remove
 import Style from '@/pages/style-guide/style-guide'
@@ -188,6 +189,12 @@ const router = new VueRouter({
           name: 'Contact Us'
         }
       ]
+    },
+    {
+      path: '/family-fun-event',
+      name: 'Family Fun Event',
+      navigation: false,
+      component: FamilyFunEvent
     },
     {
       path: '/style',

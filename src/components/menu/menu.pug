@@ -1,4 +1,4 @@
-.menu(v-if='props')
+.menu(v-if='props', :class='{"menu--family-fun-event": $route.path === "/family-fun-event"}')
   .menu__overlay
     transition(name='title-fade')
       .menu__title(

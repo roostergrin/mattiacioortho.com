@@ -10,6 +10,9 @@ export default {
       open: false
     }
   },
+  mounted () {
+    console.log(this.$route.fullPath)
+  },
   computed: {
     props () {
       return this.$store.state.app.information
