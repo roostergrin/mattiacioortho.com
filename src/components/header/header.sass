@@ -6,19 +6,23 @@
   height: 100vh
   overflow: hidden
 
-  &--family-fun-event
+  &--family-fun-event,
+  &--thank-you
     height: 6rem
 
   @media screen and (max-width: $break-md - 1)
     height: 80vh
 
-    &--family-fun-event
+    &--family-fun-event,
+    &--thank-you
       height: 6rem
+
 
   @media screen and (max-width: $break-sm)
     height: 50vh
 
-    &--family-fun-event
+    &--family-fun-event,
+    &--thank-you
       height: 6rem
 
   &--home
@@ -33,6 +37,10 @@
     top: 40%
 
   &__menu
+
+    &--thank-you
+      display: none
+
     &--desktop
       @media screen and (max-width: $break-md - 1)
         display: none !important

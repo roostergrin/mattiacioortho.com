@@ -47,7 +47,8 @@ export default {
           this.$el.children[0].reset()
         }, 500)
         this.closeModal(2)
-        this.openModal(1)
+        // this.openModal(1)
+        window.location = '/thank-you'
       })
       .catch(e => { console.log(e) })
     }

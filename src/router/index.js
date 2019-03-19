@@ -9,6 +9,7 @@ import Mattiacio from '@/pages/mattiacio-difference/mattiacio-difference'
 import NewPatients from '@/pages/new-patients/new-patients'
 import Treatments from '@/pages/treatments/treatments'
 import FamilyFunEvent from '@/pages/family-fun-event/family-fun-event'
+import ThankYou from '@/pages/thank-you/thank-you'
 
 // remove
 import Style from '@/pages/style-guide/style-guide'
@@ -195,6 +196,12 @@ const router = new VueRouter({
       name: 'Family Fun Event',
       navigation: false,
       component: FamilyFunEvent
+    },
+    {
+      path: '/thank-you',
+      name: 'Thank You',
+      navigation: false,
+      component: ThankYou
     },
     {
       path: '/style',
