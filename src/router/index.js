@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
 import AboutUs from '@/pages/about-us/about-us'
 import ContactUs from '@/pages/contact-us/contact-us'
 import Home from '@/pages/home/home'
