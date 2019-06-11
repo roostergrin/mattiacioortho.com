@@ -83,5 +83,16 @@
   <!-- /BoldChat Visitor Monitor HTML v5.00 -->
   <!-- OpenChair Code -->
   <div id="openchair-widget" data-token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmlnaW4iOiJodHRwczovL3d3dy5tYXR0aWFjaW9vcnRoby5jb20vIiwicHJhY3RpY2VfaWQiOjI2NH0.7FL-3j1krhim7MPEOwuCVGLfpVLpuOQSoPXgM0ejnM4" data-hidebutton="true" > </div> <script src="https://openchair.threadcommunication.com" async></script>
+  <!-- Hotjar Tracking Code for https://mattiacioortho.com -->
+  <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:1354868,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
 </body>
 </html>
