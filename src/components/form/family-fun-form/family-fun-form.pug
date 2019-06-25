@@ -33,17 +33,27 @@
         placeholder='Email Address')
       .family-fun-form__error-container
         span(v-show="errors.has('email')") Valid Email is required.
+        
+    .family-fun-form__group Number of Guests You'll be Bringing
+      input.family-fun-form__input(
+        name='how-many'
+        v-model='howMany'
+        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('how-many') }"
+        type='number'
+        placeholder="Additional guests")
+      .family-fun-form__error-container  
+        span(v-show="errors.has('how-many')") How many is required.  
 
     .family-fun-form__group Don't forget to Register a friend!
     input.family-fun-form__input(
     name='full-name-friend'
     v-model='fullNameFriend'
     v-validate="'required|alpha_spaces'",
-    :class="{ 'input': true, 'family-fun-form__input--error': errors.has('full-name-friend') }"
+    :class="{ 'input': true }"
     type='text'
     placeholder="Friends' Full Name")
-    .family-fun-form__error-container  
-    span(v-show="errors.has('full-name-friend')") Friend's full name is required.
+    //- .family-fun-form__error-container  
+    //- span(v-show="errors.has('full-name-friend')") Friend's full name is required.
       //- .family-fun-form__group
       //-   input.family-fun-form__input(
       //-     name='your-grade'

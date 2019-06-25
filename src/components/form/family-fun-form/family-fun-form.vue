@@ -12,6 +12,7 @@ export default {
       fullNameFriend: '',
       phone: '',
       email: '',
+      howMany: '',
       postUrl: api + '/rg-mail/v1/family-fun',
       formSubmitted: false
     }
@@ -35,6 +36,7 @@ export default {
         fullName: this.fullName,
         fullNameFriend: this.fullNameFriend,
         phone: this.phone,
+        howMany: this.howMany,
         email: this.email
       })
       .then(res => {
