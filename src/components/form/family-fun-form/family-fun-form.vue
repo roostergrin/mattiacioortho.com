@@ -12,7 +12,7 @@ export default {
       fullNameFriend: '',
       phone: '',
       email: '',
-      howMany: '',
+      howMany: 0,
       postUrl: api + '/rg-mail/v1/family-fun',
       formSubmitted: false
     }
