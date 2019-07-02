@@ -49,8 +49,18 @@
     overflow: auto
     text-align: center
 
-    @media screen and (max-width: 650px)
-      margin-bottom: 113px
+    // &__content::after
+    //   position: absolute
+    //   content: ""
+    //   bottom: -110px
+    //   height: 110px
+    //   width: 1px
+
+  @media screen and (max-width: 650px)
+    &__spacer
+      height: 113px
+      margin: 0 0 -113px 0
+      background: transparent
 
     @keyframes fade
       from
