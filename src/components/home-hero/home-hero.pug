@@ -4,8 +4,6 @@
     video.home-hero__video(loop muted autoplay v-load-directive='')
       source.home-hero__source(:src='props.acf.hero_video' type='video/mp4', :poster='props.acf.poster')
       | Your browser does not support video.
-  router-link.home-hero__link(to='/family-fun-event') 
-    span.home-hero__event Register for Family Fun Event
   .home-hero__appt.openchair-widget(:class='{active: $store.state.menu}')
     span.openchair-widget Schedule Consultation
     Icon.home-hero__appt-icon.openchair-widget(name='arrow')
