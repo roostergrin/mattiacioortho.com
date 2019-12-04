@@ -3,7 +3,7 @@ footer.footer(v-if='props')
     .footer__container
       .footer__top-row
         .footer__item
-          a.footer__patient-login(:href='props.acf.links.login', target='_blank') 
+          a.footer__patient-login(:href='props.acf.links.login', target='_blank')
             span Patient Login
         .footer__item
           .footer__icons
@@ -12,18 +12,26 @@ footer.footer(v-if='props')
               v-if='icon.label != "phone"'
               :href='icon.href'
               target='_blank'
-              )
+            )
               Icon(:name='icon.icon', :class='"footer__" + icon.label')
         .footer__item
           a.footer__rewards(:href='props.acf.links.rewards', target='_blank')
             span Rewards Center
-            Icon.footer__rewards-icon(name='arrow') 
-    
+            Icon.footer__rewards-icon(name='arrow')
+
   .footer__bottom
-    a.footer__phone(:href='props.acf.social_links[0].href')
-      | Call or Text Us Anytime
-      br
-      | 585. 742. 1050
-    a.footer__address(v-html='props.acf.address.text', :href='props.acf.address.href', target='_blank')
+    div
+      a.footer__badge(href='https://pcihipaa.com/certified-hipaa-compliance/')
+        img(
+          src='https://pcihipaa.com/Compliance-Badge.jpg'
+          alt='Certified HIPAA Compliance Provided by PCIHIPAA'
+          style='width:200px; height:124px;'
+        )
+    div
+      a.footer__phone(:href='props.acf.social_links[0].href')
+        | Call or Text Us Anytime
+        br
+        | 585. 742. 1050
+      a.footer__address(v-html='props.acf.address.text', :href='props.acf.address.href', target='_blank')
     .footer__roostergrin
-      | Powered by RoosterGrin   
+      | Powered by RoosterGrin

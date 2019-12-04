@@ -155,7 +155,8 @@
     @extend .flex-container-lg
     @extend .flex
     @extend .align-center
-    flex-direction: column
+    flex-direction: row
+    justify-content: space-between
     padding-top: 1rem
     padding-bottom: 2rem
     text-align: center
@@ -172,9 +173,16 @@
     margin-bottom: 7px
 
   &__roostergrin
-    align-self: flex-end
+    //align-self: flex-end
     color: $slate-grey
     font-size: 11px
+
+    @media screen and (max-width: $break-md)
+      align-self: center
+      margin-top: 2rem
+
+  &__badge
+    //align-self: flex-start
 
     @media screen and (max-width: $break-md)
       align-self: center
