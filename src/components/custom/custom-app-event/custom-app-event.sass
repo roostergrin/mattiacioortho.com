@@ -10,10 +10,11 @@
 
   @media screen and (max-width: 1023px)
     background-position: 20%
-    height: 900px
+    height: 1400px
 
   @media screen and (max-width: $break-sm)
     background-position: 10%
+    height: 1700px
 
   &__overlay
     position: absolute
@@ -33,6 +34,9 @@
     z-index: 1
     padding: 1rem
     width: 50%
+
+    @media screen and (max-width: 1023px)
+      width: 100%
 
     &--family-fun-event
       display: flex
