@@ -5,19 +5,18 @@
       input.family-fun-form__input(
         name='full-name'
         v-model='fullName'
-        v-validate="'required|alpha_spaces'",
+        v-validate="'required|alpha_spaces'"
         :class="{ 'input': true, 'family-fun-form__input--error': errors.has('full-name') }"
         type='text'
-        placeholder="Full Name")
+        placeholder="Player's Name")
       .family-fun-form__error-container  
-        span(v-show="errors.has('full-name')") Full name is required.
-        
+        span(v-show="errors.has('full-name')") Player's name is required.
 
     .family-fun-form__group
       input.family-fun-form__input(
         name='phone'
         v-model='phone'
-        v-validate='{regex: /^\\D?(\\d{3})\\D?\\D?(\\d{3})\\D?(\\d{4})$/}',
+        v-validate='{regex: /^\\D?(\\d{3})\\D?\\D?(\\d{3})\\D?(\\d{4})$/}'
         :class="{ 'input': true, 'family-fun-form__input--error': errors.has('phone') }"
         type='phone'
         placeholder='Phone')
@@ -28,111 +27,153 @@
       input.family-fun-form__input(
         name='email'
         v-model='email'
-        v-validate="'email'",
+        v-validate="'email'"
         :class="{ 'input': true, 'family-fun-form__input--error': errors.has('email') }"
         placeholder='Email Address')
       .family-fun-form__error-container
         span(v-show="errors.has('email')") Valid Email is required.
-        
-    .family-fun-form__group Number of Guests You'll be Bringing
-      input.family-fun-form__input(
-        name='how-many'
-        v-model='howMany'
-        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('how-many') }"
-        type='number'
-        placeholder="Additional guests")
-      //- .family-fun-form__error-container  
-      //-   span(v-show="errors.has('how-many')") How many is required.  
 
-    .family-fun-form__group Don't forget to Register a friend!
-    input.family-fun-form__input(
-    name='full-name-friend'
-    v-model='fullNameFriend'
-    :class="{ 'input': true }"
-    type='text'
-    placeholder="Friends' Full Name")
-    //- .family-fun-form__error-container  
-    //- span(v-show="errors.has('full-name-friend')") Friend's full name is required.
-      //- .family-fun-form__group
-      //-   input.family-fun-form__input(
-      //-     name='your-grade'
-      //-     v-model='yourGrade'
-      //-     v-validate="'required'"
-      //-     :class="{ 'input': true, 'family-fun-form__input--error': errors.has('your-grade') }"
-      //-     type='text'
-      //-     placeholder="Player's Grade")
-      //-   .family-fun-form__error-container  
-      //-     span(v-show="errors.has('your-grade')") Player's grade is required.
+      .family-fun-form__group
+        input.family-fun-form__input(
+          name='your-grade'
+          v-model='yourGrade'
+          v-validate="'required'"
+          :class="{ 'input': true, 'family-fun-form__input--error': errors.has('your-grade') }"
+          type='text'
+          placeholder="Player's Grade")
+        .family-fun-form__error-container  
+          span(v-show="errors.has('your-grade')") Player's grade is required.
 
-      //- .family-fun-form__group-inline
-      //-     p Male/Female?
-      //-     .family-fun-form__radio-group
-      //-       input.family-fun-form__input--radio(
-      //-         name='gender'
-      //-         v-model='gender'
-      //-         value='Male'
-      //-         type='radio')
-      //-       span.family-fun-form__radio-overlay
-      //-       label.family-fun-form__label Male
-      //-     .family-fun-form__radio-group
-      //-       input.family-fun-form__input--radio(
-      //-         name='gender'
-      //-         v-model='gender'
-      //-         value='Female'
-      //-         type='radio')
-      //-       span.family-fun-form__radio-overlay
-      //-       label.family-fun-form__label Female
+      .family-fun-form__group-inline
+          p Male/Female?
+          .family-fun-form__radio-group
+            input.family-fun-form__input--radio(
+              name='gender'
+              v-model='gender'
+              value='Male'
+              type='radio')
+            span.family-fun-form__radio-overlay
+            label.family-fun-form__label Male
+          .family-fun-form__radio-group
+            input.family-fun-form__input--radio(
+              name='gender'
+              v-model='gender'
+              value='Female'
+              type='radio')
+            span.family-fun-form__radio-overlay
+            label.family-fun-form__label Female
 
-    //- .family-fun-form__group-inline-center
-    //-   p Which Day Will you be Attending?
-    //- .family-fun-form__group
-    //-   select.family-fun-form__input(
-    //-     name='selected'
-    //-     v-model='selected'
-    //-     type='selected'
-    //-     required=''
-    //-     :class="{ 'input': true, 'family-fun-form__input--error': errors.has('selected') }")
-    //-     option(
-    //-       selected=''
-    //-       disabled=''
-    //-       :value='null'
-    //-       :class="{ 'input': true, 'family-fun-form__input--error': errors.has('selected') }")
-    //-       option.family-fun-form__label Please Select One
-    //-     option(
-    //-       value='Saturday April 6th | Victor Youth LAX Boys and Girls | k2 9:00am')
-    //-       option.family-fun-form__label Saturday April 6th | Victor Youth LAX Boys and Girls | k2 9:00am
-    //-     option(
-    //-       value='Saturday April 6th | Victor Youth LAX Boys and Girls | 3rd - 4th 9:45am')
-    //-       option.family-fun-form__label Saturday April 6th | Victor Youth LAX Boys and Girls | 3rd - 4th 9:45am
-    //-     option(
-    //-       value='Saturday April 6th | Victor Youth LAX Boys and Girls | 5th - 6th 10:30am')
-    //-       option.family-fun-form__label Saturday April 6th | Victor youth LAX Boys and Girls | 5th - 6th 10:30am
-    //-     option(
-    //-       value='Saturday April 6th | Canandaigua Boys and Girls Youth LAX  | k2 11:15am')
-    //-       option.family-fun-form__label Saturday April 6th | Canandaigua Boys and Girls Youth LAX  | k2 11:15am
-    //-     option(
-    //-       value='Saturday April 6th | Marcus Whitman Youth LAX | k-6th 1:00pm')
-    //-       option.family-fun-form__label Saturday April 6th | Marcus Whitman Youth LAX | k-6th 1:00pm
-    //-     option(
-    //-       value='Saturday April 6th | Canandaigua Boys and Girls Youth LAX  | 3rd - 4th 12:00am')
-    //-       option.family-fun-form__label Saturday April 6th | Canandaigua Boys and Girls Youth LAX  | 3rd - 4th 12:00am
-    //-     option(
-    //-       value='Saturday April 6th | Canandaigua Boys and Girls Youth LAX  | 5th - 6th 12:30am')
-    //-       option.family-fun-form__label Saturday April 6th | Canandaigua Boys and Girls Youth LAX  | 5th - 6th 12:30am
-    //-     option(
-    //-       value='Monday April 8th | Midlakes Youth LAX | k-6th 5:30pm')
-    //-       option.family-fun-form__label Monday April 8th | Midlakes Youth LAX | k-6th 5:30pm
-    //-     option(
-    //-       value='Monday April 8th | Penn Yan Youth Lacrosse | k-6th 6:15pm')
-    //-       option.family-fun-form__label Monday April 8th | Penn Yan Youth Lacrosse | k-6th 6:15pm
-    //-     option(
-    //-       value='Tuesday April 9th | BH Pride Youth LAX | k-6th 5:30pm')
-    //-       option.family-fun-form__label Tuesday April 9th | BH Pride Youth LAX | k-6th 5:30pm
-    //-   .family-fun-form__error-container
-    //-     span(v-show="errors.has('selected')") Valid date is required.
+    .family-fun-form__group-inline-center
+      p Which Day Will you be Attending?
+    .family-fun-form__group
+      select.family-fun-form__input(
+        name='selected'
+        v-model='selected'
+        type='selected'
+        required=''
+        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('selected') }")
+        option(
+          selected=''
+          disabled=''
+          :value='null'
+          :class="{ 'input': true, 'family-fun-form__input--error': errors.has('selected') }")
+          option.family-fun-form__label Please Select One
+        option(
+          value='Saturday March 28th | Victor Youth LAX Boys and Girls | k-2 9:00am')
+          option.family-fun-form__label Saturday March 28th | Victor Youth LAX Boys and Girls | k-2 9:00am
+        option(
+          value='Saturday March 28th | Victor Youth LAX Boys and Girls | 3rd - 4th 9:45am')
+          option.family-fun-form__label Saturday March 28th | Victor Youth LAX Boys and Girls | 3rd - 4th 9:45am
+        option(
+          value='Saturday March 28th | Victor Youth LAX Boys and Girls | 5th - 6th 10:30am')
+          option.family-fun-form__label Saturday March 28th | Victor youth LAX Boys and Girls | 5th - 6th 10:30am
+        option(
+          value='Saturday March 28th | Canandaigua Boys and Girls Youth LAX  | k-2 11:15am')
+          option.family-fun-form__label Saturday March 28th | Canandaigua Boys and Girls Youth LAX  | k-2 11:15am
+        option(
+          value='Saturday March 28th | Marcus Whitman Youth LAX | k-6th 1:00pm')
+          option.family-fun-form__label Saturday March 28th | Marcus Whitman Youth LAX | k-6th 1:00pm
+        option(
+          value='Saturday March 28th | Canandaigua Boys and Girls Youth LAX  | 3rd - 4th 12:00pm')
+          option.family-fun-form__label Saturday March 28th | Canandaigua Boys and Girls Youth LAX  | 3rd - 4th 12:00pm
+        option(
+          value='Saturday March 28th | Canandaigua Boys and Girls Youth LAX  | 5th - 6th 12:30pm')
+          option.family-fun-form__label Saturday March 28th | Canandaigua Boys and Girls Youth LAX  | 5th - 6th 12:30pm
+        option(
+          value='Tuesday March 31st | Midlakes Youth LAX | k-6th 5:30pm')
+          option.family-fun-form__label Tuesday March 31st | Midlakes Youth LAX | k-6th 5:30pm
+        option(
+          value='Tuesday March 31st | Penn Yan Youth Lacrosse | k-6th 5:30pm')
+          option.family-fun-form__label Tuesday March 31st | Penn Yan Youth Lacrosse | k-6th 5:30pm
+        option(
+          value='Tuesday April 9th | BH Pride Youth LAX | k-6th 5:30pm')
+          option.family-fun-form__label Tuesday April 9th | BH Pride Youth LAX | k-6th 5:30pm
+      .family-fun-form__error-container
+        span(v-show="errors.has('selected')") Valid date is required.
 
     .family-fun-form__button-group
       button.family-fun-form__submit-button(type='submit', :disabled='formSubmitted') 
         span Submit
       .family-fun-form__spinner(v-if='formSubmitted')
         span Sending
+
+
+//- The following is the previous form for Dumbo movie night event
+
+//- .family-fun-form
+//-   form.family-fun-form__form(@submit.prevent='validate', method='post')
+
+//-     .family-fun-form__group
+//-       input.family-fun-form__input(
+//-         name='full-name'
+//-         v-model='fullName'
+//-         v-validate="'required|alpha_spaces'",
+//-         :class="{ 'input': true, 'family-fun-form__input--error': errors.has('full-name') }"
+//-         type='text'
+//-         placeholder="Full Name")
+//-       .family-fun-form__error-container  
+//-         span(v-show="errors.has('full-name')") Full name is required.
+        
+
+//-     .family-fun-form__group
+//-       input.family-fun-form__input(
+//-         name='phone'
+//-         v-model='phone'
+//-         v-validate='{regex: /^\\D?(\\d{3})\\D?\\D?(\\d{3})\\D?(\\d{4})$/}',
+//-         :class="{ 'input': true, 'family-fun-form__input--error': errors.has('phone') }"
+//-         type='phone'
+//-         placeholder='Phone')
+//-       .family-fun-form__error-container
+//-         span(v-show="errors.has('phone')") Valid phone number is required.
+
+//-     .family-fun-form__group
+//-       input.family-fun-form__input(
+//-         name='email'
+//-         v-model='email'
+//-         v-validate="'email'",
+//-         :class="{ 'input': true, 'family-fun-form__input--error': errors.has('email') }"
+//-         placeholder='Email Address')
+//-       .family-fun-form__error-container
+//-         span(v-show="errors.has('email')") Valid Email is required.
+        
+//-     .family-fun-form__group Number of Guests You'll be Bringing
+//-       input.family-fun-form__input(
+//-         name='how-many'
+//-         v-model='howMany'
+//-         :class="{ 'input': true, 'family-fun-form__input--error': errors.has('how-many') }"
+//-         type='number'
+//-         placeholder="Additional guests")
+
+//-     .family-fun-form__group Don't forget to Register a friend!
+//-     input.family-fun-form__input(
+//-     name='full-name-friend'
+//-     v-model='fullNameFriend'
+//-     :class="{ 'input': true }"
+//-     type='text'
+//-     placeholder="Friends' Full Name")
+    
+//-     .family-fun-form__button-group
+//-       button.family-fun-form__submit-button(type='submit', :disabled='formSubmitted') 
+//-         span Submit
+//-       .family-fun-form__spinner(v-if='formSubmitted')
+//-         span Sending

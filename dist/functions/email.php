@@ -76,12 +76,43 @@ function rg_serve_route_sponsor () {
   }
 }
 
+// The below code was previously for the Dumbo movie night event
+
+// function rg_serve_route_family_fun () {
+//   require('wp-load.php');
+
+//   $data = json_decode(file_get_contents("php://input"), true);
+//   // $from = 'info@wordpress.com,';
+//   $to = 'austin.wiese@roostergrin.com';
+//   $subject = 'Website Family Fun Registration Form';
+//   $headers = "MIME-Version: 1.0\r\n";
+//   $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+//   $message = '<html><body>';
+//   $message .= '<p><h4><strong>Form Submission by: </strong></h4>' . $data['fullName'] . '</p>';
+//   $message .= '<p><h4><strong>Phone: </strong></h4>' . $data['phone'] . '</p>';
+//   $message .= '<p><h4><strong>Email: </strong></h4>' . $data['email'] . '</p>';
+//   $message .= '<p><h4><strong>Number of Additional Guests:</strong></h4> ' . $data['howMany'] . '</p>';
+//   $message .= '<p><h4><strong>Friend Registration: </strong></h4>' . $data['fullNameFriend'] . '</p>';
+//   // $message .= '<p><h4><strong>Gender:</strong></h4> ' . $data['gender'] . '</p>';
+//   // $message .= '<p><h4><strong>Date Attending:</strong></h4> ' . $data['selected'] . '</p>';
+//   $message .= '</body></html>';
+
+//   $sent_message = wp_mail($to, $subject, $message, $headers);
+
+//   if ($sent_message) {
+//     echo 'Email has been received!';
+//   } else {
+//     echo 'Could not send email.';
+//   }
+// }
+
 function rg_serve_route_family_fun () {
   require('wp-load.php');
 
   $data = json_decode(file_get_contents("php://input"), true);
   // $from = 'info@wordpress.com,';
-  $to = 'info@mattiacioortho.com';
+  $to = 'austin.wiese@roostergrin.com';
   $subject = 'Website Family Fun Registration Form';
   $headers = "MIME-Version: 1.0\r\n";
   $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
@@ -90,10 +121,9 @@ function rg_serve_route_family_fun () {
   $message .= '<p><h4><strong>Form Submission by: </strong></h4>' . $data['fullName'] . '</p>';
   $message .= '<p><h4><strong>Phone: </strong></h4>' . $data['phone'] . '</p>';
   $message .= '<p><h4><strong>Email: </strong></h4>' . $data['email'] . '</p>';
-  $message .= '<p><h4><strong>Number of Additional Guests:</strong></h4> ' . $data['howMany'] . '</p>';
-  $message .= '<p><h4><strong>Friend Registration: </strong></h4>' . $data['fullNameFriend'] . '</p>';
-  // $message .= '<p><h4><strong>Gender:</strong></h4> ' . $data['gender'] . '</p>';
-  // $message .= '<p><h4><strong>Date Attending:</strong></h4> ' . $data['selected'] . '</p>';
+  $message .= '<p><h4><strong>Grade:</strong></h4> ' . $data['yourGrade'] . '</p>';
+  $message .= '<p><h4><strong>Gender:</strong></h4> ' . $data['gender'] . '</p>';
+  $message .= '<p><h4><strong>Date Attending:</strong></h4> ' . $data['selected'] . '</p>';
   $message .= '</body></html>';
 
   $sent_message = wp_mail($to, $subject, $message, $headers);
