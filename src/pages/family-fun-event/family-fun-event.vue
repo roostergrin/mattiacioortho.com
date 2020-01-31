@@ -5,10 +5,10 @@ import FunEvent from 'components/custom/custom-app-event/custom-app-event'
 import Loader from 'components/loader/loader'
 
 export default {
-  name: 'family-fun-event',
+  name: 'Mouth Guard Registration',
   computed: {
     props () {
-      return this.$store.state.pages['family-fun-event']
+      return this.$store.state.pages['mouth-guard-registration']
     },
     loading () {
       return this.$store.state.loading

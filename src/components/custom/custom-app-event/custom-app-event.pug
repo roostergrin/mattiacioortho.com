@@ -1,6 +1,6 @@
-.custom-app-event(v-if='props', :style="{backgroundImage: 'url(' + props.acf.event.bg_img + ')'}", :class="{'custom-app-event--family-fun-event': $route.path.includes('/family-fun-event')}")
+.custom-app-event(v-if='props', :style="{backgroundImage: 'url(' + props.acf.event.bg_img + ')'}", :class="{'custom-app-event--family-fun-event': $route.path.includes('/mouth-guard-registration')}")
   .custom-app-event__overlay
-  .custom-app-event__container(:class="{'custom-app-event__container--family-fun-event': $route.path.includes('/family-fun-event')}")
+  .custom-app-event__container(:class="{'custom-app-event__container--family-fun-event': $route.path.includes('/mouth-guard-registration')}")
     .custom-app-event__title(v-html='props.acf.event.title')
     .custom-app-event__subtitle(v-html='props.acf.event.subtitle')
     .custom-app-event__content(v-html='props.acf.event.content')

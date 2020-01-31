@@ -191,8 +191,8 @@ const router = new VueRouter({
       ]
     },
     {
-      path: '/family-fun-event',
-      name: 'Family Fun Event',
+      path: '/mouth-guard-registration',
+      name: 'Mouth Guard Registration',
       navigation: false,
       component: FamilyFunEvent
     },
