@@ -1,12 +1,13 @@
 .custom-app-event(v-if='props', :style="{backgroundImage: 'url(' + props.acf.event.bg_img + ')'}", :class="{'custom-app-event--family-fun-event': $route.path.includes('/mouth-guard-registration')}")
   .custom-app-event__overlay
   .custom-app-event__container(:class="{'custom-app-event__container--family-fun-event': $route.path.includes('/mouth-guard-registration')}")
-    .custom-app-event__title(v-html='props.acf.event.title')
-    .custom-app-event__subtitle(v-html='props.acf.event.subtitle')
-    .custom-app-event__content(v-html='props.acf.event.content')
-    .custom-app-event__btn(@click='openModal(4)')
-      | Register Today
-    h3(style="color: white; margin-top: 20px") Please also print this Permission and Release Form and bring with you to the date and time you registered for
-    a.custom-app-event__btn(target="_blank" href="https://www.mattiacioortho.com/wp-content/uploads/Mouth-Guard-Permission-and-Release-Form-2016.docx")
-      | Permission and Release Form
+    .custom-app-event__inner
+      .custom-app-event__title(v-html='props.acf.event.title')
+      .custom-app-event__subtitle(v-html='props.acf.event.subtitle')
+      .custom-app-event__content(v-html='props.acf.event.content')
+      .custom-app-event__btn(@click='openModal(4)')
+        | Register Today
+      h3(style="color: white; margin-top: 20px") Please also print this Permission and Release Form and bring with you to the date and time you registered for
+      a.custom-app-event__btn(target="_blank" href="https://www.mattiacioortho.com/wp-content/uploads/Mouth-Guard-Permission-and-Release-Form-2016.docx")
+        | Permission and Release Form
   
