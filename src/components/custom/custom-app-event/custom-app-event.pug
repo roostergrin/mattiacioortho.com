@@ -1,6 +1,6 @@
-.custom-app-event(v-if='props', :style="{backgroundImage: 'url(' + props.acf.event.bg_img + ')'}", :class="{'custom-app-event--family-fun-event': $route.path.includes('/mouth-guard-registration')}")
+.custom-app-event(v-if='props', :style="{backgroundImage: 'url(' + props.acf.event.bg_img + ')'}", :class="{'custom-app-event--family-fun-event': $route.path.includes('/mouth-guard-registration'), 'custom-app-event--banner': $route.path != '/mouth-guard-registration'}")
   .custom-app-event__overlay
-  .custom-app-event__container(:class="{'custom-app-event__container--family-fun-event': $route.path.includes('/mouth-guard-registration')}")
+  .custom-app-event__container(v-if='$route.path.includes("/mouth-guard-registration")', :class="{'custom-app-event__container--family-fun-event': $route.path.includes('/mouth-guard-registration')}")
     .custom-app-event__inner
       .custom-app-event__title(v-html='props.acf.event.title')
       .custom-app-event__subtitle(v-html='props.acf.event.subtitle')
@@ -10,4 +10,9 @@
       h3(style="color: white; margin-top: 20px") Please also print this Permission and Release Form and bring with you to the date and time you registered for
       a.custom-app-event__btn(target="_blank" href="https://www.mattiacioortho.com/wp-content/uploads/Mouth-Guard-Permission-and-Release-Form-2016.docx")
         | Permission and Release Form
-  
+  .custom-app-event__container(v-if='$route.path != "/mouth-guard-registration"', :class="{'custom-app-event__container--family-fun-event': $route.path.includes('/mouth-guard-registration')}" style='transform: translateY(-50%); top: 50%;')
+    .custom-app-event__inner
+      .custom-app-event__title(v-html='props.acf.event.title')
+      .custom-app-event__subtitle(v-html='props.acf.event.subtitle')
+      router-link.custom-app-event__btn(to='/mouth-guard-registration')
+        | See Details
