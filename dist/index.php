@@ -80,10 +80,6 @@
     <a href="http://www.boldchat.com" title="Live Chat Software" target="_blank"><img alt="Live Chat Software" src="https://vms.boldchat.com/aid/438176494458224912/bc.vmi?wdid=435787954676086530&amp;vr=&amp;vn=&amp;vi=&amp;ve=&amp;vp=&amp;curl=" border="0" width="1" height="1" /></a>
   </noscript>
   <!-- /BoldChat Visitor Monitor HTML v5.00 -->
-  <!-- OpenChair Code -->
-<script src="https://onlineschedulingv2.threadcommunication.com" type="text/javascript"></script>
-<script type="text/javascript"> OpenChair.init({ token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmlnaW4iOiJodHRwczovL3d3dy5tYXR0aWFjaW9vcnRoby5jb20vIiwicHJhY3RpY2VfaWQiOiIyNjQifQ.gjnqfJ3U9O__I7-7WZ8BaPGEVdiVIOoifZ9giYcdY9k", mainButtonLeft: true, }) </script>
-
   <!-- Hotjar Tracking Code for https://mattiacioortho.com -->
   <script>
       (function(h,o,t,j,a,r){
