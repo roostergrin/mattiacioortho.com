@@ -5,8 +5,9 @@
   .hero-mobile__home(v-show='$route.path === "/"')
     h2.hero-mobile__hero-title Covid-19 Closure Updates
     hr
-    .hero-mobile__hero-message We are temporarily closed and all in-office appointments are cancelled through April 30th, 2020.
-    .hero-mobile__hero-message If you are experiencing an orthodontic emergency please call 585-905-4500.
+    .hero-mobile__hero-message(v-html='props.acf.custom_home_hero_message.message')
+    //- .hero-mobile__hero-message We are temporarily closed and all in-office appointments are cancelled through April 30th, 2020.
+    //- .hero-mobile__hero-message If you are experiencing an orthodontic emergency please call 585-905-4500.
     a.hero-mobile__facebook-button(href='https://www.facebook.com/pg/mattiacioortho/videos/' target='_blank')
       span Facebook Video Updates
       Icon.footer__rewards-icon(name='arrow')

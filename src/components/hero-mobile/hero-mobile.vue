@@ -9,6 +9,7 @@ export default {
       scroll: false
     }
   },
+  props: ['props'],
   components: {
     Icon
   },
