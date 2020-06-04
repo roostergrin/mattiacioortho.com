@@ -22,12 +22,17 @@
   &__hero-title
     padding: 2% 5% 0
     color: $white
-    font-size: 27px
+    font-size: 1.2em
+    @media screen and (min-width: 500px) and (max-width: $break-md - 1)
+      font-size: 2em
 
   &__hero-message
     margin: 2% 0
     padding: 0 5%
     color: $white
+    font-size: 0.75em
+    @media screen and (min-width: 500px) and (max-width: $break-md - 1)
+      font-size: 1em
 
   &__facebook-button
     @include button-circle-phil(249px, $white, $blue, .35s, 1px, $white, 30px, 4px, 30px, -225px, -40px)
