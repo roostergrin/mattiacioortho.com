@@ -30,9 +30,9 @@
     margin: 2% 0
     padding: 0 5%
     color: $white
-    font-size: 0.75em
+    font-size: 0.65em
     @media screen and (min-width: 500px) and (max-width: $break-md - 1)
-      font-size: 1em
+      font-size: 0.9em
 
   &__facebook-button
     @include button-circle-phil(249px, $white, $blue, .35s, 1px, $white, 30px, 4px, 30px, -225px, -40px)
@@ -158,7 +158,7 @@
       letter-spacing: 2px
       color: $white
       font-family: $avenir
-      font-size: 16px
+      font-size: 0.75em
       font-weight: 600
 
     &-icon
@@ -184,7 +184,10 @@
       transition: opacity .35s ease-in-out
       opacity: 0
 
-    @media (max-width: 768px)
+    // @media (max-width: 768px)
+    @media (max-width: 879px)
         position: relative
         bottom: -6%
-
+  
+  &__hr-single-px
+    margin: 1px 0

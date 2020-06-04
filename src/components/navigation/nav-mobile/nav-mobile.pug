@@ -1,4 +1,4 @@
-.nav-mobile(v-if='props', :class='{"nav-mobile--scrolling": $store.state.nav}')
+.nav-mobile(v-if='props', :class='{"nav-mobile--scrolling": $store.state.nav, "nav-mobile--notransparent": $route.path === "/" }')
   .nav-mobile__container
     .nav-mobile__item
       router-link.nav-mobile__logo-container(to='/', v-on:click.native='closeDrawer')
