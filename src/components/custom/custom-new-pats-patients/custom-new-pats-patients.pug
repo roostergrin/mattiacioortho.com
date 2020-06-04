@@ -9,6 +9,8 @@
             span {{ props.adult_label }}
           a.custom-new-pats-patients__child(:href='props.child_href' target='_blank')
             span {{ props.child_label }}
+          a.custom-new-pats-patients__form(:href='props.ic_href' target='_blank')
+            span {{ props.ic_label }}
         a.custom-new-pats-patients__privacy(:href='props.privacy_href' target='_blank')
           | Privacy Policy >>
       .custom-new-pats-patients__right(:style="{backgroundImage: 'url(' + props.img + ')'}")    
