@@ -5,12 +5,16 @@
       .custom-new-pats-patients__left
         .custom-new-pats-patients__text(v-html='props.text')
         .custom-new-pats-patients__buttons
+          h3.custom-new-pats-patients__forms-header-one COVID-19 Forms
+          a.custom-new-pats-patients__form(:href='props.ic_href' target='_blank')
+            span {{ props.ic_label }}
+          a.custom-new-pats-patients__form(:href='props.shq_href' target='_blank')
+            span {{ props.shq_label }}
+          h3.custom-new-pats-patients__forms-header-two New Patient Forms
           a.custom-new-pats-patients__adult(:href='props.adult_href' target='_blank')
             span {{ props.adult_label }}
           a.custom-new-pats-patients__child(:href='props.child_href' target='_blank')
             span {{ props.child_label }}
-          a.custom-new-pats-patients__form(:href='props.ic_href' target='_blank')
-            span {{ props.ic_label }}
         a.custom-new-pats-patients__privacy(:href='props.privacy_href' target='_blank')
           | Privacy Policy >>
       .custom-new-pats-patients__right(:style="{backgroundImage: 'url(' + props.img + ')'}")    

@@ -4,9 +4,9 @@
       h2.home-hero__title {{ props.acf.custom_home_hero_message.title }}
       hr
       .home-hero__message(v-html='props.acf.custom_home_hero_message.message')
-      //- a.home-hero__facebook-button(href='https://www.facebook.com/pg/mattiacioortho/videos/' target='_blank')
-      //-   span {{ props.acf.custom_home_hero_message.custom_button.label }}
-      //-   Icon.footer__rewards-icon(name='arrow')
+      a.home-hero__facebook-button(href='https://www.facebook.com/pg/mattiacioortho/videos/' target='_blank')
+        span {{ props.acf.custom_home_hero_message.custom_button.label }}
+        Icon.footer__rewards-icon(name='arrow')
       .home-hero__message2(v-html='props.acf.custom_home_hero_message.message2')
       a.home-hero__virtual-consult(:class='{active: $store.state.menu}' href="https://calendly.com/mattiacio")
         span Virtual Consult: New and Existing Patients

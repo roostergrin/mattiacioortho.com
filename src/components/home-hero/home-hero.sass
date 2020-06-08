@@ -8,7 +8,7 @@
     z-index: 11
     background: linear-gradient(180deg, rgba($black, .4), transparent)
     width: 100vw
-    height: 100vh
+    height: calc(100vh + 9%)
     overflow: hidden
     background: $blue
 
@@ -34,14 +34,19 @@
       font-size: 1.4em
 
 
-  &__message, &__message2
+  &__message
     margin: 20px 0
+    color: $white
+    font-size: 0.9em
+
+  &__message2
+    margin: 20px 0 8px
     color: $white
     font-size: 0.9em
 
   &__facebook-button
     @include button-circle-phil(249px, $white, $blue, .35s, 1px, $white, 30px, 4px, 30px, -225px, -40px)
-    margin: 0 auto
+    margin: -8px auto
     height: 40px
 
 
