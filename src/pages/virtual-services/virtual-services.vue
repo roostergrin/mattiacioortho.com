@@ -6,7 +6,7 @@ import Loader from 'components/loader/loader'
 import VirtualServices from 'components/custom/custom-virtual-services/custom-virtual-services'
 
 export default {
-  name: 'Virtual Services',
+  name: 'virtual-services',
   computed: {
     props () {
       return this.$store.state.pages['virtual-services']

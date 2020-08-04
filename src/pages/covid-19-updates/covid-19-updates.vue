@@ -6,7 +6,7 @@ import Loader from 'components/loader/loader'
 import COVID19 from 'components/custom/custom-covid-19-updates/custom-covid-19-updates'
 
 export default {
-  name: 'covid-19 updates',
+  name: 'covid-19-updates',
   computed: {
     props () {
       return this.$store.state.pages['covid-19-updates']

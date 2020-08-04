@@ -34,7 +34,6 @@ export default {
   },
   mounted () {
     window.addEventListener('resize', this.myEventHandler)
-    console.log(this.$router.path)
   },
   components: {
     Icon
@@ -54,9 +53,6 @@ export default {
     },
     makeAppt () {
       this.$router.push('/contact-us#form')
-    },
-    currentRoute () {
-      console.log(this.$router.path)
     }
   }
 }
