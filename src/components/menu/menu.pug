@@ -1,5 +1,5 @@
 .menu(v-if='props', :class='{"menu--family-fun-event": $route.path.includes("/mouth-guard-registration")}')
-  .menu__bg-color(v-if='$route.path === "/covid-19-updates" || $route.path === "/virtual-services"'
+  .menu__bg-color(v-if='$route.path.includes("/covid-19-updates") || $route.path.includes("/virtual-services")'
     :class='{"menu__bg-color--hide": $store.state.menu}'
     :style="{backgroundImage: 'url(static' + $route.path + '.jpg)'}")
   .menu__overlay
