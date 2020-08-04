@@ -25,23 +25,28 @@
     transition: all .5s ease
     width: 100%
     height: 100%
-    z-index: 2
-    background: $slate-grey
+    z-index: 0
 
     &--covid
       background: url('https://www.mattiacioortho.com/static/covid-19-updates.jpg')
       background-repeat: no-repeat
-      background-position: right top
+      background-position: bottom left
       background-size: cover
+      opacity: 1
+      z-index: 2
 
     &--virtual-services
       background: url('https://www.mattiacioortho.com/static/virtual-services.jpg')
       background-repeat: no-repeat
       background-position: right top
       background-size: cover
+      opacity: 1
+      z-index: 2
 
     &--hide
-      z-index: 0 
+      background: $blue 
+      opacity: 0
+      z-index: -1
 
   &__overlay
     position: absolute
