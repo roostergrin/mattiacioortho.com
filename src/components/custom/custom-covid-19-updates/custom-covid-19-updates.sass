@@ -1,10 +1,7 @@
 .custom-covid-19-updates
   &__wrapper
     position: relative
-    height: 90vh
-
-    @media screen and (max-width: 1500px)
-      height: auto
+    height: fit-content
 
     // @media screen and (max-width: 1064px)
     //   height: 55vw
@@ -31,6 +28,14 @@
 
       &:not(:first-child)
         margin-top: 2rem
+
+    a
+      transition: all .5s ease
+      font-weight: 600
+      color: $blue
+      
+      &:hover
+        color: $blue-grey
 
     .covid-19-forms
       @media screen and (max-width: 480px)
