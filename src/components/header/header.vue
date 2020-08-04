@@ -3,6 +3,7 @@
 <script>
 import HeroMobile from 'components/hero-mobile/hero-mobile'
 import HomeHero from 'components/home-hero/home-hero'
+import HeroPages from 'components/hero-pages/hero-pages'
 import Menu from 'components/menu/menu'
 
 export default {
@@ -19,6 +20,7 @@ export default {
   components: {
     HeroMobile,
     HomeHero,
+    HeroPages,
     Menu
   },
   methods: {

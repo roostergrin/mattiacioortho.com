@@ -1,0 +1,46 @@
+.hero-pages
+  @media screen and (max-width: $break-md - 1)
+    display: none
+
+  &__overlay
+    position: absolute
+    top: -9%
+    z-index: 11
+    width: 100vw
+    height: calc(100vh + 9%)
+    overflow: hidden
+    
+    &--covid
+      background: url('https://www.mattiacioortho.com/static/covid-19-updates.jpg')
+      background-repeat: no-repeat
+      background-position: bottom left
+      background-size: cover
+
+    &--virtual-services
+      background: url('https://www.mattiacioortho.com/static/virtual-services.jpg')
+      background-repeat: no-repeat
+      background-position: right top
+      background-size: cover
+
+  &__container
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 10
+    margin: auto
+    padding: 0 10%
+    width: 100%
+    height: fit-content
+    overflow: visible
+    text-align: center
+    @media screen and ( min-width: 970px ) and ( max-width: 1130px )
+      padding: 0 8%
+    @media screen and ( max-width: 969px )
+      padding: 0 2%
+
+  &__title
+    @extend h1
+    &--white
+      color: $pale-blue
