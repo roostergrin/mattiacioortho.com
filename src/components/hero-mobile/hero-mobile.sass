@@ -90,7 +90,7 @@
   &__invisalign,
   &__contact,
   &__covid,
-  &__consultation
+  &__virtual-services
     background-repeat: no-repeat
     background-position: 45%
     background-size: cover
@@ -100,10 +100,6 @@
     @media screen and (max-width: $break-sm)
       background-position: 45%
       height: 50vh
-
-  &__covid,
-  &__consultation
-    background: $blue-grey
 
   &__new-pats
     background-position: 85%
@@ -123,6 +119,12 @@
 
   &__contact
     background-position: right
+
+  &__covid
+    background-position: bottom left
+
+  &__virtual-services
+    background-position: left
 
   &__title
     // @extend h1
