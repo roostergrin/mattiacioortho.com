@@ -4,7 +4,6 @@
 import Icon from 'components/icon/icon'
 
 export default {
-  props: ['props'],
   computed: {
     classList () {
       return {
@@ -14,11 +13,6 @@ export default {
   },
   components: {
     Icon
-  },
-  methods: {
-    makeAppt () {
-      this.$router.push('/contact-us#form')
-    }
   }
 }
 </script>

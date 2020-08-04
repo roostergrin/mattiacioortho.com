@@ -1,5 +1,5 @@
 .hero-pages
-  .hero-pages__overlay(:class='{ "hero-pages__overlay--covid": $route.path === "/covid-19-updates", "hero-pages__overlay--virtual-services": $route.path === "/virtual-services" }')
+  .hero-pages__overlay(:class='{ "hero-pages__overlay--covid": $route.path.includes("/covid-19-updates"), "hero-pages__overlay--virtual-services": $route.path.includes("/virtual-services") }')
     .hero-pages__container
       h2.hero-pages__title {{ $route.name }}
       

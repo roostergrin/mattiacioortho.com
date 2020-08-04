@@ -4,5 +4,7 @@
   transition(name='home-fade')
     HomeHero(v-show='$route.path === "/" && !$store.state.menu', :props='props')
   transition(name='home-fade')
-    HeroPages(v-show='($route.path === "/covid-19-updates" || $route.path === "/virtual-services") && !$store.state.menu')
+    HeroPages(v-show='$route.path.includes("/covid-19-updates") && !$store.state.menu')
+  transition(name='home-fade')
+    HeroPages(v-show='$route.path.includes("/virtual-services") && !$store.state.menu')
   HeroMobile(:props='props')

@@ -62,12 +62,12 @@
     :style="{backgroundImage: 'url(static/contact.jpg)'}"
     )
   .hero-mobile__covid(
-    v-show='$route.path === "/covid-19-updates"',
+    v-show='$route.path.includes("/covid-19-updates")',
     :style="{backgroundImage: 'url(static/covid-19-updates.jpg)'}"
     )
     .hero-mobile__title {{ $route.name }}
   .hero-mobile__virtual-services(
-    v-show='$route.path === "/virtual-services"',
+    v-show='$route.path.includes("/virtual-services")',
     :style="{backgroundImage: 'url(static/virtual-services.jpg)'}"
     )
     .hero-mobile__title {{ $route.name }}
