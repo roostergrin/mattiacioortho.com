@@ -1,13 +1,13 @@
 .menu(v-if='props', :class='{"menu--family-fun-event": $route.path.includes("/mouth-guard-registration")}')
   .menu__bg-color(v-if='$route.path === "/covid-19-updates" || $route.path === "/virtual-services"'
     :class='{"menu__bg-color--hide": $store.state.menu}'
-    :style="{backgroundImage: 'url(/static' + $route.path + '.jpg)'}")
+    :style="{backgroundImage: 'url(https://www.mattiacioortho.com/static' + $route.path + '.jpg)'}")
   .menu__overlay
     transition(name='title-fade')
       .menu__title(
         v-if='!$store.state.menu && $route.path != "/"'
         :class='{"menu__title--white": $route.path === "/treatments" || $route.path === "/mattiacio-difference" }'
-        ) {{ $route.name }}
+        @click='image()') {{ $route.name }}
     .menu__appt(v-if='$route.path !== "/virtual-services"' :class='{"menu__appt--is-visible": !$store.state.menu && $route.path != "/contact-us" && $route.path != "/", "menu__appt--white": $route.name != "Treatments" }', @click='makeAppt')
       span Make an Appointment
       Icon.menu__appt-icon(name='arrow')
