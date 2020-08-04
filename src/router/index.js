@@ -74,7 +74,7 @@ const router = new VueRouter({
       name: 'COVID-19 Updates',
       navigation: false,
       component: COVID19Updates,
-      url: '/static/covid.jpg'
+      url: '/static/covid-19-updates.jpg'
     },
     {
       path: '/virtual-services',
