@@ -18,7 +18,7 @@
     // remove max-width to not break wrap at higher widths
     max-width: none
 
-  &__bg-color
+  &__bg
     position: absolute
     top: 0
     left: 0
@@ -27,9 +27,18 @@
     height: 100%
     z-index: 2
     background: $slate-grey
-    background-repeat: no-repeat
-    background-position: right top
-    background-size: cover
+
+    &--covid
+      background: url('https://www.mattiacioortho.com/static/covid-19-updates.jpg')
+      background-repeat: no-repeat
+      background-position: right top
+      background-size: cover
+
+    &--virtual-services
+      background: url('https://www.mattiacioortho.com/static/virtual-services.jpg')
+      background-repeat: no-repeat
+      background-position: right top
+      background-size: cover
 
     &--hide
       z-index: 0 
