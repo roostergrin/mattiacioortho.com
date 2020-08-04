@@ -2,10 +2,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import AboutUs from '@/pages/about-us/about-us'
 import ContactUs from '@/pages/contact-us/contact-us'
+import COVID19Updates from '@/pages/covid-19-updates/covid-19-updates'
 import Home from '@/pages/home/home'
 import Invisalign from '@/pages/invisalign/invisalign'
 import Mattiacio from '@/pages/mattiacio-difference/mattiacio-difference'
 import NewPatients from '@/pages/new-patients/new-patients'
+import VirtualServices from '@/pages/virtual-services/virtual-services'
 import Treatments from '@/pages/treatments/treatments'
 import FamilyFunEvent from '@/pages/family-fun-event/family-fun-event'
 import ThankYou from '@/pages/thank-you/thank-you'
@@ -66,6 +68,20 @@ const router = new VueRouter({
           target: '#office'
         }
       ]
+    },
+    {
+      path: '/covid-19-updates',
+      name: 'COVID-19 Updates',
+      navigation: false,
+      component: COVID19Updates,
+      url: '/static/covid.jpg'
+    },
+    {
+      path: '/virtual-services',
+      name: 'Virtual Services',
+      navigation: false,
+      component: VirtualServices,
+      url: '/static/virtual-services.jpg'
     },
     {
       path: '/new-patients',

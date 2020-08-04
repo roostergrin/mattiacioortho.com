@@ -1,0 +1,10 @@
+.custom-virtual-services
+  .custom-virtual-services__wrapper
+    .custom-virtual-services__container
+      .custom-virtual-services__description
+      .custom-virtual-services__buttons
+        a.custom-virtual-services__button(v-for='(button, i) in props.virtual_services_buttons'
+          :key='"button " + i'
+          v-html='button.button.label'
+          :href='button.button.href'
+          target='_blank')

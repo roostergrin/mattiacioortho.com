@@ -1,0 +1,4 @@
+.page-virtual-services
+  Loader(v-if='loading')
+  div(v-if='props && !loading')
+    VirtualServices(:props='props.acf')
