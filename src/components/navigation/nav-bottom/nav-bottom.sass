@@ -1,0 +1,29 @@
+.nav-bottom
+  display: block
+  position: relative
+  transition: background .35s ease-in-out
+  z-index: 99
+  padding: .5rem 0 0
+  width: 100%
+  color: $white
+
+  &__container
+    @media screen and (max-width: $break-md - 1)
+      flex-direction: column
+      width: fit-content
+    @extend .flex-container-lg
+    @extend .flex
+    @extend .flex-between
+    align-items: center
+
+  &__button
+    @media screen and (max-width: $break-md - 1)
+      margin: .5rem
+      width: 100%
+    padding: .4rem 1rem .5rem
+    width: fit-content
+    color: $white
+    text-align: center
+    border: 1px solid $white
+    border-radius: 30px
+    cursor: pointer

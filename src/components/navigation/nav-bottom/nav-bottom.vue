@@ -1,9 +1,8 @@
-<template lang='pug' src='./nav-desktop.pug'></template>
+<template lang='pug' src='./nav-bottom.pug'></template>
 
 <script>
 import Icon from 'components/icon/icon'
 import { openModal } from '@/methods'
-import Bottom from '../nav-bottom/nav-bottom'
 
 export default {
   data () {
@@ -17,8 +16,7 @@ export default {
     }
   },
   components: {
-    Icon,
-    Bottom
+    Icon
   },
   mixins: [ openModal ],
   methods: {

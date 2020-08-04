@@ -2,6 +2,7 @@
 
 <script>
 import Icon from 'components/icon/icon'
+import Bottom from '../nav-bottom/nav-bottom'
 
 export default {
   data () {
@@ -18,7 +19,8 @@ export default {
     }
   },
   components: {
-    Icon
+    Icon,
+    Bottom
   },
   methods: {
     toggleMenu () {
