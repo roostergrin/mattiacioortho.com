@@ -33,7 +33,6 @@ export default {
   },
   mounted () {
     window.addEventListener('resize', this.myEventHandler)
-    this.currentRoute()
   },
   components: {
     Icon
@@ -53,23 +52,6 @@ export default {
     },
     makeAppt () {
       this.$router.push('/contact-us#form')
-    },
-    currentRoute () {
-      if (this.$route.path === '/covid-19-updates') {
-        this.virtualServices = false
-        this.covid = true
-      } else if (this.$route.path === '/virtual-services') {
-        this.covid = false
-        this.virtualServices = true
-      } else {
-        this.covid = false
-        this.virtualServices = false
-      }
-    }
-  },
-  watch: {
-    '$route' () {
-      this.currentRoute()
     }
   }
 }

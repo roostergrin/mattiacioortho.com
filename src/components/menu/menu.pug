@@ -1,9 +1,8 @@
 .menu(v-if='props', :class='{"menu--family-fun-event": $route.path.includes("/mouth-guard-registration")}')
-  .menu__bg(:class='{"menu__bg--hide": $store.state.menu, "menu__bg--covid": covid, "menu__bg--virtual-services": virtualServices}')
   .menu__overlay
     transition(name='title-fade')
       .menu__title(
-        v-if='!$store.state.menu && $route.path != "/"'
+        v-if='!$store.state.menu && ($route.path != "/" && $route.path != "/covid-19-updates" && $route.path != "/virtual-services")'
         :class='{"menu__title--white": $route.path === "/treatments" || $route.path === "/mattiacio-difference" }'
       ) {{ $route.name }}
     .menu__appt(v-if='$route.path !== "/virtual-services"' :class='{"menu__appt--is-visible": !$store.state.menu && $route.path != "/contact-us" && $route.path != "/", "menu__appt--white": $route.name != "Treatments" }', @click='makeAppt')
