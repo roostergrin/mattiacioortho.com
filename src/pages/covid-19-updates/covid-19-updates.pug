@@ -1,0 +1,4 @@
+.page-covid-19-updates
+  Loader(v-if='loading')
+  div(v-if='props && !loading') 
+    COVID19(:props='props.acf.covid_19')
