@@ -1,5 +1,5 @@
 .menu(v-if='props', :class='{"menu--family-fun-event": $route.path.includes("/mouth-guard-registration")}')
-  .menu__bg(:class='{"menu__bg--hide": $store.state.menu, "menu__bg--covid": $route.path === "/covid-19-updates", "menu__bg--virtual-services": $route.path === "/virtual-services"}')
+  .menu__bg(:class='{"menu__bg--hide": $store.state.menu, "menu__bg--covid": covid, "menu__bg--virtual-services": virtualServices}')
   .menu__overlay
     transition(name='title-fade')
       .menu__title(

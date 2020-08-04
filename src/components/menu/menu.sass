@@ -22,31 +22,33 @@
     position: absolute
     top: 0
     left: 0
-    transition: all .5s ease
+    transition: visibility .1s ease, opacity .5s ease
     width: 100%
     height: 100%
-    z-index: 0
+    background: $blue
+    visibility: hidden
+    opacity: 0
+    z-index: 2
 
     &--covid
       background: url('https://www.mattiacioortho.com/static/covid-19-updates.jpg')
       background-repeat: no-repeat
       background-position: bottom left
       background-size: cover
+      visibility: visible
       opacity: 1
-      z-index: 2
 
     &--virtual-services
       background: url('https://www.mattiacioortho.com/static/virtual-services.jpg')
       background-repeat: no-repeat
       background-position: right top
       background-size: cover
+      visibility: visible
       opacity: 1
-      z-index: 2
 
     &--hide
-      background: $blue 
+      visibility: hidden
       opacity: 0
-      z-index: -1
 
   &__overlay
     position: absolute
