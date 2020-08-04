@@ -22,6 +22,9 @@ export default {
         'active': this.$store.state.menu
       }
     },
+    virtualServices () {
+      return this.$store.state.pages['virtual-services']
+    },
     styleObject () {
       return {
         width: (this.styleWidth / 3.5) + 'px',
