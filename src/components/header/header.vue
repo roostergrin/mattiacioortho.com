@@ -15,6 +15,9 @@ export default {
   computed: {
     props () {
       return this.$store.state.app.information
+    },
+    covid () {
+      return this.$store.state.pages['covid-19-updates']
     }
   },
   components: {
