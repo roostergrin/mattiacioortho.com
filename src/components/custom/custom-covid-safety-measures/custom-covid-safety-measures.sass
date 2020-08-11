@@ -1,0 +1,167 @@
+.custom-covid-safety-measures
+  padding-bottom: rem-calc(80px)
+
+  &__container
+    @extend .flex-container-lg
+
+  &__rows
+    @extend .flex
+    flex-direction: column
+
+    @media screen and (max-width: $break-md)
+      flex-direction: row
+
+  &__row
+    @extend .flex
+    @extend .flex-between
+    @extend .align-center
+    flex-direction: column
+    
+    &--tabs
+      height: fit-content
+
+    &--content
+      position: relative
+      margin-top: 2rem
+      height: 500px
+      display: flex
+
+      @media screen and (max-width: $break-md)
+        flex: 1 1 auto
+        height: 600px
+
+      @media screen and (max-width: $break-sm)
+        margin-top: 0
+        overflow: scroll
+
+  &__title
+    @extend h2
+    padding: 2rem 0
+    color: $blue
+
+    @media screen and (max-width: $break-md)
+      padding: rem-calc(80px) 0 40px
+
+  &__left
+    @extend .flex
+    @extend .flex-between
+    flex-direction: column
+    width: 90%
+
+    @media screen and (max-width: $break-md)
+      flex-direction: row
+
+    @media screen and (max-width: $break-sm)
+      width: 100%
+
+  &__tab-container
+    @extend .flex
+    @extend .flex-around
+    width: 100%
+    height: 75px
+
+    @media screen and (max-width: $break-md)
+      flex-direction: column
+      width: 25%
+      height: 550px
+
+  &__content-wrapper
+    position: relative
+    margin: 0 auto
+    width: 72.5%
+    height: 500px
+
+    @media screen and (max-width: $break-md)
+      // margin-top: 3rem
+      height: 600px
+
+    @media screen and (max-width: $break-sm)
+      height: 850px
+
+  &__content-container
+    position: absolute
+    top: 45%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 100%
+
+    @media screen and (max-width: $break-sm)
+      top: 0
+      left: 50%
+      transform: translate(-50%, 0)
+
+    ul
+      list-style-type: none
+
+      @media screen and (max-width: $break-sm)
+        padding-left: 1rem
+
+      li
+        margin-bottom: 2rem
+
+        strong
+          display: block
+          margin-bottom: -.75rem
+          font-size: 1.25rem
+          font-weight: 400
+          color: $blue-grey
+          text-transform: uppercase
+        
+          @media screen and (max-width: $break-sm)
+            font-size: 1rem
+
+  &__tab
+    cursor: pointer
+
+    &--active
+      .custom-covid-safety-measures__icon-outer
+        box-shadow: $shadow-blue
+        background: $turquoise
+
+      .custom-covid-safety-measures__icon-inner
+        background: $blue
+
+  &__icon-outer
+    position: relative
+    transition: all .3s ease-in-out
+    border-radius: 50%
+    background: lighten($blue-grey, 15)
+    width: 60px
+    height: 60px
+
+    @media screen and (max-width: $break-sm)
+      width: 45px
+      height: 45px
+
+  &__icon-inner
+    display: inline-block
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    transition: all .3s ease-in-out
+    border-radius: 50%
+    background: $blue-grey
+    width: 52px
+    height: 52px
+
+    @media screen and (max-width: $break-sm)
+      width: 40px
+      height: 40px
+
+  &__icon
+    position: absolute
+    margin: auto
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    width: fit-content
+    height: fit-content
+    font-weight: bold
+    text-align: center
+    text-shadow: 1px 1px 2px rgba(0,0,0,.5)
+    color: $white
+
+    @media screen and (max-width: $break-sm)
+      font-size: .9rem

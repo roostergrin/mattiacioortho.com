@@ -4,6 +4,7 @@
 import Divider from 'components/divider/divider'
 import Loader from 'components/loader/loader'
 import COVID19 from 'components/custom/custom-covid-19-updates/custom-covid-19-updates'
+import SafetyMeasures from 'components/custom/custom-covid-safety-measures/custom-covid-safety-measures'
 
 export default {
   name: 'covid-19-updates',
@@ -18,7 +19,8 @@ export default {
   components: {
     Divider,
     Loader,
-    COVID19
+    COVID19,
+    SafetyMeasures
   }
 }
 </script>

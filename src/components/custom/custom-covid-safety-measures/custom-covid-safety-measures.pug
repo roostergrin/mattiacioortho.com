@@ -1,0 +1,26 @@
+.custom-covid-safety-measures
+  .custom-covid-safety-measures__container
+    .custom-covid-safety-measures__title(v-html='props.title')
+    .custom-covid-safety-measures__rows
+      .custom-covid-safety-measures__row--tabs
+        .custom-covid-safety-measures__tab-container
+          .custom-covid-safety-measures__tab(
+            v-for='(tab, i) in props.tabs'
+            :key='i'
+            :class='{"custom-covid-safety-measures__tab--active": i === $store.state.tabs}'
+            @click='showContent(i)'
+            @mouseover='showContent(i)'
+            )
+            .custom-covid-safety-measures__icon-outer
+              .custom-covid-safety-measures__icon-inner
+                .custom-covid-safety-measures__icon(
+                  v-html='tab.label'
+                  :class='"custom-covid-safety-measures__icon--" + tab.label'
+                  )
+      transition-group.custom-covid-safety-measures__row--content(name='transition-meet-dr', tag='div')
+        .custom-covid-safety-measures__content-container(
+          v-for='(content, i in props.content'
+          :key='i'
+          v-show='i === $store.state.tabs'
+          )
+          .custom-covid-safety-measures__content-text(v-html='content.text')
