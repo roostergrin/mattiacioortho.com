@@ -4,6 +4,7 @@
 import Icon from 'components/icon/icon'
 
 export default {
+  props: ['props'],
   computed: {
     classList () {
       return {

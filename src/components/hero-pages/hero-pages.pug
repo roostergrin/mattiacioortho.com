@@ -2,12 +2,9 @@
   .hero-pages__overlay(:class='{ "hero-pages__overlay--covid": $route.path.includes("/covid-19-updates"), "hero-pages__overlay--virtual-services": $route.path.includes("/virtual-services") }')
     .hero-pages__container
       h2.hero-pages__title {{ $route.name }}
-      
-      
-    
-  //- .hero-pages__appt.openchair-widget(:class='{active: $store.state.menu}')
-  //-   span.openchair-widget Schedule Consultation
-  //-   Icon.hero-pages__appt-icon.openchair-widget(name='arrow')
-  //- a.hero-pages__appt#virtual(:class='{active: $store.state.menu}', href="https://formsroostergrin.com/mattiacioortho/virtual-page/index.html")
-  //-   span Virtual Smile Assessment
-  //-   Icon.hero-pages__appt-icon(name='arrow')
+      .hero-pages__buttons(v-if='props && $route.path.includes("/covid-19-updates")')
+        a.hero-pages__button(v-for='(button, i ) in props.acf.covid_19_header_buttons'
+          :key='"button " + i'
+          v-html='button.button.label'
+          :href='button.button.href'
+          target='_blank')
