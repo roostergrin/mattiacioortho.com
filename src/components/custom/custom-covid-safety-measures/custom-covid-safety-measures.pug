@@ -13,10 +13,8 @@
             )
             .custom-covid-safety-measures__icon-outer
               .custom-covid-safety-measures__icon-inner
-                .custom-covid-safety-measures__icon(
-                  v-html='tab.label'
-                  :class='"custom-covid-safety-measures__icon--" + tab.label'
-                  )
+              Icon.custom-covid-safety-measures__icon(:name='tab.label'
+                :class='{ "custom-covid-safety-measures__icon--phone": tab.label === "mobile-alt"}')
       transition-group.custom-covid-safety-measures__row--content(name='transition-meet-dr', tag='div')
         .custom-covid-safety-measures__content-container(
           v-for='(content, i in props.content'
