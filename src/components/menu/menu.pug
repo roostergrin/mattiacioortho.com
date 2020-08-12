@@ -5,7 +5,7 @@
         v-if='!$store.state.menu && ($route.path != "/" && !$route.path.includes("/covid-19-updates") && !$route.path.includes("/virtual-services"))'
         :class='{"menu__title--white": $route.path === "/treatments" || $route.path === "/mattiacio-difference" }'
       ) {{ $route.name }}
-    .menu__appt(v-if='$route.path !== "/virtual-services"' :class='{"menu__appt--is-visible": !$store.state.menu && $route.path != "/contact-us" && $route.path != "/", "menu__appt--white": $route.name != "Treatments" }', @click='makeAppt')
+    .menu__appt(v-if='$route.path.includes("/virtual-services")' :class='{"menu__appt--is-visible": !$store.state.menu && $route.path != "/contact-us" && $route.path != "/", "menu__appt--white": $route.name != "Treatments" }', @click='makeAppt')
       span Make an Appointment
       Icon.menu__appt-icon(name='arrow')
   .menu__container
