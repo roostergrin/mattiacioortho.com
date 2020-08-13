@@ -150,6 +150,11 @@ const router = new VueRouter({
           label: 'What Sets Us Apart',
           target: '#what',
           name: 'Mattiacio Difference'
+        },
+        {
+          path: '/covid-19-updates',
+          label: 'COVID-19 Safety',
+          target: '#updates'
         }
       ]
     },
