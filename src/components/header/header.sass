@@ -26,10 +26,11 @@
       height: 6rem
 
   &--home
-    height: 52.25vw
+    height: calc(100vw * 9 / 16)
+    max-height: 100vh
 
     @media screen and (max-width: $break-md - 1)
-      height: 80vh
+      height: 50vh
 
   &__waypoint
     @extend .waypoint

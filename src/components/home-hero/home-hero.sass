@@ -4,11 +4,11 @@
 
   &__overlay
     position: absolute
-    top: -9%
+    top: 0
     z-index: 11
     background: linear-gradient(180deg, rgba($black, .4), transparent)
     width: 100vw
-    height: calc(100vh + 9%)
+    height: calc(100vh)
     overflow: hidden
     background: $blue
 
@@ -116,19 +116,21 @@
 
     &#virtual
       top: 60%
-
+      background: rgba(1, 179, 191, 0.5)
 
     span
       letter-spacing: 2px
       font-family: $avenir
       font-size: 16px
       font-weight: 600
+      margin-left: 10px
 
     &-icon
       // extended shadow transition to wait for circle to collapse
       transition: all .55s ease-in-out
       border-radius: 50%
       box-shadow: 0 2px 4px 0 rgba($black, .33)
+      margin-left: 12px
 
       svg
         pointer-events: none
