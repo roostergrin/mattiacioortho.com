@@ -7,4 +7,6 @@
     HeroPages(v-show='$route.path.includes("/covid-19-updates") && !$store.state.menu', :props='covid')
   transition(name='fade-in')
     HeroPages(v-show='$route.path.includes("/virtual-services") && !$store.state.menu')
+  transition(name='fade-in')
+    HeroPages(v-show='$route.path.includes("/videos") && !$store.state.menu')
   HeroMobile(:props='props')

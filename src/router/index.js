@@ -8,6 +8,7 @@ import Invisalign from '@/pages/invisalign/invisalign'
 import Mattiacio from '@/pages/mattiacio-difference/mattiacio-difference'
 import NewPatients from '@/pages/new-patients/new-patients'
 import VirtualServices from '@/pages/virtual-services/virtual-services'
+import Videos from '@/pages/videos/videos'
 import Treatments from '@/pages/treatments/treatments'
 import FamilyFunEvent from '@/pages/family-fun-event/family-fun-event'
 import ThankYou from '@/pages/thank-you/thank-you'
@@ -84,6 +85,13 @@ const router = new VueRouter({
       url: '/static/virtual-services.jpg'
     },
     {
+      path: '/videos',
+      name: 'Videos',
+      navigation: false,
+      component: Videos,
+      url: '/static/virtual-services.jpg'
+    },
+    {
       path: '/new-patients',
       name: 'New Patients',
       navigation: true,
@@ -155,6 +163,11 @@ const router = new VueRouter({
           path: '/covid-19-updates',
           label: 'COVID-19 Safety',
           target: '#updates'
+        // },
+        // {
+        //   path: '/videos',
+        //   label: 'Videos',
+        //   target: '#videos'
         }
       ]
     },

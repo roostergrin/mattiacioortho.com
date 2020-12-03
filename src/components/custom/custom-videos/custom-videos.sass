@@ -1,0 +1,226 @@
+.custom-videos
+  background: black
+
+  #videos
+    position: relative
+    top: -50px
+    width: 100%
+    height: 1px
+
+  &__desktop
+    display: flex
+    position: relative
+    width: 100%
+
+    // @media(max-width: $screen-md)
+    //   display: none
+    @media(max-width: $screen-sm)
+      display: none
+
+  // &__clickable
+  //   display: none
+  //   width: 100%
+
+  //   @media(max-width: $screen-md)
+  //     display: flex
+
+  //   @media(max-width: $screen-sm)
+  //     display: none
+
+  &__mobile
+    display: none
+
+    @media(max-width: $screen-sm)
+      display: block
+
+  &__tab
+    @extend .image-norm
+    position: relative
+    z-index: 1
+    transition: width 0.3s cubic-bezier(0.32, 0.9, 0.76, 0.99)
+    width: 14%
+    height: 620px
+
+    &--active
+      z-index: 2
+      width: 30%
+      box-shadow: 0px 0px 36px 12px rgba(255, 255, 255, 1.0)
+
+    &:hover
+      cursor: pointer
+
+  &__overlay
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0.4
+    background: black
+    width: 100%
+    height: 100%
+    transition: opacity 0.3s cubic-bezier(0.32, 0.9, 0.76, 0.99)
+    .custom-videos__tab--active &
+      opacity: 0.4
+
+  &__title
+    position: absolute
+    bottom: 236px
+    left: -160px
+    transform: rotate(-90deg)
+    width: 410px
+    white-space: nowrap
+    color: $white
+    font-size: 22px
+    font-weight: 600
+    text-align: right
+    .custom-videos__tab--active &
+      display: none
+    &--active
+      position: absolute
+      top: 40px
+      left: -160px
+      transform: rotate(0deg)
+      width: 410px
+      white-space: nowrap
+      color: $white
+      font-size: 22px
+      font-weight: 600
+      text-align: right
+
+
+  &__content
+    position: absolute
+    right: 40px
+    bottom: 52px
+    transition: all 0.4s ease-in-out
+    width: calc(100% - 140px)
+    color: $white
+    font-size: 18px
+    .custom-videos__tab--active &
+      bottom: unset
+      top: 100px
+
+
+  &__mobile-tab
+    @extend .image-norm
+    position: relative
+    transition: all 0.4s ease-in-out
+    height: 105px
+
+    &--active
+      height: 207px
+
+      @media(max-width: $screen-xs)
+        height: 310px
+
+  &__mobile-overlay
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0.42
+    background: $black
+    width: 100%
+    height: 100%
+
+  &__mobile-label
+    display: flex
+    align-items: center
+    padding: 40px 30px 32px
+
+  &__mobile-selector
+    display: flex
+    position: relative
+    align-items: center
+    justify-content: center
+    margin-right: 16px
+    border-radius: 5px
+    background: #cccccc
+    width: 32px
+    height: 32px
+
+    &--plus,
+    &--minus
+      position: absolute
+      font-size: 32px
+
+  &__mobile-title
+    position: relative
+    width: calc(100% - 32px - 16px)
+    color: $white
+    font-size: 22px
+    font-weight: 600
+
+    @media(max-width: $screen-xs)
+      font-size: 18px
+
+  &__mobile-content
+    position: relative
+    padding: 0 30px 30px
+    color: $white
+
+  .fade-in-tab-text
+    @include fade-in-tab-text
+
+  .fade-in-label
+    @include fade-in-label
+
+
+
+
+  // Greg's additions
+  &__video-player
+    &-wrapper
+      position: fixed
+      top: 0
+      left: 0
+      // position: absolute
+      z-index: -1
+      width: 100vw
+      height: 100vh
+      // width: 100%
+      // height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      // pointer-events: none
+      &--active
+        z-index: 999
+
+    &-bg
+      position: relative
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 2px
+      height: 2px
+      background: rgba($black, 0.9)
+      transition: height 0.3s ease-in, width 0.6s ease-in 0.3s
+      .custom-videos__video-player-wrapper--active &
+        width: 100%
+        height: 100%
+
+    &-close-btn
+      position: absolute
+      z-index: -1
+      top: 30px
+      right: 30px
+      opacity: 0
+      color: $white
+      cursor: pointer
+      transition: opacity 0.3s ease 1s
+      .custom-videos__video-player-wrapper--active &
+        z-index: 1000
+        opacity: 1
+
+    &-video
+      position: absolute
+      width: 50vw
+      height: calc(50vw * 9 / 16)
+      object-fit: cover
+      opacity: 0
+      box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 1.0)
+      transition: opacity 2s ease 1s
+      .custom-videos__video-player-wrapper--active &
+        opacity: 1
+      &:focus
+        outline: none
+

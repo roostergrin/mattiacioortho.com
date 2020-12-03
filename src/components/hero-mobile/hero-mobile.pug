@@ -71,3 +71,8 @@
     :style="{backgroundImage: 'url(static/virtual-services.jpg)'}"
     )
     .hero-mobile__title {{ $route.name }}
+  .hero-mobile__videos(
+    v-show='$route.path.includes("/videos")',
+    :style="{backgroundImage: 'url(static/mattiacio-videos-poster.png)'}"
+    )
+    .hero-mobile__title {{ $route.name }}

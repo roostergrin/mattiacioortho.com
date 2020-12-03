@@ -335,3 +335,28 @@
       &:after
         transform: scale(1)
         transition: all $duration ease-in-out
+
+// animations for videos page
+@mixin fade-in-tab-text
+  &-enter-active
+    transition: all 0.3s ease
+    transition-delay: 0.3s
+
+  &-leave-active
+    transition: none
+
+  &-enter
+    opacity: 0
+
+  &-leave-to
+    opacity: 0
+
+@mixin fade-in-label
+  &-enter-active
+    transition: all .5s ease-in-out
+
+  &-enter
+    opacity: 0
+
+  &-leave-to
+    opacity: 0

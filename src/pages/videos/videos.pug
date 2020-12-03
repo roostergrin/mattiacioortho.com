@@ -1,0 +1,4 @@
+.page-videos
+  Loader(v-if='loading')
+  div(v-if='props && !loading')
+    Videos(:props='props.acf.video_clusters')

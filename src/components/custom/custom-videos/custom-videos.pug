@@ -1,0 +1,41 @@
+.custom-videos(v-if='props')
+  #videos
+  .custom-videos__tabs(v-for='(cluster, j) in props', key='j')
+    .custom-videos__desktop
+      .custom-videos__tab(v-for='(video, i) in cluster.videos', :style="{ backgroundImage: 'url(' + video.image + ')' }", :class="{ 'custom-videos__tab--active': hoverTab === i }", @mouseover='hoverTab = i', @mouseleave='hoverTab = i', @click='playVideo(i, j)')
+        .custom-videos__overlay
+        .custom-videos__title(v-html='video.title')
+        transition(name='fade-in-tab-text')
+          .custom-videos__title--active(v-html='video.title', v-show='hoverTab === i')
+        transition(name='fade-in-tab-text')
+          .custom-videos__content(v-html='video.content', v-show='hoverTab === i')
+      .custom-videos__video-player-wrapper(v-for='(video, i) in cluster.videos', :class="{ 'custom-videos__video-player-wrapper--active': openVideoPlayer === i }")
+        .custom-videos__video-player-bg
+          .custom-videos__video-player-close-btn(@click='closeVideo(i, j)') X
+          video.custom-videos__video-player-video(controls, :poster='video.poster', :id="'video-' + j + '' + i")
+            source(:src='video.src' type='video/mp4', v-load-directive='')
+            | Your browser does not support video.
+
+
+
+    //- .custom-videos__clickable
+    //-   .custom-videos__tab(v-for='(video, i) in cluster.videos', :style="{ backgroundImage: 'url(' + video.image + ')' }", :class="{ 'custom-videos__tab--active': activeTab === i }", @mouseover='activeTab = i', @mouseleave='activeTab = i' )
+    //-     .custom-videos__overlay
+    //-     .custom-videos__title(v-html='video.title')
+    //-     transition(name='fade-in-tab-text')
+    //-       .custom-videos__content(v-html='video.content', v-show='activeTab === i')
+    .custom-videos__mobile
+      .custom-videos__mobile-tab(v-for='(video, i) in cluster.videos', :style="{ backgroundImage: 'url(' + video.image + ')' }", :class="{ 'custom-videos__mobile-tab--active': mobileTabs.includes(i) }", @click='toggleMobileTab(i)')
+        .custom-videos__mobile-overlay
+        .custom-videos__mobile-label
+          .custom-videos__mobile-selector
+            transition(name='fade-in-label')
+              .custom-videos__mobile-selector--plus(v-if='!mobileTabs.includes(i)') +
+            transition(name='fade-in-label')
+              .custom-videos__mobile-selector--minus(v-if='mobileTabs.includes(i)') -
+          .custom-videos__mobile-title(v-html='video.title')
+        transition(name='fade-in-label')
+          .custom-videos__mobile-content(v-html='video.content', v-if='mobileTabs.includes(i)')
+
+
+
