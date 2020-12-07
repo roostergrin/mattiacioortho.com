@@ -62,49 +62,49 @@
       opacity: 0.4
 
   &__title
-    position: absolute
-    bottom: 236px
-    left: -160px
     transform: rotate(-90deg)
-    width: 410px
-    white-space: nowrap
+    width: 620px
     color: $white
     font-size: 22px
     font-weight: 600
     text-align: right
+    position: relative
+    top: 420px
+    right: calc(300px - 6vw)
+
     .custom-videos__tab--active &
       display: none
     &--active
-      position: absolute
-      top: 40px
-      left: -160px
-      transform: rotate(0deg)
-      width: 410px
-      white-space: nowrap
+      position: relative
+      margin: 40px 0
+      width: 100%
       color: $white
       font-size: 22px
       font-weight: 600
-      text-align: right
-
+      padding: 0px 10%
+      text-align: center
 
   &__content
-    position: absolute
-    right: 40px
-    bottom: 52px
-    transition: all 0.4s ease-in-out
-    width: calc(100% - 140px)
+    position: relative
+    width: 100%
     color: $white
     font-size: 18px
-    .custom-videos__tab--active &
-      bottom: unset
-      top: 100px
-
+    padding: 0px 10%
 
   &__mobile-tab
     @extend .image-norm
     position: relative
     transition: all 0.4s ease-in-out
     height: 105px
+
+    &:nth-child(1)
+      background-position: center 48%
+    &:nth-child(2)
+      background-position: center 27%
+    &:nth-child(3)
+      background-position: center 27%
+    &:nth-child(5)
+      background-position: center 29%
 
     &--active
       height: 207px
@@ -133,7 +133,8 @@
     justify-content: center
     margin-right: 16px
     border-radius: 5px
-    background: #cccccc
+    border: 1px solid rgba($white, 0.7)
+    background: rgba($blue, 0.7)
     width: 32px
     height: 32px
 
@@ -141,6 +142,7 @@
     &--minus
       position: absolute
       font-size: 32px
+      color: $white
 
   &__mobile-title
     position: relative
@@ -193,7 +195,7 @@
       width: 2px
       height: 2px
       background: rgba($black, 0.9)
-      transition: height 0.3s ease-in, width 0.6s ease-in 0.3s
+      transition: width 0.3s ease-in, height 0.6s ease-in 0.3s
       .custom-videos__video-player-wrapper--active &
         width: 100%
         height: 100%
@@ -201,26 +203,86 @@
     &-close-btn
       position: absolute
       z-index: -1
-      top: 30px
-      right: 30px
+      top: calc(50vh - ((800px * 9 / 16) / 2) - 30px)
+      right: calc(50vw - (800px / 2) - 30px)
+      width: 22px
+      height: 22px
       opacity: 0
       color: $white
+      box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 1.0)
       cursor: pointer
-      transition: opacity 0.3s ease 1s
+      transition: opacity 0.3s ease 1s, transform 0.1s linear, box-shadow 0.1s linear
+      @media screen and ( max-width: 1000px )
+        top: calc(50vh - ((80vw * 9 / 16) / 2) - 30px)
+        right: calc(50vw - (80vw / 2) - 30px)
+      &:hover
+        transform: scale(1.2)
+        box-shadow: 0px 0px 5px 4px rgba(255, 255, 255, 1.0)
       .custom-videos__video-player-wrapper--active &
         z-index: 1000
         opacity: 1
 
+      span
+        display: block
+        position: absolute
+        top: 10px
+        width: 22px
+        height: 2px
+        background: $white
+        &:first-child
+          transform: rotate(45deg)
+        &:last-child
+          transform: rotate(-45deg)
+          
+
     &-video
       position: absolute
-      width: 50vw
-      height: calc(50vw * 9 / 16)
+      width: 800px
+      height: calc(800px * 9 / 16)
       object-fit: cover
       opacity: 0
       box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 1.0)
-      transition: opacity 2s ease 1s
-      .custom-videos__video-player-wrapper--active &
+      @media screen and ( max-width: 1000px )
+        width: 80vw
+        height: calc(80vw * 9 / 16)
+        
+      .custom-videos__video-player-wrapper--playing &
         opacity: 1
+
       &:focus
         outline: none
 
+    &-poster
+      max-width: 100%
+      object-fit: cover
+      cursor: pointer
+      &-ctnr
+        position: absolute
+        width: 800px
+        height: calc(800px * 9 / 16)
+        box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 1.0)
+        opacity: 0
+        z-index: 1
+        transition: opacity 2s ease 1s
+        @media screen and ( max-width: 1000px )
+          width: 80vw
+          height: calc(80vw * 9 / 16)
+        .custom-videos__video-player-wrapper--active &
+          opacity: 1
+
+        &--playing
+          transition: opacity 2s ease, z-index 2s ease
+          z-index: -1
+          opacity: 0 !important
+
+  &__mobile-play-video
+    position: relative
+    padding: 30px 30px 30px
+    color: $white
+    width: 100%
+    font-weight: bold
+    text-align: center
+
+    span
+      box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 1.0)
+      padding: 5px 15px

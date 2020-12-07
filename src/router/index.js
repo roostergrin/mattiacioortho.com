@@ -163,11 +163,11 @@ const router = new VueRouter({
           path: '/covid-19-updates',
           label: 'COVID-19 Safety',
           target: '#updates'
-        // },
-        // {
-        //   path: '/videos',
-        //   label: 'Videos',
-        //   target: '#videos'
+        },
+        {
+          path: '/videos',
+          label: 'Videos',
+          target: '#videos'
         }
       ]
     },

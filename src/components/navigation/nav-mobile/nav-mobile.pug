@@ -20,6 +20,7 @@
               .nav-mobile__button-group
                   a.nav-mobile__rewards(:href='props.acf.links.rewards', target='_blank') Rewards Center
                   a.nav-mobile__login(:href='props.acf.links.login', target='_blank') Patient Login
+                  router-link.nav-mobile__videos(to='/videos') Videos
               .nav-mobile__icon-row
                 a.nav-mobile__icon-wrapper(
                   v-for='(link, i) in props.acf.social_links'

@@ -6,10 +6,9 @@ export default {
     return {
       activeTab: 0,
       hoverTab: 0,
-      mobileTabs: [0],
-      openVideoPlayer: null
-      // activeVideoSrc: '',
-      // activeVideoPoster: ''
+      mobileTabs: [],
+      openVideoPlayer: null,
+      videoPlaying: false
     }
   },
   props: ['props'],
@@ -17,20 +16,25 @@ export default {
     toggleMobileTab (i) {
       !this.mobileTabs.includes(i) ? this.mobileTabs.push(i) : this.mobileTabs.splice(this.mobileTabs.indexOf(i), 1)
     },
-    playVideo (i, j) {
+    loadVideo (i, j) {
       this.openVideoPlayer = i
+      // initiate video preloading
       let id = `video-${j}${i}`
       document.getElementById(id).play()
-      // this.activeVideoSrc = this.props[j].videos[i].src
-      // this.activeVideoPoster = this.props[j].videos[i].image
+      document.getElementById(id).pause()
+    },
+    playVideo (i, j) {
+      this.videoPlaying = true
+      let id = `video-${j}${i}`
+      document.getElementById(id).play()
     },
     closeVideo (i, j) {
       this.openVideoPlayer = null
+      this.videoPlaying = false
+      // reset the video to the beginning after closing
       let id = `video-${j}${i}`
       document.getElementById(id).pause()
       document.getElementById(id).currentTime = 0
-      // this.activeVideoSrc = ''
-      // this.activeVideoPoster = ''
     }
   }
 }
