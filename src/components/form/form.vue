@@ -1,7 +1,7 @@
 <template lang='pug' src='./form.pug'></template>
 
 <script>
-import api from 'api'
+// import api from 'api'
 import axios from 'axios'
 import { openModal } from '@/methods'
 
@@ -13,7 +13,7 @@ export default {
       email: '',
       message: '',
       newPatient: '',
-      postUrl: api + '/rg-mail/v1/contact',
+      postUrl: 'https://www.mattiacioortho.com/wp-json/rg-mail/v1/contact',
       formSubmitted: false
     }
   },
