@@ -1,7 +1,7 @@
 <template lang='pug' src='./family-fun-form.pug'></template>
 
 <script>
-import api from 'api'
+// import api from 'api'
 import axios from 'axios'
 import { openModal, closeModal } from '@/methods'
 export default {
@@ -12,7 +12,7 @@ export default {
       email: '',
       yourGrade: '',
       gender: '',
-      postUrl: api + '/rg-mail/v1/family-fun',
+      postUrl: 'https://www.mattiacioortho.com/wp-json/rg-mail/v1/family-fun',
       formSubmitted: false,
       selected: 'null'
     }
