@@ -53,7 +53,7 @@
     catch(e){window.attachEvent("onload", $buo_f)}
   </script>
   <!-- BoldChat Visitor Monitor HTML v5.00 (Website=1057 - Mattiacio Orthodontics,ChatButton=1057 - Mattiacio Orthodontics,ChatInvitation=1057 - Mattiacio Orthodontics) -->
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     window._bcvma = window._bcvma || [];
     _bcvma.push(["setAccountID", "438176494458224912"]);
     _bcvma.push(["setParameter", "WebsiteID", "435787954676086530"]);
@@ -80,8 +80,30 @@
     </script>
     <noscript>
     <a href="http://www.boldchat.com" title="Live Chat Software" target="_blank"><img alt="Live Chat Software" src="https://vms.boldchat.com/aid/438176494458224912/bc.vmi?wdid=435787954676086530&amp;vr=&amp;vn=&amp;vi=&amp;ve=&amp;vp=&amp;curl=" border="0" width="1" height="1" /></a>
-  </noscript>
+  </noscript> -->
   <!-- /BoldChat Visitor Monitor HTML v5.00 -->
+  <!-- Ruby Chat Code -->
+  <script>
+    window.rubyApi={l:[],t:[],
+      on:function(){this.l.push(arguments)},
+      trigger:function(){this.t.push(arguments)}
+    };
+    (function(){
+      var e="1c922a92-3c62-4e84-8b62-b93f46c3b681";
+      var a=false;
+      var t=document.createElement("script");
+      t.async=true;
+      t.type="text/javascript";
+      t.src="https://chatwidget.ruby.com/"+e;
+      document.getElementsByTagName("HEAD").item(0).appendChild(t);
+      t.onreadystatechange=t.onload=function(t){
+        if(!a&&(!this.readyState||this.readyState=="loaded"||this.readyState=="complete")){
+          if(window.RubyChat)window.RubyChat({c:e});a=true
+        }
+      }}
+    )();
+  </script>
+  <!-- Ruby Chat Code -->
   <!-- Hotjar Tracking Code for https://mattiacioortho.com -->
   <script>
       (function(h,o,t,j,a,r){
