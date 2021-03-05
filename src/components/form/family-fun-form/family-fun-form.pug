@@ -14,6 +14,39 @@
 
     .family-fun-form__group
       input.family-fun-form__input(
+        name='your-grade'
+        v-model='yourGrade'
+        v-validate="'required'"
+        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('your-grade') }"
+        type='text'
+        placeholder="Player's Grade")
+      .family-fun-form__error-container  
+        span(v-show="errors.has('your-grade')") Player's grade is required.
+
+    .family-fun-form__group
+      input.family-fun-form__input(
+        name='your-lax-program'
+        v-model='yourLaxProgram'
+        v-validate="'required'"
+        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('your-lax-program') }"
+        type='text'
+        placeholder="Name of LAX program")
+      .family-fun-form__error-container  
+        span(v-show="errors.has('your-lax-program')") Lax program is required.
+
+    .family-fun-form__group
+      input.family-fun-form__input(
+        name='parent-guardian-name'
+        v-model='yourParentGuardian'
+        v-validate="'required|alpha_spaces'"
+        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('parent-guardian-name') }"
+        type='text'
+        placeholder="Parent/Guardian name")
+      .family-fun-form__error-container  
+        span(v-show="errors.has('parent-guardian-name')") Parent/Guardian name is required.
+
+    .family-fun-form__group
+      input.family-fun-form__input(
         name='phone'
         v-model='phone'
         v-validate='{regex: /^\\D?(\\d{3})\\D?\\D?(\\d{3})\\D?(\\d{4})$/}'
@@ -32,17 +65,6 @@
         placeholder='Email Address')
       .family-fun-form__error-container
         span(v-show="errors.has('email')") Valid Email is required.
-
-      .family-fun-form__group
-        input.family-fun-form__input(
-          name='your-grade'
-          v-model='yourGrade'
-          v-validate="'required'"
-          :class="{ 'input': true, 'family-fun-form__input--error': errors.has('your-grade') }"
-          type='text'
-          placeholder="Player's Grade")
-        .family-fun-form__error-container  
-          span(v-show="errors.has('your-grade')") Player's grade is required.
 
       .family-fun-form__group-inline
           p Male/Female?
@@ -64,7 +86,7 @@
             label.family-fun-form__label Female
 
     .family-fun-form__group-inline-center
-      p Which Day Will you be Attending?
+      p Which Session Will you be Attending?
     .family-fun-form__group
       select.family-fun-form__input(
         name='selected'
@@ -79,35 +101,21 @@
           :class="{ 'input': true, 'family-fun-form__input--error': errors.has('selected') }")
           option.family-fun-form__label Please Select One
         option(
-          value='Saturday March 28th | Victor Youth LAX Boys and Girls | k-2 9:00am')
-          option.family-fun-form__label Saturday March 28th | Victor Youth LAX Boys and Girls | k-2 9:00am
+          value='Saturday, March 20th | Canandaigua Youth LAX Boys | all ages 9:00am')
+          option.family-fun-form__label Saturday, March 20th | Canandaigua Youth LAX Boys  | all ages 9:00am
         option(
-          value='Saturday March 28th | Victor Youth LAX Boys and Girls | 3rd - 4th 9:45am')
-          option.family-fun-form__label Saturday March 28th | Victor Youth LAX Boys and Girls | 3rd - 4th 9:45am
+          value='Saturday, March 20th | Canandaigua Youth LAX Girls | all ages 9:20am')
+          option.family-fun-form__label Saturday, March 20th | Canandaigua Youth LAX Girls  | all ages 9:20am
         option(
-          value='Saturday March 28th | Victor Youth LAX Boys and Girls | 5th - 6th 10:30am')
-          option.family-fun-form__label Saturday March 28th | Victor youth LAX Boys and Girls | 5th - 6th 10:30am
+          value='Saturday, March 20th | Marcus Whitman Youth LAX | all ages 9:45am')
+          option.family-fun-form__label Saturday, March 20th | Marcus Whitman Youth LAX | all ages 9:45am
         option(
-          value='Saturday March 28th | Canandaigua Boys and Girls Youth LAX  | k-2 11:15am')
-          option.family-fun-form__label Saturday March 28th | Canandaigua Boys and Girls Youth LAX  | k-2 11:15am
+          value='Saturday, March 20th | Victor Youth LAX Boys | all ages 10:00am')
+          option.family-fun-form__label Saturday, March 20th | Victor Youth LAX Boys | all ages 9:00am
         option(
-          value='Saturday March 28th | Marcus Whitman Youth LAX | k-6th 1:00pm')
-          option.family-fun-form__label Saturday March 28th | Marcus Whitman Youth LAX | k-6th 1:00pm
-        option(
-          value='Saturday March 28th | Canandaigua Boys and Girls Youth LAX  | 3rd - 4th 12:00pm')
-          option.family-fun-form__label Saturday March 28th | Canandaigua Boys and Girls Youth LAX  | 3rd - 4th 12:00pm
-        option(
-          value='Saturday March 28th | Canandaigua Boys and Girls Youth LAX  | 5th - 6th 12:30pm')
-          option.family-fun-form__label Saturday March 28th | Canandaigua Boys and Girls Youth LAX  | 5th - 6th 12:30pm
-        option(
-          value='Monday March 30th | BH Pride Youth LAX | k-6th 5:30pm')
-          option.family-fun-form__label Monday March 30th | BH Pride Youth LAX | k-6th 5:30pm
-        option(
-          value='Tuesday March 31st | Midlakes Youth LAX | k-6th 5:30pm')
-          option.family-fun-form__label Tuesday March 31st | Midlakes Youth LAX | k-6th 5:30pm
-        option(
-          value='Tuesday March 31st | Penn Yan Youth Lacrosse | k-6th 5:30pm')
-          option.family-fun-form__label Tuesday March 31st | Penn Yan Youth Lacrosse | k-6th 5:30pm
+          value='Saturday, March 20th | Victor Youth LAX Girls | all ages 10:15am')
+          option.family-fun-form__label Saturday, March 20th | Victor Youth LAX Girls | all ages 10:15am
+
       .family-fun-form__error-container
         span(v-show="errors.has('selected')") Valid date is required.
 

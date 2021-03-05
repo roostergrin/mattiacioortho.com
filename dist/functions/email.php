@@ -119,9 +119,11 @@ function rg_serve_route_family_fun () {
 
   $message = '<html><body>';
   $message .= '<p><h4><strong>Form Submission by: </strong></h4>' . $data['fullName'] . '</p>';
+  $message .= '<p><h4><strong>Grade:</strong></h4> ' . $data['yourGrade'] . '</p>';
+  $message .= '<p><h4><strong>Lax Program:</strong></h4> ' . $data['yourLaxProgram'] . '</p>';
+  $message .= '<p><h4><strong>Parent/guardian name:</strong></h4> ' . $data['yourParentGuardian'] . '</p>';
   $message .= '<p><h4><strong>Phone: </strong></h4>' . $data['phone'] . '</p>';
   $message .= '<p><h4><strong>Email: </strong></h4>' . $data['email'] . '</p>';
-  $message .= '<p><h4><strong>Grade:</strong></h4> ' . $data['yourGrade'] . '</p>';
   $message .= '<p><h4><strong>Gender:</strong></h4> ' . $data['gender'] . '</p>';
   $message .= '<p><h4><strong>Date Attending:</strong></h4> ' . $data['selected'] . '</p>';
   $message .= '</body></html>';
