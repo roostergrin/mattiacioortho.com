@@ -11,6 +11,8 @@ export default {
       phone: '',
       email: '',
       yourGrade: '',
+      yourParentGuardian: '',
+      yourLaxProgram: '',
       gender: '',
       postUrl: 'https://www.mattiacioortho.com/wp-json/rg-mail/v1/family-fun',
       formSubmitted: false,
