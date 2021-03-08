@@ -36,14 +36,14 @@
 
     .family-fun-form__group
       input.family-fun-form__input(
-        name='parent-guardian-name'
+        name='your-parent-guardian'
         v-model='yourParentGuardian'
         v-validate="'required|alpha_spaces'"
-        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('parent-guardian-name') }"
+        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('your-parent-guardian') }"
         type='text'
         placeholder="Parent/Guardian name")
       .family-fun-form__error-container  
-        span(v-show="errors.has('parent-guardian-name')") Parent/Guardian name is required.
+        span(v-show="errors.has('your-parent-guardian')") Parent/Guardian name is required.
 
     .family-fun-form__group
       input.family-fun-form__input(
