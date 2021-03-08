@@ -112,7 +112,7 @@ function rg_serve_route_family_fun () {
 
   $data = json_decode(file_get_contents("php://input"), true);
   // $from = 'info@wordpress.com,';
-  $to = 'info@mattiacioortho.com';
+  $to = 'anami@roostergrin.com';
   $subject = 'Website Family Fun Registration Form';
   $headers = "MIME-Version: 1.0\r\n";
   $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
