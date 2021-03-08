@@ -39,6 +39,8 @@ export default {
         phone: this.phone,
         email: this.email,
         yourGrade: this.yourGrade,
+        yourParentGuardian: this.yourParentGuardian,
+        yourLaxProgram: this.yourLaxProgram,
         gender: this.gender,
         selected: this.selected
       })
