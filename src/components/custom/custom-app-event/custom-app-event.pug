@@ -1,4 +1,4 @@
-.custom-app-event(v-if='props', :style="{backgroundImage: 'url(' + props.acf.event.bg_img + ')'}", :class="{'custom-app-event--family-fun-event': $route.path.includes('/mouth-guard-registration'), 'custom-app-event--banner': $route.path != '/mouth-guard-registration'}")
+.custom-app-event(v-if='props', :style="{backgroundImage: 'url(' + props.acf.event.bg_img + ')'}", :class="{'custom-app-event--family-fun-event': $route.path.includes('/mouth-guard-registration'), 'custom-app-event--banner': $route.path !== '/mouth-guard-registration'}")
   .custom-app-event__container(v-if='$route.path.includes("/mouth-guard-registration")', :class="{'custom-app-event__container--family-fun-event': $route.path.includes('/mouth-guard-registration')}")
     .custom-app-event__inner
       .custom-app-event__title(v-html='props.acf.event.title')
