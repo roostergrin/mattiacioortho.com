@@ -227,7 +227,7 @@ const router = new VueRouter({
     {
       path: '/mouth-guard-registration',
       name: 'Mouth Guard Registration',
-      navigation: false,
+      navigation: true,
       component: FamilyFunEvent
     },
     {
