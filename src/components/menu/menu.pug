@@ -3,12 +3,12 @@
     transition(name='title-fade')
       .menu__title(
         v-if='!$store.state.menu && ($route.path != "/" && !$route.path.includes("/covid-19-updates") && !$route.path.includes("/virtual-services") && !$route.path.includes("/videos"))'
-        :class='{"menu__title--white": $route.path === "/treatments" || $route.path === "/mattiacio-difference" }'
+        :class='{"menu__title--white": $route.path === "/treatments" || $route.path === "/mattiacio-difference", "menu__title--family-fun-event": $route.path.includes("/mouth-guard-registration")}'
       ) {{ $route.name }}
     .menu__appt(v-if='$route.path.includes("/virtual-services")' :class='{"menu__appt--is-visible": !$store.state.menu && $route.path != "/contact-us" && $route.path != "/", "menu__appt--white": $route.name != "Treatments" }', @click='makeAppt')
       span Make an Appointment
       Icon.menu__appt-icon(name='arrow')
-  .menu__container
+  .menu__container(:class='{ "menu__mouth-guard": $route.path.includes("/mouth-guard-registration") }')
     .menu__link-wrapper(
       v-for='(link, i) in links'
       :key='i'

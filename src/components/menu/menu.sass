@@ -3,7 +3,7 @@
   height: 100%
 
   &--family-fun-event
-    display: none
+    // display: none
 
   &__container
     @extend .flex-container-lg
@@ -29,6 +29,9 @@
     @extend h1
     &--white
       color: $pale-blue
+
+    &--family-fun-event
+      color: $white
 
   &__link-video
     position: absolute
@@ -329,3 +332,10 @@
       .menu__appt-icon
         svg
           fill: $blue
+
+  &__mouth-guard
+    transition: all .5s ease
+    z-index: -1
+
+    .body-stop &
+      z-index: unset
