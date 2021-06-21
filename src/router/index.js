@@ -214,7 +214,7 @@ const router = new VueRouter({
         },
         {
           item: 'Patient Login',
-          path: 'https://www.mytlink.net/TlinkDotNet/Patient/login.aspx?tpract=520945'
+          path: 'https://www.anywheredolphin.com/'
         },
         {
           path: '/contact-us',
