@@ -34,5 +34,8 @@ footer.footer(v-if='props')
           br
           | 585. 742. 1050
         a.footer__address(v-html='props.acf.address.text', :href='props.acf.address.href', target='_blank')
+
+        .footer_address2
+          a.footer__address(v-if='props.acf.address_new.text' v-html='props.acf.address_new.text', :href='props.acf.address_new.href', target='_blank')      
       .footer__roostergrin
         | Powered by RoosterGrin

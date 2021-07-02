@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import AboutUs from '@/pages/about-us/about-us'
 import ContactUs from '@/pages/contact-us/contact-us'
-import COVID19Updates from '@/pages/covid-19-updates/covid-19-updates'
+// import COVID19Updates from '@/pages/covid-19-updates/covid-19-updates'
 import Home from '@/pages/home/home'
 import Invisalign from '@/pages/invisalign/invisalign'
 import Mattiacio from '@/pages/mattiacio-difference/mattiacio-difference'
@@ -10,7 +10,7 @@ import NewPatients from '@/pages/new-patients/new-patients'
 import VirtualServices from '@/pages/virtual-services/virtual-services'
 import Videos from '@/pages/videos/videos'
 import Treatments from '@/pages/treatments/treatments'
-import FamilyFunEvent from '@/pages/family-fun-event/family-fun-event'
+// import FamilyFunEvent from '@/pages/family-fun-event/family-fun-event'
 import ThankYou from '@/pages/thank-you/thank-you'
 
 // remove
@@ -70,13 +70,13 @@ const router = new VueRouter({
         }
       ]
     },
-    {
-      path: '/covid-19-updates',
-      name: 'COVID-19 Updates',
-      navigation: false,
-      component: COVID19Updates,
-      url: '/static/covid-19-updates.jpg'
-    },
+    // {
+    //  path: '/covid-19-updates',
+    //  name: 'COVID-19 Updates',
+    //  navigation: false,
+    //  component: COVID19Updates,
+    //  url: '/static/covid-19-updates.jpg'
+//  },
     {
       path: '/virtual-services',
       name: 'Virtual Services',
@@ -159,11 +159,11 @@ const router = new VueRouter({
           target: '#what',
           name: 'Mattiacio Difference'
         },
-        {
-          path: '/covid-19-updates',
-          label: 'COVID-19 Safety',
-          target: '#updates'
-        },
+        // {
+        //  path: '/covid-19-updates',
+        //  label: 'COVID-19 Safety',
+        //  target: '#updates'
+     // },
         {
           path: '/videos',
           label: 'Videos',
@@ -224,12 +224,12 @@ const router = new VueRouter({
         }
       ]
     },
-    {
-      path: '/mouth-guard-registration',
-      name: 'Mouth Guard Registration',
-      navigation: true,
-      component: FamilyFunEvent
-    },
+  //  {
+  //    path: '/mouth-guard-registration',
+   //   name: 'Mouth Guard Registration',
+   //   navigation: true,
+    //  component: FamilyFunEvent
+   // },
     {
       path: '/thank-you',
       name: 'Thank You',

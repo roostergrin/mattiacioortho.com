@@ -9,7 +9,7 @@ import * as customFilters from './shared/filters/filters'
 import VueScrollTo from 'vue-scrollto'
 import VueWaypoint from 'vue-waypoint'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
-import 'swiper/dist/css/swiper.css'
+import 'swiper/swiper-bundle.css'
 
 // Vue config
 Vue.config.productionTip = false
@@ -33,7 +33,7 @@ Vue.use(VueScrollTo, {
   y: true
 })
 Vue.use(VueWaypoint)
-Vue.use(VueAwesomeSwiper)
+Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 
 Vue.directive('load-directive', {
   bind (el) {
