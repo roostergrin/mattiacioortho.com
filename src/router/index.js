@@ -189,15 +189,15 @@ const router = new VueRouter({
           label: 'iTero Scanner',
           target: '#section-1'
         },
-        {
-          path: '/invisalign',
-          label: 'VPro5',
-          target: '#section-2'
-        },
+        // {
+        //  path: '/invisalign',
+        //  label: 'VPro5',
+        //  target: '#section-2'
+     // },
         {
           path: '/invisalign',
           label: 'Invisalign Teen',
-          target: '#section-3'
+          target: '#section-2'
         }
       ]
     },
