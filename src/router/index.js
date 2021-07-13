@@ -76,7 +76,7 @@ const router = new VueRouter({
     //  navigation: false,
     //  component: COVID19Updates,
     //  url: '/static/covid-19-updates.jpg'
-//  },
+    //  },
     {
       path: '/virtual-services',
       name: 'Virtual Services',
@@ -95,14 +95,18 @@ const router = new VueRouter({
       path: '/new-patients',
       name: 'New Patients',
       navigation: true,
-      component: NewPatients,
       url: '/static/new-pats.jpg',
+      component: NewPatients,
       children: [
+        {
+          item: 'Virtual Smile Assessment',
+          path: 'https://formsroostergrin.com/mattiacioortho/virtual-page/index.html'
+
+        },
         {
           path: '/new-patients',
           label: 'Your First Visit',
-          target: '#first',
-          name: 'New Patients'
+          target: '#first'
         },
         {
           path: '/new-patients',
@@ -163,7 +167,7 @@ const router = new VueRouter({
         //  path: '/covid-19-updates',
         //  label: 'COVID-19 Safety',
         //  target: '#updates'
-     // },
+        // },
         {
           path: '/videos',
           label: 'Videos',
@@ -193,7 +197,7 @@ const router = new VueRouter({
         //  path: '/invisalign',
         //  label: 'VPro5',
         //  target: '#section-2'
-     // },
+        // },
         {
           path: '/invisalign',
           label: 'Invisalign Teen',
@@ -209,27 +213,27 @@ const router = new VueRouter({
       component: ContactUs,
       children: [
         {
+          path: '/contact-us',
+          label: 'Sponsorship Requests',
+          target: '#sponsor',
+          name: 'Contact Us'
+        },
+        {
           item: 'Rewards Center',
           path: 'https://mattiacio-orthodontics-farmington-2.patientrewardshub.com/'
         },
         {
           item: 'Patient Login',
           path: 'https://www.anywheredolphin.com/'
-        },
-        {
-          path: '/contact-us',
-          label: 'Sponsorship Requests',
-          target: '#sponsor',
-          name: 'Contact Us'
         }
       ]
     },
-  //  {
-  //    path: '/mouth-guard-registration',
-   //   name: 'Mouth Guard Registration',
-   //   navigation: true,
+    //  {
+    //    path: '/mouth-guard-registration',
+    //   name: 'Mouth Guard Registration',
+    //   navigation: true,
     //  component: FamilyFunEvent
-   // },
+    // },
     {
       path: '/thank-you',
       name: 'Thank You',
