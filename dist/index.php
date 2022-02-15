@@ -25,7 +25,7 @@
     <?php endif; ?>
     <!-- End Facebook Pixel Code -->
 </head>
-<body>
+<body <?php body_class(); ?>>
   <div id="app"></div>
   <?php wp_footer(); ?>
   <script type="text/javascript">
