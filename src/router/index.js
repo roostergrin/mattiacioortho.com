@@ -10,7 +10,7 @@ import NewPatients from '@/pages/new-patients/new-patients'
 import VirtualServices from '@/pages/virtual-services/virtual-services'
 import Videos from '@/pages/videos/videos'
 import Treatments from '@/pages/treatments/treatments'
-// import FamilyFunEvent from '@/pages/family-fun-event/family-fun-event'
+import FamilyFunEvent from '@/pages/family-fun-event/family-fun-event'
 import ThankYou from '@/pages/thank-you/thank-you'
 
 // remove
@@ -228,12 +228,13 @@ const router = new VueRouter({
         }
       ]
     },
-    //  {
-    //    path: '/mouth-guard-registration',
-    //   name: 'Mouth Guard Registration',
-    //   navigation: true,
-    //  component: FamilyFunEvent
-    // },
+    {
+      path: '/mouth-guard-registration',
+      name: 'Mouth Guard Registration',
+      // navigation: true,
+      navigation: false,
+      component: FamilyFunEvent
+    },
     {
       path: '/thank-you',
       name: 'Thank You',
