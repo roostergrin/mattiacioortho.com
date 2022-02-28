@@ -7,6 +7,7 @@ import Testimonials from 'components/custom/custom-home-testimonials/custom-home
 import Welcome from 'components/custom/custom-home-welcome/custom-home-welcome'
 import Why from 'components/custom/custom-home-why/custom-home-why'
 import CustomHomeReview from 'components/custom/custom-home-footer-review/custom-home-footer-review'
+import FunEvent from 'components/custom/custom-app-event/custom-app-event'
 
 export default {
   name: 'home',
@@ -24,7 +25,8 @@ export default {
     Testimonials,
     Welcome,
     Why,
-    CustomHomeReview
+    CustomHomeReview,
+    FunEvent
   }
 }
 </script>
