@@ -112,12 +112,12 @@ const router = new VueRouter({
           path: '/new-patients',
           label: 'Financial Info',
           target: '#financial'
-        },
-        {
-          path: '/new-patients',
-          label: 'Patient Forms',
-          target: '#forms'
         }
+        // {
+        //   path: '/new-patients',
+        //   label: 'Patient Forms',
+        //   target: '#forms'
+        // }
       ]
     },
     {
