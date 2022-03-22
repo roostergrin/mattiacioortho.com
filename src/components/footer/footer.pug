@@ -22,7 +22,7 @@ footer.footer(v-if='props')
   div(style="display:inline-block;min-width:200px;")
     .footer__bottom
       .footer__bottom--third
-        a.footer__badge(href='https://pcihipaa.com/certified-hipaa-compliance/')
+        a.footer__badge(href='https://pcihipaa.com/certified-hipaa-compliance/' target='_blank')
           img(
             src='https://pcihipaa.com/Compliance-Badge.jpg'
             alt='Certified HIPAA Compliance Provided by PCIHIPAA'
@@ -36,6 +36,13 @@ footer.footer(v-if='props')
         a.footer__address(v-html='props.acf.address.text', :href='props.acf.address.href', target='_blank')
 
         .footer_address2
-          a.footer__address(v-if='props.acf.address_new.text' v-html='props.acf.address_new.text', :href='props.acf.address_new.href', target='_blank')      
+          a.footer__address(v-if='props.acf.address_new.text' v-html='props.acf.address_new.text', :href='props.acf.address_new.href', target='_blank')
+      .footer__bottom--third
+        a.footer__badge(href='https://interpret.cyracom.com/' target='_blank')
+          img.footer__svg(
+            src='https://interpret.cyracom.com/wp-content/themes/cyra/dist/images/logo.svg'
+            alt='Cyracom interpretation services'
+            style='width:200px; height:124px;'
+          )
       .footer__roostergrin
         | Powered by RoosterGrin
