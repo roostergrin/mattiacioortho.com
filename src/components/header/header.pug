@@ -1,6 +1,6 @@
-#head.header(:class="{'header--home': $route.path === '/' && !$store.state.menu, 'header--family-fun-event': $route.path.includes('/mouth-guard-registration'), 'header--thank-you': $route.path.includes('/thank-you') }", v-if='props')
+#head.header(:class="{'header--home': $route.path === '/' && !$store.state.menu, 'header--family-fun-event': $route.path.includes('/mouth-guard-registration'), 'header--thank-you': $route.path.includes('/thank-you') || $route.path.includes('/accessibility') }", v-if='props')
   v-waypoint.header__waypoint(@waypoint-out='scrollOut', @waypoint-in='scrollIn')
-  Menu.header__menu--desktop(:class="{'header__menu--thank-you': $route.path.includes('/thank-you') }", v-if='props')
+  Menu.header__menu--desktop(:class="{'header__menu--thank-you': $route.path.includes('/thank-you') || $route.path.includes('/accessibility') }", v-if='props')
   transition(name='home-fade')
     HomeHero(v-show='$route.path === "/" && !$store.state.menu', :props='props')
   transition(name='fade-in')

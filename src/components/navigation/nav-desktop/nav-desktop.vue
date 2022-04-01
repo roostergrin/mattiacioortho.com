@@ -29,6 +29,7 @@ export default {
       if (menuOpen) {
         this.$store.dispatch('VIEW_MENU', false)
         document.body.classList.remove('body-stop')
+        document.getElementsByClassName('header--thank-you')[0].classList.remove('menuaddthank')
       }
       // if menu is closed and not at the top of the pg - scroll to top
       if (menuClosed && this.$store.state.nav) {
@@ -40,6 +41,7 @@ export default {
       if (menuClosed && !this.$store.state.nav) {
         this.$store.dispatch('VIEW_MENU', true)
         document.body.classList.add('body-stop')
+        document.getElementsByClassName('header--thank-you')[0].classList.add('menuaddthank')
       }
     },
     closeMenu () {

@@ -12,6 +12,7 @@ import Videos from '@/pages/videos/videos'
 import Treatments from '@/pages/treatments/treatments'
 import FamilyFunEvent from '@/pages/family-fun-event/family-fun-event'
 import ThankYou from '@/pages/thank-you/thank-you'
+import Accessibility from '@/pages/accessibility/accessibility'
 
 // remove
 import Style from '@/pages/style-guide/style-guide'
@@ -240,6 +241,12 @@ const router = new VueRouter({
       name: 'Thank You',
       navigation: false,
       component: ThankYou
+    },
+    {
+      path: '/accessibility',
+      name: 'Accessibility',
+      navigation: false,
+      component: Accessibility
     },
     {
       path: '/style',

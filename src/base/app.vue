@@ -9,6 +9,7 @@ import Loader from 'components/loader/loader'
 import Modal from 'components/modal/modal'
 import Navigation from 'components/navigation/navigation'
 import Thanks from 'components/modal/modal-thanks/modal-thanks'
+import BaseBaseAccess from 'components/base-access/index'
 
 export default {
   created () {
@@ -38,7 +39,8 @@ export default {
     Loader,
     Modal,
     Navigation,
-    Thanks
+    Thanks,
+    BaseBaseAccess
   },
   name: 'app'
 }
