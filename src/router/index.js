@@ -101,8 +101,7 @@ const router = new VueRouter({
       children: [
         {
           item: 'Virtual Smile Assessment',
-          path: 'https://formsroostergrin.com/mattiacioortho/virtual-page/index.html'
-
+          path: 'https://formsroostergrin.com/xmattiacioortho/virtual-page/index.html'
         },
         {
           path: '/new-patients',
