@@ -106,7 +106,8 @@ const router = new VueRouter({
         {
           path: '/new-patients',
           label: 'Your First Visit',
-          target: '#first'
+          target: '#first',
+          name: 'New Patients'
         },
         {
           path: '/new-patients',
