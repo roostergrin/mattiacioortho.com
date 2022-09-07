@@ -83,7 +83,7 @@
 
   <script src="https://onlineschedulingv2.threadcommunication.com" type="text/javascript"></script> <script type="text/javascript"> OpenChair.init({ token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmlnaW4iOiJodHRwczovL3d3dy5tYXR0aWFjaW9vcnRoby5jb20vIiwicHJhY3RpY2VfaWQiOiIyNjQifQ.gjnqfJ3U9O__I7-7WZ8BaPGEVdiVIOoifZ9giYcdY9k", mainButtonLeft: true, specificLocations: ["264-3c21f535-fc23-4eec-b5f6-9de1bf33a0a2","264-cd684daf-9796-4cd5-acc3-c1ffd8c3fd3d"], }) </script>
 
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
 
   (function(d){
     var s = d.createElement("script");
@@ -96,7 +96,7 @@
     ns.innerHTML = `Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a>`;
     (d.body || d.head).appendChild(ns);})(document);
 
-</script>
+</script> -->
 
 <div class="footer__container-userway-trigger" id="accessibilityWidget" tabindex="0">Click for Accessibility</div>
 </body>
