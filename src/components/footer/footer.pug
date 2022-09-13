@@ -22,12 +22,11 @@ footer.footer(v-if='props')
   div(style="display:inline-block;min-width:200px;")
     .footer__bottom
       .footer__bottom--third
-        a.footer__badge(href='https://pcihipaa.com/certified-hipaa-compliance/' target='_blank')
-          img(
-            src='https://pcihipaa.com/Compliance-Badge.jpg'
-            alt='Certified HIPAA Compliance Provided by PCIHIPAA'
-            style='width:200px; height:124px;'
-          )
+        //- a.footer__badge(href='https://pcihipaa.com/certified-hipaa-compliance/' target='_blank')
+        img.footer__bottom--hipaa(
+          src='https://cpwk.cloud/wp-content/uploads/2019/04/pcihipaa_logo.png'
+          alt='Certified HIPAA Compliance Provided by PCIHIPAA'
+        )
       .footer__bottom--third
         a.footer__phone(:href='props.acf.social_links[0].href')
           | Call or Text Us Anytime
