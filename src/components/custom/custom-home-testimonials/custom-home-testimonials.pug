@@ -16,7 +16,7 @@
       .custom-home-testimonials__prev(slot="button-prev")
         Icon(name='arrow-01')
           
-    .custom-home-testimonials__video-container
+    .custom-home-testimonials__video-container(v-if='props.video')
       .custom-home-testimonials__video-play-btn(@click='openModal(3)')
         Icon.custom-home-testimonials__play-btn-icon(name='triangle')
       .custom-home-testimonials__thumb(:style="{backgroundImage: 'url(' + props.video_thumb + ')'}")
