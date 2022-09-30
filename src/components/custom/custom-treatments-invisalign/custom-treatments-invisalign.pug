@@ -6,7 +6,7 @@
         Icon.custom-treatments-invisalign__logo(name='invisalign')
         //- Icon.custom-treatments-invisalign__logo(name='invisalign-teen')
         .custom-treatments-invisalign__text(v-html='props.text')
-        router-link.custom-treatments-invisalign__read-more(to='/invisalign#section-0')
+        .custom-treatments-invisalign__read-more(v-on:click="toInvisalign()")
           //- 
           | Read More
       .custom-treatments-invisalign__right(:style="{backgroundImage: 'url(' + props.img + ')'}")
