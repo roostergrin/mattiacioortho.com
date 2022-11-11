@@ -1,0 +1,121 @@
+.custom-about-meet-dr1
+  padding-bottom: rem-calc(103px)
+
+  &__container
+    @extend .flex-container-lg
+
+  &__row
+    @extend .flex
+    @extend .flex-between
+
+    @media screen and (max-width: 690px)
+      flex-direction: column-reverse
+      // height: inherit
+
+  &__title
+    @extend h2
+    padding: rem-calc(80px) 0
+    text-align: center
+
+  &__left
+    @extend .flex
+    @extend .flex-between
+    width: 50%
+
+    @media screen and (max-width: 690px)
+      width: 100%
+
+  &__tab-container
+    @extend .flex
+    @extend .flex-around
+    flex-direction: column
+    width: 25%
+
+  &__content-wrapper
+    position: relative
+    width: 72.5%
+    height: 100%
+
+    @media screen and (max-width: 690px)
+      margin-top: 3rem
+      height: 400px
+
+  &__content-container
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 100%
+
+  &__tab
+    cursor: pointer
+
+    &--active
+      .custom-about-meet-dr1__icon-outer
+        box-shadow: $shadow-blue
+        background: $turquoise
+
+      .custom-about-meet-dr1__icon-inner
+        background: $blue
+
+  &__right
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    width: 43%
+    height: 352px
+
+    @media screen and (max-width: $break-md)
+      background-position: 75%
+
+    @media screen and (max-width: 690px)
+      width: 100%
+
+  &__icon-outer
+    position: relative
+    transition: all .3s ease-in-out
+    border-radius: 50%
+    background: lighten($blue-grey, 15)
+    width: 60px
+    height: 60px
+
+  &__icon-inner
+    display: inline-block
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    transition: all .3s ease-in-out
+    border-radius: 50%
+    background: $blue-grey
+    width: 52px
+    height: 52px
+
+  &__icon
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 35px
+    height: 35px
+    fill: $white
+
+    &--graduation
+      transform: translate(-50%, -30%)
+
+    &--community
+      transform: translate(-50%, -40%)
+
+    &--kite
+      transform: translate(-50%, -50%) rotate(-30deg)
+      padding: 0 4px
+
+  &__content-title
+    margin-bottom: rem-calc(40px)
+    text-transform: uppercase
+    letter-spacing: 9px
+    color: $turquoise
+    font-family: $avenir
+    font-size: 18px
+
+    @media screen and (max-width: 400px)
+      letter-spacing: 7px

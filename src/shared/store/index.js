@@ -20,7 +20,8 @@ const store = new Vuex.Store({
     video: {},
     thanks: {},
     funEvent: {},
-    tabs: {}
+    tabs: {},
+    tabs1: {}
   },
   mutations: mutations,
   actions: actions

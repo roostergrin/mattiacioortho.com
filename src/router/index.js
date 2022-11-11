@@ -61,6 +61,12 @@ const router = new VueRouter({
         },
         {
           path: '/about-us',
+          label: 'Meet Dr. Weissend',
+          target: '#meet-dr1',
+          name: 'About Us'
+        },
+        {
+          path: '/about-us',
           label: 'Meet the Team',
           target: '#meet-team'
         },

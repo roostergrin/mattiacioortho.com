@@ -1,0 +1,23 @@
+.custom-about-meet-dr1#meet-dr1
+  .custom-about-meet-dr1__container
+    .custom-about-meet-dr1__title(v-html='props.title')
+    .custom-about-meet-dr1__row
+      .custom-about-meet-dr1__left
+        .custom-about-meet-dr1__tab-container
+          .custom-about-meet-dr1__tab(
+            v-for='(tab, i) in props.tabs'
+            :key='i'
+            :class='{"custom-about-meet-dr1__tab--active": i === $store.state.tabs}'
+            @click='showContent1(i)'
+            @mouseover='showContent1(i)')
+            .custom-about-meet-dr1__icon-outer
+              .custom-about-meet-dr1__icon-inner
+                Icon.custom-about-meet-dr1__icon(:name='tab.label', :class='"custom-about-meet-dr1__icon--" + tab.label')
+        transition-group.custom-about-meet-dr1__content-wrapper(name='transition-meet-dr', tag='div')          
+          .custom-about-meet-dr1__content-container(
+            v-for='(content, i) in props.content'
+            :key='i'
+            v-show='i === $store.state.tabs')
+            .custom-about-meet-dr1__content-title(v-html='content.title')
+            .custom-about-meet-dr1__content-text(v-html='content.text')
+      .custom-about-meet-dr1__right(:style="{backgroundImage: 'url(' + props.img + ')'}")      
