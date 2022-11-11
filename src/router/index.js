@@ -55,14 +55,8 @@ const router = new VueRouter({
       children: [
         {
           path: '/about-us',
-          label: 'Meet Dr. Mattiacio',
+          label: 'Meet the Doctors',
           target: '#meet-dr',
-          name: 'About Us'
-        },
-        {
-          path: '/about-us',
-          label: 'Meet Dr. Weissend',
-          target: '#meet-dr1',
           name: 'About Us'
         },
         {
