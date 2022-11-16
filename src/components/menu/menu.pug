@@ -2,7 +2,7 @@
   .menu__overlay
     transition(name='title-fade')
       .menu__title(
-        v-if='!$store.state.menu && ($route.path != "/" && !$route.path.includes("/covid-19-updates") && !$route.path.includes("/virtual-services") && !$route.path.includes("/videos"))'
+        v-if='!$store.state.menu && ($route.path != "/" && !$route.path.includes("/covid-19-updates") && !$route.path.includes("/virtual-services") && !$route.path.includes("/videos") && !$route.path.includes("/about-us"))'
         :class='{"menu__title--white": $route.path === "/treatments" || $route.path === "/mattiacio-difference", "menu__title--family-fun-event": $route.path.includes("/mouth-guard-registration")}'
       ) {{ $route.name }}
     .menu__appt(v-if='$route.path.includes("/virtual-services")' :class='{"menu__appt--is-visible": !$store.state.menu && $route.path != "/contact-us" && $route.path != "/", "menu__appt--white": $route.name != "Treatments" }', @click='makeAppt')
@@ -20,7 +20,7 @@
         video.menu__link-video(loop muted autoplay)
           source(:src='props.acf.hero_video' type='video/mp4')
         .menu__link-overlay
-        .menu__link-expanded-overlay  
+        .menu__link-expanded-overlay
         .menu__link(
           v-on:click='closeMenu(link)') {{ link.name }}
         .menu__submenu(v-if='link.children')
@@ -33,7 +33,7 @@
         v-if='link.name != "About Us"'
         :class='{"menu__link-container--disabled": !$store.state.menu}'
         :style="{backgroundImage: 'url(' + link.url + ')'}"
-        ) 
+        )
         .menu__link-overlay
         .menu__link-expanded-overlay
         .menu__link(
@@ -53,4 +53,4 @@
   .menu__social-links(:class='{"active": $store.state.menu}')
     a.menu__social-link(v-for='(link, i) in props.acf.social_links', :href='link.href' target='_blank')
       Icon(:name='link.icon', :class='"menu__" + link.label')
-              
+
