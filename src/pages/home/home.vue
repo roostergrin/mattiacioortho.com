@@ -8,6 +8,7 @@ import Welcome from 'components/custom/custom-home-welcome/custom-home-welcome'
 import Why from 'components/custom/custom-home-why/custom-home-why'
 import CustomHomeReview from 'components/custom/custom-home-footer-review/custom-home-footer-review'
 import FunEvent from 'components/custom/custom-app-event/custom-app-event'
+import Divider from 'components/divider/divider'
 
 export default {
   name: 'home',
@@ -26,7 +27,8 @@ export default {
     Welcome,
     Why,
     CustomHomeReview,
-    FunEvent
+    FunEvent,
+    Divider
   }
 }
 </script>

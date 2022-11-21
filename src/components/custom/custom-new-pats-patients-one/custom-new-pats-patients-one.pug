@@ -1,0 +1,7 @@
+.custom-new-pats-patients-one#forms1
+  .custom-new-pats-patients-one__container
+    .custom-new-pats-patients-one__title(v-html='props.title')
+    .custom-new-pats-patients-one__row
+      .custom-new-pats-patients-one__right(:style="{backgroundImage: 'url(' + props.img + ')'}")
+      .custom-new-pats-patients-one__left
+        .custom-new-pats-patients-one__text(v-html='props.text')

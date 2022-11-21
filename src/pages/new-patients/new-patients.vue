@@ -7,6 +7,7 @@ import First from 'components/custom/custom-new-pats-first/custom-new-pats-first
 import FunEvent from 'components/custom/custom-app-event/custom-app-event'
 import Loader from 'components/loader/loader'
 import Patients from 'components/custom/custom-new-pats-patients/custom-new-pats-patients'
+import PatientsOne from 'components/custom/custom-new-pats-patients-one/custom-new-pats-patients-one'
 
 export default {
   name: 'new-patients',
@@ -24,7 +25,8 @@ export default {
     First,
     FunEvent,
     Loader,
-    Patients
+    Patients,
+    PatientsOne
   }
 }
 </script>
