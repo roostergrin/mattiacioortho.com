@@ -91,7 +91,7 @@
   &__next,
   &__prev
     position: absolute
-    bottom: 0
+    bottom: 10px
     cursor: pointer
     width: 1.3rem
     fill: $blue-grey
@@ -122,3 +122,58 @@
 
       &-active
         background: rgba($blue-grey, .7) !important
+
+  &__tabscontentbox
+    position: relative
+    height: 510px
+    border-top: 1px solid #becdd9
+
+  &__slider
+    position: absolute !important
+    padding: 10px !important
+    width: 100%
+    top: 0
+    opacity: 0
+    transition: 0.25s ease
+    color: #333
+
+  &__tabsnamelist
+
+    input
+      display: none
+      &:checked
+        & + label
+          box-shadow: 0 2px 8px 2px rgba(20, 125, 247, .60), 0 -2px 8px 2px rgba(20, 125, 247, .60)
+          background: #01b3bf
+          color: #fff
+          transform: translateY(-10px)
+      
+    label
+      display: inline-block
+      height: 46px
+      line-height: 46px
+      width: 150px
+      text-align: center
+      color: #fff
+      position: relative
+      cursor: pointer
+      transition: all .3s ease-in-out
+      background: #becdd9 
+      margin-right: 20px
+
+        
+    input#tab1
+      &:checked
+        & ~ .custom-about-office__tabscontentbox 
+          #tabc1
+            opacity: 1
+            z-index: 9
+
+
+    input#tab2
+      &:checked 
+        & ~ .custom-about-office__tabscontentbox 
+          #tabc2
+            opacity: 1
+            z-index: 9
+
