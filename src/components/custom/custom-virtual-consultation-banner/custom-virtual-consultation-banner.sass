@@ -1,0 +1,51 @@
+.divider
+  background: $blue
+  height: 123px
+
+  @media screen and (max-width: $break-md)
+    height: 250px
+
+  &__container
+    @extend .flex
+    @extend .flex-center
+    @extend .align-center
+    height: 100%
+
+    @media screen and (max-width: $break-lg)
+      padding: 0 30px
+
+    @media screen and (max-width: $break-md)
+      flex-direction: column
+
+  &__text
+    @extend h2
+    margin-right: rem-calc(45px)
+    letter-spacing: normal
+    color: $white
+    font-size: 24px
+
+    @media screen and (max-width: $break-md)
+      margin-right: 0
+      text-align: center
+
+  &__phone
+    transition: all .35s ease-in-out
+    border: 1px solid $white
+    border-radius: 24px
+    padding: 9px 34px
+    width: 100%
+    max-width: 297px
+    height: 48px
+    text-align: center
+    letter-spacing: 3px
+    color: $white
+    font-family: $avenir
+    font-size: 20px
+
+    @media (hover: hover)
+      &:hover
+        background: $white
+        color: $blue
+
+    @media screen and (max-width: $break-md)
+      margin-top: 2rem

@@ -8,6 +8,7 @@ import Invisalign from '@/pages/invisalign/invisalign'
 import Mattiacio from '@/pages/mattiacio-difference/mattiacio-difference'
 import NewPatients from '@/pages/new-patients/new-patients'
 import VirtualServices from '@/pages/virtual-services/virtual-services'
+import VirtualConsultation from '@/pages/virtual-consultation/virtual-consultation'
 import Videos from '@/pages/videos/videos'
 import Treatments from '@/pages/treatments/treatments'
 import FamilyFunEvent from '@/pages/family-fun-event/family-fun-event'
@@ -93,16 +94,19 @@ const router = new VueRouter({
       url: '/static/virtual-services.jpg'
     },
     {
+      path: '/virtual-consultation',
+      name: 'Virtual Smile Assessment',
+      navigation: false,
+      component: VirtualConsultation,
+      url: '/static/new-pats.jpg'
+    },
+    {
       path: '/new-patients',
       name: 'New Patients',
       navigation: true,
       url: '/static/new-pats.jpg',
       component: NewPatients,
       children: [
-        {
-          item: 'Virtual Smile Assessment',
-          path: 'https://formsroostergrin.com/xmattiacioortho/virtual-page/index.html'
-        },
         {
           path: '/new-patients',
           label: 'Your First Visit',
@@ -113,6 +117,11 @@ const router = new VueRouter({
           path: '/new-patients',
           label: 'Financial Info',
           target: '#financial'
+        },
+        {
+          path: '/virtual-consultation',
+          label: 'Virtual Smile Assessment',
+          target: '#virtualconsultation'
         }
         // {
         //   path: '/new-patients',

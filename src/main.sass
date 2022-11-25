@@ -51,3 +51,20 @@
 
 .header--thank-you.menuaddthank .header__menu--thank-you      
   display: block
+
+
+.hero-mobile__virtual-consultation
+  display: none
+
+@media screen and (max-width: $break-md)
+  .hero-mobile
+    height: 100%
+
+  .hero-mobile__virtual-consultation
+    height: 100%
+    display: block
+
+.hero-mobile__virtual-consultation .hero-mobile__title
+    max-width: 700px;
+    width: 100%;
+    text-align: center;

@@ -1,0 +1,12 @@
+.custom-mattiacio-what#how
+  .custom-mattiacio-what__container
+    .custom-mattiacio-what__heading
+      .custom-mattiacio-what__title
+        h2(v-html='props.title')
+        .custom-mattiacio-what__content(v-html='props.content')
+    .custom-mattiacio-what__row
+      .custom-mattiacio-what__right
+        .custom-mattiacio-what__right-col3(v-for='(works, i) in props.works', :key='i')
+          img(:src='works.image')
+          h3(v-html='works.title')
+          

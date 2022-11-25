@@ -76,3 +76,8 @@
     :style="{backgroundImage: 'url(static/mattiacio-videos-poster.png)'}"
     )
     .hero-mobile__title {{ $route.name }}
+  .hero-mobile__virtual-consultation(
+    v-show='$route.path.includes("/virtual-consultation")',
+    :style="{backgroundImage: 'url(static/new-pats.jpg)'}"
+    )
+    .hero-mobile__title {{ $route.name }}

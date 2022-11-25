@@ -2,7 +2,7 @@
   .menu__overlay
     transition(name='title-fade')
       .menu__title(
-        v-if='!$store.state.menu && ($route.path != "/" && !$route.path.includes("/covid-19-updates") && !$route.path.includes("/virtual-services") && !$route.path.includes("/videos") && !$route.path.includes("/about-us"))'
+        v-if='!$store.state.menu && ($route.path != "/" && !$route.path.includes("/covid-19-updates") && !$route.path.includes("/virtual-services") && !$route.path.includes("/virtual-consultation") && !$route.path.includes("/videos") && !$route.path.includes("/about-us"))'
         :class='{"menu__title--white": $route.path === "/treatments" || $route.path === "/mattiacio-difference", "menu__title--family-fun-event": $route.path.includes("/mouth-guard-registration")}'
       ) {{ $route.name }}
     .menu__appt(v-if='$route.path.includes("/virtual-services")' :class='{"menu__appt--is-visible": !$store.state.menu && $route.path != "/contact-us" && $route.path != "/", "menu__appt--white": $route.name != "Treatments" }', @click='makeAppt')
