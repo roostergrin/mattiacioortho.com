@@ -14,14 +14,14 @@
 
     .family-fun-form__group
       input.family-fun-form__input(
-        name='your-grade'
-        v-model='yourGrade'
+        name='dob1'
+        v-model='dob1'
         v-validate="'required'"
-        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('your-grade') }"
+        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('dob1') }"
         type='text'
-        placeholder="Player's Grade")
+        placeholder="Player's Date of Birth")
       .family-fun-form__error-container
-        span(v-show="errors.has('your-grade')") Player's grade is required.
+        span(v-show="errors.has('dob1')") Player's date of birth is required.
 
     .family-fun-form__group
       input.family-fun-form__input(
@@ -47,6 +47,17 @@
 
     .family-fun-form__group
       input.family-fun-form__input(
+        name='dob2'
+        v-model='dob2'
+        v-validate="'required'"
+        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('dob2') }"
+        type='text'
+        placeholder="Parent/Guardian's Date of Birth")
+      .family-fun-form__error-container
+        span(v-show="errors.has('dob2')") Parent/Guardian's date of birth is required.
+
+    .family-fun-form__group
+      input.family-fun-form__input(
         name='phone'
         v-model='phone'
         v-validate='{regex: /^\\D?(\\d{3})\\D?\\D?(\\d{3})\\D?(\\d{4})$/}'
@@ -65,25 +76,6 @@
         placeholder='Email Address')
       .family-fun-form__error-container
         span(v-show="errors.has('email')") Valid Email is required.
-
-      .family-fun-form__group-inline
-          p Male/Female?
-          .family-fun-form__radio-group
-            input.family-fun-form__input--radio(
-              name='gender'
-              v-model='gender'
-              value='Male'
-              type='radio')
-            span.family-fun-form__radio-overlay
-            label.family-fun-form__label Male
-          .family-fun-form__radio-group
-            input.family-fun-form__input--radio(
-              name='gender'
-              v-model='gender'
-              value='Female'
-              type='radio')
-            span.family-fun-form__radio-overlay
-            label.family-fun-form__label Female
 
     .family-fun-form__group-inline-center
       p Which Session Will you be Attending?
@@ -110,8 +102,8 @@
           value='Saturday, March 4th | Hilton | 9:45am')
           option.family-fun-form__label Saturday, March 4th | Hilton | 9:45am
         option(
-          value='Saturday, March 4th | Individual | 10:00am')
-          option.family-fun-form__label Saturday, March 4th | Individual | 10:00am
+          value='Saturday, March 4th | Individual (team not listed) | 10:00am')
+          option.family-fun-form__label Saturday, March 4th | Individual (team not listed) | 10:00am
         option(
           value='Saturday, March 18th | Victor Girls | 9:00-9:45am')
           option.family-fun-form__label Saturday, March 18th | Victor Girls | 9:00-9:45am
@@ -140,8 +132,8 @@
           value='Saturday, March 18th | Midlakes School Program | 12:00-12:30pm')
           option.family-fun-form__label Saturday, March 18th | Midlakes School Program | 12:00-12:30pm
         option(
-          value='Saturday, March 18th | Individual | 12:30-1:00pm')
-          option.family-fun-form__label Saturday, March 18th | Individual | 12:30-1:00pm
+          value='Saturday, March 18th | Individual (team not listed) | 12:30-1:00pm')
+          option.family-fun-form__label Saturday, March 18th | Individual (team not listed) | 12:30-1:00pm
 
       .family-fun-form__error-container
         span(v-show="errors.has('selected')") Valid date is required.

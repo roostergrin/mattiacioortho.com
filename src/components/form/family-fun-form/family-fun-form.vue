@@ -10,10 +10,10 @@ export default {
       fullName: '',
       phone: '',
       email: '',
-      yourGrade: '',
+      dob1: '',
+      dob2: '',
       yourParentGuardian: '',
       yourLaxProgram: '',
-      gender: '',
       postUrl: 'https://www.mattiacioortho.com/wp-json/rg-mail/v1/family-fun',
       formSubmitted: false,
       selected: 'null'
@@ -38,10 +38,10 @@ export default {
         fullName: this.fullName,
         phone: this.phone,
         email: this.email,
-        yourGrade: this.yourGrade,
+        dob1: this.dob1,
+        dob2: this.dob2,
         yourParentGuardian: this.yourParentGuardian,
         yourLaxProgram: this.yourLaxProgram,
-        gender: this.gender,
         selected: this.selected
       })
       .then(res => {
