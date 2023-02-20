@@ -16,3 +16,37 @@
   &__text-container
     @extend .flex-container-sm
     margin: 2.5rem auto 0
+
+  &__button
+    display: block
+    transition: all .4s ease-in-out
+    border-radius: 5px
+    background: $sea-foam
+    cursor: pointer
+    padding: 1rem 2rem
+    width: 100%
+    max-width: 430px
+    margin: auto
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 3px
+    color: $white
+    font-weight: 700
+    margin-top: 2rem
+
+    @media (hover: hover)
+      &:hover
+        box-shadow: $shadow
+
+    &:active
+      box-shadow: none
+
+    @media screen and (max-width: $break-md)
+      max-width: 330px
+
+    @media screen and (max-width: $break-sm)
+      margin: 0 auto
+
+    @media screen and (max-width: 350px)
+      padding: 1rem 0
+
