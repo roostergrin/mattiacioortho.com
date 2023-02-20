@@ -112,19 +112,19 @@ function rg_serve_route_family_fun () {
 
   $data = json_decode(file_get_contents("php://input"), true);
   // $from = 'info@wordpress.com,';
-  $to = 'info@mattiacioortho.com';
+  $to = 'info@mattiacioortho.com, s.declercq@mattiacioortho.com';
   $subject = 'Website Family Fun Registration Form';
   $headers = "MIME-Version: 1.0\r\n";
   $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
   $message = '<html><body>';
-  $message .= '<p><h4><strong>Form Submission by: </strong></h4>' . $data['fullName'] . '</p>';
-  $message .= '<p><h4><strong>Grade:</strong></h4> ' . $data['yourGrade'] . '</p>';
+  $message .= '<p><h4><strong>Patient name: </strong></h4>' . $data['fullName'] . '</p>';
+  $message .= '<p><h4><strong>DOB:</strong></h4> ' . $data['dob1'] . '</p>';
   $message .= '<p><h4><strong>Lax Program:</strong></h4> ' . $data['yourLaxProgram'] . '</p>';
   $message .= '<p><h4><strong>Parent/guardian name:</strong></h4> ' . $data['yourParentGuardian'] . '</p>';
+  $message .= '<p><h4><strong>DOB:</strong></h4> ' . $data['dob2'] . '</p>';
   $message .= '<p><h4><strong>Phone: </strong></h4>' . $data['phone'] . '</p>';
   $message .= '<p><h4><strong>Email: </strong></h4>' . $data['email'] . '</p>';
-  $message .= '<p><h4><strong>Gender:</strong></h4> ' . $data['gender'] . '</p>';
   $message .= '<p><h4><strong>Date Attending:</strong></h4> ' . $data['selected'] . '</p>';
   $message .= '</body></html>';
 
