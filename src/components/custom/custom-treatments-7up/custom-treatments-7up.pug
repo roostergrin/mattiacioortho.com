@@ -2,7 +2,13 @@
   .custom-treatments-7up__container
     .custom-treatments-7up__title(v-html='props.title')
     .custom-treatments-7up__text(v-html='props.text')
-    img.custom-treatments-7up__uplogo(v-if='props.seven_up_logo' v-bind:src='props.seven_up_logo')    
+    img.custom-treatments-7up__uplogo(v-if='props.seven_up_logo' v-bind:src='props.seven_up_logo')
+    .custom-treatments-7up_button
+      .custom-treatments-invisalign__read-more.read-button(v-on:click="toInvisalign()")
+        //-
+        | Schedule Your Complimentary Evaluation Today
+      .custom-treatments-invisalign__read-more
+        <a href="tel:1-585-742-1050">Call Us</a>   
     .custom-treatments-7up__row
       .custom-treatments-7up__left
         .custom-treatments-7up__icon-outer

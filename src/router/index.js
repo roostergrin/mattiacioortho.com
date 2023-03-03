@@ -13,6 +13,7 @@ import Videos from '@/pages/videos/videos'
 import Treatments from '@/pages/treatments/treatments'
 import FamilyFunEvent from '@/pages/family-fun-event/family-fun-event'
 import ThankYou from '@/pages/thank-you/thank-you'
+import MouthGuardThankYou from '@/pages/mouth-guard-thank-you/mouth-guard-thank-you'
 import Accessibility from '@/pages/accessibility/accessibility'
 
 // remove
@@ -250,6 +251,12 @@ const router = new VueRouter({
       name: 'Thank You',
       navigation: false,
       component: ThankYou
+    },
+    {
+      path: '/mouth-guard-thank-you',
+      name: 'Mouth Guard Thank You',
+      navigation: false,
+      component: MouthGuardThankYou
     },
     {
       path: '/accessibility',

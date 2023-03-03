@@ -19,7 +19,7 @@ export default {
       selected: 'null'
     }
   },
-  mixins: [openModal, closeModal],
+  mixins: [openModal],
   methods: {
     validate () {
       this.$validator.validateAll()

@@ -1,22 +1,26 @@
-<template lang='pug' src='./form.pug'></template>
+<template lang='pug' src='./sponsor-form.pug'></template>
 
 <script>
 // import api from 'api'
 import axios from 'axios'
-import { openModal, closeModal } from '@/methods'
+import { openModal } from '@/methods'
+
 export default {
   data: () => {
     return {
-      fullname: '',
-      phone: '',
-      email: '',
-      message: '',
-      newPatient: '',
-      postUrl: 'https://www.mattiacioortho.com/wp-json/rg-mail/v1/contact',
+      fullName: '',
+      patientName: '',
+      contactInfo: '',
+      eventName: '',
+      date: '',
+      cause: '',
+      website: '',
+      // newPatient: '',
+      postUrl: 'https://www.mattiacioortho.com/wp-json/rg-mail/v1/sponsor',
       formSubmitted: false
     }
   },
-  mixins: [openModal, closeModal],
+  mixins: [openModal],
   methods: {
     validate () {
       this.$validator.validateAll()
@@ -32,11 +36,13 @@ export default {
     onSubmit () {
       this.formSubmitted = true
       axios.post(this.postUrl, {
-        fullname: this.fullname,
-        phone: this.phone,
-        email: this.email,
-        message: this.message,
-        newPatient: this.newPatient
+        fullName: this.fullName,
+        patientName: this.patientName,
+        contactInfo: this.contactInfo,
+        eventName: this.eventName,
+        date: this.date,
+        cause: this.cause,
+        website: this.website
       })
       .then(res => {
         this.formSubmitted = false
@@ -44,9 +50,6 @@ export default {
         setTimeout(() => {
           this.$el.children[0].reset()
         }, 500)
-        this.closeModal(2)
-        // this.openModal(1)
-        window.location = '/thank-you'
       })
       .catch(e => { console.log(e) })
     }
