@@ -2,11 +2,13 @@
 
 <script>
 import Icon from 'components/icon/icon'
+import Form from 'components/form/form'
 
 export default {
   props: ['props'],
   components: {
-    Icon
+    Icon,
+    Form
   },
   methods: {
     toInvisalign () {

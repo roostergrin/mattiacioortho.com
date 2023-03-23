@@ -10,6 +10,7 @@ import NewPatients from '@/pages/new-patients/new-patients'
 import VirtualServices from '@/pages/virtual-services/virtual-services'
 import VirtualConsultation from '@/pages/virtual-consultation/virtual-consultation'
 import Videos from '@/pages/videos/videos'
+import SevenAndUp from '@/pages/7-and-up/7-and-up'
 import Treatments from '@/pages/treatments/treatments'
 import FamilyFunEvent from '@/pages/family-fun-event/family-fun-event'
 import ThankYou from '@/pages/thank-you/thank-you'
@@ -102,6 +103,13 @@ const router = new VueRouter({
       url: '/static/new-pats.jpg'
     },
     {
+      path: '/7-and-up',
+      name: '7 & Up',
+      navigation: false,
+      component: SevenAndUp,
+      url: '/static/new-pats.jpg'
+    },
+    {
       path: '/new-patients',
       name: 'New Patients',
       navigation: true,
@@ -150,8 +158,8 @@ const router = new VueRouter({
           target: '#damon'
         },
         {
-          path: '/treatments',
-          label: '7 & Up Child Evaluation',
+          path: '/7-and-up',
+          label: '7 & Up',
           target: '#seven-up'
         },
         {

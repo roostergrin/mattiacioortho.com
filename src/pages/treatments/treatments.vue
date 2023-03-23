@@ -6,7 +6,6 @@ import Damon from 'components/custom/custom-treatments-damon/custom-treatments-d
 import Divider from 'components/divider/divider'
 import Invisalign from 'components/custom/custom-treatments-invisalign/custom-treatments-invisalign'
 import Loader from 'components/loader/loader'
-import SevenUp from 'components/custom/custom-treatments-7up/custom-treatments-7up'
 
 export default {
   name: 'treatments',
@@ -23,8 +22,7 @@ export default {
     Divider,
     Damon,
     Invisalign,
-    Loader,
-    SevenUp
+    Loader
   }
 }
 </script>

@@ -81,3 +81,8 @@
     :style="{backgroundImage: 'url(static/new-pats.jpg)'}"
     )
     .hero-mobile__title {{ $route.name }}
+  .hero-mobile__7-and-up(
+    v-show='$route.path.includes("/7-and-up")',
+    :style="{backgroundImage: 'url(static/new-pats.jpg)'}"
+    )
+    .hero-mobile__title {{ $route.name }}    

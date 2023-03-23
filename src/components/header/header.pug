@@ -11,4 +11,6 @@
     HeroPages(v-show='$route.path.includes("/videos") && !$store.state.menu')
   transition(name='fade-in')
     HeroPages(v-show='$route.path.includes("/virtual-consultation") && !$store.state.menu')
+  transition(name='fade-in')
+    HeroPages(v-show='$route.path.includes("/7-and-up") && !$store.state.menu')    
   HeroMobile(:props='props')
