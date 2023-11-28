@@ -33,6 +33,20 @@ export default {
           document.getElementsByClassName('header--thank-you')[0].classList.remove('menuaddthank')
         }
       }
+      if (menuOpen) {
+        this.$store.dispatch('VIEW_MENU', false)
+        document.body.classList.remove('body-stop')
+        if (document.getElementsByClassName('header--exit-interview').length > 0) {
+          document.getElementsByClassName('header--exit-interview')[0].classList.remove('menuaddinterview')
+        }
+      }
+      if (menuOpen) {
+        this.$store.dispatch('VIEW_MENU', false)
+        document.body.classList.remove('body-stop')
+        if (document.getElementsByClassName('header--retainer-program').length > 0) {
+          document.getElementsByClassName('header--retainer-program')[0].classList.remove('menuaddprogram')
+        }
+      }
       // if menu is closed and not at the top of the pg - scroll to top
       if (menuClosed && this.$store.state.nav) {
         setTimeout(() => {
@@ -45,6 +59,20 @@ export default {
         document.body.classList.add('body-stop')
         if (document.getElementsByClassName('header--thank-you').length > 0) {
           document.getElementsByClassName('header--thank-you')[0].classList.add('menuaddthank')
+        }
+      }
+      if (menuClosed && !this.$store.state.nav) {
+        this.$store.dispatch('VIEW_MENU', true)
+        document.body.classList.add('body-stop')
+        if (document.getElementsByClassName('header--exit-interview').length > 0) {
+          document.getElementsByClassName('header--exit-interview')[0].classList.add('menuaddinterview')
+        }
+      }
+      if (menuClosed && !this.$store.state.nav) {
+        this.$store.dispatch('VIEW_MENU', true)
+        document.body.classList.add('body-stop')
+        if (document.getElementsByClassName('header--retainer-program').length > 0) {
+          document.getElementsByClassName('header--retainer-program')[0].classList.add('menuaddprogram')
         }
       }
     },

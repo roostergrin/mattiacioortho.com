@@ -16,6 +16,10 @@ function rg_register_routes () {
     'methods' => WP_REST_Server::CREATABLE,
     'callback' => 'rg_serve_route_family_fun'
   ));
+  register_rest_route('rg-mail/v1', 'contactinterview', array(
+    'methods' => WP_REST_Server::CREATABLE,
+    'callback' => 'rg_serve_route_interview'
+  ));  
 }
 
 // function for handling post request to new api route
@@ -126,6 +130,37 @@ function rg_serve_route_family_fun () {
   $message .= '<p><h4><strong>Phone: </strong></h4>' . $data['phone'] . '</p>';
   $message .= '<p><h4><strong>Email: </strong></h4>' . $data['email'] . '</p>';
   $message .= '<p><h4><strong>Date Attending:</strong></h4> ' . $data['selected'] . '</p>';
+  $message .= '</body></html>';
+
+  $sent_message = wp_mail($to, $subject, $message, $headers);
+
+  if ($sent_message) {
+    echo 'Email has been received!';
+  } else {
+    echo 'Could not send email.';
+  }
+}
+
+// function for handling post request to new api route
+function rg_serve_route_interview () {
+  require('wp-load.php');
+
+  $data = json_decode(file_get_contents("php://input"), true);
+  // $from = 'info@wordpress.com,';
+  $to = 'info@mattiacioortho.com';
+  $subject = 'Website Exit Interview Form';
+  $headers = "MIME-Version: 1.0\r\n";
+  $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+  $message = '<html><body>';
+  $message .= '<p><h4><strong>Did Mattiacio Orthodontics meet or exceed your expectations? Please explain. </strong></h4>' . $data['message1'] . '</p>';
+  $message .= '<p><h4><strong>Was there anything we could have done better to improve your overall experience? </strong></h4>' . $data['message2'] . '</p>';
+  $message .= '<p><h4><strong>What was the best part about your experience with Mattiacio Orthodontics? </strong></h4>' . $data['message3'] . '</p>';
+  $message .= '<p><h4><strong>Would you recommend Mattiacio Orthodontics to a friend or family member? </strong></h4> ' . $data['message4'] . '</p>';
+  $message .= '<p><h4><strong><u>Patient Referral </u></strong></h4> </p>';
+  $message .= '<p><h4><strong>First Name: </strong></h4> ' . $data['firstname'] . '</p>';
+  $message .= '<p><h4><strong>Last Name: </strong></h4> ' . $data['lastname'] . '</p>';
+  $message .= '<p><h4><strong>Email Address: </strong></h4> ' . $data['email'] . '</p>';    
   $message .= '</body></html>';
 
   $sent_message = wp_mail($to, $subject, $message, $headers);

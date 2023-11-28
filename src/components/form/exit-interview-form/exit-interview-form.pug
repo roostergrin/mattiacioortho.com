@@ -1,0 +1,76 @@
+.contact-interview-form
+  form.contact-interview-form__form(@submit.prevent='validate', method='post')
+
+    .contact-interview-form__group
+      label.contact-interview-form__label Did Mattiacio Orthodontics meet or exceed your expectations? Please explain.    
+      textarea.contact-interview-form__textarea(
+        name='message1'
+        v-model='message1',
+        :class="{ 'contact-interview-form__textarea--error': errors.has('message1') }"
+        type='textarea'
+        rows='2')
+
+    .contact-interview-form__group
+      label.contact-interview-form__label Was there anything we could have done better to improve your overall experience?
+      textarea.contact-interview-form__textarea(
+        name='message2'
+        v-model='message2',
+        :class="{ 'contact-interview-form__textarea--error': errors.has('message2') }"
+        type='textarea'
+        rows='2') 
+
+    .contact-interview-form__group
+      label.contact-interview-form__label What was the best part about your experience with Mattiacio Orthodontics?
+      textarea.contact-interview-form__textarea(
+        name='message3'
+        v-model='message3',
+        :class="{ 'contact-interview-form__textarea--error': errors.has('message3') }"
+        type='textarea'
+        rows='2') 
+
+    .contact-interview-form__group
+      label.contact-interview-form__label Would you recommend Mattiacio Orthodontics to a friend or family member?
+      textarea.contact-interview-form__textarea(
+        name='message4'
+        v-model='message4',
+        :class="{ 'contact-interview-form__textarea--error': errors.has('message4') }"
+        type='textarea'
+        rows='2')
+
+    .contact-interview-form__group
+      label.contact-interview-form__label Patient Referral
+
+    .contact-interview-form__group
+      input.contact-interview-form__input(
+        name='first-name'
+        v-model='firstname'
+        v-validate="'required|alpha_spaces'"
+        :class="{ 'input': true, 'contact-interview-form__input--error': errors.has('first-name') }"
+        type='text'
+        placeholder='First Name')
+      .contact-interview-form__error-container  
+        span(v-show="errors.has('first-name')") First Name is required.
+
+    .contact-interview-form__group
+      input.contact-interview-form__input(
+        name='last-name'
+        v-model='lastname'
+        :class="{ 'input': true, 'contact-interview-form__input--error': errors.has('last-name') }"
+        type='text'
+        placeholder='Last Name')
+
+    .contact-interview-form__group
+      input.contact-interview-form__input(
+        name='email'
+        v-model='email'
+        v-validate="'required|email'"
+        :class="{ 'input': true, 'contact-interview-form__input--error': errors.has('email') }"
+        placeholder='Email Address')
+      .contact-interview-form__error-container  
+        span(v-show="errors.has('email')") Valid email is required.                      
+        
+    .contact-interview-form__button-group
+      button.contact-interview-form__submit-button(type='submit', :disabled='formSubmitted') 
+        span Submit
+      .contact-interview-form__spinner(v-if='formSubmitted')
+        span Sending

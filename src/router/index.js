@@ -15,6 +15,8 @@ import Treatments from '@/pages/treatments/treatments'
 import FamilyFunEvent from '@/pages/family-fun-event/family-fun-event'
 import ThankYou from '@/pages/thank-you/thank-you'
 import MouthGuardThankYou from '@/pages/mouth-guard-thank-you/mouth-guard-thank-you'
+import exitInterview from '@/pages/exit-interview/exit-interview'
+import retainerProgram from '@/pages/retainer-program/retainer-program'
 import Accessibility from '@/pages/accessibility/accessibility'
 
 // remove
@@ -259,6 +261,18 @@ const router = new VueRouter({
       name: 'Thank You',
       navigation: false,
       component: ThankYou
+    },
+    {
+      path: '/exit-interview',
+      name: 'Exit Interview',
+      navigation: false,
+      component: exitInterview
+    },
+    {
+      path: '/retainer-program',
+      name: 'Retainer Program',
+      navigation: false,
+      component: retainerProgram
     },
     {
       path: '/mouth-guard-thank-you',
