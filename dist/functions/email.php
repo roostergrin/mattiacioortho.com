@@ -157,10 +157,10 @@ function rg_serve_route_interview () {
   $message .= '<p><h4><strong>Was there anything we could have done better to improve your overall experience? </strong></h4>' . $data['message2'] . '</p>';
   $message .= '<p><h4><strong>What was the best part about your experience with Mattiacio Orthodontics? </strong></h4>' . $data['message3'] . '</p>';
   $message .= '<p><h4><strong>Would you recommend Mattiacio Orthodontics to a friend or family member? </strong></h4> ' . $data['message4'] . '</p>';
-  $message .= '<p><h4><strong><u>Patient Referral </u></strong></h4> </p>';
+ 
   $message .= '<p><h4><strong>First Name: </strong></h4> ' . $data['firstname'] . '</p>';
   $message .= '<p><h4><strong>Last Name: </strong></h4> ' . $data['lastname'] . '</p>';
-  $message .= '<p><h4><strong>Email Address: </strong></h4> ' . $data['email'] . '</p>';    
+  $message .= '<p><h4><strong>Email / Phone # </strong></h4> ' . $data['email'] . '</p>';    
   $message .= '</body></html>';
 
   $sent_message = wp_mail($to, $subject, $message, $headers);

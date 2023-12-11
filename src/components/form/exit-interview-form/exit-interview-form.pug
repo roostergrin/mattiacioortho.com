@@ -38,7 +38,7 @@
         rows='2')
 
     .contact-interview-form__group
-      label.contact-interview-form__label Patient Referral
+      label.contact-interview-form__label We love taking care of our patients family and friends. Score a $25 Visa Gift Card Instantly by providing us with a family member or friends contact info that you trust us to take care of. It's the best compliment we could EVER receive.
 
     .contact-interview-form__group
       input.contact-interview-form__input(
@@ -63,11 +63,11 @@
       input.contact-interview-form__input(
         name='email'
         v-model='email'
-        v-validate="'required|email'"
+        v-validate="'required'"
         :class="{ 'input': true, 'contact-interview-form__input--error': errors.has('email') }"
-        placeholder='Email Address')
+        placeholder='Email / Phone #')
       .contact-interview-form__error-container  
-        span(v-show="errors.has('email')") Valid email is required.                      
+        span(v-show="errors.has('email')") Email/phone is required.                      
         
     .contact-interview-form__button-group
       button.contact-interview-form__submit-button(type='submit', :disabled='formSubmitted') 
