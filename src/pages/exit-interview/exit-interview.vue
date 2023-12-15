@@ -3,6 +3,10 @@
 <script>
 import Loader from 'components/loader/loader'
 import exitInterviewForm from 'components/form/exit-interview-form/exit-interview-form'
+import Vue from 'vue'
+import VueConfetti from 'vue-confetti'
+
+Vue.use(VueConfetti)
 
 export default {
   name: 'Exit Interview',
@@ -17,6 +21,22 @@ export default {
   components: {
     Loader,
     exitInterviewForm
+  },
+  mounted () {
+    this.$nextTick().then(this.start)
+  },
+  methods: {
+    start () {
+      this.$confetti.start({
+        particles: [
+          {
+            type: 'circle',
+            size: '4'
+          }
+        ],
+        defaultDropRate: '8'
+      })
+    }
   }
 }
 </script>
