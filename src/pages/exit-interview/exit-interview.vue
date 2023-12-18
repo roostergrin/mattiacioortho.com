@@ -33,9 +33,11 @@ export default {
             type: 'circle',
             size: '4'
           }
-        ],
-        defaultDropRate: '8'
+        ]
       })
+      setTimeout(() => {
+        this.$confetti.stop()
+      }, 5000)
     }
   }
 }
