@@ -11,9 +11,11 @@ export default {
       message2: '',
       message3: '',
       message4: '',
+      radiographs: '',
       firstname: '',
       lastname: '',
       email: '',
+      referby: '',
       postUrl: 'https://www.mattiacioortho.com/wp-json/rg-mail/v1/contactinterview',
       formSubmitted: false
     }
@@ -38,9 +40,11 @@ export default {
         message2: this.message2,
         message3: this.message3,
         message4: this.message4,
+        radiographs: this.radiographs,
         firstname: this.firstname,
         lastname: this.lastname,
-        email: this.email
+        email: this.email,
+        referby: this.referby
       })
       .then(res => {
         this.formSubmitted = false

@@ -130,3 +130,47 @@
       letter-spacing: 2px
       color: $blue
       font-weight: bold
+
+  &__input--radio
+    width: 20px
+    height: 20px
+
+  &__radio-group
+    display: inline-flex
+    position: relative
+    align-items: center
+    margin: 10px 0 26px
+    height: 20px
+
+    label
+      margin-right: 31px
+      margin-left: 30px
+      position: relative
+      top: 3px
+
+    // hide the default radio button
+    input[type='radio']
+      position: absolute
+      opacity: 0
+      z-index: 1
+      cursor: pointer
+
+      // style when checked
+      &:checked ~ .form-refer__radio-overlay
+        background: #01548b
+
+      // style on hover
+      &:hover ~ .form-refer__radio-overlay
+        background: #01548b
+
+  // span overlay over default button
+  &__radio-overlay
+    position: absolute
+    top: 0
+    background: #fff
+    width: 20px
+    height: 20px
+    border: 1px solid #01548b
+
+    &--error
+      border-color: $brand-danger          
