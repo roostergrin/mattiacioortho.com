@@ -26,18 +26,10 @@
         v-model='message3',
         :class="{ 'contact-interview-form__textarea--error': errors.has('message3') }"
         type='textarea'
-        rows='2') 
-
-    .contact-interview-form__group
-      label.contact-interview-form__label Would you recommend Mattiacio Orthodontics to a friend or family member?
-      textarea.contact-interview-form__textarea(
-        name='message4'
-        v-model='message4',
-        :class="{ 'contact-interview-form__textarea--error': errors.has('message4') }"
-        type='textarea'
         rows='2')
 
     .contact-interview-form__group
+      label.contact-interview-form__label Would you have confidence in recommending Mattiacio Orthodontics to a friend or family member for their orthodontic care?
       .contact-interview-form__radio-group 
         input.contact-interview-form__input--radio(name='radiographs' v-model='radiographs' value='Yes' type='radio'  v-validate="'required'")
         span.contact-interview-form__radio-overlay( :class="{ 'input': true, 'contact-interview-form__radio-overlay--error': errors.has('radiographs') }")
@@ -50,13 +42,13 @@
         span(v-show="errors.has('radiographs')") Please select one Option.          
 
     .contact-interview-form__group(v-if="radiographs === 'Yes'")
-      label.contact-interview-form__label We love taking care of our patients' families and friends. Score a $25 Visa Gift Card Instantly by providing us with a family member (non-immediate) or friends contact info that you trust us to take care of. It's the best compliment we could EVER receive.
+      label.contact-interview-form__label Thank you for your willingness to spread the word about Mattiacio Orthodontics! To express our appreciation, we'd like to offer you a $25 Visa Gift Card for providing the contact information of a family member (non-immediate) or friends contact info that you trust us to take care of. It's the best compliment we could EVER receive. *If you do not wish to enter a name, simply leave the fields blank and submit the form*
 
     .contact-interview-form__group(v-if="radiographs === 'Yes'")
       input.contact-interview-form__input(
         name='first-name'
         v-model='firstname'
-        v-validate="'required|alpha_spaces'"
+        v-validate="'required'"
         :class="{ 'input': true, 'contact-interview-form__input--error': errors.has('first-name') }"
         type='text'
         placeholder='First Name')

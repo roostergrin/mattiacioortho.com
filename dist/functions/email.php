@@ -156,9 +156,9 @@ function rg_serve_route_interview () {
   $message .= '<p><h4><strong>Did Mattiacio Orthodontics meet or exceed your expectations? Please explain. </strong></h4>' . $data['message1'] . '</p>';
   $message .= '<p><h4><strong>Was there anything we could have done better to improve your overall experience? </strong></h4>' . $data['message2'] . '</p>';
   $message .= '<p><h4><strong>What was the best part about your experience with Mattiacio Orthodontics? </strong></h4>' . $data['message3'] . '</p>';
-  $message .= '<p><h4><strong>Would you recommend Mattiacio Orthodontics to a friend or family member? </strong></h4> ' . $data['message4'] . '</p>';
-  $message .= '<p><h4><strong>I would like to make a referral? </strong></h4> ' . $data['radiographs'] . '</p>';  
+  $message .= '<p><h4><strong>Would you have confidence in recommending Mattiacio Orthodontics to a friend or family member for their orthodontic care? </strong></h4> ' . $data['radiographs'] . '</p>';  
  
+  $message .= "<p><h4><strong>Thank you for your willingness to spread the word about Mattiacio Orthodontics! To express our appreciation, we'd like to offer you a $25 Visa Gift Card for providing the contact information of a family member (non-immediate) or friends contact info that you trust us to take care of. It's the best compliment we could EVER receive. *If you do not wish to enter a name, simply leave the fields blank and submit the form*</strong></h4> </p>";
   $message .= '<p><h4><strong>First Name: </strong></h4> ' . $data['firstname'] . '</p>';
   $message .= '<p><h4><strong>Last Name: </strong></h4> ' . $data['lastname'] . '</p>';
   $message .= '<p><h4><strong>Email / Phone # </strong></h4> ' . $data['email'] . '</p>';
