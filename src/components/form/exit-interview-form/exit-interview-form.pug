@@ -42,18 +42,15 @@
         span(v-show="errors.has('radiographs')") Please select one Option.          
 
     .contact-interview-form__group(v-if="radiographs === 'Yes'")
-      label.contact-interview-form__label Thank you for your willingness to spread the word about Mattiacio Orthodontics! To express our appreciation, we'd like to offer you a $25 Visa Gift Card for providing the contact information of a family member (non-immediate) or friends contact info that you trust us to take care of. It's the best compliment we could EVER receive. *If you do not wish to enter a name, simply leave the fields blank and submit the form*
+      label.contact-interview-form__label Thank you for your willingness to spread the word about Mattiacio Orthodontics! To express our appreciation, we'd like to offer you a $25 Visa Gift Card for providing the contact information of a family member (non-immediate) or friends contact info that you trust us to take care of. It's the best compliment we could EVER receive. If you do not wish to enter a name, simply leave the form blank and submit.
 
     .contact-interview-form__group(v-if="radiographs === 'Yes'")
       input.contact-interview-form__input(
         name='first-name'
         v-model='firstname'
-        v-validate="'required'"
         :class="{ 'input': true, 'contact-interview-form__input--error': errors.has('first-name') }"
         type='text'
         placeholder='First Name')
-      .contact-interview-form__error-container  
-        span(v-show="errors.has('first-name')") First Name is required.
 
     .contact-interview-form__group(v-if="radiographs === 'Yes'")
       input.contact-interview-form__input(
