@@ -16,6 +16,7 @@ import FamilyFunEvent from '@/pages/family-fun-event/family-fun-event'
 import ThankYou from '@/pages/thank-you/thank-you'
 import MouthGuardThankYou from '@/pages/mouth-guard-thank-you/mouth-guard-thank-you'
 import exitInterview from '@/pages/exit-interview/exit-interview'
+import smileAssuranceProgram from '@/pages/smile-assurance-program/smile-assurance-program'
 import retainerProgram from '@/pages/retainer-program/retainer-program'
 import Accessibility from '@/pages/accessibility/accessibility'
 
@@ -267,6 +268,12 @@ const router = new VueRouter({
       name: 'Exit Interview',
       navigation: false,
       component: exitInterview
+    },
+    {
+      path: '/smile-assurance-program',
+      name: 'Smile Assurance Program',
+      navigation: false,
+      component: smileAssuranceProgram
     },
     {
       path: '/retainer-program',

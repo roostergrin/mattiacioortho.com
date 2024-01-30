@@ -19,7 +19,11 @@ function rg_register_routes () {
   register_rest_route('rg-mail/v1', 'contactinterview', array(
     'methods' => WP_REST_Server::CREATABLE,
     'callback' => 'rg_serve_route_interview'
-  ));  
+  ));
+  register_rest_route('rg-mail/v1', 'smileassurance', array(
+    'methods' => WP_REST_Server::CREATABLE,
+    'callback' => 'rg_serve_route_smileassurance'
+  ));     
 }
 
 // function for handling post request to new api route
@@ -163,6 +167,31 @@ function rg_serve_route_interview () {
   $message .= '<p><h4><strong>Last Name: </strong></h4> ' . $data['lastname'] . '</p>';
   $message .= '<p><h4><strong>Email / Phone # </strong></h4> ' . $data['email'] . '</p>';
   $message .= '<p><h4><strong>Referred by: </strong></h4> ' . $data['referby'] . '</p>';     
+  $message .= '</body></html>';
+
+  $sent_message = wp_mail($to, $subject, $message, $headers);
+
+  if ($sent_message) {
+    echo 'Email has been received!';
+  } else {
+    echo 'Could not send email.';
+  }
+}
+
+// function for handling post request to new api route
+function rg_serve_route_smileassurance () {
+  require('wp-load.php');
+
+  $data = json_decode(file_get_contents("php://input"), true);
+  // $from = 'info@wordpress.com,';
+  $to = 'info@mattiacioortho.com';
+  $subject = 'Smile Assurance Program Form';
+  $headers = "MIME-Version: 1.0\r\n";
+  $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+  $message = '<html><body>';
+  $message .= '<p><h4><strong>Would you like to purchase Smile Assurance? </strong></h4> ' . $data['radiographs'] . '</p>';  
+  
   $message .= '</body></html>';
 
   $sent_message = wp_mail($to, $subject, $message, $headers);

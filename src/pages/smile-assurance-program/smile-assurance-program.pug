@@ -1,0 +1,35 @@
+.pages-assurance-program
+
+  .pages-assurance-program__section1(:style="{backgroundImage: 'url(' + props.acf.section_1_bg + ')'}")
+    .pages-assurance-program__container
+      .pages-assurance-program__section1-title(v-if='props.acf.section_1_title' v-html='props.acf.section_1_title')
+
+  .pages-assurance-program__container
+    .pages-assurance-program__section2
+      .pages-assurance-program__section2-leftlogo
+        img.pages-assurance-program__section2-leftlogoimg(v-if='props.acf.section_2_left_img' v-bind:src='props.acf.section_2_left_img' alt='')    
+      .pages-assurance-program__section2-rightlogo
+        img.pages-assurance-program__section2-rightlogoimg(v-if='props.acf.section_2_right_img' v-bind:src='props.acf.section_2_right_img' alt='')
+
+    .pages-assurance-program__section3
+      .pages-assurance-program__section3-title(v-if='props.acf.section_3_title' v-html='props.acf.section_3_title')
+      .pages-assurance-program__section3-subtitle(v-if='props.acf.section_3_subtitle' v-html='props.acf.section_3_subtitle')
+
+    .pages-assurance-program__section4
+      .pages-assurance-program__section4-leftlogo
+        img.pages-assurance-program__section4-leftlogoimg(v-if='props.acf.section_4_price_img' v-bind:src='props.acf.section_4_price_img' alt='')    
+      .pages-assurance-program__section4-rightlogo
+        ul
+          li(:style="{backgroundImage: 'url(' + props.acf.section_4_li_bg_img + ')'}" v-for='(LiContentList, i) in props.acf.section_4_li_content')
+            span(v-html='LiContentList.content')
+          pre {{LiContentList}}
+
+    .pages-assurance-program__section5
+      .pages-assurance-program__formwrap
+        smileAssuranceForm()    
+      router-link.pages-assurance-program__section5-logo(to='/')
+        img.pages-assurance-program__section5-logoimg(v-if='props.acf.section_5_logo_image' v-bind:src='props.acf.section_5_logo_image' alt='')
+
+    .pages-assurance-program__section6(v-if='props.acf.section_6_content' v-html='props.acf.section_6_content')                      
+
+  .pages-exit-interview__formwrap

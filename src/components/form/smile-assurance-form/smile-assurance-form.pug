@@ -1,0 +1,20 @@
+.contact-assurance-form
+  form.contact-assurance-form__form(@submit.prevent='validate', method='post')
+
+    .contact-assurance-form__group
+      .contact-assurance-form__radio-group
+        input.contact-assurance-form__input--radio(name='radiographs' v-model='radiographs' value='Yes' type='radio'  v-validate="'required'")
+        span.contact-assurance-form__radio-overlay( :class="{ 'input': true, 'contact-assurance-form__radio-overlay--error': errors.has('radiographs') }")
+        label.contact-assurance-form__label Yes, I would like to purchase Smile Assurance
+      .contact-assurance-form__radio-group
+        input.contact-assurance-form__input--radio(name='radiographs' v-model='radiographs' value='No' type='radio')
+        span.contact-assurance-form__radio-overlay( :class="{ 'input': true, 'contact-assurance-form__radio-overlay--error': errors.has('radiographs') }")
+        label.contact-assurance-form__label No, I am not interested at this time.
+      .contact-assurance-form__error-container
+        span(v-show="errors.has('radiographs')") Please select one Option.
+
+    .contact-assurance-form__button-group
+      button.contact-assurance-form__submit-button(type='submit', :disabled='formSubmitted')
+        span Submit
+      .contact-assurance-form__spinner(v-if='formSubmitted')
+        span Sending
