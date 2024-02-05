@@ -3,13 +3,17 @@
 
     .contact-assurance-form__group
       .contact-assurance-form__radio-group
-        input.contact-assurance-form__input--radio(name='radiographs' v-model='radiographs' value='Yes' type='radio'  v-validate="'required'")
+        input.contact-assurance-form__input--radio(name='radiographs' v-model='radiographs' value="Yes, I'd like to protect my new smile with Smile Assurance" type='radio'  v-validate="'required'")
         span.contact-assurance-form__radio-overlay( :class="{ 'input': true, 'contact-assurance-form__radio-overlay--error': errors.has('radiographs') }")
-        label.contact-assurance-form__label Yes, I would like to purchase Smile Assurance
+        label.contact-assurance-form__label Yes, I'd like to protect my new smile with Smile Assurance
       .contact-assurance-form__radio-group
-        input.contact-assurance-form__input--radio(name='radiographs' v-model='radiographs' value='No' type='radio')
+        input.contact-assurance-form__input--radio(name='radiographs' v-model='radiographs' value='Gimme the whole shebang! Smile Assurance and Teeth Whitening for $1000.00 ($130.00 savings!)' type='radio')
         span.contact-assurance-form__radio-overlay( :class="{ 'input': true, 'contact-assurance-form__radio-overlay--error': errors.has('radiographs') }")
-        label.contact-assurance-form__label No, I am not interested at this time.
+        label.contact-assurance-form__label Gimme the whole shebang! Smile Assurance and Teeth Whitening for $1000.00 ($130.00 savings!)
+      .contact-assurance-form__radio-group
+        input.contact-assurance-form__input--radio(name='radiographs' v-model='radiographs' value="No thanks! We'll take our chances." type='radio')
+        span.contact-assurance-form__radio-overlay( :class="{ 'input': true, 'contact-assurance-form__radio-overlay--error': errors.has('radiographs') }")
+        label.contact-assurance-form__label No thanks! We'll take our chances.      
       .contact-assurance-form__error-container
         span(v-show="errors.has('radiographs')") Please select one Option.
 
