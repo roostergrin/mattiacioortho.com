@@ -7304,11 +7304,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "page-family-fun-event"
-  }, [_c('FunEvent', {
-    attrs: {
-      "props": _vm.props
-    }
-  })], 1)
+  })
 },staticRenderFns: []}
 
 /***/ }),
