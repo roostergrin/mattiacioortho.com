@@ -1,0 +1,5 @@
+.pages-review
+  .pages-review__wrap
+    h2.pages-review__title(v-if='props.acf.title' v-html='props.acf.title')
+    p.pages-review__text(v-if='props.acf.content' v-html='props.acf.content')
+    img.pages-review__scan(v-if='props.acf.scan_image' v-bind:src='props.acf.scan_image' alt='')

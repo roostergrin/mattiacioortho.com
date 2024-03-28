@@ -19,6 +19,7 @@ import exitInterview from '@/pages/exit-interview/exit-interview'
 import smileAssuranceProgram from '@/pages/smile-assurance-program/smile-assurance-program'
 import retainerProgram from '@/pages/retainer-program/retainer-program'
 import Accessibility from '@/pages/accessibility/accessibility'
+import Review from '@/pages/review/review'
 
 // remove
 import Style from '@/pages/style-guide/style-guide'
@@ -292,6 +293,12 @@ const router = new VueRouter({
       name: 'Accessibility',
       navigation: false,
       component: Accessibility
+    },
+    {
+      path: '/review',
+      name: 'Review',
+      navigation: false,
+      component: Review
     },
     {
       path: '/style',
