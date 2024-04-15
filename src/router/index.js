@@ -268,13 +268,19 @@ const router = new VueRouter({
       path: '/exit-interview',
       name: 'Exit Interview',
       navigation: false,
-      component: exitInterview
+      component: exitInterview,
+      meta: {
+        auth: true
+      }
     },
     {
       path: '/smile-assurance-program',
       name: 'Smile Assurance Program',
       navigation: false,
-      component: smileAssuranceProgram
+      component: smileAssuranceProgram,
+      meta: {
+        auth: true
+      }
     },
     {
       path: '/retainer-program',
@@ -298,7 +304,10 @@ const router = new VueRouter({
       path: '/review',
       name: 'Review',
       navigation: false,
-      component: Review
+      component: Review,
+      meta: {
+        auth: true
+      }
     },
     {
       path: '/style',
@@ -313,6 +322,23 @@ const router = new VueRouter({
       component: Home
     }
   ]
+})
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.auth) {
+    var person = prompt('Please enter password')
+    if (person === 'bWF0dGlhY2lvb3J0aG9zY2Fu') {
+      next()
+    } else if (person === null || person === '') {
+      next('/')
+      alert('Password field is blank')
+    } else {
+      next('/')
+      alert('Wrong Password')
+    }
+  } else {
+    next()
+  }
 })
 
 export default router
