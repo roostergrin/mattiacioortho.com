@@ -20,6 +20,7 @@ import smileAssuranceProgram from '@/pages/smile-assurance-program/smile-assuran
 import retainerProgram from '@/pages/retainer-program/retainer-program'
 import Accessibility from '@/pages/accessibility/accessibility'
 import Review from '@/pages/review/review'
+import adminLinks from '@/pages/admin-links/admin-links'
 
 // remove
 import Style from '@/pages/style-guide/style-guide'
@@ -263,6 +264,15 @@ const router = new VueRouter({
       name: 'Thank You',
       navigation: false,
       component: ThankYou
+    },
+    {
+      path: '/admin-links',
+      name: 'Admin Links',
+      navigation: false,
+      component: adminLinks,
+      meta: {
+        auth: true
+      }
     },
     {
       path: '/exit-interview',

@@ -1,0 +1,6 @@
+.pages-adminlinks
+  .pages-adminlinks__content
+    h2.pages-adminlinks__title(v-if='props.acf.page_title' v-html:p='props.acf.page_title')
+    .pages-adminlinks__list
+      .pages-adminlinks__listitem(v-for='(lists, i) in props.acf.page_links_lists')
+        router-link(v-bind:to='lists.links' v-html:p='"https://www.mattiacioortho.com" + lists.links')
