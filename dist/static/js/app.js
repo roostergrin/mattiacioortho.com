@@ -11,9 +11,9 @@ webpackJsonp([1],[
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(260),
+  __webpack_require__(262),
   /* template */
-  __webpack_require__(703),
+  __webpack_require__(690),
   /* styles */
   null,
   /* scopeId */
@@ -34,9 +34,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(261),
+  __webpack_require__(263),
   /* template */
-  __webpack_require__(692),
+  __webpack_require__(716),
   /* styles */
   null,
   /* scopeId */
@@ -129,9 +129,9 @@ var closeModal = exports.closeModal = {
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(249),
+  __webpack_require__(251),
   /* template */
-  __webpack_require__(695),
+  __webpack_require__(728),
   /* styles */
   null,
   /* scopeId */
@@ -203,9 +203,9 @@ module.exports = "<svg viewBox=\"0 0 368 668\" version=\"1.1\" xmlns=\"http://ww
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(223),
+  __webpack_require__(225),
   /* template */
-  __webpack_require__(668),
+  __webpack_require__(665),
   /* styles */
   null,
   /* scopeId */
@@ -262,9 +262,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(267),
+  __webpack_require__(269),
   /* template */
-  __webpack_require__(731),
+  __webpack_require__(692),
   /* styles */
   null,
   /* scopeId */
@@ -361,53 +361,55 @@ var VIEW_EVENT = exports.VIEW_EVENT = 'VIEW_EVENT';
 /* 188 */,
 /* 189 */,
 /* 190 */,
-/* 191 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(1)(
-  /* script */
-  __webpack_require__(240),
-  /* template */
-  __webpack_require__(689),
-  /* styles */
-  null,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 192 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(1)(
-  /* script */
-  __webpack_require__(253),
-  /* template */
-  __webpack_require__(662),
-  /* styles */
-  null,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
+/* 191 */,
+/* 192 */,
 /* 193 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(242),
+  /* template */
+  __webpack_require__(707),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 194 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(255),
+  /* template */
+  __webpack_require__(735),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _keys = __webpack_require__(295);
+var _keys = __webpack_require__(297);
 
 var _keys2 = _interopRequireDefault(_keys);
 
@@ -419,7 +421,7 @@ var _app = __webpack_require__(594);
 
 var _app2 = _interopRequireDefault(_app);
 
-var _router = __webpack_require__(211);
+var _router = __webpack_require__(213);
 
 var _router2 = _interopRequireDefault(_router);
 
@@ -427,11 +429,11 @@ var _veeValidate = __webpack_require__(591);
 
 var _veeValidate2 = _interopRequireDefault(_veeValidate);
 
-var _store = __webpack_require__(215);
+var _store = __webpack_require__(217);
 
 var _store2 = _interopRequireDefault(_store);
 
-var _filters = __webpack_require__(213);
+var _filters = __webpack_require__(215);
 
 var customFilters = _interopRequireWildcard(_filters);
 
@@ -492,8 +494,6 @@ new _vue2.default({
 }).$mount('#app');
 
 /***/ }),
-/* 194 */,
-/* 195 */,
 /* 196 */,
 /* 197 */,
 /* 198 */,
@@ -509,7 +509,9 @@ new _vue2.default({
 /* 208 */,
 /* 209 */,
 /* 210 */,
-/* 211 */
+/* 211 */,
+/* 212 */,
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -873,7 +875,7 @@ router.beforeEach(function (to, from, next) {
 exports.default = router;
 
 /***/ }),
-/* 212 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -891,7 +893,7 @@ var api = function api() {
 exports.default = api();
 
 /***/ }),
-/* 213 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -912,7 +914,7 @@ function formatPhone(value) {
 }
 
 /***/ }),
-/* 214 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -922,19 +924,19 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _regenerator = __webpack_require__(299);
+var _regenerator = __webpack_require__(142);
 
 var _regenerator2 = _interopRequireDefault(_regenerator);
 
-var _defineProperty2 = __webpack_require__(140);
+var _defineProperty2 = __webpack_require__(141);
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
-var _extends4 = __webpack_require__(298);
+var _extends4 = __webpack_require__(299);
 
 var _extends5 = _interopRequireDefault(_extends4);
 
-var _asyncToGenerator2 = __webpack_require__(297);
+var _asyncToGenerator2 = __webpack_require__(140);
 
 var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
 
@@ -942,7 +944,7 @@ var _axios = __webpack_require__(55);
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _api = __webpack_require__(212);
+var _api = __webpack_require__(214);
 
 var _api2 = _interopRequireDefault(_api);
 
@@ -1092,7 +1094,7 @@ var actions = {
 exports.default = actions;
 
 /***/ }),
-/* 215 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1110,11 +1112,11 @@ var _vuex = __webpack_require__(741);
 
 var _vuex2 = _interopRequireDefault(_vuex);
 
-var _mutations = __webpack_require__(216);
+var _mutations = __webpack_require__(218);
 
 var _mutations2 = _interopRequireDefault(_mutations);
 
-var _actions = __webpack_require__(214);
+var _actions = __webpack_require__(216);
 
 var _actions2 = _interopRequireDefault(_actions);
 
@@ -1147,7 +1149,7 @@ var store = new _vuex2.default.Store({
 exports.default = store;
 
 /***/ }),
-/* 216 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1157,7 +1159,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _defineProperty2 = __webpack_require__(140);
+var _defineProperty2 = __webpack_require__(141);
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
@@ -1201,7 +1203,7 @@ var mutations = (_mutations = {}, (0, _defineProperty3.default)(_mutations, _mut
 exports.default = mutations;
 
 /***/ }),
-/* 217 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1281,7 +1283,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 218 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1303,36 +1305,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 219 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _icon = __webpack_require__(7);
-
-var _icon2 = _interopRequireDefault(_icon);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = {
-  props: ['props'],
-  methods: {
-    showContent1: function showContent1(i) {
-      this.$store.dispatch('VIEW_TABS', i);
-    }
-  },
-  components: {
-    Icon: _icon2.default
-  }
-};
-
-/***/ }),
-/* 220 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1361,7 +1334,36 @@ exports.default = {
 };
 
 /***/ }),
-/* 221 */
+/* 222 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _icon = __webpack_require__(7);
+
+var _icon2 = _interopRequireDefault(_icon);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+  props: ['props'],
+  methods: {
+    showContent1: function showContent1(i) {
+      this.$store.dispatch('VIEW_TABS', i);
+    }
+  },
+  components: {
+    Icon: _icon2.default
+  }
+};
+
+/***/ }),
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1421,7 +1423,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 222 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1445,7 +1447,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 223 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1468,7 +1470,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 224 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1478,7 +1480,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _form = __webpack_require__(192);
+var _form = __webpack_require__(194);
 
 var _form2 = _interopRequireDefault(_form);
 
@@ -1497,7 +1499,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 225 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1511,7 +1513,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 226 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1535,7 +1537,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 227 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1560,7 +1562,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 228 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1578,7 +1580,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 229 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1636,7 +1638,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 230 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1650,7 +1652,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 231 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1669,7 +1671,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 232 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1693,7 +1695,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 233 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1716,44 +1718,6 @@ exports.default = {
       this.$store.dispatch('VIEW_TABS', i);
     }
   },
-  components: {
-    Icon: _icon2.default
-  }
-};
-
-/***/ }),
-/* 234 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
-  props: ['props']
-};
-
-/***/ }),
-/* 235 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _icon = __webpack_require__(7);
-
-var _icon2 = _interopRequireDefault(_icon);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = {
-  props: ['props'],
   components: {
     Icon: _icon2.default
   }
@@ -1783,8 +1747,18 @@ exports.default = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+
+var _icon = __webpack_require__(7);
+
+var _icon2 = _interopRequireDefault(_icon);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 exports.default = {
-  props: ['props']
+  props: ['props'],
+  components: {
+    Icon: _icon2.default
+  }
 };
 
 /***/ }),
@@ -1811,22 +1785,8 @@ exports.default = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-var _icon = __webpack_require__(7);
-
-var _icon2 = _interopRequireDefault(_icon);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 exports.default = {
-  computed: {
-    props: function props() {
-      return this.$store.state.app.information;
-    }
-  },
-  components: {
-    Icon: _icon2.default
-  }
+  props: ['props']
 };
 
 /***/ }),
@@ -1858,7 +1818,49 @@ var _icon = __webpack_require__(7);
 
 var _icon2 = _interopRequireDefault(_icon);
 
-var _form = __webpack_require__(192);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+  computed: {
+    props: function props() {
+      return this.$store.state.app.information;
+    }
+  },
+  components: {
+    Icon: _icon2.default
+  }
+};
+
+/***/ }),
+/* 242 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
+  props: ['props']
+};
+
+/***/ }),
+/* 243 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _icon = __webpack_require__(7);
+
+var _icon2 = _interopRequireDefault(_icon);
+
+var _form = __webpack_require__(194);
 
 var _form2 = _interopRequireDefault(_form);
 
@@ -1884,7 +1886,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 242 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1913,7 +1915,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 243 */
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1937,7 +1939,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 244 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1972,7 +1974,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 245 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2021,35 +2023,35 @@ exports.default = {
 };
 
 /***/ }),
-/* 246 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
-  props: ['props']
-};
-
-/***/ }),
-/* 247 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = {
-  props: ['props']
-};
-
-/***/ }),
 /* 248 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
+  props: ['props']
+};
+
+/***/ }),
+/* 249 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
+  props: ['props']
+};
+
+/***/ }),
+/* 250 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2068,7 +2070,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 249 */
+/* 251 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2086,7 +2088,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 250 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2114,7 +2116,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 251 */
+/* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2190,7 +2192,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 252 */
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2265,7 +2267,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 253 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2274,6 +2276,14 @@ exports.default = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+
+var _regenerator = __webpack_require__(142);
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+var _asyncToGenerator2 = __webpack_require__(140);
+
+var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
 
 var _axios = __webpack_require__(55);
 
@@ -2308,34 +2318,105 @@ exports.default = {
         console.log(e);
       });
     },
-    onSubmit: function onSubmit() {
-      var _this2 = this;
+    onSubmit: function () {
+      var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+        var _this2 = this;
 
-      this.formSubmitted = true;
-      _axios2.default.post(this.postUrl, {
-        fullname: this.fullname,
-        phone: this.phone,
-        email: this.email,
-        message: this.message,
-        newPatient: this.newPatient
-      }).then(function (res) {
-        _this2.formSubmitted = false;
-        _this2.openModal(1);
-        setTimeout(function () {
-          _this2.$el.children[0].reset();
-        }, 500);
-        _this2.closeModal(2);
+        var trackingData, referrerSource, utmSource, campaign, baseUrl, response;
+        return _regenerator2.default.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.prev = 0;
 
-        window.location = '/thank-you';
-      }).catch(function (e) {
-        console.log(e);
-      });
-    }
+                this.formSubmitted = true;
+
+                _context.next = 4;
+                return _axios2.default.post(this.postUrl, {
+                  fullname: this.fullname,
+                  phone: this.phone,
+                  email: this.email,
+                  message: this.message,
+                  newPatient: this.newPatient
+                });
+
+              case 4:
+                _context.prev = 4;
+                trackingData = JSON.parse(sessionStorage.getItem('sessionTrackingData')) ? JSON.parse(sessionStorage.getItem('sessionTrackingData')).trackingParams : undefined;
+                referrerSource = trackingData ? trackingData.referrerSource : undefined;
+                utmSource = trackingData ? trackingData.source : undefined;
+                campaign = trackingData ? trackingData.campaign : undefined;
+                baseUrl = 'https://api.threadcommunication.com';
+                _context.next = 12;
+                return _axios2.default.post(baseUrl + '/api/v1/website_leads', {
+                  first_name: this.fullname.split(' ')[0],
+                  last_name: this.fullname.split(' ').slice(1).join(' '),
+                  email: this.email,
+                  phone: this.phone,
+                  message: this.message,
+                  referrer_source: referrerSource,
+                  utm_source: utmSource,
+                  campaign_name: campaign
+                }, {
+                  headers: {
+                    'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmlnaW4iOiJodHRwczovL3d3dy5tYXR0aWFjaW9vcnRoby5jb20vIiwicHJhY3RpY2VfaWQiOiIyNjQifQ.gjnqfJ3U9O__I7-7WZ8BaPGEVdiVIOoifZ9giYcdY9k',
+                    'Content-Type': 'application/json'
+                  }
+                });
+
+              case 12:
+                response = _context.sent;
+
+
+                if (response.message) {
+                  console.warn(response.message);
+                }
+                _context.next = 19;
+                break;
+
+              case 16:
+                _context.prev = 16;
+                _context.t0 = _context['catch'](4);
+
+                console.error('New Lead not created in RG CRM.', _context.t0);
+
+              case 19:
+
+                this.formSubmitted = false;
+                this.openModal(1);
+                setTimeout(function () {
+                  _this2.$el.children[0].reset();
+                }, 500);
+                this.closeModal(2);
+                window.location = '/thank-you';
+                _context.next = 29;
+                break;
+
+              case 26:
+                _context.prev = 26;
+                _context.t1 = _context['catch'](0);
+
+                console.log(_context.t1);
+
+              case 29:
+              case 'end':
+                return _context.stop();
+            }
+          }
+        }, _callee, this, [[0, 26], [4, 16]]);
+      }));
+
+      function onSubmit() {
+        return _ref.apply(this, arguments);
+      }
+
+      return onSubmit;
+    }()
   }
 };
 
 /***/ }),
-/* 254 */
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2397,7 +2478,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 255 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2472,7 +2553,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 256 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2532,7 +2613,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 257 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2573,7 +2654,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 258 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2604,7 +2685,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 259 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2640,7 +2721,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 260 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2659,7 +2740,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 261 */
+/* 263 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2682,7 +2763,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 262 */
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2758,7 +2839,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 263 */
+/* 265 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2789,7 +2870,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 264 */
+/* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2817,7 +2898,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 265 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2844,7 +2925,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 266 */
+/* 268 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2864,7 +2945,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 267 */
+/* 269 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2943,7 +3024,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 268 */
+/* 270 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3103,7 +3184,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 269 */
+/* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3156,7 +3237,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 270 */
+/* 272 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3190,7 +3271,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 271 */
+/* 273 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3227,7 +3308,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 272 */
+/* 274 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3241,11 +3322,11 @@ var _loader = __webpack_require__(11);
 
 var _loader2 = _interopRequireDefault(_loader);
 
-var _customAboutMeetDr = __webpack_require__(597);
+var _customAboutMeetDr = __webpack_require__(596);
 
 var _customAboutMeetDr2 = _interopRequireDefault(_customAboutMeetDr);
 
-var _customAboutMeetDr3 = __webpack_require__(596);
+var _customAboutMeetDr3 = __webpack_require__(597);
 
 var _customAboutMeetDr4 = _interopRequireDefault(_customAboutMeetDr3);
 
@@ -3279,7 +3360,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 273 */
+/* 275 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3293,7 +3374,7 @@ var _loader = __webpack_require__(11);
 
 var _loader2 = _interopRequireDefault(_loader);
 
-var _customThankYou = __webpack_require__(191);
+var _customThankYou = __webpack_require__(193);
 
 var _customThankYou2 = _interopRequireDefault(_customThankYou);
 
@@ -3334,7 +3415,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 274 */
+/* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3366,7 +3447,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 275 */
+/* 277 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3423,7 +3504,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 276 */
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3489,7 +3570,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 277 */
+/* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3526,7 +3607,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 278 */
+/* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3593,7 +3674,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 279 */
+/* 281 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3630,7 +3711,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 280 */
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3672,7 +3753,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 281 */
+/* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3709,7 +3790,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 282 */
+/* 284 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3771,7 +3852,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 283 */
+/* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3803,7 +3884,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 284 */
+/* 286 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3835,7 +3916,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 285 */
+/* 287 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3872,7 +3953,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 286 */
+/* 288 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3906,7 +3987,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 287 */
+/* 289 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3920,7 +4001,7 @@ var _loader = __webpack_require__(11);
 
 var _loader2 = _interopRequireDefault(_loader);
 
-var _customThankYou = __webpack_require__(191);
+var _customThankYou = __webpack_require__(193);
 
 var _customThankYou2 = _interopRequireDefault(_customThankYou);
 
@@ -3943,7 +4024,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 288 */
+/* 290 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3995,7 +4076,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 289 */
+/* 291 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4037,7 +4118,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 290 */
+/* 292 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4084,7 +4165,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 291 */
+/* 293 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4126,8 +4207,6 @@ exports.default = {
 };
 
 /***/ }),
-/* 292 */,
-/* 293 */,
 /* 294 */,
 /* 295 */,
 /* 296 */,
@@ -4657,13 +4736,13 @@ module.exports = "<svg id=\"9a0b266c-c5a3-4088-a65d-d84aa6dab296\" data-name=\"L
 /***/ (function(module, exports, __webpack_require__) {
 
 function injectStyle (ssrContext) {
-  __webpack_require__(544)
+  __webpack_require__(543)
 }
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(217),
+  __webpack_require__(219),
   /* template */
-  __webpack_require__(716),
+  __webpack_require__(684),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -4680,13 +4759,13 @@ module.exports = Component.exports
 /***/ (function(module, exports, __webpack_require__) {
 
 function injectStyle (ssrContext) {
-  __webpack_require__(543)
+  __webpack_require__(544)
 }
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(218),
+  __webpack_require__(220),
   /* template */
-  __webpack_require__(694),
+  __webpack_require__(708),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -4704,9 +4783,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(219),
+  __webpack_require__(221),
   /* template */
-  __webpack_require__(680),
+  __webpack_require__(674),
   /* styles */
   null,
   /* scopeId */
@@ -4724,9 +4803,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(220),
+  __webpack_require__(222),
   /* template */
-  __webpack_require__(683),
+  __webpack_require__(669),
   /* styles */
   null,
   /* scopeId */
@@ -4744,9 +4823,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(221),
+  __webpack_require__(223),
   /* template */
-  __webpack_require__(710),
+  __webpack_require__(693),
   /* styles */
   null,
   /* scopeId */
@@ -4764,9 +4843,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(222),
+  __webpack_require__(224),
   /* template */
-  __webpack_require__(717),
+  __webpack_require__(691),
   /* styles */
   null,
   /* scopeId */
@@ -4784,9 +4863,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(224),
+  __webpack_require__(226),
   /* template */
-  __webpack_require__(696),
+  __webpack_require__(726),
   /* styles */
   null,
   /* scopeId */
@@ -4804,9 +4883,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(225),
+  __webpack_require__(227),
   /* template */
-  __webpack_require__(711),
+  __webpack_require__(696),
   /* styles */
   null,
   /* scopeId */
@@ -4824,9 +4903,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(226),
+  __webpack_require__(228),
   /* template */
-  __webpack_require__(714),
+  __webpack_require__(668),
   /* styles */
   null,
   /* scopeId */
@@ -4844,9 +4923,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(227),
+  __webpack_require__(229),
   /* template */
-  __webpack_require__(669),
+  __webpack_require__(695),
   /* styles */
   null,
   /* scopeId */
@@ -4864,9 +4943,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(228),
+  __webpack_require__(230),
   /* template */
-  __webpack_require__(709),
+  __webpack_require__(694),
   /* styles */
   null,
   /* scopeId */
@@ -4884,9 +4963,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(229),
+  __webpack_require__(231),
   /* template */
-  __webpack_require__(735),
+  __webpack_require__(679),
   /* styles */
   null,
   /* scopeId */
@@ -4904,9 +4983,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(230),
+  __webpack_require__(232),
   /* template */
-  __webpack_require__(697),
+  __webpack_require__(721),
   /* styles */
   null,
   /* scopeId */
@@ -4924,9 +5003,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(231),
+  __webpack_require__(233),
   /* template */
-  __webpack_require__(701),
+  __webpack_require__(664),
   /* styles */
   null,
   /* scopeId */
@@ -4944,9 +5023,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(232),
+  __webpack_require__(234),
   /* template */
-  __webpack_require__(673),
+  __webpack_require__(662),
   /* styles */
   null,
   /* scopeId */
@@ -4964,9 +5043,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(233),
+  __webpack_require__(235),
   /* template */
-  __webpack_require__(665),
+  __webpack_require__(682),
   /* styles */
   null,
   /* scopeId */
@@ -4984,9 +5063,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(234),
+  __webpack_require__(236),
   /* template */
-  __webpack_require__(705),
+  __webpack_require__(700),
   /* styles */
   null,
   /* scopeId */
@@ -5004,9 +5083,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(235),
+  __webpack_require__(237),
   /* template */
-  __webpack_require__(677),
+  __webpack_require__(702),
   /* styles */
   null,
   /* scopeId */
@@ -5024,9 +5103,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(236),
+  __webpack_require__(238),
   /* template */
-  __webpack_require__(684),
+  __webpack_require__(672),
   /* styles */
   null,
   /* scopeId */
@@ -5044,9 +5123,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(237),
+  __webpack_require__(239),
   /* template */
-  __webpack_require__(681),
+  __webpack_require__(729),
   /* styles */
   null,
   /* scopeId */
@@ -5064,9 +5143,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(238),
+  __webpack_require__(240),
   /* template */
-  __webpack_require__(708),
+  __webpack_require__(666),
   /* styles */
   null,
   /* scopeId */
@@ -5080,26 +5159,6 @@ module.exports = Component.exports
 
 /***/ }),
 /* 615 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(1)(
-  /* script */
-  __webpack_require__(239),
-  /* template */
-  __webpack_require__(698),
-  /* styles */
-  null,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 616 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(1)(
@@ -5119,14 +5178,34 @@ module.exports = Component.exports
 
 
 /***/ }),
+/* 616 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(243),
+  /* template */
+  __webpack_require__(711),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
 /* 617 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(242),
+  __webpack_require__(244),
   /* template */
-  __webpack_require__(713),
+  __webpack_require__(671),
   /* styles */
   null,
   /* scopeId */
@@ -5144,9 +5223,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(243),
+  __webpack_require__(245),
   /* template */
-  __webpack_require__(721),
+  __webpack_require__(715),
   /* styles */
   null,
   /* scopeId */
@@ -5164,9 +5243,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(244),
+  __webpack_require__(246),
   /* template */
-  __webpack_require__(700),
+  __webpack_require__(713),
   /* styles */
   null,
   /* scopeId */
@@ -5184,9 +5263,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(245),
+  __webpack_require__(247),
   /* template */
-  __webpack_require__(663),
+  __webpack_require__(687),
   /* styles */
   null,
   /* scopeId */
@@ -5204,9 +5283,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(246),
+  __webpack_require__(248),
   /* template */
-  __webpack_require__(682),
+  __webpack_require__(689),
   /* styles */
   null,
   /* scopeId */
@@ -5224,9 +5303,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(247),
+  __webpack_require__(249),
   /* template */
-  __webpack_require__(675),
+  __webpack_require__(667),
   /* styles */
   null,
   /* scopeId */
@@ -5244,9 +5323,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(248),
+  __webpack_require__(250),
   /* template */
-  __webpack_require__(666),
+  __webpack_require__(698),
   /* styles */
   null,
   /* scopeId */
@@ -5264,9 +5343,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(250),
+  __webpack_require__(252),
   /* template */
-  __webpack_require__(720),
+  __webpack_require__(685),
   /* styles */
   null,
   /* scopeId */
@@ -5284,9 +5363,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(251),
+  __webpack_require__(253),
   /* template */
-  __webpack_require__(702),
+  __webpack_require__(724),
   /* styles */
   null,
   /* scopeId */
@@ -5304,9 +5383,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(252),
+  __webpack_require__(254),
   /* template */
-  __webpack_require__(664),
+  __webpack_require__(734),
   /* styles */
   null,
   /* scopeId */
@@ -5324,9 +5403,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(254),
+  __webpack_require__(256),
   /* template */
-  __webpack_require__(670),
+  __webpack_require__(704),
   /* styles */
   null,
   /* scopeId */
@@ -5344,9 +5423,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(255),
+  __webpack_require__(257),
   /* template */
-  __webpack_require__(706),
+  __webpack_require__(718),
   /* styles */
   null,
   /* scopeId */
@@ -5364,9 +5443,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(256),
+  __webpack_require__(258),
   /* template */
-  __webpack_require__(725),
+  __webpack_require__(703),
   /* styles */
   null,
   /* scopeId */
@@ -5380,46 +5459,6 @@ module.exports = Component.exports
 
 /***/ }),
 /* 630 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(1)(
-  /* script */
-  __webpack_require__(257),
-  /* template */
-  __webpack_require__(736),
-  /* styles */
-  null,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 631 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(1)(
-  /* script */
-  __webpack_require__(258),
-  /* template */
-  __webpack_require__(734),
-  /* styles */
-  null,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 632 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(1)(
@@ -5439,52 +5478,12 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 633 */
+/* 631 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(262),
-  /* template */
-  __webpack_require__(699),
-  /* styles */
-  null,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 634 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(1)(
-  /* script */
-  __webpack_require__(263),
-  /* template */
-  __webpack_require__(719),
-  /* styles */
-  null,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 635 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(1)(
-  /* script */
-  __webpack_require__(264),
+  __webpack_require__(260),
   /* template */
   __webpack_require__(727),
   /* styles */
@@ -5499,7 +5498,47 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 636 */
+/* 632 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(261),
+  /* template */
+  __webpack_require__(731),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 633 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(264),
+  /* template */
+  __webpack_require__(712),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 634 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(1)(
@@ -5519,14 +5558,54 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 637 */
+/* 635 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(266),
   /* template */
-  __webpack_require__(672),
+  __webpack_require__(732),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 636 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(267),
+  /* template */
+  __webpack_require__(722),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 637 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(268),
+  /* template */
+  __webpack_require__(670),
   /* styles */
   null,
   /* scopeId */
@@ -5544,9 +5623,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(268),
+  __webpack_require__(270),
   /* template */
-  __webpack_require__(693),
+  __webpack_require__(673),
   /* styles */
   null,
   /* scopeId */
@@ -5564,9 +5643,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(269),
+  __webpack_require__(271),
   /* template */
-  __webpack_require__(671),
+  __webpack_require__(705),
   /* styles */
   null,
   /* scopeId */
@@ -5584,9 +5663,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(270),
+  __webpack_require__(272),
   /* template */
-  __webpack_require__(728),
+  __webpack_require__(719),
   /* styles */
   null,
   /* scopeId */
@@ -5604,9 +5683,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(271),
+  __webpack_require__(273),
   /* template */
-  __webpack_require__(679),
+  __webpack_require__(736),
   /* styles */
   null,
   /* scopeId */
@@ -5624,9 +5703,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(272),
+  __webpack_require__(274),
   /* template */
-  __webpack_require__(690),
+  __webpack_require__(699),
   /* styles */
   null,
   /* scopeId */
@@ -5644,9 +5723,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(273),
+  __webpack_require__(275),
   /* template */
-  __webpack_require__(726),
+  __webpack_require__(681),
   /* styles */
   null,
   /* scopeId */
@@ -5664,9 +5743,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(274),
+  __webpack_require__(276),
   /* template */
-  __webpack_require__(704),
+  __webpack_require__(688),
   /* styles */
   null,
   /* scopeId */
@@ -5684,9 +5763,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(275),
+  __webpack_require__(277),
   /* template */
-  __webpack_require__(685),
+  __webpack_require__(663),
   /* styles */
   null,
   /* scopeId */
@@ -5704,9 +5783,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(276),
+  __webpack_require__(278),
   /* template */
-  __webpack_require__(715),
+  __webpack_require__(710),
   /* styles */
   null,
   /* scopeId */
@@ -5724,9 +5803,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(277),
+  __webpack_require__(279),
   /* template */
-  __webpack_require__(718),
+  __webpack_require__(686),
   /* styles */
   null,
   /* scopeId */
@@ -5744,9 +5823,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(278),
+  __webpack_require__(280),
   /* template */
-  __webpack_require__(688),
+  __webpack_require__(714),
   /* styles */
   null,
   /* scopeId */
@@ -5764,9 +5843,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(279),
+  __webpack_require__(281),
   /* template */
-  __webpack_require__(667),
+  __webpack_require__(697),
   /* styles */
   null,
   /* scopeId */
@@ -5784,9 +5863,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(280),
+  __webpack_require__(282),
   /* template */
-  __webpack_require__(691),
+  __webpack_require__(709),
   /* styles */
   null,
   /* scopeId */
@@ -5804,9 +5883,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(281),
+  __webpack_require__(283),
   /* template */
-  __webpack_require__(676),
+  __webpack_require__(701),
   /* styles */
   null,
   /* scopeId */
@@ -5824,9 +5903,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(282),
+  __webpack_require__(284),
   /* template */
-  __webpack_require__(686),
+  __webpack_require__(717),
   /* styles */
   null,
   /* scopeId */
@@ -5844,9 +5923,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(283),
+  __webpack_require__(285),
   /* template */
-  __webpack_require__(678),
+  __webpack_require__(725),
   /* styles */
   null,
   /* scopeId */
@@ -5864,9 +5943,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(284),
+  __webpack_require__(286),
   /* template */
-  __webpack_require__(729),
+  __webpack_require__(720),
   /* styles */
   null,
   /* scopeId */
@@ -5884,9 +5963,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(285),
+  __webpack_require__(287),
   /* template */
-  __webpack_require__(732),
+  __webpack_require__(677),
   /* styles */
   null,
   /* scopeId */
@@ -5904,9 +5983,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(286),
+  __webpack_require__(288),
   /* template */
-  __webpack_require__(687),
+  __webpack_require__(676),
   /* styles */
   null,
   /* scopeId */
@@ -5924,9 +6003,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(287),
+  __webpack_require__(289),
   /* template */
-  __webpack_require__(674),
+  __webpack_require__(675),
   /* styles */
   null,
   /* scopeId */
@@ -5944,9 +6023,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(288),
+  __webpack_require__(290),
   /* template */
-  __webpack_require__(724),
+  __webpack_require__(706),
   /* styles */
   null,
   /* scopeId */
@@ -5964,9 +6043,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(289),
+  __webpack_require__(291),
   /* template */
-  __webpack_require__(712),
+  __webpack_require__(680),
   /* styles */
   null,
   /* scopeId */
@@ -5984,9 +6063,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(290),
+  __webpack_require__(292),
   /* template */
-  __webpack_require__(707),
+  __webpack_require__(678),
   /* styles */
   null,
   /* scopeId */
@@ -6004,9 +6083,9 @@ module.exports = Component.exports
 
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(291),
+  __webpack_require__(293),
   /* template */
-  __webpack_require__(722),
+  __webpack_require__(683),
   /* styles */
   null,
   /* scopeId */
@@ -6024,256 +6103,1476 @@ module.exports = Component.exports
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "contact-form"
-  }, [_c('form', {
-    staticClass: "contact-form__form",
+    staticClass: "custom-invisalign-sections",
     attrs: {
-      "method": "post"
-    },
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        return _vm.validate($event)
+      "id": "invilignsection1"
+    }
+  }, _vm._l((_vm.props), function(section, i) {
+    return _c('div', {
+      key: i,
+      staticClass: "custom-invisalign-sections__section",
+      attrs: {
+        "id": 'section-' + i
       }
-    }
-  }, [_c('div', {
-    staticClass: "contact-form__group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.fullname),
-      expression: "fullname"
-    }, {
-      name: "validate",
-      rawName: "v-validate",
-      value: ('required|alpha_spaces'),
-      expression: "'required|alpha_spaces'"
-    }],
-    staticClass: "contact-form__input",
-    class: {
-      'input': true, 'contact-form__input--error': _vm.errors.has('full-name')
-    },
-    attrs: {
-      "name": "full-name",
-      "type": "text",
-      "placeholder": "Full Name"
-    },
-    domProps: {
-      "value": (_vm.fullname)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.fullname = $event.target.value
+    }, [_c('div', {
+      staticClass: "custom-invisalign-sections__container"
+    }, [_c('div', {
+      staticClass: "custom-invisalign-sections__title",
+      domProps: {
+        "innerHTML": _vm._s(section.title)
       }
-    }
-  }), _c('div', {
-    staticClass: "contact-form__error-container"
-  }, [_c('span', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('full-name')),
-      expression: "errors.has('full-name')"
-    }]
-  }, [_vm._v("Full name is required.")])])]), _c('div', {
-    staticClass: "contact-form__group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.phone),
-      expression: "phone"
-    }, {
-      name: "validate",
-      rawName: "v-validate",
-      value: ({
-        required: true,
-        regex: /^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$/
-      }),
-      expression: "{required: true, regex: /^\\D?(\\d{3})\\D?\\D?(\\d{3})\\D?(\\d{4})$/}"
-    }],
-    staticClass: "contact-form__input",
-    class: {
-      'input': true, 'contact-form__input--error': _vm.errors.has('phone')
-    },
-    attrs: {
-      "name": "phone",
-      "type": "phone",
-      "placeholder": "Phone"
-    },
-    domProps: {
-      "value": (_vm.phone)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.phone = $event.target.value
+    }), _c('div', {
+      staticClass: "custom-invisalign-sections__row"
+    }, [_c('div', {
+      staticClass: "custom-invisalign-sections__left"
+    }, [(section.icon) ? _c('Icon', {
+      staticClass: "custom-invisalign-sections",
+      class: 'custom-invisalign-sections__icon-' + section.icon,
+      attrs: {
+        "name": section.icon
       }
-    }
-  }), _c('div', {
-    staticClass: "contact-form__error-container"
-  }, [_c('span', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('phone')),
-      expression: "errors.has('phone')"
-    }]
-  }, [_vm._v("Valid phone number is required.")])])]), _c('div', {
-    staticClass: "contact-form__group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.email),
-      expression: "email"
-    }, {
-      name: "validate",
-      rawName: "v-validate",
-      value: ('required|email'),
-      expression: "'required|email'"
-    }],
-    staticClass: "contact-form__input",
-    class: {
-      'input': true, 'contact-form__input--error': _vm.errors.has('email')
-    },
-    attrs: {
-      "name": "email",
-      "placeholder": "Email Address"
-    },
-    domProps: {
-      "value": (_vm.email)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.email = $event.target.value
+    }) : _vm._e(), _c('div', {
+      staticClass: "custom-invisalign-sections__text",
+      domProps: {
+        "innerHTML": _vm._s(section.text)
       }
-    }
-  }), _c('div', {
-    staticClass: "contact-form__error-container"
-  }, [_c('span', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('email')),
-      expression: "errors.has('email')"
-    }]
-  }, [_vm._v("Valid email is required.")])])]), _c('div', {
-    staticClass: "contact-form__group"
-  }, [_c('p', [_vm._v("First Time Patient?")]), _c('div', {
-    staticClass: "contact-form__radio-group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.newPatient),
-      expression: "newPatient"
-    }],
-    staticClass: "contact-form__input--radio",
-    attrs: {
-      "name": "newPatient",
-      "value": "Yes",
-      "type": "radio"
-    },
-    domProps: {
-      "checked": _vm._q(_vm.newPatient, "Yes")
-    },
-    on: {
-      "change": function($event) {
-        _vm.newPatient = "Yes"
-      }
-    }
-  }), _c('span', {
-    staticClass: "contact-form__radio-overlay"
-  }), _c('label', {
-    staticClass: "contact-form__label"
-  }, [_vm._v("Yes")])]), _c('div', {
-    staticClass: "contact-form__radio-group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.newPatient),
-      expression: "newPatient"
-    }],
-    staticClass: "contact-form__input--radio",
-    attrs: {
-      "name": "newPatient",
-      "value": "No",
-      "type": "radio"
-    },
-    domProps: {
-      "checked": _vm._q(_vm.newPatient, "No")
-    },
-    on: {
-      "change": function($event) {
-        _vm.newPatient = "No"
-      }
-    }
-  }), _c('span', {
-    staticClass: "contact-form__radio-overlay"
-  }), _c('label', {
-    staticClass: "contact-form__label"
-  }, [_vm._v("No")])])]), _c('div', {
-    staticClass: "contact-form__group"
-  }, [_c('textarea', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.message),
-      expression: "message"
-    }, {
-      name: "validate",
-      rawName: "v-validate",
-      value: ('required'),
-      expression: "'required'"
-    }],
-    staticClass: "contact-form__textarea",
-    class: {
-      'contact-form__textarea--error': _vm.errors.has('message')
-    },
-    attrs: {
-      "name": "message",
-      "type": "textarea",
-      "rows": "4",
-      "placeholder": "Message"
-    },
-    domProps: {
-      "value": (_vm.message)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.message = $event.target.value
-      }
-    }
-  }), _c('div', {
-    staticClass: "contact-form__error-container"
-  }, [_c('span', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('message')),
-      expression: "errors.has('message')"
-    }]
-  }, [_vm._v("Send us a message!")])])]), _c('div', {
-    staticClass: "contact-form__button-group"
-  }, [_c('button', {
-    staticClass: "contact-form__submit-button",
-    attrs: {
-      "type": "submit",
-      "disabled": _vm.formSubmitted
-    }
-  }, [_c('span', [_vm._v("Submit")])]), (_vm.formSubmitted) ? _c('div', {
-    staticClass: "contact-form__spinner"
-  }, [_c('span', [_vm._v("Sending")])]) : _vm._e()])])])
+    })], 1), _c('div', {
+      staticClass: "custom-invisalign-sections__right",
+      class: {
+        "custom-invisalign-sections__right--order-first": section.img_left
+      },
+      style: ({
+        backgroundImage: 'url(' + section.img + ')'
+      })
+    })])])])
+  }), 0)
 },staticRenderFns: []}
 
 /***/ }),
 /* 663 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "page-contact-us"
+  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('Header', {
+    attrs: {
+      "props": _vm.props.acf.custom_header
+    }
+  }), _c('FormSection', {
+    attrs: {
+      "props": _vm.props.acf.custom_form
+    }
+  }), _c('Divider'), _c('FunEvent'), _c('SponsorSection', {
+    attrs: {
+      "props": _vm.props.acf.custom_sponsor
+    }
+  })], 1) : _vm._e()], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 664 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-home-why"
+  }, [_c('div', {
+    staticClass: "custom-home-why__wrapper"
+  }, [_c('div', {
+    staticClass: "custom-home-why__shape",
+    domProps: {
+      "innerHTML": _vm._s(_vm.shape)
+    }
+  }), _c('div', {
+    staticClass: "custom-home-why__container"
+  }, [_c('div', {
+    staticClass: "custom-home-why__left"
+  }, [_c('h2', [_vm._v(_vm._s(_vm.props.title))])]), _c('div', {
+    staticClass: "custom-home-why__right"
+  }, _vm._l((_vm.props.cards), function(card, i) {
+    return _c('div', {
+      key: i,
+      staticClass: "custom-home-why__item"
+    }, [_c('div', {
+      staticClass: "custom-home-why__card-title",
+      domProps: {
+        "innerHTML": _vm._s(card.title)
+      }
+    }), _c('div', {
+      staticClass: "custom-home-why__card-text",
+      domProps: {
+        "innerHTML": _vm._s(card.text)
+      }
+    })])
+  }), 0)])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 665 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.props) ? _c('div', {
+    staticClass: "custom-app-event",
+    class: {
+      'custom-app-event--family-fun-event': _vm.$route.path.includes('/mouth-guard-registration'), 'custom-app-event--banner': _vm.$route.path !== '/mouth-guard-registration'
+    },
+    style: ({
+      backgroundImage: 'url(' + _vm.props.acf.event.bg_img + ')'
+    })
+  }, [(_vm.$route.path.includes("/mouth-guard-registration")) ? _c('div', {
+    staticClass: "custom-app-event__container",
+    class: {
+      'custom-app-event__container--family-fun-event': _vm.$route.path.includes('/mouth-guard-registration')
+    }
+  }, [_c('div', {
+    staticClass: "custom-app-event__inner"
+  }, [_c('div', {
+    staticClass: "custom-app-event__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.event.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-app-event__subtitle",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.event.subtitle)
+    }
+  }), _c('div', {
+    staticClass: "custom-app-event__content",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.event.content)
+    }
+  }), _c('div', {
+    staticClass: "custom-app-event__btn",
+    on: {
+      "click": function($event) {
+        return _vm.openModal(4)
+      }
+    }
+  }, [_vm._v("Register Today")]), _c('h3', {
+    staticStyle: {
+      "color": "white",
+      "margin-top": "20px"
+    }
+  }, [_vm._v("Please also print this Permission and Release Form and bring with you to the date and time you registered for")]), _c('a', {
+    staticClass: "custom-app-event__btn",
+    attrs: {
+      "target": "_blank",
+      "href": "/wp-content/uploads/Mouth-Guard-Permission-and-Release-2023.pdf"
+    }
+  }, [_vm._v("Permission and Release Form")])])]) : _vm._e()]) : _vm._e()
+},staticRenderFns: []}
+
+/***/ }),
+/* 666 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-new-pats-patients",
+    attrs: {
+      "id": "forms"
+    }
+  }, [_c('div', {
+    staticClass: "custom-new-pats-patients__container"
+  }, [_c('div', {
+    staticClass: "custom-new-pats-patients__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-new-pats-patients__row"
+  }, [_c('div', {
+    staticClass: "custom-new-pats-patients__left"
+  }, [_c('div', {
+    staticClass: "custom-new-pats-patients__text",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.text)
+    }
+  })]), _c('div', {
+    staticClass: "custom-new-pats-patients__right",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.img + ')'
+    })
+  })])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 667 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-mattiacio-what",
+    attrs: {
+      "id": "how"
+    }
+  }, [_c('div', {
+    staticClass: "custom-mattiacio-what__container"
+  }, [_c('div', {
+    staticClass: "custom-mattiacio-what__heading"
+  }, [_c('div', {
+    staticClass: "custom-mattiacio-what__title"
+  }, [_c('h2', {
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-mattiacio-what__content",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.content)
+    }
+  })])]), _c('div', {
+    staticClass: "custom-mattiacio-what__row"
+  }, [_c('div', {
+    staticClass: "custom-mattiacio-what__right"
+  }, _vm._l((_vm.props.works), function(works, i) {
+    return _c('div', {
+      key: i,
+      staticClass: "custom-mattiacio-what__right-col3"
+    }, [_c('img', {
+      attrs: {
+        "src": works.image
+      }
+    }), _c('h3', {
+      domProps: {
+        "innerHTML": _vm._s(works.title)
+      }
+    })])
+  }), 0)])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 668 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.props) ? _c('div', {
+    staticClass: "custom-contact-sponsor-section",
+    attrs: {
+      "id": "sponsor"
+    }
+  }, [_c('div', {
+    staticClass: "custom-contact-sponsor-section__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-contact-sponsor-section__text",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.text)
+    }
+  }), _c('div', {
+    staticClass: "custom-contact-sponsor-section__container"
+  }, [_c('div', {
+    staticClass: "custom-contact-sponsor-section__form-container"
+  }, [_c('SponsorForm')], 1), _c('div', {
+    staticClass: "custom-contact-sponsor-section__instructions-container"
+  }, [_c('div', {
+    staticClass: "custom-contact-sponsor-section__instructions",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.instructions)
+    }
+  })])])]) : _vm._e()
+},staticRenderFns: []}
+
+/***/ }),
+/* 669 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-about-meet-dr1",
+    attrs: {
+      "id": "meet-dr1"
+    }
+  }, [_c('div', {
+    staticClass: "custom-about-meet-dr1__container"
+  }, [_c('div', {
+    staticClass: "custom-about-meet-dr1__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-about-meet-dr1__row"
+  }, [_c('div', {
+    staticClass: "custom-about-meet-dr1__left"
+  }, [_c('div', {
+    staticClass: "custom-about-meet-dr1__tab-container"
+  }, _vm._l((_vm.props.tabs), function(tab, i) {
+    return _c('div', {
+      key: i,
+      staticClass: "custom-about-meet-dr1__tab",
+      class: {
+        "custom-about-meet-dr1__tab--active": i === _vm.$store.state.tabs
+      },
+      on: {
+        "click": function($event) {
+          return _vm.showContent1(i)
+        },
+        "mouseover": function($event) {
+          return _vm.showContent1(i)
+        }
+      }
+    }, [_c('div', {
+      staticClass: "custom-about-meet-dr1__icon-outer"
+    }, [_c('div', {
+      staticClass: "custom-about-meet-dr1__icon-inner"
+    }, [_c('Icon', {
+      staticClass: "custom-about-meet-dr1__icon",
+      class: "custom-about-meet-dr1__icon--" + tab.label,
+      attrs: {
+        "name": tab.label
+      }
+    })], 1)])])
+  }), 0), _c('transition-group', {
+    staticClass: "custom-about-meet-dr1__content-wrapper",
+    attrs: {
+      "name": "transition-meet-dr",
+      "tag": "div"
+    }
+  }, _vm._l((_vm.props.content), function(content, i) {
+    return _c('div', {
+      directives: [{
+        name: "show",
+        rawName: "v-show",
+        value: (i === _vm.$store.state.tabs),
+        expression: "i === $store.state.tabs"
+      }],
+      key: i,
+      staticClass: "custom-about-meet-dr1__content-container"
+    }, [_c('div', {
+      staticClass: "custom-about-meet-dr1__content-title",
+      domProps: {
+        "innerHTML": _vm._s(content.title)
+      }
+    }), _c('div', {
+      staticClass: "custom-about-meet-dr1__content-text",
+      domProps: {
+        "innerHTML": _vm._s(content.text)
+      }
+    })])
+  }), 0)], 1), _c('div', {
+    staticClass: "custom-about-meet-dr1__right",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.img + ')'
+    })
+  })])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 670 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "video-modal"
+  }, [_c('div', {
+    staticClass: "video-modal__overlay",
+    on: {
+      "click": _vm.closeVideo
+    }
+  }, [_c('div', {
+    staticClass: "video-modal__container"
+  }, [_c('div', {
+    staticClass: "video-modal__close",
+    on: {
+      "click": _vm.closeVideo
+    }
+  }, [_c('span'), _c('span')]), _c('div', {
+    staticClass: "video-modal__content"
+  }, [_c('video', {
+    staticClass: "video-modal__video",
+    attrs: {
+      "controls": "controls"
+    }
+  }, [_c('source', {
+    attrs: {
+      "src": _vm.props,
+      "type": "video/mp4"
+    }
+  }), _vm._v("Your browser does not support video.")])])])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 671 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-treatments-adults",
+    attrs: {
+      "id": "adults"
+    }
+  }, [_c('div', {
+    staticClass: "custom-treatments-adults__wrapper"
+  }, [_c('div', {
+    staticClass: "custom-treatments-adults__shape",
+    domProps: {
+      "innerHTML": _vm._s(_vm.shape)
+    }
+  }), _c('div', {
+    staticClass: "custom-treatments-adults__container"
+  }, [_c('div', {
+    staticClass: "custom-treatments-adults__left"
+  }, [_c('h2', [_vm._v(_vm._s(_vm.props.title))])]), _c('div', {
+    staticClass: "custom-treatments-adults__right"
+  }, _vm._l((_vm.props.cards), function(card, i) {
+    return _c('div', {
+      key: i,
+      staticClass: "custom-treatments-adults__card"
+    }, [_c('div', {
+      staticClass: "custom-treatments-adults__card-left"
+    }, [_c('div', {
+      staticClass: "custom-treatments-adults__icon-outer"
+    }, [_c('div', {
+      staticClass: "custom-treatments-adults__icon-inner"
+    }, [_c('Icon', {
+      staticClass: "custom-treatments-adults__icon",
+      class: 'custom-treatments-adults__icon--' + card.label,
+      attrs: {
+        "name": card.label
+      }
+    })], 1)])]), _c('div', {
+      staticClass: "custom-treatments-adults__card-right"
+    }, [_c('div', {
+      staticClass: "custom-treatments-adults__card-title",
+      domProps: {
+        "innerHTML": _vm._s(card.title)
+      }
+    }), _c('div', {
+      staticClass: "custom-treatments-adults__card-text",
+      domProps: {
+        "innerHTML": _vm._s(card.text)
+      }
+    })])])
+  }), 0)])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 672 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-new-pats-first",
+    attrs: {
+      "id": "first"
+    }
+  }, [_c('div', {
+    staticClass: "custom-new-pats-first__container"
+  }, [_c('div', {
+    staticClass: "custom-new-pats-first__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-new-pats-first__text",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.text)
+    }
+  })])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 673 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.props) ? _c('div', {
+    staticClass: "nav-desktop",
+    class: {
+      "nav-desktop--scrolling": _vm.$store.state.nav, "nav-desktop--notransparent": _vm.$route.path === "/"
+    }
+  }, [_c('div', {
+    staticClass: "nav-desktop__container"
+  }, [_c('div', {
+    staticClass: "nav-desktop__item"
+  }, [_c('div', {
+    staticClass: "nav-desktop__dropdown",
+    class: {
+      "nav-desktop__dropdown--active": _vm.$store.state.menu
+    },
+    on: {
+      "click": _vm.dropdown
+    }
+  }, [_c('span', [_vm._v("GET IN TOUCH")]), _c('Icon', {
+    staticClass: "nav-desktop__dropdown-icon",
+    class: {
+      "nav-desktop__dropdown-icon--open": _vm.open
+    },
+    attrs: {
+      "name": "triangle"
+    }
+  }), _c('transition', {
+    attrs: {
+      "name": "fade-in"
+    }
+  }, [_c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.open),
+      expression: "open"
+    }],
+    staticClass: "nav-desktop__dropdown-container"
+  }, [_c('a', {
+    staticClass: "nav-desktop__dropdown-phone",
+    attrs: {
+      "href": _vm.props.acf.social_links[0].href
+    }
+  }, [_c('Icon', {
+    staticClass: "nav-desktop__phone",
+    attrs: {
+      "name": "phone"
+    }
+  }), _c('p', [_vm._v("585. 742. 1050  ")])], 1), _c('a', {
+    staticClass: "nav-desktop__dropdown-phone-emergency",
+    attrs: {
+      "href": _vm.props.acf.phone.href
+    }
+  }, [_c('Icon', {
+    staticClass: "nav-desktop__phone-emergency",
+    attrs: {
+      "name": "bandaid"
+    }
+  }), _c('p', [_vm._v(_vm._s(_vm.props.acf.phone.label))])], 1), _c('a', {
+    staticClass: "nav-desktop__dropdown-map",
+    attrs: {
+      "href": _vm.props.acf.address.href,
+      "target": "_blank"
+    }
+  }, [_c('Icon', {
+    staticClass: "nav-desktop__map",
+    attrs: {
+      "name": "location"
+    }
+  }), _c('p', [_vm._v("MAP  ")])], 1), _c('a', {
+    staticClass: "nav-desktop__dropdown-email",
+    attrs: {
+      "href": _vm.props.acf.social_links[1].href
+    }
+  }, [_c('Icon', {
+    staticClass: "nav-desktop__email",
+    attrs: {
+      "name": "envelope"
+    }
+  }), _c('p', [_vm._v("EMAIL US")])], 1)])])], 1)]), _c('div', {
+    staticClass: "nav-desktop__item"
+  }, [_c('div', {
+    directives: [{
+      name: "scroll-to",
+      rawName: "v-scroll-to",
+      value: ({
+        el: "#head",
+        container: "body",
+        duration: 750,
+        easing: "ease-in-out",
+        x: false,
+        y: true
+      }),
+      expression: "{el: \"#head\", container: \"body\", duration: 750, easing: \"ease-in-out\", x: false, y: true}"
+    }],
+    staticClass: "nav-desktop__logo-container",
+    on: {
+      "click": _vm.closeMenu
+    }
+  }, [_c('Icon', {
+    staticClass: "nav-desktop__logo",
+    class: {
+      "nav-desktop__logo--active": _vm.$store.state.menu
+    },
+    attrs: {
+      "name": "matt_logo-01"
+    }
+  })], 1)]), _c('div', {
+    staticClass: "nav-desktop__item"
+  }, [_c('div', {
+    directives: [{
+      name: "scroll-to",
+      rawName: "v-scroll-to",
+      value: ({
+        el: "#head",
+        container: "body",
+        duration: 750,
+        easing: "ease-in-out",
+        x: false,
+        y: true
+      }),
+      expression: "{el: \"#head\", container: \"body\", duration: 750, easing: \"ease-in-out\", x: false, y: true}"
+    }],
+    staticClass: "nav-desktop__menu-container",
+    on: {
+      "click": _vm.toggleMenu
+    }
+  }, [_c('div', {
+    staticClass: "nav-desktop__menu"
+  }, [_vm._v("MENU")]), _c('div', {
+    staticClass: "nav-desktop__hamburger",
+    class: {
+      "nav-desktop__hamburger--active": _vm.$store.state.menu
+    }
+  }, [_c('span'), _c('span')])])])]), _c('Bottom')], 1) : _vm._e()
+},staticRenderFns: []}
+
+/***/ }),
+/* 674 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-about-meet-dr",
+    attrs: {
+      "id": "meet-dr"
+    }
+  }, [_c('div', {
+    staticClass: "custom-about-meet-dr__container"
+  }, [_c('div', {
+    staticClass: "custom-about-meet-dr__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-about-meet-dr__row"
+  }, [_c('div', {
+    staticClass: "custom-about-meet-dr__left"
+  }, [_c('div', {
+    staticClass: "custom-about-meet-dr__tab-container"
+  }, _vm._l((_vm.props.tabs), function(tab, i) {
+    return _c('div', {
+      key: i,
+      staticClass: "custom-about-meet-dr__tab",
+      class: {
+        "custom-about-meet-dr__tab--active": i === _vm.$store.state.types
+      },
+      on: {
+        "click": function($event) {
+          return _vm.showContent(i)
+        },
+        "mouseover": function($event) {
+          return _vm.showContent(i)
+        }
+      }
+    }, [_c('div', {
+      staticClass: "custom-about-meet-dr__icon-outer"
+    }, [_c('div', {
+      staticClass: "custom-about-meet-dr__icon-inner"
+    }, [_c('Icon', {
+      staticClass: "custom-about-meet-dr__icon",
+      class: "custom-about-meet-dr__icon--" + tab.label,
+      attrs: {
+        "name": tab.label
+      }
+    })], 1)])])
+  }), 0), _c('transition-group', {
+    staticClass: "custom-about-meet-dr__content-wrapper",
+    attrs: {
+      "name": "transition-meet-dr",
+      "tag": "div"
+    }
+  }, _vm._l((_vm.props.content), function(content, i) {
+    return _c('div', {
+      directives: [{
+        name: "show",
+        rawName: "v-show",
+        value: (i === _vm.$store.state.types),
+        expression: "i === $store.state.types"
+      }],
+      key: i,
+      staticClass: "custom-about-meet-dr__content-container"
+    }, [_c('div', {
+      staticClass: "custom-about-meet-dr__content-title",
+      domProps: {
+        "innerHTML": _vm._s(content.title)
+      }
+    }), _c('div', {
+      staticClass: "custom-about-meet-dr__content-text",
+      domProps: {
+        "innerHTML": _vm._s(content.text)
+      }
+    })])
+  }), 0)], 1), _c('div', {
+    staticClass: "custom-about-meet-dr__right",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.img + ')'
+    })
+  })])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 675 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "pages-thank-you"
+  }, [_c('ThankYou', {
+    attrs: {
+      "props": _vm.props.acf.custom_thank_you
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 676 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "style-guide"
+  }, [_c('div', {
+    staticClass: "style-guide__container"
+  }, [_c('Icon', {
+    staticClass: "style-guide__logo",
+    attrs: {
+      "name": "matt_logo-01"
+    }
+  }), _c('div', {
+    staticClass: "style-guide__typography"
+  }, [_c('h1', [_vm._v("Header 1")]), _c('h1', {
+    staticClass: "h1-option"
+  }, [_vm._v("Header 1.b")]), _c('h2', [_vm._v("Header 2")]), _c('h2', {
+    staticClass: "h2-option",
+    staticStyle: {
+      "background": "black",
+      "display": "inline-block"
+    }
+  }, [_vm._v("Header 2.b")]), _c('h3', [_vm._v("Header 3")]), _c('h3', {
+    staticClass: "h3-option"
+  }, [_vm._v("Header 3.b")]), _c('br'), _c('p', [_vm._v("This is paragraph text. It is the text style that is in paragraphs ")]), _c('p', [_vm._v("and is all throughout the page in paragraphs.")]), _c('br'), _c('div', {
+    staticClass: "style-guide__icon-row"
+  }, [_c('Icon', {
+    staticClass: "style-guide__envelope",
+    attrs: {
+      "name": "envelope"
+    }
+  }), _c('Icon', {
+    staticClass: "style-guide__fb",
+    attrs: {
+      "name": "fb"
+    }
+  }), _c('Icon', {
+    staticClass: "style-guide__goog",
+    attrs: {
+      "name": "goog"
+    }
+  }), _c('Icon', {
+    staticClass: "style-guide__phone",
+    attrs: {
+      "name": "phone"
+    }
+  }), _c('Icon', {
+    staticClass: "style-guide__ig",
+    attrs: {
+      "name": "ig"
+    }
+  })], 1), _c('br'), _vm._v(" "), _c('div', {
+    staticClass: "style-guide__button-main"
+  }, [_c('span', [_vm._v("Make an Appointment")]), _c('Icon', {
+    staticClass: "style-guide__button-main-icon",
+    attrs: {
+      "name": "arrow"
+    }
+  })], 1), _c('br'), _c('div', {
+    staticClass: "style-guide__row"
+  }, [_c('div', {
+    staticClass: "style-guide__menu-container"
+  }, [_c('div', {
+    staticClass: "style-guide__menu"
+  }, [_vm._v("MENU")]), _c('div', {
+    staticClass: "style-guide__hamburger",
+    class: {
+      "style-guide__hamburger--active": _vm.active
+    },
+    on: {
+      "click": function($event) {
+        _vm.active = !_vm.active
+      }
+    }
+  }, [_c('span'), _c('span')])]), _c('div', {
+    staticClass: "style-guide__icons"
+  }, [_c('div', {
+    staticClass: "style-guide__icon-outer"
+  }, [_c('div', {
+    staticClass: "style-guide__icon-inner"
+  }, [_c('Icon', {
+    staticClass: "style-guide__icon-wrapper smile",
+    attrs: {
+      "name": "smile"
+    }
+  })], 1)]), _c('div', {
+    staticClass: "style-guide__icon-outer disabled"
+  }, [_c('div', {
+    staticClass: "style-guide__icon-inner disabled"
+  }, [_c('Icon', {
+    staticClass: "style-guide__icon-wrapper",
+    attrs: {
+      "name": "community"
+    }
+  })], 1)]), _c('div', {
+    staticClass: "style-guide__icon-outer active"
+  }, [_c('div', {
+    staticClass: "style-guide__icon-inner"
+  }, [_c('Icon', {
+    staticClass: "style-guide__icon-wrapper",
+    attrs: {
+      "name": "graduation"
+    }
+  })], 1)]), _c('div', {
+    staticClass: "style-guide__icon-outer"
+  }, [_c('div', {
+    staticClass: "style-guide__icon-inner"
+  }, [_c('Icon', {
+    staticClass: "style-guide__icon-wrapper kite",
+    attrs: {
+      "name": "kite"
+    }
+  })], 1)]), _c('div', {
+    staticClass: "style-guide__icon-outer"
+  }, [_c('div', {
+    staticClass: "style-guide__icon-inner"
+  }, [_c('Icon', {
+    staticClass: "style-guide__icon-wrapper",
+    attrs: {
+      "name": "party"
+    }
+  })], 1)]), _c('div', {
+    staticClass: "style-guide__icon-outer"
+  }, [_c('div', {
+    staticClass: "style-guide__icon-inner"
+  }, [_c('Icon', {
+    staticClass: "style-guide__icon-wrapper ribbon",
+    attrs: {
+      "name": "ribbon"
+    }
+  })], 1)]), _c('div', {
+    staticClass: "style-guide__icon-outer"
+  }, [_c('div', {
+    staticClass: "style-guide__icon-inner"
+  }, [_c('Icon', {
+    staticClass: "style-guide__icon-wrapper",
+    attrs: {
+      "name": "technology"
+    }
+  })], 1)]), _c('div', {
+    staticClass: "style-guide__icon-outer"
+  }, [_c('div', {
+    staticClass: "style-guide__icon-inner"
+  }, [_c('Icon', {
+    staticClass: "style-guide__icon-wrapper",
+    attrs: {
+      "name": "bowtie"
+    }
+  })], 1)]), _c('div', {
+    staticClass: "style-guide__icon-outer"
+  }, [_c('div', {
+    staticClass: "style-guide__icon-inner"
+  }, [_c('Icon', {
+    staticClass: "style-guide__icon-wrapper",
+    attrs: {
+      "name": "couch-plant"
+    }
+  })], 1)]), _c('div', {
+    staticClass: "style-guide__icon-outer"
+  }, [_c('div', {
+    staticClass: "style-guide__icon-inner"
+  }, [_c('Icon', {
+    staticClass: "style-guide__icon-wrapper star",
+    attrs: {
+      "name": "star"
+    }
+  })], 1)]), _c('div', {
+    staticClass: "style-guide__icon-outer"
+  }, [_c('div', {
+    staticClass: "style-guide__icon-inner"
+  }, [_c('Icon', {
+    staticClass: "style-guide__icon-wrapper",
+    attrs: {
+      "name": "shield"
+    }
+  })], 1)])])])])], 1), _c('div', {
+    staticClass: "style-guide__content-wrapper"
+  }, [_c('div', {
+    staticClass: "style-guide__shape",
+    domProps: {
+      "innerHTML": _vm._s(_vm.svg)
+    }
+  }), _vm._m(0)])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "style-guide__text-container"
+  }, [_c('div', {
+    staticClass: "style-guide__text"
+  }, [_c('h2', [_vm._v("Why Not")])]), _c('div', {
+    staticClass: "style-guide__right-container"
+  }, [_c('div', {
+    staticClass: "item"
+  }), _c('div', {
+    staticClass: "item"
+  }), _c('div', {
+    staticClass: "item"
+  }), _c('div', {
+    staticClass: "item"
+  }), _c('div', {
+    staticClass: "item"
+  })])])
+}]}
+
+/***/ }),
+/* 677 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "pages-assurance-program"
+  }, [_c('div', {
+    staticClass: "pages-assurance-program__section1",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.acf.section_1_bg + ')'
+    })
+  }, [_c('div', {
+    staticClass: "pages-assurance-program__container"
+  }, [(_vm.props.acf.section_1_title) ? _c('div', {
+    staticClass: "pages-assurance-program__section1-title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.section_1_title)
+    }
+  }) : _vm._e()])]), _c('div', {
+    staticClass: "pages-assurance-program__container"
+  }, [_c('div', {
+    staticClass: "pages-assurance-program__section2"
+  }, [_c('div', {
+    staticClass: "pages-assurance-program__section2-leftlogo"
+  }, [(_vm.props.acf.section_2_left_img) ? _c('img', {
+    staticClass: "pages-assurance-program__section2-leftlogoimg",
+    attrs: {
+      "src": _vm.props.acf.section_2_left_img,
+      "alt": ""
+    }
+  }) : _vm._e()]), _c('div', {
+    staticClass: "pages-assurance-program__section2-rightlogo"
+  }, [(_vm.props.acf.section_2_right_img) ? _c('img', {
+    staticClass: "pages-assurance-program__section2-rightlogoimg",
+    attrs: {
+      "src": _vm.props.acf.section_2_right_img,
+      "alt": ""
+    }
+  }) : _vm._e()])]), _c('div', {
+    staticClass: "pages-assurance-program__section3"
+  }, [(_vm.props.acf.section_3_title) ? _c('div', {
+    staticClass: "pages-assurance-program__section3-title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.section_3_title)
+    }
+  }) : _vm._e(), (_vm.props.acf.section_3_subtitle) ? _c('div', {
+    staticClass: "pages-assurance-program__section3-subtitle",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.section_3_subtitle)
+    }
+  }) : _vm._e()]), _c('div', {
+    staticClass: "pages-assurance-program__section4"
+  }, [_c('div', {
+    staticClass: "pages-assurance-program__section4-leftlogo"
+  }, [(_vm.props.acf.section_4_price_img) ? _c('img', {
+    staticClass: "pages-assurance-program__section4-leftlogoimg",
+    attrs: {
+      "src": _vm.props.acf.section_4_price_img,
+      "alt": ""
+    }
+  }) : _vm._e()]), _c('div', {
+    staticClass: "pages-assurance-program__section4-rightlogo"
+  }, [_c('ul', [_vm._l((_vm.props.acf.section_4_li_content), function(LiContentList, i) {
+    return _c('li', {
+      style: ({
+        backgroundImage: 'url(' + _vm.props.acf.section_4_li_bg_img + ')'
+      })
+    }, [_c('span', {
+      domProps: {
+        "innerHTML": _vm._s(LiContentList.content)
+      }
+    })])
+  }), _c('pre', [_vm._v(_vm._s(_vm.LiContentList))])], 2)])]), _c('div', {
+    staticClass: "pages-assurance-program__section5"
+  }, [_c('div', {
+    staticClass: "pages-assurance-program__formwrap"
+  }, [_c('smileAssuranceForm')], 1), _c('router-link', {
+    staticClass: "pages-assurance-program__section5-logo",
+    attrs: {
+      "to": "/"
+    }
+  }, [(_vm.props.acf.section_5_logo_image) ? _c('img', {
+    staticClass: "pages-assurance-program__section5-logoimg",
+    attrs: {
+      "src": _vm.props.acf.section_5_logo_image,
+      "alt": ""
+    }
+  }) : _vm._e()])], 1), (_vm.props.acf.section_6_content) ? _c('div', {
+    staticClass: "pages-assurance-program__section6",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.section_6_content)
+    }
+  }) : _vm._e()]), _c('div', {
+    staticClass: "pages-exit-interview__formwrap"
+  })])
+},staticRenderFns: []}
+
+/***/ }),
+/* 678 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "page-virtual-consultation"
+  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('CustomVirtualConsultationBanner', {
+    attrs: {
+      "props": _vm.props.acf.custom_virtual_consultation_banner
+    }
+  }), _c('CustomVirtualConsultationHow', {
+    attrs: {
+      "props": _vm.props.acf.custom_how_it_works
+    }
+  })], 1) : _vm._e()], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 679 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-home-testimonials"
+  }, [_c('div', {
+    staticClass: "custom-home-testimonials__container"
+  }, [_c('div', {
+    staticClass: "custom-home-testimonials__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-home-testimonials__icon-outer"
+  }, [_c('div', {
+    staticClass: "custom-home-testimonials__icon-inner"
+  }, [_c('Icon', {
+    staticClass: "custom-home-testimonials__icon",
+    attrs: {
+      "name": "smile"
+    }
+  })], 1)]), _c('swiper', {
+    staticClass: "custom-home-testimonials__slider",
+    attrs: {
+      "options": _vm.swiperOption
+    }
+  }, [_vm._l((_vm.props.testimonials), function(slide, i) {
+    return _c('swiperSlide', {
+      key: i,
+      staticClass: "custom-home-testimonials__slide"
+    }, [_c('div', {
+      staticClass: "custom-home-testimonials__slide-text",
+      domProps: {
+        "innerHTML": _vm._s(slide.text)
+      }
+    }), _c('div', {
+      staticClass: "custom-home-testimonials__slide-author"
+    }, [_vm._v(_vm._s(slide.author))])])
+  }), _c('div', {
+    staticClass: "custom-home-testimonials__pagination",
+    attrs: {
+      "slot": "pagination"
+    },
+    slot: "pagination"
+  }), _c('div', {
+    staticClass: "custom-home-testimonials__next",
+    attrs: {
+      "slot": "button-next"
+    },
+    slot: "button-next"
+  }, [_c('Icon', {
+    attrs: {
+      "name": "arrow-01"
+    }
+  })], 1), _c('div', {
+    staticClass: "custom-home-testimonials__prev",
+    attrs: {
+      "slot": "button-prev"
+    },
+    slot: "button-prev"
+  }, [_c('Icon', {
+    attrs: {
+      "name": "arrow-01"
+    }
+  })], 1)], 2), (_vm.props.video) ? _c('div', {
+    staticClass: "custom-home-testimonials__video-container"
+  }, [_c('div', {
+    staticClass: "custom-home-testimonials__video-play-btn",
+    on: {
+      "click": function($event) {
+        return _vm.openModal(3)
+      }
+    }
+  }, [_c('Icon', {
+    staticClass: "custom-home-testimonials__play-btn-icon",
+    attrs: {
+      "name": "triangle"
+    }
+  })], 1), _c('div', {
+    staticClass: "custom-home-testimonials__thumb",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.video_thumb + ')'
+    })
+  }), _c('transition', {
+    attrs: {
+      "name": "fade-in"
+    }
+  }, [_c('Video', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$store.state.video),
+      expression: "$store.state.video"
+    }],
+    attrs: {
+      "props": _vm.props.video
+    }
+  })], 1)], 1) : _vm._e()], 1)])
+},staticRenderFns: []}
+
+/***/ }),
+/* 680 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "page-videos"
+  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('Videos', {
+    attrs: {
+      "props": _vm.props.acf.video_clusters
+    }
+  })], 1) : _vm._e()], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 681 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "pages-access"
+  }, [_c('div', {
+    staticClass: "access-wrap"
+  }, [_c('h2', {
+    staticClass: "block-title",
+    domProps: {
+      "innerHTML": _vm._s((_vm.companyName + " Accessibility Statement"))
+    }
+  }), _c('p', {
+    domProps: {
+      "innerHTML": _vm._s((_vm.companyName + " is committed to facilitating the accessibility and usability of its website, " + _vm.domain + ", for everyone.  " + _vm.companyName + " aims to comply with all applicable standards, including the World Wide Web Consortiums Web Content Accessibility Guidelines 2.0 up to Level AA (WCAG 2.0 AA). " + _vm.companyName + " is proud of the efforts that we have completed and that are in-progress to ensure that our website is accessible to everyone."))
+    }
+  }), _c('br'), _c('p', {
+    domProps: {
+      "innerHTML": _vm._s(("We highly recommend using the userway accessibility widget linked in the footer, but should you experience any difficulty in accessing any part of this website, please feel free to " + (_vm.phone ? "call us at " + _vm.phone : "") + " " + (_vm.phone && _vm.email ? "or" : "") + " " + (_vm.email ? "email us at " + _vm.formattedEmail : "") + " and we will work with you to provide the information or service you seek through an alternate communication method that is accessible for you consistent with applicable law (for example, through telephone support)."))
+    }
+  })])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 682 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-mattiacio-what",
+    attrs: {
+      "id": "what"
+    }
+  }, [_c('div', {
+    staticClass: "custom-mattiacio-what__container"
+  }, [_c('div', {
+    staticClass: "custom-mattiacio-what__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-mattiacio-what__row"
+  }, [_c('div', {
+    staticClass: "custom-mattiacio-what__left"
+  }, [_c('div', {
+    staticClass: "custom-mattiacio-what__tab-container"
+  }, _vm._l((_vm.props.tabs), function(tab, i) {
+    return _c('div', {
+      key: i,
+      staticClass: "custom-mattiacio-what__tab",
+      class: {
+        "custom-mattiacio-what__tab--active": i === _vm.$store.state.tabs
+      },
+      on: {
+        "click": function($event) {
+          return _vm.showContent(i)
+        },
+        "mouseover": function($event) {
+          return _vm.showContent(i)
+        }
+      }
+    }, [_c('div', {
+      staticClass: "custom-mattiacio-what__icon-outer"
+    }, [_c('div', {
+      staticClass: "custom-mattiacio-what__icon-inner"
+    }, [_c('Icon', {
+      staticClass: "custom-mattiacio-what__icon",
+      class: "custom-mattiacio-what__icon--" + tab.label,
+      attrs: {
+        "name": tab.label
+      }
+    })], 1)])])
+  }), 0), _c('transition-group', {
+    staticClass: "custom-mattiacio-what__content-wrapper",
+    attrs: {
+      "name": "transition-meet-dr",
+      "tag": "div"
+    }
+  }, _vm._l((_vm.props.content), function(content, i) {
+    return _c('div', {
+      directives: [{
+        name: "show",
+        rawName: "v-show",
+        value: (i === _vm.$store.state.tabs),
+        expression: "i === $store.state.tabs"
+      }],
+      key: i,
+      staticClass: "custom-mattiacio-what__content-container"
+    }, [_c('div', {
+      staticClass: "custom-mattiacio-what__content-title",
+      domProps: {
+        "innerHTML": _vm._s(content.title)
+      }
+    }), _c('div', {
+      staticClass: "custom-mattiacio-what__content-text",
+      domProps: {
+        "innerHTML": _vm._s(content.text)
+      }
+    })])
+  }), 0)], 1), _c('div', {
+    staticClass: "custom-mattiacio-what__right"
+  }, _vm._l((_vm.props.images), function(img, i) {
+    return _c('div', {
+      key: i,
+      staticClass: "custom-mattiacio-what__right-images",
+      style: ({
+        backgroundImage: 'url(' + img.url + ')'
+      })
+    })
+  }), 0)])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 683 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "page-virtual-services"
+  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('VirtualServices', {
+    attrs: {
+      "props": _vm.props.acf
+    }
+  })], 1) : _vm._e()], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 684 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    attrs: {
+      "id": "app"
+    }
+  }, [_c('Loader', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$store.state.loading),
+      expression: "$store.state.loading"
+    }]
+  }), (_vm.props) ? _c('div', [_c('BaseBaseAccess'), _c('Navigation'), _c('Header'), _c('transition', {
+    attrs: {
+      "name": "fade-in"
+    }
+  }, [_c('router-view')], 1), _c('transition', {
+    attrs: {
+      "name": "fade-in"
+    }
+  }, [_c('Modal', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$store.state.showModal),
+      expression: "$store.state.showModal"
+    }]
+  })], 1), _c('Footer'), _c('transition', {
+    attrs: {
+      "name": "fade-in"
+    }
+  }, [_c('EventModal', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$store.state.funEvent),
+      expression: "$store.state.funEvent"
+    }]
+  })], 1), _c('transition', {
+    attrs: {
+      "name": "fade-in"
+    }
+  }, [_c('Thanks', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$store.state.thanks),
+      expression: "$store.state.thanks"
+    }]
+  })], 1)], 1) : _vm._e()], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 685 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.props) ? _c('footer', {
+    staticClass: "footer"
+  }, [_c('div', {
+    staticClass: "footer__top"
+  }, [_c('div', {
+    staticClass: "footer__container"
+  }, [_c('div', {
+    staticClass: "footer__top-row"
+  }, [_c('div', {
+    staticClass: "footer__item"
+  }, [_c('a', {
+    staticClass: "footer__patient-login",
+    attrs: {
+      "href": _vm.props.acf.links.login,
+      "target": "_blank"
+    }
+  }, [_c('span', [_vm._v("Patient Login")])])]), _c('div', {
+    staticClass: "footer__item"
+  }, [_c('div', {
+    staticClass: "footer__icons"
+  }, _vm._l((_vm.props.acf.social_links), function(icon, i) {
+    return (icon.label != "phone") ? _c('a', {
+      staticClass: "footer__icon",
+      attrs: {
+        "href": icon.href,
+        "target": "_blank"
+      }
+    }, [_c('Icon', {
+      class: "footer__" + icon.label,
+      attrs: {
+        "name": icon.icon
+      }
+    })], 1) : _vm._e()
+  }), 0)]), _c('div', {
+    staticClass: "footer__item"
+  }, [_c('a', {
+    staticClass: "footer__rewards",
+    attrs: {
+      "href": _vm.props.acf.links.rewards,
+      "target": "_blank"
+    }
+  }, [_c('span', [_vm._v("Rewards Center")]), _c('Icon', {
+    staticClass: "footer__rewards-icon",
+    attrs: {
+      "name": "arrow"
+    }
+  })], 1)])])])]), _c('div', {
+    staticStyle: {
+      "display": "inline-block",
+      "min-width": "200px"
+    }
+  }, [_c('div', {
+    staticClass: "footer__bottom"
+  }, [_vm._m(0), _c('div', {
+    staticClass: "footer__bottom--third"
+  }, [_c('a', {
+    staticClass: "footer__phone",
+    attrs: {
+      "href": _vm.props.acf.social_links[0].href
+    }
+  }, [_vm._v("Call or Text Us Anytime"), _c('br'), _vm._v("585. 742. 1050")]), _c('a', {
+    staticClass: "footer__address",
+    attrs: {
+      "href": _vm.props.acf.address.href,
+      "target": "_blank"
+    },
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.address.text)
+    }
+  }), _c('div', {
+    staticClass: "footer_address2"
+  }, [(_vm.props.acf.address_new.text) ? _c('a', {
+    staticClass: "footer__address",
+    attrs: {
+      "href": _vm.props.acf.address_new.href,
+      "target": "_blank"
+    },
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.address_new.text)
+    }
+  }) : _vm._e()])]), _vm._m(1)]), _c('div', {
+    staticClass: "footer__roostergrin"
+  }, [_vm._v("Powered by RoosterGrin"), _c('div', {
+    staticClass: "footer__adminuse"
+  }, [_c('router-link', {
+    attrs: {
+      "to": "/admin-links"
+    }
+  }, [_vm._v("Admin use only    ")])], 1)])])]) : _vm._e()
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "footer__bottom--third"
+  }, [_c('img', {
+    staticClass: "footer__bottom--hipaa",
+    attrs: {
+      "src": "https://cpwk.cloud/wp-content/uploads/2019/04/pcihipaa_logo.png",
+      "alt": "Certified HIPAA Compliance Provided by PCIHIPAA"
+    }
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "footer__bottom--third"
+  }, [_c('a', {
+    staticClass: "footer__badge",
+    attrs: {
+      "href": "https://interpret.cyracom.com/",
+      "target": "_blank"
+    }
+  }, [_c('img', {
+    staticClass: "footer__svg",
+    staticStyle: {
+      "width": "200px",
+      "height": "124px"
+    },
+    attrs: {
+      "src": "https://interpret.cyracom.com/wp-content/themes/cyra/dist/images/logo.svg",
+      "alt": "Cyracom interpretation services"
+    }
+  })])])
+}]}
+
+/***/ }),
+/* 686 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "page-family-fun-event"
+  })
+},staticRenderFns: []}
+
+/***/ }),
+/* 687 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -6459,7 +7758,2664 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 664 */
+/* 688 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "pages-adminlinks"
+  }, [_c('div', {
+    staticClass: "pages-adminlinks__content"
+  }, [(_vm.props.acf.page_title) ? _c('h2', {
+    staticClass: "pages-adminlinks__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.page_title)
+    }
+  }) : _vm._e(), _c('div', {
+    staticClass: "pages-adminlinks__list"
+  }, _vm._l((_vm.props.acf.page_links_lists), function(lists, i) {
+    return _c('div', {
+      staticClass: "pages-adminlinks__listitem"
+    }, [_c('router-link', {
+      attrs: {
+        "to": lists.links
+      },
+      domProps: {
+        "innerHTML": _vm._s("https://www.mattiacioortho.com" + lists.links)
+      }
+    })], 1)
+  }), 0)])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 689 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.props) ? _c('div', {
+    staticClass: "divider"
+  }, [_c('div', {
+    attrs: {
+      "id": "virtualconsultation"
+    }
+  }), _c('div', {
+    staticClass: "divider__container"
+  }, [_c('div', {
+    staticClass: "divider__text",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.text)
+    }
+  })])]) : _vm._e()
+},staticRenderFns: []}
+
+/***/ }),
+/* 690 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "icon-container",
+    domProps: {
+      "innerHTML": _vm._s(_vm.svg)
+    }
+  })
+},staticRenderFns: []}
+
+/***/ }),
+/* 691 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-about-team",
+    attrs: {
+      "id": "meet-team"
+    }
+  }, [_c('div', {
+    staticClass: "custom-about-team__container"
+  }, [_c('div', {
+    staticClass: "custom-about-team__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-about-team__row"
+  }, _vm._l((_vm.props.content), function(content, i) {
+    return _c('div', {
+      key: i,
+      staticClass: "custom-about-team__item"
+    }, [_c('div', {
+      staticClass: "custom-about-team__icon-wrapper"
+    }, [_c('div', {
+      staticClass: "custom-about-team__icon-outer"
+    }, [_c('div', {
+      staticClass: "custom-about-team__icon-inner"
+    }, [_c('Icon', {
+      staticClass: "custom-about-team__icon",
+      class: "custom-about-team__icon--" + content.label,
+      attrs: {
+        "name": content.label
+      }
+    })], 1)])]), _c('div', {
+      staticClass: "custom-about-team__text",
+      domProps: {
+        "innerHTML": _vm._s(content.text)
+      }
+    })])
+  }), 0), _c('div', {
+    staticClass: "custom-about-team__image",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.img + ')'
+    })
+  })])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 692 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.props) ? _c('div', {
+    staticClass: "nav-bottom",
+    class: {
+      "nav-bottom--scrolling": _vm.$store.state.nav, "nav-bottom--notransparent": _vm.$route.path === "/"
+    }
+  }, [_c('div', {
+    staticClass: "nav-bottom__container"
+  }, [(_vm.props.acf.virtual_services_button.label && _vm.props.acf.virtual_services_button.href) ? _c('a', {
+    staticClass: "nav-bottom__button",
+    attrs: {
+      "href": _vm.props.acf.virtual_services_button.href
+    },
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.virtual_services_button.label)
+    }
+  }) : _vm._e()])]) : _vm._e()
+},staticRenderFns: []}
+
+/***/ }),
+/* 693 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-about-office",
+    attrs: {
+      "id": "office"
+    }
+  }, [_c('div', {
+    staticClass: "custom-about-office__container"
+  }, [_c('div', {
+    staticClass: "custom-about-office__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-about-office__row"
+  }, [_c('div', {
+    staticClass: "custom-about-office__left"
+  }, [_c('div', {
+    staticClass: "custom-about-office__tabsnamelist"
+  }, [_c('input', {
+    attrs: {
+      "id": "tab1",
+      "type": "radio",
+      "name": "tab",
+      "checked": "checked"
+    }
+  }), _c('label', {
+    attrs: {
+      "for": "tab1"
+    },
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.tabname1)
+    }
+  }), _c('input', {
+    attrs: {
+      "id": "tab2",
+      "type": "radio",
+      "name": "tab"
+    }
+  }), _c('label', {
+    attrs: {
+      "for": "tab2"
+    },
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.tabname2)
+    }
+  }), _c('div', {
+    staticClass: "custom-about-office__tabscontentbox"
+  }, [_c('swiper', {
+    staticClass: "custom-about-office__slider",
+    attrs: {
+      "id": "tabc1",
+      "options": _vm.swiperOption
+    }
+  }, [_vm._l((_vm.props.slides), function(slide, i) {
+    return _c('swiperSlide', {
+      key: i,
+      staticClass: "custom-about-office__slide",
+      style: ({
+        backgroundImage: 'url(' + slide.url + ')'
+      })
+    })
+  }), _c('div', {
+    staticClass: "custom-about-office__pagination",
+    attrs: {
+      "slot": "pagination"
+    },
+    slot: "pagination"
+  }), _c('div', {
+    staticClass: "custom-about-office__next",
+    attrs: {
+      "slot": "button-next"
+    },
+    slot: "button-next"
+  }, [_c('Icon', {
+    attrs: {
+      "name": "arrow-01"
+    }
+  })], 1), _c('div', {
+    staticClass: "custom-about-office__prev",
+    attrs: {
+      "slot": "button-prev"
+    },
+    slot: "button-prev"
+  }, [_c('Icon', {
+    attrs: {
+      "name": "arrow-01"
+    }
+  })], 1)], 2), _c('swiper', {
+    staticClass: "custom-about-office__slider",
+    attrs: {
+      "id": "tabc2",
+      "options": _vm.swiperOption
+    }
+  }, [_vm._l((_vm.props.slides2), function(slide, i) {
+    return _c('swiperSlide', {
+      key: i,
+      staticClass: "custom-about-office__slide",
+      style: ({
+        backgroundImage: 'url(' + slide.url + ')'
+      })
+    })
+  }), _c('div', {
+    staticClass: "custom-about-office__pagination",
+    attrs: {
+      "slot": "pagination"
+    },
+    slot: "pagination"
+  }), _c('div', {
+    staticClass: "custom-about-office__next",
+    attrs: {
+      "slot": "button-next"
+    },
+    slot: "button-next"
+  }, [_c('Icon', {
+    attrs: {
+      "name": "arrow-01"
+    }
+  })], 1), _c('div', {
+    staticClass: "custom-about-office__prev",
+    attrs: {
+      "slot": "button-prev"
+    },
+    slot: "button-prev"
+  }, [_c('Icon', {
+    attrs: {
+      "name": "arrow-01"
+    }
+  })], 1)], 2)], 1)])]), _c('div', {
+    staticClass: "custom-about-office__right"
+  }, [_c('div', {
+    staticClass: "custom-about-office__content",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.content)
+    }
+  })])])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 694 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-home-retainers",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.bg_img + ')'
+    })
+  }, [_c('div', {
+    staticClass: "custom-home-retainers__container"
+  }, [_c('div', {
+    staticClass: "custom-home-retainers__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-home-retainers__subtitle",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.subtitle)
+    }
+  })]), _c('div', {
+    staticClass: "custom-home-retainers__row"
+  }, [_c('div', {
+    staticClass: "custom-home-retainers__left",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.lifetime.left_img + ')'
+    })
+  }), _c('div', {
+    staticClass: "custom-home-retainers__right",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.lifetime.right_img + ')'
+    })
+  }, [_c('div', {
+    staticClass: "custom-home-retainers__lifetime-content"
+  }, [_c('div', {
+    staticClass: "custom-home-retainers__lifetime-title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.lifetime.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-home-retainers__lifetime-subtitle",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.lifetime.subtitle)
+    }
+  })])])]), _c('div', {
+    staticClass: "custom-home-retainers__row",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.bottom.bg_img + ')'
+    })
+  }, [_c('div', {
+    staticClass: "custom-home-retainers__bottom-container"
+  }, [_c('div', {
+    staticClass: "custom-home-retainers__bottom-content"
+  }, [_c('div', {
+    staticClass: "custom-home-retainers__bottom-subtitle",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.bottom.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-home-retainers__bottom-headline",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.bottom.headline)
+    }
+  }), _c('div', {
+    staticClass: "custom-home-retainers__bottom-cta-btn",
+    on: {
+      "click": function($event) {
+        return _vm.openModal(2)
+      }
+    }
+  }, [_c('span', [_vm._v(_vm._s(_vm.props.bottom.cta_btn))])])])])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 695 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-home-footer-review",
+    attrs: {
+      "id": "first"
+    }
+  }, [_c('div', {
+    staticClass: "custom-home-footer-review__container"
+  }, [_c('a', {
+    staticClass: "custom-home-footer-review__button",
+    attrs: {
+      "href": "https://search.google.com/local/writereview?placeid=ChIJF5_x57Yv0YkRAxAGy1qUPFw",
+      "target": "_blank"
+    },
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.button_text)
+    }
+  })]), _c('div', {
+    staticClass: "custom-home-footer-review__invisalign"
+  }, [_c('div', {
+    staticClass: "custom-home-footer-review__invisalignwrap"
+  }, [_c('div', {
+    staticClass: "reviews_diamond",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.diamond_plus_intro)
+    }
+  }), _c('div', {
+    staticClass: "custom-home-footer-review__read-more"
+  }, [_c('div', {
+    staticClass: "customclick",
+    on: {
+      "click": function($event) {
+        return _vm.welcome1Click()
+      }
+    }
+  }, [_vm._v("Read More      ")])])])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 696 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-contact-header"
+  }, [_c('div', {
+    staticClass: "custom-contact-header__container"
+  }, [_c('div', {
+    staticClass: "custom-contact-header__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-contact-header__text",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.text)
+    }
+  })])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 697 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "page-invisalign"
+  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('Sections', {
+    attrs: {
+      "props": _vm.props.acf.custom_sections
+    }
+  })], 1) : _vm._e()], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 698 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-virtual-services"
+  }, [_c('div', {
+    staticClass: "custom-virtual-services__wrapper"
+  }, [_c('div', {
+    staticClass: "custom-virtual-services__container"
+  }, [_c('div', {
+    staticClass: "custom-virtual-services__description"
+  }), _c('div', {
+    staticClass: "custom-virtual-services__buttons"
+  }, _vm._l((_vm.props.virtual_services_buttons), function(button, i) {
+    return _c('a', {
+      key: "button " + i,
+      staticClass: "custom-virtual-services__button",
+      attrs: {
+        "href": button.button.href,
+        "target": "_blank"
+      },
+      domProps: {
+        "innerHTML": _vm._s(button.button.label)
+      }
+    })
+  }), 0)])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 699 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "page-about-us"
+  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('MeetDr', {
+    attrs: {
+      "props": _vm.props.acf.custom_meet_dr
+    }
+  }), _c('MeetDr1', {
+    attrs: {
+      "props": _vm.props.acf.custom_meet_dr1
+    }
+  }), _c('MeetTeam', {
+    attrs: {
+      "props": _vm.props.acf.custom_team
+    }
+  }), _c('Office', {
+    attrs: {
+      "props": _vm.props.acf.custom_office
+    }
+  })], 1) : _vm._e()], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 700 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.props) ? _c('div', {
+    staticClass: "custom-mouth-guard-thank-you"
+  }, [_c('div', {
+    staticClass: "custom-mouth-guard-thank-you__content"
+  }, [_c('div', {
+    staticClass: "custom-mouth-guard-thank-you__text",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.content)
+    }
+  })])]) : _vm._e()
+},staticRenderFns: []}
+
+/***/ }),
+/* 701 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "pages-mouth-guard-thank-you"
+  }, [_c('mouthGuardThankYous', {
+    attrs: {
+      "props": _vm.props.acf.custom_mouth_guard_thank_you
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 702 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-new-pats-financial",
+    attrs: {
+      "id": "financial"
+    }
+  }, [_c('div', {
+    staticClass: "custom-new-pats-financial__img",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.bg_img + ')'
+    })
+  }, [_c('Icon', {
+    staticClass: "custom-new-pats-financial__mask",
+    attrs: {
+      "name": "mask"
+    }
+  })], 1), _c('div', {
+    staticClass: "custom-new-pats-financial__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-new-pats-financial__container"
+  }, [_c('div', {
+    staticClass: "custom-new-pats-financial__content"
+  }, _vm._l((_vm.props.info), function(item, i) {
+    return _c('div', {
+      key: i,
+      staticClass: "custom-new-pats-financial__row"
+    }, [_c('div', {
+      staticClass: "custom-new-pats-financial__left"
+    }, [_c('div', {
+      staticClass: "custom-new-pats-financial__icon-outer"
+    }, [_c('div', {
+      staticClass: "custom-new-pats-financial__icon-inner"
+    }, [_c('Icon', {
+      staticClass: "custom-new-pats-financial__icon",
+      class: 'custom-new-pats-financial__icon--' + item.icon,
+      attrs: {
+        "name": item.icon
+      }
+    })], 1)])]), _c('div', {
+      staticClass: "custom-new-pats-financial__right"
+    }, [_c('div', {
+      staticClass: "custom-new-pats-financial__heading",
+      domProps: {
+        "innerHTML": _vm._s(item.heading)
+      }
+    }), _c('div', {
+      staticClass: "custom-new-pats-financial__text",
+      domProps: {
+        "innerHTML": _vm._s(item.text)
+      }
+    })])])
+  }), 0)])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 703 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.props) ? _c('div', {
+    staticClass: "header",
+    class: {
+      'header--home': _vm.$route.path === '/' && !_vm.$store.state.menu, 'header--family-fun-event': _vm.$route.path.includes('/mouth-guard-registration'), 'header--retainer-program': _vm.$route.path.includes('/retainer-program'), 'header--exit-interview': _vm.$route.path.includes('/exit-interview'), 'header--smile-assurance': _vm.$route.path.includes('/smile-assurance-program'), 'header--thank-you': _vm.$route.path.includes('/thank-you'), 'header--adminlink': _vm.$route.path.includes('/admin-links'), 'header--review': _vm.$route.path.includes('/review') || _vm.$route.path.includes('/accessibility') || _vm.$route.path.includes('/mouth-guard-thank-you')
+    },
+    attrs: {
+      "id": "head"
+    }
+  }, [_c('v-waypoint', {
+    staticClass: "header__waypoint",
+    on: {
+      "waypoint-out": _vm.scrollOut,
+      "waypoint-in": _vm.scrollIn
+    }
+  }), (_vm.props) ? _c('Menu', {
+    staticClass: "header__menu--desktop",
+    class: {
+      'header__menu--thank-you': _vm.$route.path.includes('/thank-you'), 'header__menu--adminlink': _vm.$route.path.includes('/admin-links'), 'header__menu--exit-interview': _vm.$route.path.includes('/exit-interview'), 'header__menu--review': _vm.$route.path.includes('/review'), 'header__menu--smile-assurance': _vm.$route.path.includes('/smile-assurance-program'), 'header__menu--retainer-program': _vm.$route.path.includes('/retainer-program') || _vm.$route.path.includes('/mouth-guard-thank-you') || _vm.$route.path.includes('/accessibility')
+    }
+  }) : _vm._e(), _c('transition', {
+    attrs: {
+      "name": "home-fade"
+    }
+  }, [_c('HomeHero', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path === "/" && !_vm.$store.state.menu),
+      expression: "$route.path === \"/\" && !$store.state.menu"
+    }],
+    attrs: {
+      "props": _vm.props
+    }
+  })], 1), _c('transition', {
+    attrs: {
+      "name": "fade-in"
+    }
+  }, [_c('HeroPages', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path.includes("/covid-19-updates") && !_vm.$store.state.menu),
+      expression: "$route.path.includes(\"/covid-19-updates\") && !$store.state.menu"
+    }],
+    attrs: {
+      "props": _vm.covid
+    }
+  })], 1), _c('transition', {
+    attrs: {
+      "name": "fade-in"
+    }
+  }, [_c('HeroPages', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path.includes("/virtual-services") && !_vm.$store.state.menu),
+      expression: "$route.path.includes(\"/virtual-services\") && !$store.state.menu"
+    }]
+  })], 1), _c('transition', {
+    attrs: {
+      "name": "fade-in"
+    }
+  }, [_c('HeroPages', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path.includes("/videos") && !_vm.$store.state.menu),
+      expression: "$route.path.includes(\"/videos\") && !$store.state.menu"
+    }]
+  })], 1), _c('transition', {
+    attrs: {
+      "name": "fade-in"
+    }
+  }, [_c('HeroPages', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path.includes("/virtual-consultation") && !_vm.$store.state.menu),
+      expression: "$route.path.includes(\"/virtual-consultation\") && !$store.state.menu"
+    }]
+  })], 1), _c('transition', {
+    attrs: {
+      "name": "fade-in"
+    }
+  }, [_c('HeroPages', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path.includes("/7-and-up") && !_vm.$store.state.menu),
+      expression: "$route.path.includes(\"/7-and-up\") && !$store.state.menu"
+    }]
+  })], 1), _c('HeroMobile', {
+    attrs: {
+      "props": _vm.props
+    }
+  })], 1) : _vm._e()
+},staticRenderFns: []}
+
+/***/ }),
+/* 704 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "contact-assurance-form"
+  }, [_c('form', {
+    staticClass: "contact-assurance-form__form",
+    attrs: {
+      "method": "post"
+    },
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        return _vm.validate($event)
+      }
+    }
+  }, [_c('div', {
+    staticClass: "contact-assurance-form__group"
+  }, [_c('div', {
+    staticClass: "contact-assurance-form__radio-group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.radiographs),
+      expression: "radiographs"
+    }, {
+      name: "validate",
+      rawName: "v-validate",
+      value: ('required'),
+      expression: "'required'"
+    }],
+    staticClass: "contact-assurance-form__input--radio",
+    attrs: {
+      "name": "radiographs",
+      "value": "Yes, I'd like to protect my new smile with Smile Assurance",
+      "type": "radio"
+    },
+    domProps: {
+      "checked": _vm._q(_vm.radiographs, "Yes, I'd like to protect my new smile with Smile Assurance")
+    },
+    on: {
+      "change": function($event) {
+        _vm.radiographs = "Yes, I'd like to protect my new smile with Smile Assurance"
+      }
+    }
+  }), _c('span', {
+    staticClass: "contact-assurance-form__radio-overlay",
+    class: {
+      'input': true, 'contact-assurance-form__radio-overlay--error': _vm.errors.has('radiographs')
+    }
+  }), _c('label', {
+    staticClass: "contact-assurance-form__label"
+  }, [_vm._v("Yes, I'd like to protect my new smile with Smile Assurance")])]), _c('div', {
+    staticClass: "contact-assurance-form__radio-group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.radiographs),
+      expression: "radiographs"
+    }],
+    staticClass: "contact-assurance-form__input--radio",
+    attrs: {
+      "name": "radiographs",
+      "value": "Gimme the whole shebang! Smile Assurance and Teeth Whitening for $1000.00 ($130.00 savings!)",
+      "type": "radio"
+    },
+    domProps: {
+      "checked": _vm._q(_vm.radiographs, "Gimme the whole shebang! Smile Assurance and Teeth Whitening for $1000.00 ($130.00 savings!)")
+    },
+    on: {
+      "change": function($event) {
+        _vm.radiographs = "Gimme the whole shebang! Smile Assurance and Teeth Whitening for $1000.00 ($130.00 savings!)"
+      }
+    }
+  }), _c('span', {
+    staticClass: "contact-assurance-form__radio-overlay",
+    class: {
+      'input': true, 'contact-assurance-form__radio-overlay--error': _vm.errors.has('radiographs')
+    }
+  }), _c('label', {
+    staticClass: "contact-assurance-form__label"
+  }, [_vm._v("Gimme the whole shebang! Smile Assurance and Teeth Whitening for $1000.00 ($130.00 savings!)")])]), _c('div', {
+    staticClass: "contact-assurance-form__radio-group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.radiographs),
+      expression: "radiographs"
+    }],
+    staticClass: "contact-assurance-form__input--radio",
+    attrs: {
+      "name": "radiographs",
+      "value": "No thanks! We'll take our chances.",
+      "type": "radio"
+    },
+    domProps: {
+      "checked": _vm._q(_vm.radiographs, "No thanks! We'll take our chances.")
+    },
+    on: {
+      "change": function($event) {
+        _vm.radiographs = "No thanks! We'll take our chances."
+      }
+    }
+  }), _c('span', {
+    staticClass: "contact-assurance-form__radio-overlay",
+    class: {
+      'input': true, 'contact-assurance-form__radio-overlay--error': _vm.errors.has('radiographs')
+    }
+  }), _c('label', {
+    staticClass: "contact-assurance-form__label"
+  }, [_vm._v("No thanks! We'll take our chances.      ")])]), _c('div', {
+    staticClass: "contact-assurance-form__error-container"
+  }, [_c('span', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('radiographs')),
+      expression: "errors.has('radiographs')"
+    }]
+  }, [_vm._v("Please select one Option.")])])]), _c('div', {
+    staticClass: "contact-assurance-form__button-group"
+  }, [_c('button', {
+    staticClass: "contact-assurance-form__submit-button",
+    attrs: {
+      "type": "submit",
+      "disabled": _vm.formSubmitted
+    }
+  }, [_c('span', [_vm._v("Submit")])]), (_vm.formSubmitted) ? _c('div', {
+    staticClass: "contact-assurance-form__spinner"
+  }, [_c('span', [_vm._v("Sending")])]) : _vm._e()])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 705 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.props) ? _c('div', {
+    staticClass: "nav-mobile",
+    class: {
+      "nav-mobile--scrolling": _vm.$store.state.nav, "nav-mobile--notransparent": _vm.$route.path === "/"
+    }
+  }, [_c('div', {
+    staticClass: "nav-mobile__container"
+  }, [_c('div', {
+    staticClass: "nav-mobile__item"
+  }, [_c('router-link', {
+    staticClass: "nav-mobile__logo-container",
+    attrs: {
+      "to": "/"
+    },
+    nativeOn: {
+      "click": function($event) {
+        return _vm.closeDrawer($event)
+      }
+    }
+  }, [_c('Icon', {
+    staticClass: "nav-mobile__logo",
+    attrs: {
+      "name": "matt_logo-01"
+    }
+  })], 1)], 1), _c('div', {
+    staticClass: "nav-mobile__item"
+  }, [_c('div', {
+    staticClass: "nav-mobile__menu-container",
+    on: {
+      "click": _vm.toggleMenu
+    }
+  }, [_c('div', {
+    staticClass: "nav-mobile__hamburger",
+    class: {
+      "nav-mobile__hamburger--active": _vm.active
+    }
+  }, [_c('span'), _c('span')])])]), _c('transition', {
+    staticClass: "nav-mobile__drawer-transition",
+    attrs: {
+      "name": "fade-in"
+    }
+  }, [_c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.active),
+      expression: "active"
+    }],
+    staticClass: "nav-mobile__drawer",
+    on: {
+      "click": _vm.closeDrawer
+    }
+  }, [_c('div', {
+    staticClass: "nav-mobile__drawer-container",
+    on: {
+      "click": _vm.closeDrawer
+    }
+  }, [_c('div', {
+    staticClass: "nav-mobile__links"
+  }, _vm._l((_vm.links), function(nav) {
+    return (nav.navigation || nav.mobile) ? _c('span', {
+      staticClass: "nav-mobile__link"
+    }, [_c('router-link', {
+      attrs: {
+        "to": nav.path
+      }
+    }, [_vm._v(_vm._s(nav.name))])], 1) : _vm._e()
+  }), 0), _c('Bottom'), _c('div', {
+    staticClass: "nav-mobile__bottom"
+  }, [_c('div', {
+    staticClass: "nav-mobile__button-group"
+  }, [_c('a', {
+    staticClass: "nav-mobile__rewards",
+    attrs: {
+      "href": _vm.props.acf.links.rewards,
+      "target": "_blank"
+    }
+  }, [_vm._v("Rewards Center")]), _c('a', {
+    staticClass: "nav-mobile__login",
+    attrs: {
+      "href": _vm.props.acf.links.login,
+      "target": "_blank"
+    }
+  }, [_vm._v("Patient Login")]), _c('router-link', {
+    staticClass: "nav-mobile__videos",
+    attrs: {
+      "to": "/videos"
+    }
+  }, [_vm._v("Videos")])], 1), _c('div', {
+    staticClass: "nav-mobile__icon-row"
+  }, _vm._l((_vm.props.acf.social_links), function(link, i) {
+    return _c('a', {
+      key: i,
+      staticClass: "nav-mobile__icon-wrapper",
+      attrs: {
+        "href": link.href,
+        "target": "_blank"
+      }
+    }, [_c('Icon', {
+      staticClass: "nav-mobile__icon",
+      class: "nav-mobile__" + link.label,
+      attrs: {
+        "name": link.icon
+      }
+    })], 1)
+  }), 0)])], 1)])])], 1)]) : _vm._e()
+},staticRenderFns: []}
+
+/***/ }),
+/* 706 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "page-treatments"
+  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('Invisalign', {
+    attrs: {
+      "props": _vm.props.acf.custom_invisalign
+    }
+  }), _c('Damon', {
+    attrs: {
+      "props": _vm.props.acf.custom_damon
+    }
+  }), _c('Divider'), _c('Adults', {
+    attrs: {
+      "props": _vm.props.acf.custom_adults
+    }
+  })], 1) : _vm._e()], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 707 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.props) ? _c('div', {
+    staticClass: "custom-thank-you"
+  }, [_c('div', {
+    staticClass: "custom-thank-you__content"
+  }, [_c('div', {
+    staticClass: "custom-thank-you__text",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.content)
+    }
+  })])]) : _vm._e()
+},staticRenderFns: []}
+
+/***/ }),
+/* 708 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.$route.path !== '/accessibility') ? _c('div', {
+    staticClass: "base-access"
+  }, [_c('div', {
+    staticClass: "base-access__container"
+  }, [_c('p', {
+    domProps: {
+      "innerHTML": _vm._s((_vm.companyName + " Accessibility Statement"))
+    }
+  }), _c('p', {
+    domProps: {
+      "innerHTML": _vm._s((_vm.companyName + " is committed to facilitating the accessibility and usability of its website, " + _vm.domain + ", for everyone. " + _vm.companyName + " aims to comply with all applicable standards, including the World Wide Web Consortiums Web Content Accessibility Guidelines 2.0 up to Level AA (WCAG 2.0 AA). " + _vm.companyName + " is proud of the efforts that we have completed and that are in-progress to ensure that our website is accessible to everyone."))
+    }
+  }), _c('p', {
+    domProps: {
+      "innerHTML": _vm._s(("We highly recommend using the userway accessibility widget linked in the footer, but should you experience any difficulty in accessing any part of this website, please feel free to " + (_vm.phone ? "call us at " + _vm.phone : "") + " " + (_vm.phone && _vm.email ? "or" : "") + " " + (_vm.email ? "email us at " + _vm.email : "") + " and we will work with you to provide the information or service you seek through an alternate communication method that is accessible for you consistent with applicable law (for example, through telephone support)."))
+    }
+  })])]) : _vm._e()
+},staticRenderFns: []}
+
+/***/ }),
+/* 709 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "page-mattiacio-difference"
+  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('What', {
+    attrs: {
+      "props": _vm.props.acf.custom_what
+    }
+  }), _c('Divider')], 1) : _vm._e()], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 710 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "pages-exit-interview"
+  }, [_c('div', {
+    staticClass: "pages-exit-interview__container"
+  }, [_c('div', {
+    staticClass: "pages-exit-interview__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.title_main)
+    }
+  }), _c('div', {
+    staticClass: "pages-exit-interview__formwrap"
+  }, [_c('exitInterviewForm')], 1)])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 711 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-treatments-7up",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.bg_img + ')'
+    }),
+    attrs: {
+      "id": "seven-up"
+    }
+  }, [_c('div', {
+    staticClass: "custom-treatments-7up__container"
+  }, [_c('div', {
+    staticClass: "custom-treatments-7up__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-treatments-7up__text",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.text)
+    }
+  }), (_vm.props.seven_up_logo) ? _c('img', {
+    staticClass: "custom-treatments-7up__uplogo",
+    attrs: {
+      "src": _vm.props.seven_up_logo
+    }
+  }) : _vm._e(), _vm._m(0), _c('div', {
+    staticClass: "custom-treatments-7up__row"
+  }, [_c('div', {
+    staticClass: "custom-treatments-7up__left"
+  }, [_c('div', {
+    staticClass: "custom-treatments-7up__icon-outer"
+  }, [_c('div', {
+    staticClass: "custom-treatments-7up__icon-inner"
+  }, [_c('Icon', {
+    staticClass: "custom-treatments-7up__icon",
+    attrs: {
+      "name": "faces"
+    }
+  })], 1)]), _c('div', {
+    staticClass: "custom-treatments-7up__subtitle",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.top.subtitle)
+    }
+  }), _c('div', {
+    staticClass: "custom-treatments-7up__top-text hello",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.top.text)
+    }
+  })]), _c('div', {
+    staticClass: "custom-treatments-7up__right",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.top.img + ')'
+    })
+  })]), _c('div', {
+    staticClass: "custom-treatments-7up__row"
+  }, [_c('div', {
+    staticClass: "custom-treatments-7up__left"
+  }, [_c('div', {
+    staticClass: "custom-treatments-7up__header",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.bottom.header)
+    }
+  }), _c('div', {
+    staticClass: "custom-treatments-7up__bottom-text",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.bottom.text)
+    }
+  })]), _c('div', {
+    staticClass: "custom-treatments-7up__right",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.bottom.img + ')'
+    })
+  })]), _c('div', {
+    staticClass: "custom-treatments-7up__form"
+  }, [_c('Form')], 1)])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-treatments-7up_button"
+  }, [_c('div', {
+    staticClass: "custom-treatments-invisalign__read-more"
+  }, [_c('a', {
+    attrs: {
+      "href": "tel:1-585-742-1050"
+    }
+  }, [_vm._v("Call Us")])])])
+}]}
+
+/***/ }),
+/* 712 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.props) ? _c('div', {
+    staticClass: "menu",
+    class: {
+      "menu--family-fun-event": _vm.$route.path.includes("/mouth-guard-registration")
+    }
+  }, [_c('div', {
+    staticClass: "menu__overlay"
+  }, [_c('transition', {
+    attrs: {
+      "name": "title-fade"
+    }
+  }, [(!_vm.$store.state.menu && (_vm.$route.path != "/" && !_vm.$route.path.includes("/covid-19-updates") && !_vm.$route.path.includes("/virtual-services") && !_vm.$route.path.includes("/virtual-consultation") && !_vm.$route.path.includes("/7-and-up") && !_vm.$route.path.includes("/videos") && !_vm.$route.path.includes("/about-us"))) ? _c('div', {
+    staticClass: "menu__title",
+    class: {
+      "menu__title--white": _vm.$route.path === "/treatments" || _vm.$route.path === "/mattiacio-difference", "menu__title--family-fun-event": _vm.$route.path.includes("/mouth-guard-registration")
+    }
+  }, [_vm._v(_vm._s(_vm.$route.name))]) : _vm._e()]), (_vm.$route.path.includes("/virtual-services")) ? _c('div', {
+    staticClass: "menu__appt",
+    class: {
+      "menu__appt--is-visible": !_vm.$store.state.menu && _vm.$route.path != "/contact-us" && _vm.$route.path != "/", "menu__appt--white": _vm.$route.name != "Treatments"
+    },
+    on: {
+      "click": _vm.makeAppt
+    }
+  }, [_c('span', [_vm._v("Make an Appointment")]), _c('Icon', {
+    staticClass: "menu__appt-icon",
+    attrs: {
+      "name": "arrow"
+    }
+  })], 1) : _vm._e()], 1), _c('div', {
+    staticClass: "menu__container",
+    class: {
+      "menu__mouth-guard": _vm.$route.path.includes("/mouth-guard-registration")
+    }
+  }, _vm._l((_vm.links), function(link, i) {
+    return (link.navigation) ? _c('div', {
+      key: i,
+      staticClass: "menu__link-wrapper",
+      class: {
+        "active": _vm.$route.name === link.name && !_vm.$store.state.menu, "menu__link-wrapper--current": _vm.$route.name === link.name, "not-active": _vm.$route.name != link.name && _vm.$store.state.menu
+      },
+      style: (_vm.styleObject)
+    }, [(link.name === "About Us") ? _c('div', {
+      staticClass: "menu__link-container"
+    }, [_c('video', {
+      staticClass: "menu__link-video",
+      attrs: {
+        "loop": "loop",
+        "muted": "muted",
+        "autoplay": "autoplay"
+      },
+      domProps: {
+        "muted": true
+      }
+    }, [_c('source', {
+      attrs: {
+        "src": _vm.props.acf.hero_video,
+        "type": "video/mp4"
+      }
+    })]), _c('div', {
+      staticClass: "menu__link-overlay"
+    }), _c('div', {
+      staticClass: "menu__link-expanded-overlay"
+    }), _c('div', {
+      staticClass: "menu__link",
+      on: {
+        "click": function($event) {
+          return _vm.closeMenu(link)
+        }
+      }
+    }, [_vm._v(_vm._s(link.name))]), (link.children) ? _c('div', {
+      staticClass: "menu__submenu"
+    }, _vm._l((link.children), function(item, i) {
+      return _c('div', {
+        key: i,
+        staticClass: "menu__submenu-link",
+        domProps: {
+          "innerHTML": _vm._s(item.label)
+        },
+        on: {
+          "click": function($event) {
+            return _vm.closeMenu(item)
+          }
+        }
+      })
+    }), 0) : _vm._e()]) : _vm._e(), (link.name != "About Us") ? _c('div', {
+      staticClass: "menu__link-container",
+      class: {
+        "menu__link-container--disabled": !_vm.$store.state.menu
+      },
+      style: ({
+        backgroundImage: 'url(' + link.url + ')'
+      })
+    }, [_c('div', {
+      staticClass: "menu__link-overlay"
+    }), _c('div', {
+      staticClass: "menu__link-expanded-overlay"
+    }), _c('div', {
+      staticClass: "menu__link",
+      on: {
+        "click": function($event) {
+          return _vm.closeMenu(link)
+        }
+      }
+    }, [_vm._v(_vm._s(link.name))]), (link.children) ? _c('div', {
+      staticClass: "menu__submenu"
+    }, [_vm._l((link.children), function(item, i) {
+      return _c('div', {
+        key: i,
+        staticClass: "menu__submenu-link",
+        domProps: {
+          "innerHTML": _vm._s(item.label)
+        },
+        on: {
+          "click": function($event) {
+            return _vm.closeMenu(item)
+          }
+        }
+      })
+    }), _vm._l((link.children), function(item, i) {
+      return (link.name === "Contact Us" || link.name === "New Patients") ? _c('a', {
+        staticClass: "menu__submenu-link",
+        attrs: {
+          "href": item.path,
+          "target": "_blank"
+        }
+      }, [_vm._v(_vm._s(item.item))]) : _vm._e()
+    })], 2) : _vm._e()]) : _vm._e()]) : _vm._e()
+  }), 0), _c('div', {
+    staticClass: "menu__social-links",
+    class: {
+      "active": _vm.$store.state.menu
+    }
+  }, _vm._l((_vm.props.acf.social_links), function(link, i) {
+    return _c('a', {
+      staticClass: "menu__social-link",
+      attrs: {
+        "href": link.href,
+        "target": "_blank"
+      }
+    }, [_c('Icon', {
+      class: "menu__" + link.label,
+      attrs: {
+        "name": link.icon
+      }
+    })], 1)
+  }), 0)]) : _vm._e()
+},staticRenderFns: []}
+
+/***/ }),
+/* 713 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-treatments-invisalign",
+    attrs: {
+      "id": "invisalign"
+    }
+  }, [_c('div', {
+    staticClass: "custom-treatments-invisalign__container"
+  }, [_c('div', {
+    staticClass: "custom-treatments-invisalign__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-treatments-invisalign__row"
+  }, [_c('div', {
+    staticClass: "custom-treatments-invisalign__left"
+  }, [_c('Icon', {
+    staticClass: "custom-treatments-invisalign__logo",
+    attrs: {
+      "name": "invisalign"
+    }
+  }), _c('div', {
+    staticClass: "custom-treatments-invisalign__text",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.text)
+    }
+  }), _c('div', {
+    staticClass: "custom-treatments-invisalign__read-more",
+    on: {
+      "click": function($event) {
+        return _vm.toInvisalign()
+      }
+    }
+  }, [_vm._v("Read More")])], 1), _c('div', {
+    staticClass: "custom-treatments-invisalign__right",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.img + ')'
+    })
+  })])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 714 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "pages-home"
+  }, [(_vm.props) ? _c('div', [_c('Welcome', {
+    attrs: {
+      "props": _vm.props.acf.custom_welcome
+    }
+  }), _c('Why', {
+    attrs: {
+      "props": _vm.props.acf.custom_why
+    }
+  }), _c('Testimonials', {
+    attrs: {
+      "props": _vm.props.acf.custom_testimonials
+    }
+  }), _c('Retainers', {
+    attrs: {
+      "props": _vm.props.acf.custom_retainers
+    }
+  }), _c('CustomHomeReview', {
+    attrs: {
+      "props": _vm.props.acf.custom_reviews
+    }
+  }), _c('Divider')], 1) : _vm._e()])
+},staticRenderFns: []}
+
+/***/ }),
+/* 715 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-treatments-damon",
+    attrs: {
+      "id": "damon"
+    }
+  }, [_c('div', {
+    staticClass: "custom-treatments-damon__img",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.img + ')'
+    })
+  }, [_c('Icon', {
+    staticClass: "custom-treatments-damon__mask",
+    attrs: {
+      "name": "mask"
+    }
+  })], 1), _c('div', {
+    staticClass: "custom-treatments-damon__container"
+  }, [_c('div', {
+    staticClass: "custom-treatments-damon__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-treatments-damon__text",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.text)
+    }
+  }), _c('div', {
+    staticClass: "custom-treatments-damon__cards"
+  }, _vm._l((_vm.props.cards), function(card, i) {
+    return _c('div', {
+      key: i,
+      staticClass: "custom-treatments-damon__card"
+    }, [_c('div', {
+      staticClass: "custom-treatments-damon__logo",
+      style: ({
+        backgroundImage: 'url(' + card.logo + ')'
+      })
+    }), _c('div', {
+      staticClass: "custom-treatments-damon__card-text",
+      domProps: {
+        "innerHTML": _vm._s(card.text)
+      }
+    })])
+  }), 0)])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 716 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "loader-overlay"
+  }, [_c('Icon', {
+    staticClass: "loader-overlay__icon",
+    attrs: {
+      "name": "matt_logo-01"
+    }
+  }), _c('div', {
+    staticClass: "loader"
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 717 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "page-new-patients"
+  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('First', {
+    attrs: {
+      "props": _vm.props.acf.custom_first
+    }
+  }), _c('Financial', {
+    attrs: {
+      "props": _vm.props.acf.custom_financial
+    }
+  }), _c('Patients', {
+    attrs: {
+      "props": _vm.props.acf.custom_patients
+    }
+  }), _c('PatientsOne', {
+    attrs: {
+      "props": _vm.props.acf.custom_patients_one
+    }
+  })], 1) : _vm._e()], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 718 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "sponsor-form"
+  }, [_c('form', {
+    staticClass: "sponsor-form__form",
+    attrs: {
+      "method": "post"
+    },
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        return _vm.validate($event)
+      }
+    }
+  }, [_c('div', {
+    staticClass: "sponsor-form__group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.fullName),
+      expression: "fullName"
+    }, {
+      name: "validate",
+      rawName: "v-validate",
+      value: ('required|alpha_spaces'),
+      expression: "'required|alpha_spaces'"
+    }],
+    staticClass: "sponsor-form__input",
+    class: {
+      'input': true, 'sponsor-form__input--error': _vm.errors.has('full-name')
+    },
+    attrs: {
+      "name": "full-name",
+      "type": "text",
+      "placeholder": "Your Name"
+    },
+    domProps: {
+      "value": (_vm.fullName)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.fullName = $event.target.value
+      }
+    }
+  }), _c('div', {
+    staticClass: "sponsor-form__error-container"
+  }, [_c('span', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('full-name')),
+      expression: "errors.has('full-name')"
+    }]
+  }, [_vm._v("Your name is required.")])])]), _c('div', {
+    staticClass: "sponsor-form__group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.patientName),
+      expression: "patientName"
+    }],
+    staticClass: "sponsor-form__input",
+    attrs: {
+      "name": "patient-name",
+      "type": "text",
+      "placeholder": "Patient's Name"
+    },
+    domProps: {
+      "value": (_vm.patientName)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.patientName = $event.target.value
+      }
+    }
+  }), _c('div', {
+    staticClass: "sponsor-form__error-container"
+  })]), _c('div', {
+    staticClass: "sponsor-form__group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.contactInfo),
+      expression: "contactInfo"
+    }, {
+      name: "validate",
+      rawName: "v-validate",
+      value: ('required'),
+      expression: "'required'"
+    }],
+    staticClass: "sponsor-form__input",
+    class: {
+      'input': true, 'sponsor-form__input--error': _vm.errors.has('contact-info')
+    },
+    attrs: {
+      "name": "contact-info",
+      "type": "text",
+      "placeholder": "Email or Phone"
+    },
+    domProps: {
+      "value": (_vm.contactInfo)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.contactInfo = $event.target.value
+      }
+    }
+  }), _c('div', {
+    staticClass: "sponsor-form__error-container"
+  }, [_c('span', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('contac-info')),
+      expression: "errors.has('contac-info')"
+    }]
+  }, [_vm._v("Phone or Email is required.")])])]), _c('div', {
+    staticClass: "sponsor-form__group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.eventName),
+      expression: "eventName"
+    }],
+    staticClass: "sponsor-form__input",
+    attrs: {
+      "name": "event-name",
+      "type": "text",
+      "placeholder": "Event"
+    },
+    domProps: {
+      "value": (_vm.eventName)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.eventName = $event.target.value
+      }
+    }
+  }), _c('div', {
+    staticClass: "sponsor-form__error-container"
+  })]), _c('div', {
+    staticClass: "sponsor-form__group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.date),
+      expression: "date"
+    }],
+    staticClass: "sponsor-form__input",
+    attrs: {
+      "name": "date",
+      "placeholder": "Date of Event",
+      "type": "date"
+    },
+    domProps: {
+      "value": (_vm.date)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.date = $event.target.value
+      }
+    }
+  }), _c('div', {
+    staticClass: "sponsor-form__error-container"
+  })]), _c('div', {
+    staticClass: "sponsor-form__group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.cause),
+      expression: "cause"
+    }],
+    staticClass: "sponsor-form__input",
+    attrs: {
+      "name": "cause",
+      "type": "text",
+      "placeholder": "Cause/Nature of organization"
+    },
+    domProps: {
+      "value": (_vm.cause)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.cause = $event.target.value
+      }
+    }
+  }), _c('div', {
+    staticClass: "sponsor-form__error-container"
+  })]), _c('div', {
+    staticClass: "sponsor-form__group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.website),
+      expression: "website"
+    }],
+    staticClass: "sponsor-form__input",
+    attrs: {
+      "name": "website",
+      "type": "text",
+      "placeholder": "Website Associated with the Event/School/Foundation"
+    },
+    domProps: {
+      "value": (_vm.website)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.website = $event.target.value
+      }
+    }
+  }), _c('div', {
+    staticClass: "sponsor-form__error-container"
+  })]), _c('div', {
+    staticClass: "sponsor-form__button-group"
+  }, [_c('button', {
+    staticClass: "sponsor-form__submit-button",
+    attrs: {
+      "type": "submit",
+      "disabled": _vm.formSubmitted
+    }
+  }, [_c('span', [_vm._v("Submit")])]), (_vm.formSubmitted) ? _c('div', {
+    staticClass: "sponsor-form__spinner"
+  }, [_c('span', [_vm._v("Sending")])]) : _vm._e()])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 719 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('nav', {
+    staticClass: "navigation"
+  }, [_c('Desktop', {
+    staticClass: "navigation--desktop",
+    attrs: {
+      "props": _vm.props
+    }
+  }), _c('Mobile', {
+    staticClass: "navigation--mobile",
+    attrs: {
+      "props": _vm.props
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 720 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "pages-review"
+  }, [_c('div', {
+    staticClass: "pages-review__wrap"
+  }, [(_vm.props.acf.title) ? _c('h2', {
+    staticClass: "pages-review__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.title)
+    }
+  }) : _vm._e(), (_vm.props.acf.content) ? _c('p', {
+    staticClass: "pages-review__text",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.content)
+    }
+  }) : _vm._e(), (_vm.props.acf.scan_image) ? _c('img', {
+    staticClass: "pages-review__scan",
+    attrs: {
+      "src": _vm.props.acf.scan_image,
+      "alt": ""
+    }
+  }) : _vm._e(), _c('p', {
+    staticClass: "pages-review__text",
+    staticStyle: {
+      "margin-top": "1rem"
+    }
+  }, [_vm._v(" Once on Google, under Mattiacio Orthodontics, click on the \"Reviews\" tab. Scroll down to \"Rate and Review on Google\" and select your star rating and leave us a review!")])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 721 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-home-welcome"
+  }, [_c('div', {
+    staticClass: "custom-home-welcome__container"
+  }, [_c('div', {
+    staticClass: "custom-home-welcome__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-home-welcome__subtitle",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.subtitle)
+    }
+  }), _c('div', {
+    staticClass: "custom-home-welcome__text-container"
+  }, [_c('div', {
+    staticClass: "custom-home-welcome__text",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.text)
+    }
+  })])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 722 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "modal"
+  }, [_c('div', {
+    staticClass: "modal__overlay",
+    on: {
+      "click": function($event) {
+        return _vm.closeModal(1)
+      }
+    }
+  }), _c('div', {
+    staticClass: "modal__container"
+  }, [_c('div', {
+    staticClass: "modal__close",
+    on: {
+      "click": function($event) {
+        return _vm.closeModal(1)
+      }
+    }
+  }, [_c('span'), _c('span')]), _c('div', {
+    staticClass: "modal__content"
+  }, [_c('Platinum')], 1)])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 723 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.props) ? _c('div', {
+    staticClass: "event-modal"
+  }, [_c('div', {
+    staticClass: "event-modal__overlay",
+    on: {
+      "click": function($event) {
+        return _vm.closeModal(2)
+      }
+    }
+  }), _c('div', {
+    staticClass: "event-modal__container"
+  }, [_c('div', {
+    staticClass: "event-modal__close",
+    on: {
+      "click": function($event) {
+        return _vm.closeModal(2)
+      }
+    }
+  }, [_c('span'), _c('span')]), _c('div', {
+    staticClass: "event-modal__content"
+  }, [_c('div', {
+    staticClass: "event-modal__text",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.event_modal.content)
+    }
+  }), _c('div', {
+    staticClass: "event-modal__form-container"
+  }, [_c('EventForm')], 1), _c('div', {
+    staticClass: "event-modal__spacer"
+  })])])]) : _vm._e()
+},staticRenderFns: []}
+
+/***/ }),
+/* 724 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "contact-interview-form"
+  }, [_c('form', {
+    staticClass: "contact-interview-form__form",
+    attrs: {
+      "method": "post"
+    },
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        return _vm.validate($event)
+      }
+    }
+  }, [_c('div', {
+    staticClass: "contact-interview-form__group"
+  }, [_c('label', {
+    staticClass: "contact-interview-form__label"
+  }, [_vm._v("Did Mattiacio Orthodontics meet or exceed your expectations? Please explain.")]), _c('textarea', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.message1),
+      expression: "message1"
+    }],
+    staticClass: "contact-interview-form__textarea",
+    class: {
+      'contact-interview-form__textarea--error': _vm.errors.has('message1')
+    },
+    attrs: {
+      "name": "message1",
+      "type": "textarea",
+      "rows": "2"
+    },
+    domProps: {
+      "value": (_vm.message1)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.message1 = $event.target.value
+      }
+    }
+  })]), _c('div', {
+    staticClass: "contact-interview-form__group"
+  }, [_c('label', {
+    staticClass: "contact-interview-form__label"
+  }, [_vm._v("Was there anything we could have done better to improve your overall experience?")]), _c('textarea', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.message2),
+      expression: "message2"
+    }],
+    staticClass: "contact-interview-form__textarea",
+    class: {
+      'contact-interview-form__textarea--error': _vm.errors.has('message2')
+    },
+    attrs: {
+      "name": "message2",
+      "type": "textarea",
+      "rows": "2"
+    },
+    domProps: {
+      "value": (_vm.message2)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.message2 = $event.target.value
+      }
+    }
+  })]), _c('div', {
+    staticClass: "contact-interview-form__group"
+  }, [_c('label', {
+    staticClass: "contact-interview-form__label"
+  }, [_vm._v("What was the best part about your experience with Mattiacio Orthodontics?")]), _c('textarea', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.message3),
+      expression: "message3"
+    }],
+    staticClass: "contact-interview-form__textarea",
+    class: {
+      'contact-interview-form__textarea--error': _vm.errors.has('message3')
+    },
+    attrs: {
+      "name": "message3",
+      "type": "textarea",
+      "rows": "2"
+    },
+    domProps: {
+      "value": (_vm.message3)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.message3 = $event.target.value
+      }
+    }
+  })]), _c('div', {
+    staticClass: "contact-interview-form__group"
+  }, [_c('label', {
+    staticClass: "contact-interview-form__label"
+  }, [_vm._v("Would you have confidence in recommending Mattiacio Orthodontics to a friend or family member for their orthodontic care?")]), _c('div', {
+    staticClass: "contact-interview-form__radio-group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.radiographs),
+      expression: "radiographs"
+    }, {
+      name: "validate",
+      rawName: "v-validate",
+      value: ('required'),
+      expression: "'required'"
+    }],
+    staticClass: "contact-interview-form__input--radio",
+    attrs: {
+      "name": "radiographs",
+      "value": "Yes",
+      "type": "radio"
+    },
+    domProps: {
+      "checked": _vm._q(_vm.radiographs, "Yes")
+    },
+    on: {
+      "change": function($event) {
+        _vm.radiographs = "Yes"
+      }
+    }
+  }), _c('span', {
+    staticClass: "contact-interview-form__radio-overlay",
+    class: {
+      'input': true, 'contact-interview-form__radio-overlay--error': _vm.errors.has('radiographs')
+    }
+  }), _c('label', {
+    staticClass: "contact-interview-form__label"
+  }, [_vm._v("Yes, I would like to make a referral")])]), _c('div', {
+    staticClass: "contact-interview-form__radio-group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.radiographs),
+      expression: "radiographs"
+    }],
+    staticClass: "contact-interview-form__input--radio",
+    attrs: {
+      "name": "radiographs",
+      "value": "No",
+      "type": "radio"
+    },
+    domProps: {
+      "checked": _vm._q(_vm.radiographs, "No")
+    },
+    on: {
+      "change": function($event) {
+        _vm.radiographs = "No"
+      }
+    }
+  }), _c('span', {
+    staticClass: "contact-interview-form__radio-overlay",
+    class: {
+      'input': true, 'contact-interview-form__radio-overlay--error': _vm.errors.has('radiographs')
+    }
+  }), _c('label', {
+    staticClass: "contact-interview-form__label"
+  }, [_vm._v("No, I'd rather not")])]), _c('div', {
+    staticClass: "contact-interview-form__error-container"
+  }, [_c('span', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('radiographs')),
+      expression: "errors.has('radiographs')"
+    }]
+  }, [_vm._v("Please select one Option.")])])]), (_vm.radiographs === 'Yes') ? _c('div', {
+    staticClass: "contact-interview-form__group"
+  }, [_c('label', {
+    staticClass: "contact-interview-form__label"
+  }, [_vm._v("Thank you for your willingness to spread the word about Mattiacio Orthodontics! To express our appreciation, we'd like to offer you a $25 Visa Gift Card for providing the contact information of a family member (non-immediate) or friend that you trust us to take great care of. It's the best compliment we could EVER receive. *If you do not wish to enter a name, simply leave the form blank and submit*")])]) : _vm._e(), (_vm.radiographs === 'Yes') ? _c('div', {
+    staticClass: "contact-interview-form__group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.firstname),
+      expression: "firstname"
+    }],
+    staticClass: "contact-interview-form__input",
+    class: {
+      'input': true, 'contact-interview-form__input--error': _vm.errors.has('first-name')
+    },
+    attrs: {
+      "name": "first-name",
+      "type": "text",
+      "placeholder": "First Name"
+    },
+    domProps: {
+      "value": (_vm.firstname)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.firstname = $event.target.value
+      }
+    }
+  })]) : _vm._e(), (_vm.radiographs === 'Yes') ? _c('div', {
+    staticClass: "contact-interview-form__group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.lastname),
+      expression: "lastname"
+    }],
+    staticClass: "contact-interview-form__input",
+    class: {
+      'input': true, 'contact-interview-form__input--error': _vm.errors.has('last-name')
+    },
+    attrs: {
+      "name": "last-name",
+      "type": "text",
+      "placeholder": "Last Name"
+    },
+    domProps: {
+      "value": (_vm.lastname)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.lastname = $event.target.value
+      }
+    }
+  })]) : _vm._e(), (_vm.radiographs === 'Yes') ? _c('div', {
+    staticClass: "contact-interview-form__group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.email),
+      expression: "email"
+    }, {
+      name: "validate",
+      rawName: "v-validate",
+      value: ('required'),
+      expression: "'required'"
+    }],
+    staticClass: "contact-interview-form__input",
+    class: {
+      'input': true, 'contact-interview-form__input--error': _vm.errors.has('email')
+    },
+    attrs: {
+      "name": "email",
+      "placeholder": "Email / Phone #"
+    },
+    domProps: {
+      "value": (_vm.email)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.email = $event.target.value
+      }
+    }
+  }), _c('div', {
+    staticClass: "contact-interview-form__error-container"
+  }, [_c('span', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('email')),
+      expression: "errors.has('email')"
+    }]
+  }, [_vm._v("Email/phone is required.")])])]) : _vm._e(), (_vm.radiographs === 'Yes') ? _c('div', {
+    staticClass: "contact-interview-form__group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.referby),
+      expression: "referby"
+    }, {
+      name: "validate",
+      rawName: "v-validate",
+      value: ('required'),
+      expression: "'required'"
+    }],
+    staticClass: "contact-interview-form__input",
+    class: {
+      'input': true, 'contact-interview-form__input--error': _vm.errors.has('referby')
+    },
+    attrs: {
+      "name": "referby",
+      "type": "text",
+      "placeholder": "Referred by"
+    },
+    domProps: {
+      "value": (_vm.referby)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.referby = $event.target.value
+      }
+    }
+  }), _c('div', {
+    staticClass: "contact-interview-form__error-container"
+  }, [_c('span', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('referby')),
+      expression: "errors.has('referby')"
+    }]
+  }, [_vm._v("Refer By field is required.")])])]) : _vm._e(), _c('div', {
+    staticClass: "contact-interview-form__button-group"
+  }, [_c('button', {
+    staticClass: "contact-interview-form__submit-button",
+    attrs: {
+      "type": "submit",
+      "disabled": _vm.formSubmitted
+    }
+  }, [_c('span', [_vm._v("Submit")])]), (_vm.formSubmitted) ? _c('div', {
+    staticClass: "contact-interview-form__spinner"
+  }, [_c('span', [_vm._v("Sending")])]) : _vm._e()])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 725 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "pages-retainer-program"
+  }, [_c('div', {
+    staticClass: "pages-retainer-program__container"
+  }, [(_vm.props.title.rendered) ? _c('div', {
+    staticClass: "pages-retainer-program__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title.rendered)
+    }
+  }) : _vm._e(), (_vm.props.content.rendered) ? _c('div', {
+    staticClass: "pages-retainer-program__content",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.content.rendered)
+    }
+  }) : _vm._e()])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 726 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-contact-form-section",
+    attrs: {
+      "id": "form"
+    }
+  }, [_c('div', {
+    staticClass: "custom-contact-form-section__container"
+  }, [_c('div', {
+    staticClass: "custom-contact-form-section__form-container"
+  }, [_c('Form')], 1), _c('div', {
+    staticClass: "custom-contact-form-section__contact"
+  }, [_c('div', {
+    staticClass: "custom-contact-form-section__hours",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.hours)
+    }
+  }), _c('Icon', {
+    staticClass: "custom-contact-form-section__logo",
+    attrs: {
+      "name": "matt_logo_small"
+    }
+  }), _c('div', {
+    staticClass: "custom-contact-form-section__address",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.address)
+    }
+  }), _c('div', {
+    staticClass: "custom-contact-form-section__phones",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.phones)
+    }
+  })], 1)])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 727 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "hero-pages"
+  }, [_c('div', {
+    staticClass: "hero-pages__overlay",
+    class: {
+      "hero-pages__overlay--covid": _vm.$route.path.includes("/covid-19-updates"), "hero-pages__overlay--virtual-services": _vm.$route.path.includes("/virtual-services"), "hero-pages__overlay--virtual-consultation": _vm.$route.path.includes("/virtual-consultation"), "hero-pages__overlay--7-and-up": _vm.$route.path.includes("/7-and-up"), "hero-pages__overlay--videos": _vm.$route.path.includes("/videos")
+    }
+  }, [_c('div', {
+    staticClass: "hero-pages__container"
+  }, [_c('h2', {
+    staticClass: "hero-pages__title"
+  }, [_vm._v(_vm._s(_vm.$route.name))]), (_vm.props && _vm.$route.path.includes("/covid-19-updates")) ? _c('div', {
+    staticClass: "hero-pages__buttons"
+  }, _vm._l((_vm.props.acf.covid_19_header_buttons), function(button, i) {
+    return _c('a', {
+      key: "button " + i,
+      staticClass: "hero-pages__button",
+      attrs: {
+        "href": button.button.href,
+        "target": "_blank"
+      },
+      domProps: {
+        "innerHTML": _vm._s(button.button.label)
+      }
+    })
+  }), 0) : _vm._e()])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 728 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.props) ? _c('div', {
+    staticClass: "divider"
+  }, [_c('div', {
+    staticClass: "divider__container"
+  }, [_vm._m(0), _c('a', {
+    staticClass: "divider__phone",
+    attrs: {
+      "href": _vm.props.acf.phone.href
+    }
+  }, [_c('span', [_vm._v(_vm._s(_vm.props.acf.phone.label))])])])]) : _vm._e()
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "divider__text"
+  }, [_vm._v("we're here for you when you need us even after hours"), _c('br'), _vm._v("Call or text us anytime")])
+}]}
+
+/***/ }),
+/* 729 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-new-pats-patients-one",
+    attrs: {
+      "id": "forms1"
+    }
+  }, [_c('div', {
+    staticClass: "custom-new-pats-patients-one__container"
+  }, [_c('div', {
+    staticClass: "custom-new-pats-patients-one__title",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.title)
+    }
+  }), _c('div', {
+    staticClass: "custom-new-pats-patients-one__row"
+  }, [_c('div', {
+    staticClass: "custom-new-pats-patients-one__right",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.img + ')'
+    })
+  }), _c('div', {
+    staticClass: "custom-new-pats-patients-one__left"
+  }, [_c('div', {
+    staticClass: "custom-new-pats-patients-one__text",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.text)
+    }
+  })])])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 730 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "hero-mobile"
+  }, [_c('div', {
+    staticClass: "hero-mobile__overlay"
+  }), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path === "/"),
+      expression: "$route.path === \"/\""
+    }],
+    staticClass: "hero-mobile__home"
+  }, [_c('video', {
+    directives: [{
+      name: "load-directive",
+      rawName: "v-load-directive"
+    }],
+    staticClass: "hero-mobile__video",
+    attrs: {
+      "loop": "loop",
+      "muted": "muted",
+      "autoplay": "autoplay"
+    },
+    domProps: {
+      "muted": true
+    }
+  }, [_c('source', {
+    staticClass: "hero-mobile__source",
+    attrs: {
+      "src": _vm.props.acf.hero_video,
+      "type": "video/mp4",
+      "poster": _vm.props.acf.poster
+    }
+  }), _vm._v("Your browser does not support video.")]), _c('div', {
+    staticClass: "hero-mobile__buttons"
+  }, [(_vm.props.acf.virtual_services_button.label && _vm.props.acf.virtual_services_button.href) ? _c('a', {
+    staticClass: "hero-mobile__button",
+    attrs: {
+      "href": _vm.props.acf.virtual_services_button.href
+    },
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.virtual_services_button.label)
+    }
+  }) : _vm._e()])]), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path === "/about-us"),
+      expression: "$route.path === \"/about-us\""
+    }],
+    staticClass: "hero-mobile__about-us",
+    style: ({
+      backgroundImage: 'url(static/about-mobile-bg.jpg)'
+    })
+  }, [_c('div', {
+    staticClass: "hero-mobile__title"
+  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path === "/new-patients"),
+      expression: "$route.path === \"/new-patients\""
+    }],
+    staticClass: "hero-mobile__new-pats",
+    style: ({
+      backgroundImage: 'url(static/new-pats.jpg)'
+    })
+  }, [_c('div', {
+    staticClass: "hero-mobile__title"
+  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path === "/treatments"),
+      expression: "$route.path === \"/treatments\""
+    }],
+    staticClass: "hero-mobile__treatments",
+    style: ({
+      backgroundImage: 'url(static/treatments.jpg)'
+    })
+  }, [_c('div', {
+    staticClass: "hero-mobile__title"
+  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path === "/mattiacio-difference"),
+      expression: "$route.path === \"/mattiacio-difference\""
+    }],
+    staticClass: "hero-mobile__matt-diff",
+    style: ({
+      backgroundImage: 'url(static/matt-diff-bg1.jpg)'
+    })
+  }, [_c('div', {
+    staticClass: "hero-mobile__title"
+  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path === "/invisalign"),
+      expression: "$route.path === \"/invisalign\""
+    }],
+    staticClass: "hero-mobile__invisalign",
+    style: ({
+      backgroundImage: 'url(static/invisalign.jpg)'
+    })
+  }, [_c('div', {
+    staticClass: "hero-mobile__title"
+  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path === "/contact-us"),
+      expression: "$route.path === \"/contact-us\""
+    }],
+    staticClass: "hero-mobile__contact",
+    style: ({
+      backgroundImage: 'url(static/contact.jpg)'
+    })
+  }), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path.includes("/covid-19-updates")),
+      expression: "$route.path.includes(\"/covid-19-updates\")"
+    }],
+    staticClass: "hero-mobile__covid",
+    style: ({
+      backgroundImage: 'url(static/covid-19-updates.jpg)'
+    })
+  }, [_c('div', {
+    staticClass: "hero-mobile__title"
+  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path.includes("/virtual-services")),
+      expression: "$route.path.includes(\"/virtual-services\")"
+    }],
+    staticClass: "hero-mobile__virtual-services",
+    style: ({
+      backgroundImage: 'url(static/virtual-services.jpg)'
+    })
+  }, [_c('div', {
+    staticClass: "hero-mobile__title"
+  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path.includes("/videos")),
+      expression: "$route.path.includes(\"/videos\")"
+    }],
+    staticClass: "hero-mobile__videos",
+    style: ({
+      backgroundImage: 'url(static/mattiacio-videos-poster.png)'
+    })
+  }, [_c('div', {
+    staticClass: "hero-mobile__title"
+  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path.includes("/virtual-consultation")),
+      expression: "$route.path.includes(\"/virtual-consultation\")"
+    }],
+    staticClass: "hero-mobile__virtual-consultation",
+    style: ({
+      backgroundImage: 'url(static/new-pats.jpg)'
+    })
+  }, [_c('div', {
+    staticClass: "hero-mobile__title"
+  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.path.includes("/7-and-up")),
+      expression: "$route.path.includes(\"/7-and-up\")"
+    }],
+    staticClass: "hero-mobile__7-and-up",
+    style: ({
+      backgroundImage: 'url(static/new-pats.jpg)'
+    })
+  }, [_c('div', {
+    staticClass: "hero-mobile__title"
+  }, [_vm._v(_vm._s(_vm.$route.name) + "    ")])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 731 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.props) ? _c('div', {
+    staticClass: "home-hero"
+  }, [_c('div', {
+    staticClass: "home-hero__overlay"
+  }, [_c('video', {
+    directives: [{
+      name: "load-directive",
+      rawName: "v-load-directive"
+    }],
+    staticClass: "home-hero__video",
+    attrs: {
+      "loop": "loop",
+      "muted": "muted",
+      "autoplay": "autoplay"
+    },
+    domProps: {
+      "muted": true
+    }
+  }, [_c('source', {
+    staticClass: "home-hero__source",
+    attrs: {
+      "src": _vm.props.acf.hero_video,
+      "type": "video/mp4",
+      "poster": _vm.props.acf.poster
+    }
+  }), _vm._v("Your browser does not support video.")])])]) : _vm._e()
+},staticRenderFns: []}
+
+/***/ }),
+/* 732 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "modal-thanks"
+  }, [_c('div', {
+    staticClass: "modal__overlay",
+    on: {
+      "click": _vm.closeThanks
+    }
+  }), _c('div', {
+    staticClass: "modal-thanks__container"
+  }, [_c('div', {
+    staticClass: "modal-thanks__close",
+    on: {
+      "click": _vm.closeThanks
+    }
+  }, [_c('span'), _c('span')]), _c('div', {
+    staticClass: "modal-thanks__content"
+  }, [_c('div', {
+    staticClass: "modal-thanks__logo-container"
+  }, [_c('Icon', {
+    staticClass: "modal-thanks__logo",
+    attrs: {
+      "name": "matt_logo-01"
+    }
+  })], 1), _vm._m(0)])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "modal-thanks__text"
+  }, [_c('h2', [_vm._v("Thank you!")]), _c('p', [_vm._v("You are all set! Please download the form below for a faster visit!")]), _c('a', {
+    staticClass: "modal-thanks__link",
+    attrs: {
+      "href": "https://www.mattiacioortho.com/wp-content/uploads/Mouth-Guard-Permission-and-Release-Form-2017-OTHER.pdf"
+    }
+  }, [_vm._v("Download the Form")])])
+}]}
+
+/***/ }),
+/* 733 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.props) ? _c('div', {
+    staticClass: "custom-platinum"
+  }, [_c('div', {
+    staticClass: "custom-platinum__container"
+  }, [_c('div', {
+    staticClass: "custom-platinum__header",
+    style: ({
+      backgroundImage: 'url(' + _vm.props.acf.platinum.header_img + ')'
+    })
+  }, [_c('div', {
+    staticClass: "custom-platinum__icon-outer"
+  }, [_c('div', {
+    staticClass: "custom-platinum__icon-inner"
+  }, [_c('Icon', {
+    staticClass: "custom-platinum__icon custom-platinum__icon--shield",
+    attrs: {
+      "name": "shield"
+    }
+  })], 1)]), _c('div', {
+    staticClass: "custom-platinum__text",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.platinum.text)
+    }
+  })]), _c('div', {
+    staticClass: "custom-platinum__table"
+  }, [_c('div', {
+    staticClass: "custom-platinum__table-header"
+  }, [_c('div', {
+    staticClass: "custom-platinum__table-head-left",
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.acf.platinum.table_head)
+    }
+  }), _vm._m(0)]), _c('div', {
+    staticClass: "custom-platinum__rows-container"
+  }, _vm._l((_vm.props.acf.platinum.rows), function(row, i) {
+    return _c('div', {
+      staticClass: "custom-platinum__row"
+    }, [_c('div', {
+      staticClass: "custom-platinum__row-text",
+      domProps: {
+        "innerHTML": _vm._s(row.text)
+      }
+    }), (row.r_four_el) ? _c('div', {
+      staticClass: "custom-platinum__r-four-el"
+    }, [_c('Icon', {
+      staticClass: "custom-platinum__r-four-check",
+      attrs: {
+        "name": "check"
+      }
+    })], 1) : _vm._e(), (row.platinum) ? _c('div', {
+      staticClass: "custom-platinum__platinum"
+    }, [_c('Icon', {
+      staticClass: "custom-platinum__platinum-check",
+      attrs: {
+        "name": "check"
+      }
+    })], 1) : _vm._e()])
+  }), 0)])])]) : _vm._e()
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "custom-platinum__table-head-right"
+  }, [_c('div', {
+    staticClass: "custom-platinum__r-four-el-head"
+  }, [_vm._v("r4l")]), _c('div', {
+    staticClass: "custom-platinum__platinum-head"
+  }, [_vm._v("r4l platinum")])])
+}]}
+
+/***/ }),
+/* 734 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -6993,245 +10949,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 665 */
+/* 735 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "custom-mattiacio-what",
-    attrs: {
-      "id": "what"
-    }
-  }, [_c('div', {
-    staticClass: "custom-mattiacio-what__container"
-  }, [_c('div', {
-    staticClass: "custom-mattiacio-what__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-mattiacio-what__row"
-  }, [_c('div', {
-    staticClass: "custom-mattiacio-what__left"
-  }, [_c('div', {
-    staticClass: "custom-mattiacio-what__tab-container"
-  }, _vm._l((_vm.props.tabs), function(tab, i) {
-    return _c('div', {
-      key: i,
-      staticClass: "custom-mattiacio-what__tab",
-      class: {
-        "custom-mattiacio-what__tab--active": i === _vm.$store.state.tabs
-      },
-      on: {
-        "click": function($event) {
-          return _vm.showContent(i)
-        },
-        "mouseover": function($event) {
-          return _vm.showContent(i)
-        }
-      }
-    }, [_c('div', {
-      staticClass: "custom-mattiacio-what__icon-outer"
-    }, [_c('div', {
-      staticClass: "custom-mattiacio-what__icon-inner"
-    }, [_c('Icon', {
-      staticClass: "custom-mattiacio-what__icon",
-      class: "custom-mattiacio-what__icon--" + tab.label,
-      attrs: {
-        "name": tab.label
-      }
-    })], 1)])])
-  }), 0), _c('transition-group', {
-    staticClass: "custom-mattiacio-what__content-wrapper",
-    attrs: {
-      "name": "transition-meet-dr",
-      "tag": "div"
-    }
-  }, _vm._l((_vm.props.content), function(content, i) {
-    return _c('div', {
-      directives: [{
-        name: "show",
-        rawName: "v-show",
-        value: (i === _vm.$store.state.tabs),
-        expression: "i === $store.state.tabs"
-      }],
-      key: i,
-      staticClass: "custom-mattiacio-what__content-container"
-    }, [_c('div', {
-      staticClass: "custom-mattiacio-what__content-title",
-      domProps: {
-        "innerHTML": _vm._s(content.title)
-      }
-    }), _c('div', {
-      staticClass: "custom-mattiacio-what__content-text",
-      domProps: {
-        "innerHTML": _vm._s(content.text)
-      }
-    })])
-  }), 0)], 1), _c('div', {
-    staticClass: "custom-mattiacio-what__right"
-  }, _vm._l((_vm.props.images), function(img, i) {
-    return _c('div', {
-      key: i,
-      staticClass: "custom-mattiacio-what__right-images",
-      style: ({
-        backgroundImage: 'url(' + img.url + ')'
-      })
-    })
-  }), 0)])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 666 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-virtual-services"
-  }, [_c('div', {
-    staticClass: "custom-virtual-services__wrapper"
-  }, [_c('div', {
-    staticClass: "custom-virtual-services__container"
-  }, [_c('div', {
-    staticClass: "custom-virtual-services__description"
-  }), _c('div', {
-    staticClass: "custom-virtual-services__buttons"
-  }, _vm._l((_vm.props.virtual_services_buttons), function(button, i) {
-    return _c('a', {
-      key: "button " + i,
-      staticClass: "custom-virtual-services__button",
-      attrs: {
-        "href": button.button.href,
-        "target": "_blank"
-      },
-      domProps: {
-        "innerHTML": _vm._s(button.button.label)
-      }
-    })
-  }), 0)])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 667 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "page-invisalign"
-  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('Sections', {
-    attrs: {
-      "props": _vm.props.acf.custom_sections
-    }
-  })], 1) : _vm._e()], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 668 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.props) ? _c('div', {
-    staticClass: "custom-app-event",
-    class: {
-      'custom-app-event--family-fun-event': _vm.$route.path.includes('/mouth-guard-registration'), 'custom-app-event--banner': _vm.$route.path !== '/mouth-guard-registration'
-    },
-    style: ({
-      backgroundImage: 'url(' + _vm.props.acf.event.bg_img + ')'
-    })
-  }, [(_vm.$route.path.includes("/mouth-guard-registration")) ? _c('div', {
-    staticClass: "custom-app-event__container",
-    class: {
-      'custom-app-event__container--family-fun-event': _vm.$route.path.includes('/mouth-guard-registration')
-    }
-  }, [_c('div', {
-    staticClass: "custom-app-event__inner"
-  }, [_c('div', {
-    staticClass: "custom-app-event__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.event.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-app-event__subtitle",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.event.subtitle)
-    }
-  }), _c('div', {
-    staticClass: "custom-app-event__content",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.event.content)
-    }
-  }), _c('div', {
-    staticClass: "custom-app-event__btn",
-    on: {
-      "click": function($event) {
-        return _vm.openModal(4)
-      }
-    }
-  }, [_vm._v("Register Today")]), _c('h3', {
-    staticStyle: {
-      "color": "white",
-      "margin-top": "20px"
-    }
-  }, [_vm._v("Please also print this Permission and Release Form and bring with you to the date and time you registered for")]), _c('a', {
-    staticClass: "custom-app-event__btn",
-    attrs: {
-      "target": "_blank",
-      "href": "/wp-content/uploads/Mouth-Guard-Permission-and-Release-2023.pdf"
-    }
-  }, [_vm._v("Permission and Release Form")])])]) : _vm._e()]) : _vm._e()
-},staticRenderFns: []}
-
-/***/ }),
-/* 669 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-home-footer-review",
-    attrs: {
-      "id": "first"
-    }
-  }, [_c('div', {
-    staticClass: "custom-home-footer-review__container"
-  }, [_c('a', {
-    staticClass: "custom-home-footer-review__button",
-    attrs: {
-      "href": "https://search.google.com/local/writereview?placeid=ChIJF5_x57Yv0YkRAxAGy1qUPFw",
-      "target": "_blank"
-    },
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.button_text)
-    }
-  })]), _c('div', {
-    staticClass: "custom-home-footer-review__invisalign"
-  }, [_c('div', {
-    staticClass: "custom-home-footer-review__invisalignwrap"
-  }, [_c('div', {
-    staticClass: "reviews_diamond",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.diamond_plus_intro)
-    }
-  }), _c('div', {
-    staticClass: "custom-home-footer-review__read-more"
-  }, [_c('div', {
-    staticClass: "customclick",
-    on: {
-      "click": function($event) {
-        return _vm.welcome1Click()
-      }
-    }
-  }, [_vm._v("Read More      ")])])])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 670 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "contact-assurance-form"
+    staticClass: "contact-form"
   }, [_c('form', {
-    staticClass: "contact-assurance-form__form",
+    staticClass: "contact-form__form",
     attrs: {
       "method": "post"
     },
@@ -7242,1905 +10967,92 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   }, [_c('div', {
-    staticClass: "contact-assurance-form__group"
-  }, [_c('div', {
-    staticClass: "contact-assurance-form__radio-group"
+    staticClass: "contact-form__group"
   }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.radiographs),
-      expression: "radiographs"
+      value: (_vm.fullname),
+      expression: "fullname"
     }, {
       name: "validate",
       rawName: "v-validate",
-      value: ('required'),
-      expression: "'required'"
+      value: ('required|alpha_spaces'),
+      expression: "'required|alpha_spaces'"
     }],
-    staticClass: "contact-assurance-form__input--radio",
+    staticClass: "contact-form__input",
+    class: {
+      'input': true, 'contact-form__input--error': _vm.errors.has('full-name')
+    },
     attrs: {
-      "name": "radiographs",
-      "value": "Yes, I'd like to protect my new smile with Smile Assurance",
-      "type": "radio"
+      "name": "full-name",
+      "type": "text",
+      "placeholder": "Full Name"
     },
     domProps: {
-      "checked": _vm._q(_vm.radiographs, "Yes, I'd like to protect my new smile with Smile Assurance")
+      "value": (_vm.fullname)
     },
     on: {
-      "change": function($event) {
-        _vm.radiographs = "Yes, I'd like to protect my new smile with Smile Assurance"
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.fullname = $event.target.value
       }
     }
-  }), _c('span', {
-    staticClass: "contact-assurance-form__radio-overlay",
-    class: {
-      'input': true, 'contact-assurance-form__radio-overlay--error': _vm.errors.has('radiographs')
-    }
-  }), _c('label', {
-    staticClass: "contact-assurance-form__label"
-  }, [_vm._v("Yes, I'd like to protect my new smile with Smile Assurance")])]), _c('div', {
-    staticClass: "contact-assurance-form__radio-group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.radiographs),
-      expression: "radiographs"
-    }],
-    staticClass: "contact-assurance-form__input--radio",
-    attrs: {
-      "name": "radiographs",
-      "value": "Gimme the whole shebang! Smile Assurance and Teeth Whitening for $1000.00 ($130.00 savings!)",
-      "type": "radio"
-    },
-    domProps: {
-      "checked": _vm._q(_vm.radiographs, "Gimme the whole shebang! Smile Assurance and Teeth Whitening for $1000.00 ($130.00 savings!)")
-    },
-    on: {
-      "change": function($event) {
-        _vm.radiographs = "Gimme the whole shebang! Smile Assurance and Teeth Whitening for $1000.00 ($130.00 savings!)"
-      }
-    }
-  }), _c('span', {
-    staticClass: "contact-assurance-form__radio-overlay",
-    class: {
-      'input': true, 'contact-assurance-form__radio-overlay--error': _vm.errors.has('radiographs')
-    }
-  }), _c('label', {
-    staticClass: "contact-assurance-form__label"
-  }, [_vm._v("Gimme the whole shebang! Smile Assurance and Teeth Whitening for $1000.00 ($130.00 savings!)")])]), _c('div', {
-    staticClass: "contact-assurance-form__radio-group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.radiographs),
-      expression: "radiographs"
-    }],
-    staticClass: "contact-assurance-form__input--radio",
-    attrs: {
-      "name": "radiographs",
-      "value": "No thanks! We'll take our chances.",
-      "type": "radio"
-    },
-    domProps: {
-      "checked": _vm._q(_vm.radiographs, "No thanks! We'll take our chances.")
-    },
-    on: {
-      "change": function($event) {
-        _vm.radiographs = "No thanks! We'll take our chances."
-      }
-    }
-  }), _c('span', {
-    staticClass: "contact-assurance-form__radio-overlay",
-    class: {
-      'input': true, 'contact-assurance-form__radio-overlay--error': _vm.errors.has('radiographs')
-    }
-  }), _c('label', {
-    staticClass: "contact-assurance-form__label"
-  }, [_vm._v("No thanks! We'll take our chances.      ")])]), _c('div', {
-    staticClass: "contact-assurance-form__error-container"
+  }), _c('div', {
+    staticClass: "contact-form__error-container"
   }, [_c('span', {
     directives: [{
       name: "show",
       rawName: "v-show",
-      value: (_vm.errors.has('radiographs')),
-      expression: "errors.has('radiographs')"
+      value: (_vm.errors.has('full-name')),
+      expression: "errors.has('full-name')"
     }]
-  }, [_vm._v("Please select one Option.")])])]), _c('div', {
-    staticClass: "contact-assurance-form__button-group"
-  }, [_c('button', {
-    staticClass: "contact-assurance-form__submit-button",
-    attrs: {
-      "type": "submit",
-      "disabled": _vm.formSubmitted
-    }
-  }, [_c('span', [_vm._v("Submit")])]), (_vm.formSubmitted) ? _c('div', {
-    staticClass: "contact-assurance-form__spinner"
-  }, [_c('span', [_vm._v("Sending")])]) : _vm._e()])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 671 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.props) ? _c('div', {
-    staticClass: "nav-mobile",
-    class: {
-      "nav-mobile--scrolling": _vm.$store.state.nav, "nav-mobile--notransparent": _vm.$route.path === "/"
-    }
-  }, [_c('div', {
-    staticClass: "nav-mobile__container"
-  }, [_c('div', {
-    staticClass: "nav-mobile__item"
-  }, [_c('router-link', {
-    staticClass: "nav-mobile__logo-container",
-    attrs: {
-      "to": "/"
-    },
-    nativeOn: {
-      "click": function($event) {
-        return _vm.closeDrawer($event)
-      }
-    }
-  }, [_c('Icon', {
-    staticClass: "nav-mobile__logo",
-    attrs: {
-      "name": "matt_logo-01"
-    }
-  })], 1)], 1), _c('div', {
-    staticClass: "nav-mobile__item"
-  }, [_c('div', {
-    staticClass: "nav-mobile__menu-container",
-    on: {
-      "click": _vm.toggleMenu
-    }
-  }, [_c('div', {
-    staticClass: "nav-mobile__hamburger",
-    class: {
-      "nav-mobile__hamburger--active": _vm.active
-    }
-  }, [_c('span'), _c('span')])])]), _c('transition', {
-    staticClass: "nav-mobile__drawer-transition",
-    attrs: {
-      "name": "fade-in"
-    }
-  }, [_c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.active),
-      expression: "active"
-    }],
-    staticClass: "nav-mobile__drawer",
-    on: {
-      "click": _vm.closeDrawer
-    }
-  }, [_c('div', {
-    staticClass: "nav-mobile__drawer-container",
-    on: {
-      "click": _vm.closeDrawer
-    }
-  }, [_c('div', {
-    staticClass: "nav-mobile__links"
-  }, _vm._l((_vm.links), function(nav) {
-    return (nav.navigation || nav.mobile) ? _c('span', {
-      staticClass: "nav-mobile__link"
-    }, [_c('router-link', {
-      attrs: {
-        "to": nav.path
-      }
-    }, [_vm._v(_vm._s(nav.name))])], 1) : _vm._e()
-  }), 0), _c('Bottom'), _c('div', {
-    staticClass: "nav-mobile__bottom"
-  }, [_c('div', {
-    staticClass: "nav-mobile__button-group"
-  }, [_c('a', {
-    staticClass: "nav-mobile__rewards",
-    attrs: {
-      "href": _vm.props.acf.links.rewards,
-      "target": "_blank"
-    }
-  }, [_vm._v("Rewards Center")]), _c('a', {
-    staticClass: "nav-mobile__login",
-    attrs: {
-      "href": _vm.props.acf.links.login,
-      "target": "_blank"
-    }
-  }, [_vm._v("Patient Login")]), _c('router-link', {
-    staticClass: "nav-mobile__videos",
-    attrs: {
-      "to": "/videos"
-    }
-  }, [_vm._v("Videos")])], 1), _c('div', {
-    staticClass: "nav-mobile__icon-row"
-  }, _vm._l((_vm.props.acf.social_links), function(link, i) {
-    return _c('a', {
-      key: i,
-      staticClass: "nav-mobile__icon-wrapper",
-      attrs: {
-        "href": link.href,
-        "target": "_blank"
-      }
-    }, [_c('Icon', {
-      staticClass: "nav-mobile__icon",
-      class: "nav-mobile__" + link.label,
-      attrs: {
-        "name": link.icon
-      }
-    })], 1)
-  }), 0)])], 1)])])], 1)]) : _vm._e()
-},staticRenderFns: []}
-
-/***/ }),
-/* 672 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "video-modal"
-  }, [_c('div', {
-    staticClass: "video-modal__overlay",
-    on: {
-      "click": _vm.closeVideo
-    }
-  }, [_c('div', {
-    staticClass: "video-modal__container"
-  }, [_c('div', {
-    staticClass: "video-modal__close",
-    on: {
-      "click": _vm.closeVideo
-    }
-  }, [_c('span'), _c('span')]), _c('div', {
-    staticClass: "video-modal__content"
-  }, [_c('video', {
-    staticClass: "video-modal__video",
-    attrs: {
-      "controls": "controls"
-    }
-  }, [_c('source', {
-    attrs: {
-      "src": _vm.props,
-      "type": "video/mp4"
-    }
-  }), _vm._v("Your browser does not support video.")])])])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 673 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-invisalign-sections",
-    attrs: {
-      "id": "invilignsection1"
-    }
-  }, _vm._l((_vm.props), function(section, i) {
-    return _c('div', {
-      key: i,
-      staticClass: "custom-invisalign-sections__section",
-      attrs: {
-        "id": 'section-' + i
-      }
-    }, [_c('div', {
-      staticClass: "custom-invisalign-sections__container"
-    }, [_c('div', {
-      staticClass: "custom-invisalign-sections__title",
-      domProps: {
-        "innerHTML": _vm._s(section.title)
-      }
-    }), _c('div', {
-      staticClass: "custom-invisalign-sections__row"
-    }, [_c('div', {
-      staticClass: "custom-invisalign-sections__left"
-    }, [(section.icon) ? _c('Icon', {
-      staticClass: "custom-invisalign-sections",
-      class: 'custom-invisalign-sections__icon-' + section.icon,
-      attrs: {
-        "name": section.icon
-      }
-    }) : _vm._e(), _c('div', {
-      staticClass: "custom-invisalign-sections__text",
-      domProps: {
-        "innerHTML": _vm._s(section.text)
-      }
-    })], 1), _c('div', {
-      staticClass: "custom-invisalign-sections__right",
-      class: {
-        "custom-invisalign-sections__right--order-first": section.img_left
-      },
-      style: ({
-        backgroundImage: 'url(' + section.img + ')'
-      })
-    })])])])
-  }), 0)
-},staticRenderFns: []}
-
-/***/ }),
-/* 674 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "pages-thank-you"
-  }, [_c('ThankYou', {
-    attrs: {
-      "props": _vm.props.acf.custom_thank_you
-    }
-  })], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 675 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-mattiacio-what",
-    attrs: {
-      "id": "how"
-    }
-  }, [_c('div', {
-    staticClass: "custom-mattiacio-what__container"
-  }, [_c('div', {
-    staticClass: "custom-mattiacio-what__heading"
-  }, [_c('div', {
-    staticClass: "custom-mattiacio-what__title"
-  }, [_c('h2', {
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-mattiacio-what__content",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.content)
-    }
-  })])]), _c('div', {
-    staticClass: "custom-mattiacio-what__row"
-  }, [_c('div', {
-    staticClass: "custom-mattiacio-what__right"
-  }, _vm._l((_vm.props.works), function(works, i) {
-    return _c('div', {
-      key: i,
-      staticClass: "custom-mattiacio-what__right-col3"
-    }, [_c('img', {
-      attrs: {
-        "src": works.image
-      }
-    }), _c('h3', {
-      domProps: {
-        "innerHTML": _vm._s(works.title)
-      }
-    })])
-  }), 0)])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 676 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "pages-mouth-guard-thank-you"
-  }, [_c('mouthGuardThankYous', {
-    attrs: {
-      "props": _vm.props.acf.custom_mouth_guard_thank_you
-    }
-  })], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 677 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-new-pats-financial",
-    attrs: {
-      "id": "financial"
-    }
-  }, [_c('div', {
-    staticClass: "custom-new-pats-financial__img",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.bg_img + ')'
-    })
-  }, [_c('Icon', {
-    staticClass: "custom-new-pats-financial__mask",
-    attrs: {
-      "name": "mask"
-    }
-  })], 1), _c('div', {
-    staticClass: "custom-new-pats-financial__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-new-pats-financial__container"
-  }, [_c('div', {
-    staticClass: "custom-new-pats-financial__content"
-  }, _vm._l((_vm.props.info), function(item, i) {
-    return _c('div', {
-      key: i,
-      staticClass: "custom-new-pats-financial__row"
-    }, [_c('div', {
-      staticClass: "custom-new-pats-financial__left"
-    }, [_c('div', {
-      staticClass: "custom-new-pats-financial__icon-outer"
-    }, [_c('div', {
-      staticClass: "custom-new-pats-financial__icon-inner"
-    }, [_c('Icon', {
-      staticClass: "custom-new-pats-financial__icon",
-      class: 'custom-new-pats-financial__icon--' + item.icon,
-      attrs: {
-        "name": item.icon
-      }
-    })], 1)])]), _c('div', {
-      staticClass: "custom-new-pats-financial__right"
-    }, [_c('div', {
-      staticClass: "custom-new-pats-financial__heading",
-      domProps: {
-        "innerHTML": _vm._s(item.heading)
-      }
-    }), _c('div', {
-      staticClass: "custom-new-pats-financial__text",
-      domProps: {
-        "innerHTML": _vm._s(item.text)
-      }
-    })])])
-  }), 0)])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 678 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "pages-retainer-program"
-  }, [_c('div', {
-    staticClass: "pages-retainer-program__container"
-  }, [(_vm.props.title.rendered) ? _c('div', {
-    staticClass: "pages-retainer-program__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title.rendered)
-    }
-  }) : _vm._e(), (_vm.props.content.rendered) ? _c('div', {
-    staticClass: "pages-retainer-program__content",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.content.rendered)
-    }
-  }) : _vm._e()])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 679 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "page-7-and-up"
-  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('SevenUp', {
-    attrs: {
-      "props": _vm.props.acf.custom_7up
-    }
-  })], 1) : _vm._e()], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 680 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-about-meet-dr1",
-    attrs: {
-      "id": "meet-dr1"
-    }
-  }, [_c('div', {
-    staticClass: "custom-about-meet-dr1__container"
-  }, [_c('div', {
-    staticClass: "custom-about-meet-dr1__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-about-meet-dr1__row"
-  }, [_c('div', {
-    staticClass: "custom-about-meet-dr1__left"
-  }, [_c('div', {
-    staticClass: "custom-about-meet-dr1__tab-container"
-  }, _vm._l((_vm.props.tabs), function(tab, i) {
-    return _c('div', {
-      key: i,
-      staticClass: "custom-about-meet-dr1__tab",
-      class: {
-        "custom-about-meet-dr1__tab--active": i === _vm.$store.state.tabs
-      },
-      on: {
-        "click": function($event) {
-          return _vm.showContent1(i)
-        },
-        "mouseover": function($event) {
-          return _vm.showContent1(i)
-        }
-      }
-    }, [_c('div', {
-      staticClass: "custom-about-meet-dr1__icon-outer"
-    }, [_c('div', {
-      staticClass: "custom-about-meet-dr1__icon-inner"
-    }, [_c('Icon', {
-      staticClass: "custom-about-meet-dr1__icon",
-      class: "custom-about-meet-dr1__icon--" + tab.label,
-      attrs: {
-        "name": tab.label
-      }
-    })], 1)])])
-  }), 0), _c('transition-group', {
-    staticClass: "custom-about-meet-dr1__content-wrapper",
-    attrs: {
-      "name": "transition-meet-dr",
-      "tag": "div"
-    }
-  }, _vm._l((_vm.props.content), function(content, i) {
-    return _c('div', {
-      directives: [{
-        name: "show",
-        rawName: "v-show",
-        value: (i === _vm.$store.state.tabs),
-        expression: "i === $store.state.tabs"
-      }],
-      key: i,
-      staticClass: "custom-about-meet-dr1__content-container"
-    }, [_c('div', {
-      staticClass: "custom-about-meet-dr1__content-title",
-      domProps: {
-        "innerHTML": _vm._s(content.title)
-      }
-    }), _c('div', {
-      staticClass: "custom-about-meet-dr1__content-text",
-      domProps: {
-        "innerHTML": _vm._s(content.text)
-      }
-    })])
-  }), 0)], 1), _c('div', {
-    staticClass: "custom-about-meet-dr1__right",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.img + ')'
-    })
-  })])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 681 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-new-pats-patients-one",
-    attrs: {
-      "id": "forms1"
-    }
-  }, [_c('div', {
-    staticClass: "custom-new-pats-patients-one__container"
-  }, [_c('div', {
-    staticClass: "custom-new-pats-patients-one__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-new-pats-patients-one__row"
-  }, [_c('div', {
-    staticClass: "custom-new-pats-patients-one__right",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.img + ')'
-    })
-  }), _c('div', {
-    staticClass: "custom-new-pats-patients-one__left"
-  }, [_c('div', {
-    staticClass: "custom-new-pats-patients-one__text",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.text)
-    }
-  })])])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 682 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.props) ? _c('div', {
-    staticClass: "divider"
-  }, [_c('div', {
-    attrs: {
-      "id": "virtualconsultation"
-    }
-  }), _c('div', {
-    staticClass: "divider__container"
-  }, [_c('div', {
-    staticClass: "divider__text",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.text)
-    }
-  })])]) : _vm._e()
-},staticRenderFns: []}
-
-/***/ }),
-/* 683 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-about-meet-dr",
-    attrs: {
-      "id": "meet-dr"
-    }
-  }, [_c('div', {
-    staticClass: "custom-about-meet-dr__container"
-  }, [_c('div', {
-    staticClass: "custom-about-meet-dr__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-about-meet-dr__row"
-  }, [_c('div', {
-    staticClass: "custom-about-meet-dr__left"
-  }, [_c('div', {
-    staticClass: "custom-about-meet-dr__tab-container"
-  }, _vm._l((_vm.props.tabs), function(tab, i) {
-    return _c('div', {
-      key: i,
-      staticClass: "custom-about-meet-dr__tab",
-      class: {
-        "custom-about-meet-dr__tab--active": i === _vm.$store.state.types
-      },
-      on: {
-        "click": function($event) {
-          return _vm.showContent(i)
-        },
-        "mouseover": function($event) {
-          return _vm.showContent(i)
-        }
-      }
-    }, [_c('div', {
-      staticClass: "custom-about-meet-dr__icon-outer"
-    }, [_c('div', {
-      staticClass: "custom-about-meet-dr__icon-inner"
-    }, [_c('Icon', {
-      staticClass: "custom-about-meet-dr__icon",
-      class: "custom-about-meet-dr__icon--" + tab.label,
-      attrs: {
-        "name": tab.label
-      }
-    })], 1)])])
-  }), 0), _c('transition-group', {
-    staticClass: "custom-about-meet-dr__content-wrapper",
-    attrs: {
-      "name": "transition-meet-dr",
-      "tag": "div"
-    }
-  }, _vm._l((_vm.props.content), function(content, i) {
-    return _c('div', {
-      directives: [{
-        name: "show",
-        rawName: "v-show",
-        value: (i === _vm.$store.state.types),
-        expression: "i === $store.state.types"
-      }],
-      key: i,
-      staticClass: "custom-about-meet-dr__content-container"
-    }, [_c('div', {
-      staticClass: "custom-about-meet-dr__content-title",
-      domProps: {
-        "innerHTML": _vm._s(content.title)
-      }
-    }), _c('div', {
-      staticClass: "custom-about-meet-dr__content-text",
-      domProps: {
-        "innerHTML": _vm._s(content.text)
-      }
-    })])
-  }), 0)], 1), _c('div', {
-    staticClass: "custom-about-meet-dr__right",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.img + ')'
-    })
-  })])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 684 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-new-pats-first",
-    attrs: {
-      "id": "first"
-    }
-  }, [_c('div', {
-    staticClass: "custom-new-pats-first__container"
-  }, [_c('div', {
-    staticClass: "custom-new-pats-first__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-new-pats-first__text",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.text)
-    }
-  })])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 685 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "page-contact-us"
-  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('Header', {
-    attrs: {
-      "props": _vm.props.acf.custom_header
-    }
-  }), _c('FormSection', {
-    attrs: {
-      "props": _vm.props.acf.custom_form
-    }
-  }), _c('Divider'), _c('FunEvent'), _c('SponsorSection', {
-    attrs: {
-      "props": _vm.props.acf.custom_sponsor
-    }
-  })], 1) : _vm._e()], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 686 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "page-new-patients"
-  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('First', {
-    attrs: {
-      "props": _vm.props.acf.custom_first
-    }
-  }), _c('Financial', {
-    attrs: {
-      "props": _vm.props.acf.custom_financial
-    }
-  }), _c('Patients', {
-    attrs: {
-      "props": _vm.props.acf.custom_patients
-    }
-  }), _c('PatientsOne', {
-    attrs: {
-      "props": _vm.props.acf.custom_patients_one
-    }
-  })], 1) : _vm._e()], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 687 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "style-guide"
-  }, [_c('div', {
-    staticClass: "style-guide__container"
-  }, [_c('Icon', {
-    staticClass: "style-guide__logo",
-    attrs: {
-      "name": "matt_logo-01"
-    }
-  }), _c('div', {
-    staticClass: "style-guide__typography"
-  }, [_c('h1', [_vm._v("Header 1")]), _c('h1', {
-    staticClass: "h1-option"
-  }, [_vm._v("Header 1.b")]), _c('h2', [_vm._v("Header 2")]), _c('h2', {
-    staticClass: "h2-option",
-    staticStyle: {
-      "background": "black",
-      "display": "inline-block"
-    }
-  }, [_vm._v("Header 2.b")]), _c('h3', [_vm._v("Header 3")]), _c('h3', {
-    staticClass: "h3-option"
-  }, [_vm._v("Header 3.b")]), _c('br'), _c('p', [_vm._v("This is paragraph text. It is the text style that is in paragraphs ")]), _c('p', [_vm._v("and is all throughout the page in paragraphs.")]), _c('br'), _c('div', {
-    staticClass: "style-guide__icon-row"
-  }, [_c('Icon', {
-    staticClass: "style-guide__envelope",
-    attrs: {
-      "name": "envelope"
-    }
-  }), _c('Icon', {
-    staticClass: "style-guide__fb",
-    attrs: {
-      "name": "fb"
-    }
-  }), _c('Icon', {
-    staticClass: "style-guide__goog",
-    attrs: {
-      "name": "goog"
-    }
-  }), _c('Icon', {
-    staticClass: "style-guide__phone",
-    attrs: {
-      "name": "phone"
-    }
-  }), _c('Icon', {
-    staticClass: "style-guide__ig",
-    attrs: {
-      "name": "ig"
-    }
-  })], 1), _c('br'), _vm._v(" "), _c('div', {
-    staticClass: "style-guide__button-main"
-  }, [_c('span', [_vm._v("Make an Appointment")]), _c('Icon', {
-    staticClass: "style-guide__button-main-icon",
-    attrs: {
-      "name": "arrow"
-    }
-  })], 1), _c('br'), _c('div', {
-    staticClass: "style-guide__row"
-  }, [_c('div', {
-    staticClass: "style-guide__menu-container"
-  }, [_c('div', {
-    staticClass: "style-guide__menu"
-  }, [_vm._v("MENU")]), _c('div', {
-    staticClass: "style-guide__hamburger",
-    class: {
-      "style-guide__hamburger--active": _vm.active
-    },
-    on: {
-      "click": function($event) {
-        _vm.active = !_vm.active
-      }
-    }
-  }, [_c('span'), _c('span')])]), _c('div', {
-    staticClass: "style-guide__icons"
-  }, [_c('div', {
-    staticClass: "style-guide__icon-outer"
-  }, [_c('div', {
-    staticClass: "style-guide__icon-inner"
-  }, [_c('Icon', {
-    staticClass: "style-guide__icon-wrapper smile",
-    attrs: {
-      "name": "smile"
-    }
-  })], 1)]), _c('div', {
-    staticClass: "style-guide__icon-outer disabled"
-  }, [_c('div', {
-    staticClass: "style-guide__icon-inner disabled"
-  }, [_c('Icon', {
-    staticClass: "style-guide__icon-wrapper",
-    attrs: {
-      "name": "community"
-    }
-  })], 1)]), _c('div', {
-    staticClass: "style-guide__icon-outer active"
-  }, [_c('div', {
-    staticClass: "style-guide__icon-inner"
-  }, [_c('Icon', {
-    staticClass: "style-guide__icon-wrapper",
-    attrs: {
-      "name": "graduation"
-    }
-  })], 1)]), _c('div', {
-    staticClass: "style-guide__icon-outer"
-  }, [_c('div', {
-    staticClass: "style-guide__icon-inner"
-  }, [_c('Icon', {
-    staticClass: "style-guide__icon-wrapper kite",
-    attrs: {
-      "name": "kite"
-    }
-  })], 1)]), _c('div', {
-    staticClass: "style-guide__icon-outer"
-  }, [_c('div', {
-    staticClass: "style-guide__icon-inner"
-  }, [_c('Icon', {
-    staticClass: "style-guide__icon-wrapper",
-    attrs: {
-      "name": "party"
-    }
-  })], 1)]), _c('div', {
-    staticClass: "style-guide__icon-outer"
-  }, [_c('div', {
-    staticClass: "style-guide__icon-inner"
-  }, [_c('Icon', {
-    staticClass: "style-guide__icon-wrapper ribbon",
-    attrs: {
-      "name": "ribbon"
-    }
-  })], 1)]), _c('div', {
-    staticClass: "style-guide__icon-outer"
-  }, [_c('div', {
-    staticClass: "style-guide__icon-inner"
-  }, [_c('Icon', {
-    staticClass: "style-guide__icon-wrapper",
-    attrs: {
-      "name": "technology"
-    }
-  })], 1)]), _c('div', {
-    staticClass: "style-guide__icon-outer"
-  }, [_c('div', {
-    staticClass: "style-guide__icon-inner"
-  }, [_c('Icon', {
-    staticClass: "style-guide__icon-wrapper",
-    attrs: {
-      "name": "bowtie"
-    }
-  })], 1)]), _c('div', {
-    staticClass: "style-guide__icon-outer"
-  }, [_c('div', {
-    staticClass: "style-guide__icon-inner"
-  }, [_c('Icon', {
-    staticClass: "style-guide__icon-wrapper",
-    attrs: {
-      "name": "couch-plant"
-    }
-  })], 1)]), _c('div', {
-    staticClass: "style-guide__icon-outer"
-  }, [_c('div', {
-    staticClass: "style-guide__icon-inner"
-  }, [_c('Icon', {
-    staticClass: "style-guide__icon-wrapper star",
-    attrs: {
-      "name": "star"
-    }
-  })], 1)]), _c('div', {
-    staticClass: "style-guide__icon-outer"
-  }, [_c('div', {
-    staticClass: "style-guide__icon-inner"
-  }, [_c('Icon', {
-    staticClass: "style-guide__icon-wrapper",
-    attrs: {
-      "name": "shield"
-    }
-  })], 1)])])])])], 1), _c('div', {
-    staticClass: "style-guide__content-wrapper"
-  }, [_c('div', {
-    staticClass: "style-guide__shape",
-    domProps: {
-      "innerHTML": _vm._s(_vm.svg)
-    }
-  }), _vm._m(0)])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "style-guide__text-container"
-  }, [_c('div', {
-    staticClass: "style-guide__text"
-  }, [_c('h2', [_vm._v("Why Not")])]), _c('div', {
-    staticClass: "style-guide__right-container"
-  }, [_c('div', {
-    staticClass: "item"
-  }), _c('div', {
-    staticClass: "item"
-  }), _c('div', {
-    staticClass: "item"
-  }), _c('div', {
-    staticClass: "item"
-  }), _c('div', {
-    staticClass: "item"
-  })])])
-}]}
-
-/***/ }),
-/* 688 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "pages-home"
-  }, [(_vm.props) ? _c('div', [_c('Welcome', {
-    attrs: {
-      "props": _vm.props.acf.custom_welcome
-    }
-  }), _c('Why', {
-    attrs: {
-      "props": _vm.props.acf.custom_why
-    }
-  }), _c('Testimonials', {
-    attrs: {
-      "props": _vm.props.acf.custom_testimonials
-    }
-  }), _c('Retainers', {
-    attrs: {
-      "props": _vm.props.acf.custom_retainers
-    }
-  }), _c('CustomHomeReview', {
-    attrs: {
-      "props": _vm.props.acf.custom_reviews
-    }
-  }), _c('Divider')], 1) : _vm._e()])
-},staticRenderFns: []}
-
-/***/ }),
-/* 689 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.props) ? _c('div', {
-    staticClass: "custom-thank-you"
-  }, [_c('div', {
-    staticClass: "custom-thank-you__content"
-  }, [_c('div', {
-    staticClass: "custom-thank-you__text",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.content)
-    }
-  })])]) : _vm._e()
-},staticRenderFns: []}
-
-/***/ }),
-/* 690 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "page-about-us"
-  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('MeetDr', {
-    attrs: {
-      "props": _vm.props.acf.custom_meet_dr
-    }
-  }), _c('MeetDr1', {
-    attrs: {
-      "props": _vm.props.acf.custom_meet_dr1
-    }
-  }), _c('MeetTeam', {
-    attrs: {
-      "props": _vm.props.acf.custom_team
-    }
-  }), _c('Office', {
-    attrs: {
-      "props": _vm.props.acf.custom_office
-    }
-  })], 1) : _vm._e()], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 691 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "page-mattiacio-difference"
-  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('What', {
-    attrs: {
-      "props": _vm.props.acf.custom_what
-    }
-  }), _c('Divider')], 1) : _vm._e()], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 692 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "loader-overlay"
-  }, [_c('Icon', {
-    staticClass: "loader-overlay__icon",
-    attrs: {
-      "name": "matt_logo-01"
-    }
-  }), _c('div', {
-    staticClass: "loader"
-  })], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 693 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.props) ? _c('div', {
-    staticClass: "nav-desktop",
-    class: {
-      "nav-desktop--scrolling": _vm.$store.state.nav, "nav-desktop--notransparent": _vm.$route.path === "/"
-    }
-  }, [_c('div', {
-    staticClass: "nav-desktop__container"
-  }, [_c('div', {
-    staticClass: "nav-desktop__item"
-  }, [_c('div', {
-    staticClass: "nav-desktop__dropdown",
-    class: {
-      "nav-desktop__dropdown--active": _vm.$store.state.menu
-    },
-    on: {
-      "click": _vm.dropdown
-    }
-  }, [_c('span', [_vm._v("GET IN TOUCH")]), _c('Icon', {
-    staticClass: "nav-desktop__dropdown-icon",
-    class: {
-      "nav-desktop__dropdown-icon--open": _vm.open
-    },
-    attrs: {
-      "name": "triangle"
-    }
-  }), _c('transition', {
-    attrs: {
-      "name": "fade-in"
-    }
-  }, [_c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.open),
-      expression: "open"
-    }],
-    staticClass: "nav-desktop__dropdown-container"
-  }, [_c('a', {
-    staticClass: "nav-desktop__dropdown-phone",
-    attrs: {
-      "href": _vm.props.acf.social_links[0].href
-    }
-  }, [_c('Icon', {
-    staticClass: "nav-desktop__phone",
-    attrs: {
-      "name": "phone"
-    }
-  }), _c('p', [_vm._v("585. 742. 1050  ")])], 1), _c('a', {
-    staticClass: "nav-desktop__dropdown-phone-emergency",
-    attrs: {
-      "href": _vm.props.acf.phone.href
-    }
-  }, [_c('Icon', {
-    staticClass: "nav-desktop__phone-emergency",
-    attrs: {
-      "name": "bandaid"
-    }
-  }), _c('p', [_vm._v(_vm._s(_vm.props.acf.phone.label))])], 1), _c('a', {
-    staticClass: "nav-desktop__dropdown-map",
-    attrs: {
-      "href": _vm.props.acf.address.href,
-      "target": "_blank"
-    }
-  }, [_c('Icon', {
-    staticClass: "nav-desktop__map",
-    attrs: {
-      "name": "location"
-    }
-  }), _c('p', [_vm._v("MAP  ")])], 1), _c('a', {
-    staticClass: "nav-desktop__dropdown-email",
-    attrs: {
-      "href": _vm.props.acf.social_links[1].href
-    }
-  }, [_c('Icon', {
-    staticClass: "nav-desktop__email",
-    attrs: {
-      "name": "envelope"
-    }
-  }), _c('p', [_vm._v("EMAIL US")])], 1)])])], 1)]), _c('div', {
-    staticClass: "nav-desktop__item"
-  }, [_c('div', {
-    directives: [{
-      name: "scroll-to",
-      rawName: "v-scroll-to",
-      value: ({
-        el: "#head",
-        container: "body",
-        duration: 750,
-        easing: "ease-in-out",
-        x: false,
-        y: true
-      }),
-      expression: "{el: \"#head\", container: \"body\", duration: 750, easing: \"ease-in-out\", x: false, y: true}"
-    }],
-    staticClass: "nav-desktop__logo-container",
-    on: {
-      "click": _vm.closeMenu
-    }
-  }, [_c('Icon', {
-    staticClass: "nav-desktop__logo",
-    class: {
-      "nav-desktop__logo--active": _vm.$store.state.menu
-    },
-    attrs: {
-      "name": "matt_logo-01"
-    }
-  })], 1)]), _c('div', {
-    staticClass: "nav-desktop__item"
-  }, [_c('div', {
-    directives: [{
-      name: "scroll-to",
-      rawName: "v-scroll-to",
-      value: ({
-        el: "#head",
-        container: "body",
-        duration: 750,
-        easing: "ease-in-out",
-        x: false,
-        y: true
-      }),
-      expression: "{el: \"#head\", container: \"body\", duration: 750, easing: \"ease-in-out\", x: false, y: true}"
-    }],
-    staticClass: "nav-desktop__menu-container",
-    on: {
-      "click": _vm.toggleMenu
-    }
-  }, [_c('div', {
-    staticClass: "nav-desktop__menu"
-  }, [_vm._v("MENU")]), _c('div', {
-    staticClass: "nav-desktop__hamburger",
-    class: {
-      "nav-desktop__hamburger--active": _vm.$store.state.menu
-    }
-  }, [_c('span'), _c('span')])])])]), _c('Bottom')], 1) : _vm._e()
-},staticRenderFns: []}
-
-/***/ }),
-/* 694 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.$route.path !== '/accessibility') ? _c('div', {
-    staticClass: "base-access"
-  }, [_c('div', {
-    staticClass: "base-access__container"
-  }, [_c('p', {
-    domProps: {
-      "innerHTML": _vm._s((_vm.companyName + " Accessibility Statement"))
-    }
-  }), _c('p', {
-    domProps: {
-      "innerHTML": _vm._s((_vm.companyName + " is committed to facilitating the accessibility and usability of its website, " + _vm.domain + ", for everyone. " + _vm.companyName + " aims to comply with all applicable standards, including the World Wide Web Consortiums Web Content Accessibility Guidelines 2.0 up to Level AA (WCAG 2.0 AA). " + _vm.companyName + " is proud of the efforts that we have completed and that are in-progress to ensure that our website is accessible to everyone."))
-    }
-  }), _c('p', {
-    domProps: {
-      "innerHTML": _vm._s(("We highly recommend using the userway accessibility widget linked in the footer, but should you experience any difficulty in accessing any part of this website, please feel free to " + (_vm.phone ? "call us at " + _vm.phone : "") + " " + (_vm.phone && _vm.email ? "or" : "") + " " + (_vm.email ? "email us at " + _vm.email : "") + " and we will work with you to provide the information or service you seek through an alternate communication method that is accessible for you consistent with applicable law (for example, through telephone support)."))
-    }
-  })])]) : _vm._e()
-},staticRenderFns: []}
-
-/***/ }),
-/* 695 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.props) ? _c('div', {
-    staticClass: "divider"
-  }, [_c('div', {
-    staticClass: "divider__container"
-  }, [_vm._m(0), _c('a', {
-    staticClass: "divider__phone",
-    attrs: {
-      "href": _vm.props.acf.phone.href
-    }
-  }, [_c('span', [_vm._v(_vm._s(_vm.props.acf.phone.label))])])])]) : _vm._e()
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "divider__text"
-  }, [_vm._v("we're here for you when you need us even after hours"), _c('br'), _vm._v("Call or text us anytime")])
-}]}
-
-/***/ }),
-/* 696 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-contact-form-section",
-    attrs: {
-      "id": "form"
-    }
-  }, [_c('div', {
-    staticClass: "custom-contact-form-section__container"
-  }, [_c('div', {
-    staticClass: "custom-contact-form-section__form-container"
-  }, [_c('Form')], 1), _c('div', {
-    staticClass: "custom-contact-form-section__contact"
-  }, [_c('div', {
-    staticClass: "custom-contact-form-section__hours",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.hours)
-    }
-  }), _c('Icon', {
-    staticClass: "custom-contact-form-section__logo",
-    attrs: {
-      "name": "matt_logo_small"
-    }
-  }), _c('div', {
-    staticClass: "custom-contact-form-section__address",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.address)
-    }
-  }), _c('div', {
-    staticClass: "custom-contact-form-section__phones",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.phones)
-    }
-  })], 1)])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 697 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-home-welcome"
-  }, [_c('div', {
-    staticClass: "custom-home-welcome__container"
-  }, [_c('div', {
-    staticClass: "custom-home-welcome__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-home-welcome__subtitle",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.subtitle)
-    }
-  }), _c('div', {
-    staticClass: "custom-home-welcome__text-container"
-  }, [_c('div', {
-    staticClass: "custom-home-welcome__text",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.text)
-    }
-  })])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 698 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.props) ? _c('div', {
-    staticClass: "custom-platinum"
-  }, [_c('div', {
-    staticClass: "custom-platinum__container"
-  }, [_c('div', {
-    staticClass: "custom-platinum__header",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.acf.platinum.header_img + ')'
-    })
-  }, [_c('div', {
-    staticClass: "custom-platinum__icon-outer"
-  }, [_c('div', {
-    staticClass: "custom-platinum__icon-inner"
-  }, [_c('Icon', {
-    staticClass: "custom-platinum__icon custom-platinum__icon--shield",
-    attrs: {
-      "name": "shield"
-    }
-  })], 1)]), _c('div', {
-    staticClass: "custom-platinum__text",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.platinum.text)
-    }
-  })]), _c('div', {
-    staticClass: "custom-platinum__table"
-  }, [_c('div', {
-    staticClass: "custom-platinum__table-header"
-  }, [_c('div', {
-    staticClass: "custom-platinum__table-head-left",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.platinum.table_head)
-    }
-  }), _vm._m(0)]), _c('div', {
-    staticClass: "custom-platinum__rows-container"
-  }, _vm._l((_vm.props.acf.platinum.rows), function(row, i) {
-    return _c('div', {
-      staticClass: "custom-platinum__row"
-    }, [_c('div', {
-      staticClass: "custom-platinum__row-text",
-      domProps: {
-        "innerHTML": _vm._s(row.text)
-      }
-    }), (row.r_four_el) ? _c('div', {
-      staticClass: "custom-platinum__r-four-el"
-    }, [_c('Icon', {
-      staticClass: "custom-platinum__r-four-check",
-      attrs: {
-        "name": "check"
-      }
-    })], 1) : _vm._e(), (row.platinum) ? _c('div', {
-      staticClass: "custom-platinum__platinum"
-    }, [_c('Icon', {
-      staticClass: "custom-platinum__platinum-check",
-      attrs: {
-        "name": "check"
-      }
-    })], 1) : _vm._e()])
-  }), 0)])])]) : _vm._e()
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-platinum__table-head-right"
-  }, [_c('div', {
-    staticClass: "custom-platinum__r-four-el-head"
-  }, [_vm._v("r4l")]), _c('div', {
-    staticClass: "custom-platinum__platinum-head"
-  }, [_vm._v("r4l platinum")])])
-}]}
-
-/***/ }),
-/* 699 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.props) ? _c('div', {
-    staticClass: "menu",
-    class: {
-      "menu--family-fun-event": _vm.$route.path.includes("/mouth-guard-registration")
-    }
-  }, [_c('div', {
-    staticClass: "menu__overlay"
-  }, [_c('transition', {
-    attrs: {
-      "name": "title-fade"
-    }
-  }, [(!_vm.$store.state.menu && (_vm.$route.path != "/" && !_vm.$route.path.includes("/covid-19-updates") && !_vm.$route.path.includes("/virtual-services") && !_vm.$route.path.includes("/virtual-consultation") && !_vm.$route.path.includes("/7-and-up") && !_vm.$route.path.includes("/videos") && !_vm.$route.path.includes("/about-us"))) ? _c('div', {
-    staticClass: "menu__title",
-    class: {
-      "menu__title--white": _vm.$route.path === "/treatments" || _vm.$route.path === "/mattiacio-difference", "menu__title--family-fun-event": _vm.$route.path.includes("/mouth-guard-registration")
-    }
-  }, [_vm._v(_vm._s(_vm.$route.name))]) : _vm._e()]), (_vm.$route.path.includes("/virtual-services")) ? _c('div', {
-    staticClass: "menu__appt",
-    class: {
-      "menu__appt--is-visible": !_vm.$store.state.menu && _vm.$route.path != "/contact-us" && _vm.$route.path != "/", "menu__appt--white": _vm.$route.name != "Treatments"
-    },
-    on: {
-      "click": _vm.makeAppt
-    }
-  }, [_c('span', [_vm._v("Make an Appointment")]), _c('Icon', {
-    staticClass: "menu__appt-icon",
-    attrs: {
-      "name": "arrow"
-    }
-  })], 1) : _vm._e()], 1), _c('div', {
-    staticClass: "menu__container",
-    class: {
-      "menu__mouth-guard": _vm.$route.path.includes("/mouth-guard-registration")
-    }
-  }, _vm._l((_vm.links), function(link, i) {
-    return (link.navigation) ? _c('div', {
-      key: i,
-      staticClass: "menu__link-wrapper",
-      class: {
-        "active": _vm.$route.name === link.name && !_vm.$store.state.menu, "menu__link-wrapper--current": _vm.$route.name === link.name, "not-active": _vm.$route.name != link.name && _vm.$store.state.menu
-      },
-      style: (_vm.styleObject)
-    }, [(link.name === "About Us") ? _c('div', {
-      staticClass: "menu__link-container"
-    }, [_c('video', {
-      staticClass: "menu__link-video",
-      attrs: {
-        "loop": "loop",
-        "muted": "muted",
-        "autoplay": "autoplay"
-      },
-      domProps: {
-        "muted": true
-      }
-    }, [_c('source', {
-      attrs: {
-        "src": _vm.props.acf.hero_video,
-        "type": "video/mp4"
-      }
-    })]), _c('div', {
-      staticClass: "menu__link-overlay"
-    }), _c('div', {
-      staticClass: "menu__link-expanded-overlay"
-    }), _c('div', {
-      staticClass: "menu__link",
-      on: {
-        "click": function($event) {
-          return _vm.closeMenu(link)
-        }
-      }
-    }, [_vm._v(_vm._s(link.name))]), (link.children) ? _c('div', {
-      staticClass: "menu__submenu"
-    }, _vm._l((link.children), function(item, i) {
-      return _c('div', {
-        key: i,
-        staticClass: "menu__submenu-link",
-        domProps: {
-          "innerHTML": _vm._s(item.label)
-        },
-        on: {
-          "click": function($event) {
-            return _vm.closeMenu(item)
-          }
-        }
-      })
-    }), 0) : _vm._e()]) : _vm._e(), (link.name != "About Us") ? _c('div', {
-      staticClass: "menu__link-container",
-      class: {
-        "menu__link-container--disabled": !_vm.$store.state.menu
-      },
-      style: ({
-        backgroundImage: 'url(' + link.url + ')'
-      })
-    }, [_c('div', {
-      staticClass: "menu__link-overlay"
-    }), _c('div', {
-      staticClass: "menu__link-expanded-overlay"
-    }), _c('div', {
-      staticClass: "menu__link",
-      on: {
-        "click": function($event) {
-          return _vm.closeMenu(link)
-        }
-      }
-    }, [_vm._v(_vm._s(link.name))]), (link.children) ? _c('div', {
-      staticClass: "menu__submenu"
-    }, [_vm._l((link.children), function(item, i) {
-      return _c('div', {
-        key: i,
-        staticClass: "menu__submenu-link",
-        domProps: {
-          "innerHTML": _vm._s(item.label)
-        },
-        on: {
-          "click": function($event) {
-            return _vm.closeMenu(item)
-          }
-        }
-      })
-    }), _vm._l((link.children), function(item, i) {
-      return (link.name === "Contact Us" || link.name === "New Patients") ? _c('a', {
-        staticClass: "menu__submenu-link",
-        attrs: {
-          "href": item.path,
-          "target": "_blank"
-        }
-      }, [_vm._v(_vm._s(item.item))]) : _vm._e()
-    })], 2) : _vm._e()]) : _vm._e()]) : _vm._e()
-  }), 0), _c('div', {
-    staticClass: "menu__social-links",
-    class: {
-      "active": _vm.$store.state.menu
-    }
-  }, _vm._l((_vm.props.acf.social_links), function(link, i) {
-    return _c('a', {
-      staticClass: "menu__social-link",
-      attrs: {
-        "href": link.href,
-        "target": "_blank"
-      }
-    }, [_c('Icon', {
-      class: "menu__" + link.label,
-      attrs: {
-        "name": link.icon
-      }
-    })], 1)
-  }), 0)]) : _vm._e()
-},staticRenderFns: []}
-
-/***/ }),
-/* 700 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-treatments-invisalign",
-    attrs: {
-      "id": "invisalign"
-    }
-  }, [_c('div', {
-    staticClass: "custom-treatments-invisalign__container"
-  }, [_c('div', {
-    staticClass: "custom-treatments-invisalign__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-treatments-invisalign__row"
-  }, [_c('div', {
-    staticClass: "custom-treatments-invisalign__left"
-  }, [_c('Icon', {
-    staticClass: "custom-treatments-invisalign__logo",
-    attrs: {
-      "name": "invisalign"
-    }
-  }), _c('div', {
-    staticClass: "custom-treatments-invisalign__text",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.text)
-    }
-  }), _c('div', {
-    staticClass: "custom-treatments-invisalign__read-more",
-    on: {
-      "click": function($event) {
-        return _vm.toInvisalign()
-      }
-    }
-  }, [_vm._v("Read More")])], 1), _c('div', {
-    staticClass: "custom-treatments-invisalign__right",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.img + ')'
-    })
-  })])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 701 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-home-why"
-  }, [_c('div', {
-    staticClass: "custom-home-why__wrapper"
-  }, [_c('div', {
-    staticClass: "custom-home-why__shape",
-    domProps: {
-      "innerHTML": _vm._s(_vm.shape)
-    }
-  }), _c('div', {
-    staticClass: "custom-home-why__container"
-  }, [_c('div', {
-    staticClass: "custom-home-why__left"
-  }, [_c('h2', [_vm._v(_vm._s(_vm.props.title))])]), _c('div', {
-    staticClass: "custom-home-why__right"
-  }, _vm._l((_vm.props.cards), function(card, i) {
-    return _c('div', {
-      key: i,
-      staticClass: "custom-home-why__item"
-    }, [_c('div', {
-      staticClass: "custom-home-why__card-title",
-      domProps: {
-        "innerHTML": _vm._s(card.title)
-      }
-    }), _c('div', {
-      staticClass: "custom-home-why__card-text",
-      domProps: {
-        "innerHTML": _vm._s(card.text)
-      }
-    })])
-  }), 0)])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 702 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "contact-interview-form"
-  }, [_c('form', {
-    staticClass: "contact-interview-form__form",
-    attrs: {
-      "method": "post"
-    },
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        return _vm.validate($event)
-      }
-    }
-  }, [_c('div', {
-    staticClass: "contact-interview-form__group"
-  }, [_c('label', {
-    staticClass: "contact-interview-form__label"
-  }, [_vm._v("Did Mattiacio Orthodontics meet or exceed your expectations? Please explain.")]), _c('textarea', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.message1),
-      expression: "message1"
-    }],
-    staticClass: "contact-interview-form__textarea",
-    class: {
-      'contact-interview-form__textarea--error': _vm.errors.has('message1')
-    },
-    attrs: {
-      "name": "message1",
-      "type": "textarea",
-      "rows": "2"
-    },
-    domProps: {
-      "value": (_vm.message1)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.message1 = $event.target.value
-      }
-    }
-  })]), _c('div', {
-    staticClass: "contact-interview-form__group"
-  }, [_c('label', {
-    staticClass: "contact-interview-form__label"
-  }, [_vm._v("Was there anything we could have done better to improve your overall experience?")]), _c('textarea', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.message2),
-      expression: "message2"
-    }],
-    staticClass: "contact-interview-form__textarea",
-    class: {
-      'contact-interview-form__textarea--error': _vm.errors.has('message2')
-    },
-    attrs: {
-      "name": "message2",
-      "type": "textarea",
-      "rows": "2"
-    },
-    domProps: {
-      "value": (_vm.message2)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.message2 = $event.target.value
-      }
-    }
-  })]), _c('div', {
-    staticClass: "contact-interview-form__group"
-  }, [_c('label', {
-    staticClass: "contact-interview-form__label"
-  }, [_vm._v("What was the best part about your experience with Mattiacio Orthodontics?")]), _c('textarea', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.message3),
-      expression: "message3"
-    }],
-    staticClass: "contact-interview-form__textarea",
-    class: {
-      'contact-interview-form__textarea--error': _vm.errors.has('message3')
-    },
-    attrs: {
-      "name": "message3",
-      "type": "textarea",
-      "rows": "2"
-    },
-    domProps: {
-      "value": (_vm.message3)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.message3 = $event.target.value
-      }
-    }
-  })]), _c('div', {
-    staticClass: "contact-interview-form__group"
-  }, [_c('label', {
-    staticClass: "contact-interview-form__label"
-  }, [_vm._v("Would you have confidence in recommending Mattiacio Orthodontics to a friend or family member for their orthodontic care?")]), _c('div', {
-    staticClass: "contact-interview-form__radio-group"
+  }, [_vm._v("Full name is required.")])])]), _c('div', {
+    staticClass: "contact-form__group"
   }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.radiographs),
-      expression: "radiographs"
+      value: (_vm.phone),
+      expression: "phone"
     }, {
       name: "validate",
       rawName: "v-validate",
-      value: ('required'),
-      expression: "'required'"
+      value: ({
+        required: true,
+        regex: /^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$/
+      }),
+      expression: "{required: true, regex: /^\\D?(\\d{3})\\D?\\D?(\\d{3})\\D?(\\d{4})$/}"
     }],
-    staticClass: "contact-interview-form__input--radio",
+    staticClass: "contact-form__input",
+    class: {
+      'input': true, 'contact-form__input--error': _vm.errors.has('phone')
+    },
     attrs: {
-      "name": "radiographs",
-      "value": "Yes",
-      "type": "radio"
+      "name": "phone",
+      "type": "phone",
+      "placeholder": "Phone"
     },
     domProps: {
-      "checked": _vm._q(_vm.radiographs, "Yes")
+      "value": (_vm.phone)
     },
     on: {
-      "change": function($event) {
-        _vm.radiographs = "Yes"
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.phone = $event.target.value
       }
     }
-  }), _c('span', {
-    staticClass: "contact-interview-form__radio-overlay",
-    class: {
-      'input': true, 'contact-interview-form__radio-overlay--error': _vm.errors.has('radiographs')
-    }
-  }), _c('label', {
-    staticClass: "contact-interview-form__label"
-  }, [_vm._v("Yes, I would like to make a referral")])]), _c('div', {
-    staticClass: "contact-interview-form__radio-group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.radiographs),
-      expression: "radiographs"
-    }],
-    staticClass: "contact-interview-form__input--radio",
-    attrs: {
-      "name": "radiographs",
-      "value": "No",
-      "type": "radio"
-    },
-    domProps: {
-      "checked": _vm._q(_vm.radiographs, "No")
-    },
-    on: {
-      "change": function($event) {
-        _vm.radiographs = "No"
-      }
-    }
-  }), _c('span', {
-    staticClass: "contact-interview-form__radio-overlay",
-    class: {
-      'input': true, 'contact-interview-form__radio-overlay--error': _vm.errors.has('radiographs')
-    }
-  }), _c('label', {
-    staticClass: "contact-interview-form__label"
-  }, [_vm._v("No, I'd rather not")])]), _c('div', {
-    staticClass: "contact-interview-form__error-container"
+  }), _c('div', {
+    staticClass: "contact-form__error-container"
   }, [_c('span', {
     directives: [{
       name: "show",
       rawName: "v-show",
-      value: (_vm.errors.has('radiographs')),
-      expression: "errors.has('radiographs')"
+      value: (_vm.errors.has('phone')),
+      expression: "errors.has('phone')"
     }]
-  }, [_vm._v("Please select one Option.")])])]), (_vm.radiographs === 'Yes') ? _c('div', {
-    staticClass: "contact-interview-form__group"
-  }, [_c('label', {
-    staticClass: "contact-interview-form__label"
-  }, [_vm._v("Thank you for your willingness to spread the word about Mattiacio Orthodontics! To express our appreciation, we'd like to offer you a $25 Visa Gift Card for providing the contact information of a family member (non-immediate) or friend that you trust us to take great care of. It's the best compliment we could EVER receive. *If you do not wish to enter a name, simply leave the form blank and submit*")])]) : _vm._e(), (_vm.radiographs === 'Yes') ? _c('div', {
-    staticClass: "contact-interview-form__group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.firstname),
-      expression: "firstname"
-    }],
-    staticClass: "contact-interview-form__input",
-    class: {
-      'input': true, 'contact-interview-form__input--error': _vm.errors.has('first-name')
-    },
-    attrs: {
-      "name": "first-name",
-      "type": "text",
-      "placeholder": "First Name"
-    },
-    domProps: {
-      "value": (_vm.firstname)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.firstname = $event.target.value
-      }
-    }
-  })]) : _vm._e(), (_vm.radiographs === 'Yes') ? _c('div', {
-    staticClass: "contact-interview-form__group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.lastname),
-      expression: "lastname"
-    }],
-    staticClass: "contact-interview-form__input",
-    class: {
-      'input': true, 'contact-interview-form__input--error': _vm.errors.has('last-name')
-    },
-    attrs: {
-      "name": "last-name",
-      "type": "text",
-      "placeholder": "Last Name"
-    },
-    domProps: {
-      "value": (_vm.lastname)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.lastname = $event.target.value
-      }
-    }
-  })]) : _vm._e(), (_vm.radiographs === 'Yes') ? _c('div', {
-    staticClass: "contact-interview-form__group"
+  }, [_vm._v("Valid phone number is required.")])])]), _c('div', {
+    staticClass: "contact-form__group"
   }, [_c('input', {
     directives: [{
       name: "model",
@@ -9150,16 +11062,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, {
       name: "validate",
       rawName: "v-validate",
-      value: ('required'),
-      expression: "'required'"
+      value: ('required|email'),
+      expression: "'required|email'"
     }],
-    staticClass: "contact-interview-form__input",
+    staticClass: "contact-form__input",
     class: {
-      'input': true, 'contact-interview-form__input--error': _vm.errors.has('email')
+      'input': true, 'contact-form__input--error': _vm.errors.has('email')
     },
     attrs: {
       "name": "email",
-      "placeholder": "Email / Phone #"
+      "placeholder": "Email Address"
     },
     domProps: {
       "value": (_vm.email)
@@ -9171,7 +11083,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   }), _c('div', {
-    staticClass: "contact-interview-form__error-container"
+    staticClass: "contact-form__error-container"
   }, [_c('span', {
     directives: [{
       name: "show",
@@ -9179,1770 +11091,115 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       value: (_vm.errors.has('email')),
       expression: "errors.has('email')"
     }]
-  }, [_vm._v("Email/phone is required.")])])]) : _vm._e(), (_vm.radiographs === 'Yes') ? _c('div', {
-    staticClass: "contact-interview-form__group"
+  }, [_vm._v("Valid email is required.")])])]), _c('div', {
+    staticClass: "contact-form__group"
+  }, [_c('p', [_vm._v("First Time Patient?")]), _c('div', {
+    staticClass: "contact-form__radio-group"
   }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.referby),
-      expression: "referby"
+      value: (_vm.newPatient),
+      expression: "newPatient"
+    }],
+    staticClass: "contact-form__input--radio",
+    attrs: {
+      "name": "newPatient",
+      "value": "Yes",
+      "type": "radio"
+    },
+    domProps: {
+      "checked": _vm._q(_vm.newPatient, "Yes")
+    },
+    on: {
+      "change": function($event) {
+        _vm.newPatient = "Yes"
+      }
+    }
+  }), _c('span', {
+    staticClass: "contact-form__radio-overlay"
+  }), _c('label', {
+    staticClass: "contact-form__label"
+  }, [_vm._v("Yes")])]), _c('div', {
+    staticClass: "contact-form__radio-group"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.newPatient),
+      expression: "newPatient"
+    }],
+    staticClass: "contact-form__input--radio",
+    attrs: {
+      "name": "newPatient",
+      "value": "No",
+      "type": "radio"
+    },
+    domProps: {
+      "checked": _vm._q(_vm.newPatient, "No")
+    },
+    on: {
+      "change": function($event) {
+        _vm.newPatient = "No"
+      }
+    }
+  }), _c('span', {
+    staticClass: "contact-form__radio-overlay"
+  }), _c('label', {
+    staticClass: "contact-form__label"
+  }, [_vm._v("No")])])]), _c('div', {
+    staticClass: "contact-form__group"
+  }, [_c('textarea', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.message),
+      expression: "message"
     }, {
       name: "validate",
       rawName: "v-validate",
       value: ('required'),
       expression: "'required'"
     }],
-    staticClass: "contact-interview-form__input",
+    staticClass: "contact-form__textarea",
     class: {
-      'input': true, 'contact-interview-form__input--error': _vm.errors.has('referby')
+      'contact-form__textarea--error': _vm.errors.has('message')
     },
     attrs: {
-      "name": "referby",
-      "type": "text",
-      "placeholder": "Referred by"
+      "name": "message",
+      "type": "textarea",
+      "rows": "4",
+      "placeholder": "Message"
     },
     domProps: {
-      "value": (_vm.referby)
+      "value": (_vm.message)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.referby = $event.target.value
+        _vm.message = $event.target.value
       }
     }
   }), _c('div', {
-    staticClass: "contact-interview-form__error-container"
+    staticClass: "contact-form__error-container"
   }, [_c('span', {
     directives: [{
       name: "show",
       rawName: "v-show",
-      value: (_vm.errors.has('referby')),
-      expression: "errors.has('referby')"
+      value: (_vm.errors.has('message')),
+      expression: "errors.has('message')"
     }]
-  }, [_vm._v("Refer By field is required.")])])]) : _vm._e(), _c('div', {
-    staticClass: "contact-interview-form__button-group"
+  }, [_vm._v("Send us a message!")])])]), _c('div', {
+    staticClass: "contact-form__button-group"
   }, [_c('button', {
-    staticClass: "contact-interview-form__submit-button",
+    staticClass: "contact-form__submit-button",
     attrs: {
       "type": "submit",
       "disabled": _vm.formSubmitted
     }
   }, [_c('span', [_vm._v("Submit")])]), (_vm.formSubmitted) ? _c('div', {
-    staticClass: "contact-interview-form__spinner"
+    staticClass: "contact-form__spinner"
   }, [_c('span', [_vm._v("Sending")])]) : _vm._e()])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 703 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "icon-container",
-    domProps: {
-      "innerHTML": _vm._s(_vm.svg)
-    }
-  })
-},staticRenderFns: []}
-
-/***/ }),
-/* 704 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "pages-adminlinks"
-  }, [_c('div', {
-    staticClass: "pages-adminlinks__content"
-  }, [(_vm.props.acf.page_title) ? _c('h2', {
-    staticClass: "pages-adminlinks__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.page_title)
-    }
-  }) : _vm._e(), _c('div', {
-    staticClass: "pages-adminlinks__list"
-  }, _vm._l((_vm.props.acf.page_links_lists), function(lists, i) {
-    return _c('div', {
-      staticClass: "pages-adminlinks__listitem"
-    }, [_c('router-link', {
-      attrs: {
-        "to": lists.links
-      },
-      domProps: {
-        "innerHTML": _vm._s("https://www.mattiacioortho.com" + lists.links)
-      }
-    })], 1)
-  }), 0)])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 705 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.props) ? _c('div', {
-    staticClass: "custom-mouth-guard-thank-you"
-  }, [_c('div', {
-    staticClass: "custom-mouth-guard-thank-you__content"
-  }, [_c('div', {
-    staticClass: "custom-mouth-guard-thank-you__text",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.content)
-    }
-  })])]) : _vm._e()
-},staticRenderFns: []}
-
-/***/ }),
-/* 706 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "sponsor-form"
-  }, [_c('form', {
-    staticClass: "sponsor-form__form",
-    attrs: {
-      "method": "post"
-    },
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        return _vm.validate($event)
-      }
-    }
-  }, [_c('div', {
-    staticClass: "sponsor-form__group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.fullName),
-      expression: "fullName"
-    }, {
-      name: "validate",
-      rawName: "v-validate",
-      value: ('required|alpha_spaces'),
-      expression: "'required|alpha_spaces'"
-    }],
-    staticClass: "sponsor-form__input",
-    class: {
-      'input': true, 'sponsor-form__input--error': _vm.errors.has('full-name')
-    },
-    attrs: {
-      "name": "full-name",
-      "type": "text",
-      "placeholder": "Your Name"
-    },
-    domProps: {
-      "value": (_vm.fullName)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.fullName = $event.target.value
-      }
-    }
-  }), _c('div', {
-    staticClass: "sponsor-form__error-container"
-  }, [_c('span', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('full-name')),
-      expression: "errors.has('full-name')"
-    }]
-  }, [_vm._v("Your name is required.")])])]), _c('div', {
-    staticClass: "sponsor-form__group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.patientName),
-      expression: "patientName"
-    }],
-    staticClass: "sponsor-form__input",
-    attrs: {
-      "name": "patient-name",
-      "type": "text",
-      "placeholder": "Patient's Name"
-    },
-    domProps: {
-      "value": (_vm.patientName)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.patientName = $event.target.value
-      }
-    }
-  }), _c('div', {
-    staticClass: "sponsor-form__error-container"
-  })]), _c('div', {
-    staticClass: "sponsor-form__group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.contactInfo),
-      expression: "contactInfo"
-    }, {
-      name: "validate",
-      rawName: "v-validate",
-      value: ('required'),
-      expression: "'required'"
-    }],
-    staticClass: "sponsor-form__input",
-    class: {
-      'input': true, 'sponsor-form__input--error': _vm.errors.has('contact-info')
-    },
-    attrs: {
-      "name": "contact-info",
-      "type": "text",
-      "placeholder": "Email or Phone"
-    },
-    domProps: {
-      "value": (_vm.contactInfo)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.contactInfo = $event.target.value
-      }
-    }
-  }), _c('div', {
-    staticClass: "sponsor-form__error-container"
-  }, [_c('span', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('contac-info')),
-      expression: "errors.has('contac-info')"
-    }]
-  }, [_vm._v("Phone or Email is required.")])])]), _c('div', {
-    staticClass: "sponsor-form__group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.eventName),
-      expression: "eventName"
-    }],
-    staticClass: "sponsor-form__input",
-    attrs: {
-      "name": "event-name",
-      "type": "text",
-      "placeholder": "Event"
-    },
-    domProps: {
-      "value": (_vm.eventName)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.eventName = $event.target.value
-      }
-    }
-  }), _c('div', {
-    staticClass: "sponsor-form__error-container"
-  })]), _c('div', {
-    staticClass: "sponsor-form__group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.date),
-      expression: "date"
-    }],
-    staticClass: "sponsor-form__input",
-    attrs: {
-      "name": "date",
-      "placeholder": "Date of Event",
-      "type": "date"
-    },
-    domProps: {
-      "value": (_vm.date)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.date = $event.target.value
-      }
-    }
-  }), _c('div', {
-    staticClass: "sponsor-form__error-container"
-  })]), _c('div', {
-    staticClass: "sponsor-form__group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.cause),
-      expression: "cause"
-    }],
-    staticClass: "sponsor-form__input",
-    attrs: {
-      "name": "cause",
-      "type": "text",
-      "placeholder": "Cause/Nature of organization"
-    },
-    domProps: {
-      "value": (_vm.cause)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.cause = $event.target.value
-      }
-    }
-  }), _c('div', {
-    staticClass: "sponsor-form__error-container"
-  })]), _c('div', {
-    staticClass: "sponsor-form__group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.website),
-      expression: "website"
-    }],
-    staticClass: "sponsor-form__input",
-    attrs: {
-      "name": "website",
-      "type": "text",
-      "placeholder": "Website Associated with the Event/School/Foundation"
-    },
-    domProps: {
-      "value": (_vm.website)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.website = $event.target.value
-      }
-    }
-  }), _c('div', {
-    staticClass: "sponsor-form__error-container"
-  })]), _c('div', {
-    staticClass: "sponsor-form__button-group"
-  }, [_c('button', {
-    staticClass: "sponsor-form__submit-button",
-    attrs: {
-      "type": "submit",
-      "disabled": _vm.formSubmitted
-    }
-  }, [_c('span', [_vm._v("Submit")])]), (_vm.formSubmitted) ? _c('div', {
-    staticClass: "sponsor-form__spinner"
-  }, [_c('span', [_vm._v("Sending")])]) : _vm._e()])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 707 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "page-virtual-consultation"
-  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('CustomVirtualConsultationBanner', {
-    attrs: {
-      "props": _vm.props.acf.custom_virtual_consultation_banner
-    }
-  }), _c('CustomVirtualConsultationHow', {
-    attrs: {
-      "props": _vm.props.acf.custom_how_it_works
-    }
-  })], 1) : _vm._e()], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 708 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-new-pats-patients",
-    attrs: {
-      "id": "forms"
-    }
-  }, [_c('div', {
-    staticClass: "custom-new-pats-patients__container"
-  }, [_c('div', {
-    staticClass: "custom-new-pats-patients__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-new-pats-patients__row"
-  }, [_c('div', {
-    staticClass: "custom-new-pats-patients__left"
-  }, [_c('div', {
-    staticClass: "custom-new-pats-patients__text",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.text)
-    }
-  })]), _c('div', {
-    staticClass: "custom-new-pats-patients__right",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.img + ')'
-    })
-  })])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 709 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-home-retainers",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.bg_img + ')'
-    })
-  }, [_c('div', {
-    staticClass: "custom-home-retainers__container"
-  }, [_c('div', {
-    staticClass: "custom-home-retainers__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-home-retainers__subtitle",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.subtitle)
-    }
-  })]), _c('div', {
-    staticClass: "custom-home-retainers__row"
-  }, [_c('div', {
-    staticClass: "custom-home-retainers__left",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.lifetime.left_img + ')'
-    })
-  }), _c('div', {
-    staticClass: "custom-home-retainers__right",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.lifetime.right_img + ')'
-    })
-  }, [_c('div', {
-    staticClass: "custom-home-retainers__lifetime-content"
-  }, [_c('div', {
-    staticClass: "custom-home-retainers__lifetime-title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.lifetime.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-home-retainers__lifetime-subtitle",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.lifetime.subtitle)
-    }
-  })])])]), _c('div', {
-    staticClass: "custom-home-retainers__row",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.bottom.bg_img + ')'
-    })
-  }, [_c('div', {
-    staticClass: "custom-home-retainers__bottom-container"
-  }, [_c('div', {
-    staticClass: "custom-home-retainers__bottom-content"
-  }, [_c('div', {
-    staticClass: "custom-home-retainers__bottom-subtitle",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.bottom.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-home-retainers__bottom-headline",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.bottom.headline)
-    }
-  }), _c('div', {
-    staticClass: "custom-home-retainers__bottom-cta-btn",
-    on: {
-      "click": function($event) {
-        return _vm.openModal(2)
-      }
-    }
-  }, [_c('span', [_vm._v(_vm._s(_vm.props.bottom.cta_btn))])])])])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 710 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-about-office",
-    attrs: {
-      "id": "office"
-    }
-  }, [_c('div', {
-    staticClass: "custom-about-office__container"
-  }, [_c('div', {
-    staticClass: "custom-about-office__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-about-office__row"
-  }, [_c('div', {
-    staticClass: "custom-about-office__left"
-  }, [_c('div', {
-    staticClass: "custom-about-office__tabsnamelist"
-  }, [_c('input', {
-    attrs: {
-      "id": "tab1",
-      "type": "radio",
-      "name": "tab",
-      "checked": "checked"
-    }
-  }), _c('label', {
-    attrs: {
-      "for": "tab1"
-    },
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.tabname1)
-    }
-  }), _c('input', {
-    attrs: {
-      "id": "tab2",
-      "type": "radio",
-      "name": "tab"
-    }
-  }), _c('label', {
-    attrs: {
-      "for": "tab2"
-    },
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.tabname2)
-    }
-  }), _c('div', {
-    staticClass: "custom-about-office__tabscontentbox"
-  }, [_c('swiper', {
-    staticClass: "custom-about-office__slider",
-    attrs: {
-      "id": "tabc1",
-      "options": _vm.swiperOption
-    }
-  }, [_vm._l((_vm.props.slides), function(slide, i) {
-    return _c('swiperSlide', {
-      key: i,
-      staticClass: "custom-about-office__slide",
-      style: ({
-        backgroundImage: 'url(' + slide.url + ')'
-      })
-    })
-  }), _c('div', {
-    staticClass: "custom-about-office__pagination",
-    attrs: {
-      "slot": "pagination"
-    },
-    slot: "pagination"
-  }), _c('div', {
-    staticClass: "custom-about-office__next",
-    attrs: {
-      "slot": "button-next"
-    },
-    slot: "button-next"
-  }, [_c('Icon', {
-    attrs: {
-      "name": "arrow-01"
-    }
-  })], 1), _c('div', {
-    staticClass: "custom-about-office__prev",
-    attrs: {
-      "slot": "button-prev"
-    },
-    slot: "button-prev"
-  }, [_c('Icon', {
-    attrs: {
-      "name": "arrow-01"
-    }
-  })], 1)], 2), _c('swiper', {
-    staticClass: "custom-about-office__slider",
-    attrs: {
-      "id": "tabc2",
-      "options": _vm.swiperOption
-    }
-  }, [_vm._l((_vm.props.slides2), function(slide, i) {
-    return _c('swiperSlide', {
-      key: i,
-      staticClass: "custom-about-office__slide",
-      style: ({
-        backgroundImage: 'url(' + slide.url + ')'
-      })
-    })
-  }), _c('div', {
-    staticClass: "custom-about-office__pagination",
-    attrs: {
-      "slot": "pagination"
-    },
-    slot: "pagination"
-  }), _c('div', {
-    staticClass: "custom-about-office__next",
-    attrs: {
-      "slot": "button-next"
-    },
-    slot: "button-next"
-  }, [_c('Icon', {
-    attrs: {
-      "name": "arrow-01"
-    }
-  })], 1), _c('div', {
-    staticClass: "custom-about-office__prev",
-    attrs: {
-      "slot": "button-prev"
-    },
-    slot: "button-prev"
-  }, [_c('Icon', {
-    attrs: {
-      "name": "arrow-01"
-    }
-  })], 1)], 2)], 1)])]), _c('div', {
-    staticClass: "custom-about-office__right"
-  }, [_c('div', {
-    staticClass: "custom-about-office__content",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.content)
-    }
-  })])])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 711 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-contact-header"
-  }, [_c('div', {
-    staticClass: "custom-contact-header__container"
-  }, [_c('div', {
-    staticClass: "custom-contact-header__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-contact-header__text",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.text)
-    }
-  })])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 712 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "page-videos"
-  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('Videos', {
-    attrs: {
-      "props": _vm.props.acf.video_clusters
-    }
-  })], 1) : _vm._e()], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 713 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-treatments-adults",
-    attrs: {
-      "id": "adults"
-    }
-  }, [_c('div', {
-    staticClass: "custom-treatments-adults__wrapper"
-  }, [_c('div', {
-    staticClass: "custom-treatments-adults__shape",
-    domProps: {
-      "innerHTML": _vm._s(_vm.shape)
-    }
-  }), _c('div', {
-    staticClass: "custom-treatments-adults__container"
-  }, [_c('div', {
-    staticClass: "custom-treatments-adults__left"
-  }, [_c('h2', [_vm._v(_vm._s(_vm.props.title))])]), _c('div', {
-    staticClass: "custom-treatments-adults__right"
-  }, _vm._l((_vm.props.cards), function(card, i) {
-    return _c('div', {
-      key: i,
-      staticClass: "custom-treatments-adults__card"
-    }, [_c('div', {
-      staticClass: "custom-treatments-adults__card-left"
-    }, [_c('div', {
-      staticClass: "custom-treatments-adults__icon-outer"
-    }, [_c('div', {
-      staticClass: "custom-treatments-adults__icon-inner"
-    }, [_c('Icon', {
-      staticClass: "custom-treatments-adults__icon",
-      class: 'custom-treatments-adults__icon--' + card.label,
-      attrs: {
-        "name": card.label
-      }
-    })], 1)])]), _c('div', {
-      staticClass: "custom-treatments-adults__card-right"
-    }, [_c('div', {
-      staticClass: "custom-treatments-adults__card-title",
-      domProps: {
-        "innerHTML": _vm._s(card.title)
-      }
-    }), _c('div', {
-      staticClass: "custom-treatments-adults__card-text",
-      domProps: {
-        "innerHTML": _vm._s(card.text)
-      }
-    })])])
-  }), 0)])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 714 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.props) ? _c('div', {
-    staticClass: "custom-contact-sponsor-section",
-    attrs: {
-      "id": "sponsor"
-    }
-  }, [_c('div', {
-    staticClass: "custom-contact-sponsor-section__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-contact-sponsor-section__text",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.text)
-    }
-  }), _c('div', {
-    staticClass: "custom-contact-sponsor-section__container"
-  }, [_c('div', {
-    staticClass: "custom-contact-sponsor-section__form-container"
-  }, [_c('SponsorForm')], 1), _c('div', {
-    staticClass: "custom-contact-sponsor-section__instructions-container"
-  }, [_c('div', {
-    staticClass: "custom-contact-sponsor-section__instructions",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.instructions)
-    }
-  })])])]) : _vm._e()
-},staticRenderFns: []}
-
-/***/ }),
-/* 715 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "pages-exit-interview"
-  }, [_c('div', {
-    staticClass: "pages-exit-interview__container"
-  }, [_c('div', {
-    staticClass: "pages-exit-interview__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.title_main)
-    }
-  }), _c('div', {
-    staticClass: "pages-exit-interview__formwrap"
-  }, [_c('exitInterviewForm')], 1)])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 716 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    attrs: {
-      "id": "app"
-    }
-  }, [_c('Loader', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$store.state.loading),
-      expression: "$store.state.loading"
-    }]
-  }), (_vm.props) ? _c('div', [_c('BaseBaseAccess'), _c('Navigation'), _c('Header'), _c('transition', {
-    attrs: {
-      "name": "fade-in"
-    }
-  }, [_c('router-view')], 1), _c('transition', {
-    attrs: {
-      "name": "fade-in"
-    }
-  }, [_c('Modal', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$store.state.showModal),
-      expression: "$store.state.showModal"
-    }]
-  })], 1), _c('Footer'), _c('transition', {
-    attrs: {
-      "name": "fade-in"
-    }
-  }, [_c('EventModal', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$store.state.funEvent),
-      expression: "$store.state.funEvent"
-    }]
-  })], 1), _c('transition', {
-    attrs: {
-      "name": "fade-in"
-    }
-  }, [_c('Thanks', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$store.state.thanks),
-      expression: "$store.state.thanks"
-    }]
-  })], 1)], 1) : _vm._e()], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 717 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-about-team",
-    attrs: {
-      "id": "meet-team"
-    }
-  }, [_c('div', {
-    staticClass: "custom-about-team__container"
-  }, [_c('div', {
-    staticClass: "custom-about-team__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-about-team__row"
-  }, _vm._l((_vm.props.content), function(content, i) {
-    return _c('div', {
-      key: i,
-      staticClass: "custom-about-team__item"
-    }, [_c('div', {
-      staticClass: "custom-about-team__icon-wrapper"
-    }, [_c('div', {
-      staticClass: "custom-about-team__icon-outer"
-    }, [_c('div', {
-      staticClass: "custom-about-team__icon-inner"
-    }, [_c('Icon', {
-      staticClass: "custom-about-team__icon",
-      class: "custom-about-team__icon--" + content.label,
-      attrs: {
-        "name": content.label
-      }
-    })], 1)])]), _c('div', {
-      staticClass: "custom-about-team__text",
-      domProps: {
-        "innerHTML": _vm._s(content.text)
-      }
-    })])
-  }), 0), _c('div', {
-    staticClass: "custom-about-team__image",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.img + ')'
-    })
-  })])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 718 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "page-family-fun-event"
-  })
-},staticRenderFns: []}
-
-/***/ }),
-/* 719 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.props) ? _c('div', {
-    staticClass: "event-modal"
-  }, [_c('div', {
-    staticClass: "event-modal__overlay",
-    on: {
-      "click": function($event) {
-        return _vm.closeModal(2)
-      }
-    }
-  }), _c('div', {
-    staticClass: "event-modal__container"
-  }, [_c('div', {
-    staticClass: "event-modal__close",
-    on: {
-      "click": function($event) {
-        return _vm.closeModal(2)
-      }
-    }
-  }, [_c('span'), _c('span')]), _c('div', {
-    staticClass: "event-modal__content"
-  }, [_c('div', {
-    staticClass: "event-modal__text",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.event_modal.content)
-    }
-  }), _c('div', {
-    staticClass: "event-modal__form-container"
-  }, [_c('EventForm')], 1), _c('div', {
-    staticClass: "event-modal__spacer"
-  })])])]) : _vm._e()
-},staticRenderFns: []}
-
-/***/ }),
-/* 720 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.props) ? _c('footer', {
-    staticClass: "footer"
-  }, [_c('div', {
-    staticClass: "footer__top"
-  }, [_c('div', {
-    staticClass: "footer__container"
-  }, [_c('div', {
-    staticClass: "footer__top-row"
-  }, [_c('div', {
-    staticClass: "footer__item"
-  }, [_c('a', {
-    staticClass: "footer__patient-login",
-    attrs: {
-      "href": _vm.props.acf.links.login,
-      "target": "_blank"
-    }
-  }, [_c('span', [_vm._v("Patient Login")])])]), _c('div', {
-    staticClass: "footer__item"
-  }, [_c('div', {
-    staticClass: "footer__icons"
-  }, _vm._l((_vm.props.acf.social_links), function(icon, i) {
-    return (icon.label != "phone") ? _c('a', {
-      staticClass: "footer__icon",
-      attrs: {
-        "href": icon.href,
-        "target": "_blank"
-      }
-    }, [_c('Icon', {
-      class: "footer__" + icon.label,
-      attrs: {
-        "name": icon.icon
-      }
-    })], 1) : _vm._e()
-  }), 0)]), _c('div', {
-    staticClass: "footer__item"
-  }, [_c('a', {
-    staticClass: "footer__rewards",
-    attrs: {
-      "href": _vm.props.acf.links.rewards,
-      "target": "_blank"
-    }
-  }, [_c('span', [_vm._v("Rewards Center")]), _c('Icon', {
-    staticClass: "footer__rewards-icon",
-    attrs: {
-      "name": "arrow"
-    }
-  })], 1)])])])]), _c('div', {
-    staticStyle: {
-      "display": "inline-block",
-      "min-width": "200px"
-    }
-  }, [_c('div', {
-    staticClass: "footer__bottom"
-  }, [_vm._m(0), _c('div', {
-    staticClass: "footer__bottom--third"
-  }, [_c('a', {
-    staticClass: "footer__phone",
-    attrs: {
-      "href": _vm.props.acf.social_links[0].href
-    }
-  }, [_vm._v("Call or Text Us Anytime"), _c('br'), _vm._v("585. 742. 1050")]), _c('a', {
-    staticClass: "footer__address",
-    attrs: {
-      "href": _vm.props.acf.address.href,
-      "target": "_blank"
-    },
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.address.text)
-    }
-  }), _c('div', {
-    staticClass: "footer_address2"
-  }, [(_vm.props.acf.address_new.text) ? _c('a', {
-    staticClass: "footer__address",
-    attrs: {
-      "href": _vm.props.acf.address_new.href,
-      "target": "_blank"
-    },
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.address_new.text)
-    }
-  }) : _vm._e()])]), _vm._m(1)]), _c('div', {
-    staticClass: "footer__roostergrin"
-  }, [_vm._v("Powered by RoosterGrin"), _c('div', {
-    staticClass: "footer__adminuse"
-  }, [_c('router-link', {
-    attrs: {
-      "to": "/admin-links"
-    }
-  }, [_vm._v("Admin use only    ")])], 1)])])]) : _vm._e()
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "footer__bottom--third"
-  }, [_c('img', {
-    staticClass: "footer__bottom--hipaa",
-    attrs: {
-      "src": "https://cpwk.cloud/wp-content/uploads/2019/04/pcihipaa_logo.png",
-      "alt": "Certified HIPAA Compliance Provided by PCIHIPAA"
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "footer__bottom--third"
-  }, [_c('a', {
-    staticClass: "footer__badge",
-    attrs: {
-      "href": "https://interpret.cyracom.com/",
-      "target": "_blank"
-    }
-  }, [_c('img', {
-    staticClass: "footer__svg",
-    staticStyle: {
-      "width": "200px",
-      "height": "124px"
-    },
-    attrs: {
-      "src": "https://interpret.cyracom.com/wp-content/themes/cyra/dist/images/logo.svg",
-      "alt": "Cyracom interpretation services"
-    }
-  })])])
-}]}
-
-/***/ }),
-/* 721 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-treatments-damon",
-    attrs: {
-      "id": "damon"
-    }
-  }, [_c('div', {
-    staticClass: "custom-treatments-damon__img",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.img + ')'
-    })
-  }, [_c('Icon', {
-    staticClass: "custom-treatments-damon__mask",
-    attrs: {
-      "name": "mask"
-    }
-  })], 1), _c('div', {
-    staticClass: "custom-treatments-damon__container"
-  }, [_c('div', {
-    staticClass: "custom-treatments-damon__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-treatments-damon__text",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.text)
-    }
-  }), _c('div', {
-    staticClass: "custom-treatments-damon__cards"
-  }, _vm._l((_vm.props.cards), function(card, i) {
-    return _c('div', {
-      key: i,
-      staticClass: "custom-treatments-damon__card"
-    }, [_c('div', {
-      staticClass: "custom-treatments-damon__logo",
-      style: ({
-        backgroundImage: 'url(' + card.logo + ')'
-      })
-    }), _c('div', {
-      staticClass: "custom-treatments-damon__card-text",
-      domProps: {
-        "innerHTML": _vm._s(card.text)
-      }
-    })])
-  }), 0)])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 722 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "page-virtual-services"
-  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('VirtualServices', {
-    attrs: {
-      "props": _vm.props.acf
-    }
-  })], 1) : _vm._e()], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 723 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "modal"
-  }, [_c('div', {
-    staticClass: "modal__overlay",
-    on: {
-      "click": function($event) {
-        return _vm.closeModal(1)
-      }
-    }
-  }), _c('div', {
-    staticClass: "modal__container"
-  }, [_c('div', {
-    staticClass: "modal__close",
-    on: {
-      "click": function($event) {
-        return _vm.closeModal(1)
-      }
-    }
-  }, [_c('span'), _c('span')]), _c('div', {
-    staticClass: "modal__content"
-  }, [_c('Platinum')], 1)])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 724 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "page-treatments"
-  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('Invisalign', {
-    attrs: {
-      "props": _vm.props.acf.custom_invisalign
-    }
-  }), _c('Damon', {
-    attrs: {
-      "props": _vm.props.acf.custom_damon
-    }
-  }), _c('Divider'), _c('Adults', {
-    attrs: {
-      "props": _vm.props.acf.custom_adults
-    }
-  })], 1) : _vm._e()], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 725 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.props) ? _c('div', {
-    staticClass: "header",
-    class: {
-      'header--home': _vm.$route.path === '/' && !_vm.$store.state.menu, 'header--family-fun-event': _vm.$route.path.includes('/mouth-guard-registration'), 'header--retainer-program': _vm.$route.path.includes('/retainer-program'), 'header--exit-interview': _vm.$route.path.includes('/exit-interview'), 'header--smile-assurance': _vm.$route.path.includes('/smile-assurance-program'), 'header--thank-you': _vm.$route.path.includes('/thank-you'), 'header--adminlink': _vm.$route.path.includes('/admin-links'), 'header--review': _vm.$route.path.includes('/review') || _vm.$route.path.includes('/accessibility') || _vm.$route.path.includes('/mouth-guard-thank-you')
-    },
-    attrs: {
-      "id": "head"
-    }
-  }, [_c('v-waypoint', {
-    staticClass: "header__waypoint",
-    on: {
-      "waypoint-out": _vm.scrollOut,
-      "waypoint-in": _vm.scrollIn
-    }
-  }), (_vm.props) ? _c('Menu', {
-    staticClass: "header__menu--desktop",
-    class: {
-      'header__menu--thank-you': _vm.$route.path.includes('/thank-you'), 'header__menu--adminlink': _vm.$route.path.includes('/admin-links'), 'header__menu--exit-interview': _vm.$route.path.includes('/exit-interview'), 'header__menu--review': _vm.$route.path.includes('/review'), 'header__menu--smile-assurance': _vm.$route.path.includes('/smile-assurance-program'), 'header__menu--retainer-program': _vm.$route.path.includes('/retainer-program') || _vm.$route.path.includes('/mouth-guard-thank-you') || _vm.$route.path.includes('/accessibility')
-    }
-  }) : _vm._e(), _c('transition', {
-    attrs: {
-      "name": "home-fade"
-    }
-  }, [_c('HomeHero', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path === "/" && !_vm.$store.state.menu),
-      expression: "$route.path === \"/\" && !$store.state.menu"
-    }],
-    attrs: {
-      "props": _vm.props
-    }
-  })], 1), _c('transition', {
-    attrs: {
-      "name": "fade-in"
-    }
-  }, [_c('HeroPages', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path.includes("/covid-19-updates") && !_vm.$store.state.menu),
-      expression: "$route.path.includes(\"/covid-19-updates\") && !$store.state.menu"
-    }],
-    attrs: {
-      "props": _vm.covid
-    }
-  })], 1), _c('transition', {
-    attrs: {
-      "name": "fade-in"
-    }
-  }, [_c('HeroPages', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path.includes("/virtual-services") && !_vm.$store.state.menu),
-      expression: "$route.path.includes(\"/virtual-services\") && !$store.state.menu"
-    }]
-  })], 1), _c('transition', {
-    attrs: {
-      "name": "fade-in"
-    }
-  }, [_c('HeroPages', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path.includes("/videos") && !_vm.$store.state.menu),
-      expression: "$route.path.includes(\"/videos\") && !$store.state.menu"
-    }]
-  })], 1), _c('transition', {
-    attrs: {
-      "name": "fade-in"
-    }
-  }, [_c('HeroPages', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path.includes("/virtual-consultation") && !_vm.$store.state.menu),
-      expression: "$route.path.includes(\"/virtual-consultation\") && !$store.state.menu"
-    }]
-  })], 1), _c('transition', {
-    attrs: {
-      "name": "fade-in"
-    }
-  }, [_c('HeroPages', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path.includes("/7-and-up") && !_vm.$store.state.menu),
-      expression: "$route.path.includes(\"/7-and-up\") && !$store.state.menu"
-    }]
-  })], 1), _c('HeroMobile', {
-    attrs: {
-      "props": _vm.props
-    }
-  })], 1) : _vm._e()
-},staticRenderFns: []}
-
-/***/ }),
-/* 726 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "pages-access"
-  }, [_c('div', {
-    staticClass: "access-wrap"
-  }, [_c('h2', {
-    staticClass: "block-title",
-    domProps: {
-      "innerHTML": _vm._s((_vm.companyName + " Accessibility Statement"))
-    }
-  }), _c('p', {
-    domProps: {
-      "innerHTML": _vm._s((_vm.companyName + " is committed to facilitating the accessibility and usability of its website, " + _vm.domain + ", for everyone.  " + _vm.companyName + " aims to comply with all applicable standards, including the World Wide Web Consortiums Web Content Accessibility Guidelines 2.0 up to Level AA (WCAG 2.0 AA). " + _vm.companyName + " is proud of the efforts that we have completed and that are in-progress to ensure that our website is accessible to everyone."))
-    }
-  }), _c('br'), _c('p', {
-    domProps: {
-      "innerHTML": _vm._s(("We highly recommend using the userway accessibility widget linked in the footer, but should you experience any difficulty in accessing any part of this website, please feel free to " + (_vm.phone ? "call us at " + _vm.phone : "") + " " + (_vm.phone && _vm.email ? "or" : "") + " " + (_vm.email ? "email us at " + _vm.formattedEmail : "") + " and we will work with you to provide the information or service you seek through an alternate communication method that is accessible for you consistent with applicable law (for example, through telephone support)."))
-    }
-  })])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 727 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "modal-thanks"
-  }, [_c('div', {
-    staticClass: "modal__overlay",
-    on: {
-      "click": _vm.closeThanks
-    }
-  }), _c('div', {
-    staticClass: "modal-thanks__container"
-  }, [_c('div', {
-    staticClass: "modal-thanks__close",
-    on: {
-      "click": _vm.closeThanks
-    }
-  }, [_c('span'), _c('span')]), _c('div', {
-    staticClass: "modal-thanks__content"
-  }, [_c('div', {
-    staticClass: "modal-thanks__logo-container"
-  }, [_c('Icon', {
-    staticClass: "modal-thanks__logo",
-    attrs: {
-      "name": "matt_logo-01"
-    }
-  })], 1), _vm._m(0)])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "modal-thanks__text"
-  }, [_c('h2', [_vm._v("Thank you!")]), _c('p', [_vm._v("You are all set! Please download the form below for a faster visit!")]), _c('a', {
-    staticClass: "modal-thanks__link",
-    attrs: {
-      "href": "https://www.mattiacioortho.com/wp-content/uploads/Mouth-Guard-Permission-and-Release-Form-2017-OTHER.pdf"
-    }
-  }, [_vm._v("Download the Form")])])
-}]}
-
-/***/ }),
-/* 728 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('nav', {
-    staticClass: "navigation"
-  }, [_c('Desktop', {
-    staticClass: "navigation--desktop",
-    attrs: {
-      "props": _vm.props
-    }
-  }), _c('Mobile', {
-    staticClass: "navigation--mobile",
-    attrs: {
-      "props": _vm.props
-    }
-  })], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 729 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "pages-review"
-  }, [_c('div', {
-    staticClass: "pages-review__wrap"
-  }, [(_vm.props.acf.title) ? _c('h2', {
-    staticClass: "pages-review__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.title)
-    }
-  }) : _vm._e(), (_vm.props.acf.content) ? _c('p', {
-    staticClass: "pages-review__text",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.content)
-    }
-  }) : _vm._e(), (_vm.props.acf.scan_image) ? _c('img', {
-    staticClass: "pages-review__scan",
-    attrs: {
-      "src": _vm.props.acf.scan_image,
-      "alt": ""
-    }
-  }) : _vm._e(), _c('p', {
-    staticClass: "pages-review__text",
-    staticStyle: {
-      "margin-top": "1rem"
-    }
-  }, [_vm._v(" Once on Google, under Mattiacio Orthodontics, click on the \"Reviews\" tab. Scroll down to \"Rate and Review on Google\" and select your star rating and leave us a review!")])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 730 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.props) ? _c('div', {
-    staticClass: "home-hero"
-  }, [_c('div', {
-    staticClass: "home-hero__overlay"
-  }, [_c('video', {
-    directives: [{
-      name: "load-directive",
-      rawName: "v-load-directive"
-    }],
-    staticClass: "home-hero__video",
-    attrs: {
-      "loop": "loop",
-      "muted": "muted",
-      "autoplay": "autoplay"
-    },
-    domProps: {
-      "muted": true
-    }
-  }, [_c('source', {
-    staticClass: "home-hero__source",
-    attrs: {
-      "src": _vm.props.acf.hero_video,
-      "type": "video/mp4",
-      "poster": _vm.props.acf.poster
-    }
-  }), _vm._v("Your browser does not support video.")])])]) : _vm._e()
-},staticRenderFns: []}
-
-/***/ }),
-/* 731 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.props) ? _c('div', {
-    staticClass: "nav-bottom",
-    class: {
-      "nav-bottom--scrolling": _vm.$store.state.nav, "nav-bottom--notransparent": _vm.$route.path === "/"
-    }
-  }, [_c('div', {
-    staticClass: "nav-bottom__container"
-  }, [(_vm.props.acf.virtual_services_button.label && _vm.props.acf.virtual_services_button.href) ? _c('a', {
-    staticClass: "nav-bottom__button",
-    attrs: {
-      "href": _vm.props.acf.virtual_services_button.href
-    },
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.virtual_services_button.label)
-    }
-  }) : _vm._e()])]) : _vm._e()
-},staticRenderFns: []}
-
-/***/ }),
-/* 732 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "pages-assurance-program"
-  }, [_c('div', {
-    staticClass: "pages-assurance-program__section1",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.acf.section_1_bg + ')'
-    })
-  }, [_c('div', {
-    staticClass: "pages-assurance-program__container"
-  }, [(_vm.props.acf.section_1_title) ? _c('div', {
-    staticClass: "pages-assurance-program__section1-title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.section_1_title)
-    }
-  }) : _vm._e()])]), _c('div', {
-    staticClass: "pages-assurance-program__container"
-  }, [_c('div', {
-    staticClass: "pages-assurance-program__section2"
-  }, [_c('div', {
-    staticClass: "pages-assurance-program__section2-leftlogo"
-  }, [(_vm.props.acf.section_2_left_img) ? _c('img', {
-    staticClass: "pages-assurance-program__section2-leftlogoimg",
-    attrs: {
-      "src": _vm.props.acf.section_2_left_img,
-      "alt": ""
-    }
-  }) : _vm._e()]), _c('div', {
-    staticClass: "pages-assurance-program__section2-rightlogo"
-  }, [(_vm.props.acf.section_2_right_img) ? _c('img', {
-    staticClass: "pages-assurance-program__section2-rightlogoimg",
-    attrs: {
-      "src": _vm.props.acf.section_2_right_img,
-      "alt": ""
-    }
-  }) : _vm._e()])]), _c('div', {
-    staticClass: "pages-assurance-program__section3"
-  }, [(_vm.props.acf.section_3_title) ? _c('div', {
-    staticClass: "pages-assurance-program__section3-title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.section_3_title)
-    }
-  }) : _vm._e(), (_vm.props.acf.section_3_subtitle) ? _c('div', {
-    staticClass: "pages-assurance-program__section3-subtitle",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.section_3_subtitle)
-    }
-  }) : _vm._e()]), _c('div', {
-    staticClass: "pages-assurance-program__section4"
-  }, [_c('div', {
-    staticClass: "pages-assurance-program__section4-leftlogo"
-  }, [(_vm.props.acf.section_4_price_img) ? _c('img', {
-    staticClass: "pages-assurance-program__section4-leftlogoimg",
-    attrs: {
-      "src": _vm.props.acf.section_4_price_img,
-      "alt": ""
-    }
-  }) : _vm._e()]), _c('div', {
-    staticClass: "pages-assurance-program__section4-rightlogo"
-  }, [_c('ul', [_vm._l((_vm.props.acf.section_4_li_content), function(LiContentList, i) {
-    return _c('li', {
-      style: ({
-        backgroundImage: 'url(' + _vm.props.acf.section_4_li_bg_img + ')'
-      })
-    }, [_c('span', {
-      domProps: {
-        "innerHTML": _vm._s(LiContentList.content)
-      }
-    })])
-  }), _c('pre', [_vm._v(_vm._s(_vm.LiContentList))])], 2)])]), _c('div', {
-    staticClass: "pages-assurance-program__section5"
-  }, [_c('div', {
-    staticClass: "pages-assurance-program__formwrap"
-  }, [_c('smileAssuranceForm')], 1), _c('router-link', {
-    staticClass: "pages-assurance-program__section5-logo",
-    attrs: {
-      "to": "/"
-    }
-  }, [(_vm.props.acf.section_5_logo_image) ? _c('img', {
-    staticClass: "pages-assurance-program__section5-logoimg",
-    attrs: {
-      "src": _vm.props.acf.section_5_logo_image,
-      "alt": ""
-    }
-  }) : _vm._e()])], 1), (_vm.props.acf.section_6_content) ? _c('div', {
-    staticClass: "pages-assurance-program__section6",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.section_6_content)
-    }
-  }) : _vm._e()]), _c('div', {
-    staticClass: "pages-exit-interview__formwrap"
-  })])
-},staticRenderFns: []}
-
-/***/ }),
-/* 733 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-treatments-7up",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.bg_img + ')'
-    }),
-    attrs: {
-      "id": "seven-up"
-    }
-  }, [_c('div', {
-    staticClass: "custom-treatments-7up__container"
-  }, [_c('div', {
-    staticClass: "custom-treatments-7up__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-treatments-7up__text",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.text)
-    }
-  }), (_vm.props.seven_up_logo) ? _c('img', {
-    staticClass: "custom-treatments-7up__uplogo",
-    attrs: {
-      "src": _vm.props.seven_up_logo
-    }
-  }) : _vm._e(), _vm._m(0), _c('div', {
-    staticClass: "custom-treatments-7up__row"
-  }, [_c('div', {
-    staticClass: "custom-treatments-7up__left"
-  }, [_c('div', {
-    staticClass: "custom-treatments-7up__icon-outer"
-  }, [_c('div', {
-    staticClass: "custom-treatments-7up__icon-inner"
-  }, [_c('Icon', {
-    staticClass: "custom-treatments-7up__icon",
-    attrs: {
-      "name": "faces"
-    }
-  })], 1)]), _c('div', {
-    staticClass: "custom-treatments-7up__subtitle",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.top.subtitle)
-    }
-  }), _c('div', {
-    staticClass: "custom-treatments-7up__top-text hello",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.top.text)
-    }
-  })]), _c('div', {
-    staticClass: "custom-treatments-7up__right",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.top.img + ')'
-    })
-  })]), _c('div', {
-    staticClass: "custom-treatments-7up__row"
-  }, [_c('div', {
-    staticClass: "custom-treatments-7up__left"
-  }, [_c('div', {
-    staticClass: "custom-treatments-7up__header",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.bottom.header)
-    }
-  }), _c('div', {
-    staticClass: "custom-treatments-7up__bottom-text",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.bottom.text)
-    }
-  })]), _c('div', {
-    staticClass: "custom-treatments-7up__right",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.bottom.img + ')'
-    })
-  })]), _c('div', {
-    staticClass: "custom-treatments-7up__form"
-  }, [_c('Form')], 1)])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-treatments-7up_button"
-  }, [_c('div', {
-    staticClass: "custom-treatments-invisalign__read-more"
-  }, [_c('a', {
-    attrs: {
-      "href": "tel:1-585-742-1050"
-    }
-  }, [_vm._v("Call Us")])])])
-}]}
-
-/***/ }),
-/* 734 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "hero-pages"
-  }, [_c('div', {
-    staticClass: "hero-pages__overlay",
-    class: {
-      "hero-pages__overlay--covid": _vm.$route.path.includes("/covid-19-updates"), "hero-pages__overlay--virtual-services": _vm.$route.path.includes("/virtual-services"), "hero-pages__overlay--virtual-consultation": _vm.$route.path.includes("/virtual-consultation"), "hero-pages__overlay--7-and-up": _vm.$route.path.includes("/7-and-up"), "hero-pages__overlay--videos": _vm.$route.path.includes("/videos")
-    }
-  }, [_c('div', {
-    staticClass: "hero-pages__container"
-  }, [_c('h2', {
-    staticClass: "hero-pages__title"
-  }, [_vm._v(_vm._s(_vm.$route.name))]), (_vm.props && _vm.$route.path.includes("/covid-19-updates")) ? _c('div', {
-    staticClass: "hero-pages__buttons"
-  }, _vm._l((_vm.props.acf.covid_19_header_buttons), function(button, i) {
-    return _c('a', {
-      key: "button " + i,
-      staticClass: "hero-pages__button",
-      attrs: {
-        "href": button.button.href,
-        "target": "_blank"
-      },
-      domProps: {
-        "innerHTML": _vm._s(button.button.label)
-      }
-    })
-  }), 0) : _vm._e()])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 735 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "custom-home-testimonials"
-  }, [_c('div', {
-    staticClass: "custom-home-testimonials__container"
-  }, [_c('div', {
-    staticClass: "custom-home-testimonials__title",
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.title)
-    }
-  }), _c('div', {
-    staticClass: "custom-home-testimonials__icon-outer"
-  }, [_c('div', {
-    staticClass: "custom-home-testimonials__icon-inner"
-  }, [_c('Icon', {
-    staticClass: "custom-home-testimonials__icon",
-    attrs: {
-      "name": "smile"
-    }
-  })], 1)]), _c('swiper', {
-    staticClass: "custom-home-testimonials__slider",
-    attrs: {
-      "options": _vm.swiperOption
-    }
-  }, [_vm._l((_vm.props.testimonials), function(slide, i) {
-    return _c('swiperSlide', {
-      key: i,
-      staticClass: "custom-home-testimonials__slide"
-    }, [_c('div', {
-      staticClass: "custom-home-testimonials__slide-text",
-      domProps: {
-        "innerHTML": _vm._s(slide.text)
-      }
-    }), _c('div', {
-      staticClass: "custom-home-testimonials__slide-author"
-    }, [_vm._v(_vm._s(slide.author))])])
-  }), _c('div', {
-    staticClass: "custom-home-testimonials__pagination",
-    attrs: {
-      "slot": "pagination"
-    },
-    slot: "pagination"
-  }), _c('div', {
-    staticClass: "custom-home-testimonials__next",
-    attrs: {
-      "slot": "button-next"
-    },
-    slot: "button-next"
-  }, [_c('Icon', {
-    attrs: {
-      "name": "arrow-01"
-    }
-  })], 1), _c('div', {
-    staticClass: "custom-home-testimonials__prev",
-    attrs: {
-      "slot": "button-prev"
-    },
-    slot: "button-prev"
-  }, [_c('Icon', {
-    attrs: {
-      "name": "arrow-01"
-    }
-  })], 1)], 2), (_vm.props.video) ? _c('div', {
-    staticClass: "custom-home-testimonials__video-container"
-  }, [_c('div', {
-    staticClass: "custom-home-testimonials__video-play-btn",
-    on: {
-      "click": function($event) {
-        return _vm.openModal(3)
-      }
-    }
-  }, [_c('Icon', {
-    staticClass: "custom-home-testimonials__play-btn-icon",
-    attrs: {
-      "name": "triangle"
-    }
-  })], 1), _c('div', {
-    staticClass: "custom-home-testimonials__thumb",
-    style: ({
-      backgroundImage: 'url(' + _vm.props.video_thumb + ')'
-    })
-  }), _c('transition', {
-    attrs: {
-      "name": "fade-in"
-    }
-  }, [_c('Video', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$store.state.video),
-      expression: "$store.state.video"
-    }],
-    attrs: {
-      "props": _vm.props.video
-    }
-  })], 1)], 1) : _vm._e()], 1)])
 },staticRenderFns: []}
 
 /***/ }),
@@ -10951,190 +11208,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "hero-mobile"
-  }, [_c('div', {
-    staticClass: "hero-mobile__overlay"
-  }), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path === "/"),
-      expression: "$route.path === \"/\""
-    }],
-    staticClass: "hero-mobile__home"
-  }, [_c('video', {
-    directives: [{
-      name: "load-directive",
-      rawName: "v-load-directive"
-    }],
-    staticClass: "hero-mobile__video",
+    staticClass: "page-7-and-up"
+  }, [(_vm.loading) ? _c('Loader') : _vm._e(), (_vm.props && !_vm.loading) ? _c('div', [_c('SevenUp', {
     attrs: {
-      "loop": "loop",
-      "muted": "muted",
-      "autoplay": "autoplay"
-    },
-    domProps: {
-      "muted": true
+      "props": _vm.props.acf.custom_7up
     }
-  }, [_c('source', {
-    staticClass: "hero-mobile__source",
-    attrs: {
-      "src": _vm.props.acf.hero_video,
-      "type": "video/mp4",
-      "poster": _vm.props.acf.poster
-    }
-  }), _vm._v("Your browser does not support video.")]), _c('div', {
-    staticClass: "hero-mobile__buttons"
-  }, [(_vm.props.acf.virtual_services_button.label && _vm.props.acf.virtual_services_button.href) ? _c('a', {
-    staticClass: "hero-mobile__button",
-    attrs: {
-      "href": _vm.props.acf.virtual_services_button.href
-    },
-    domProps: {
-      "innerHTML": _vm._s(_vm.props.acf.virtual_services_button.label)
-    }
-  }) : _vm._e()])]), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path === "/about-us"),
-      expression: "$route.path === \"/about-us\""
-    }],
-    staticClass: "hero-mobile__about-us",
-    style: ({
-      backgroundImage: 'url(static/about-mobile-bg.jpg)'
-    })
-  }, [_c('div', {
-    staticClass: "hero-mobile__title"
-  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path === "/new-patients"),
-      expression: "$route.path === \"/new-patients\""
-    }],
-    staticClass: "hero-mobile__new-pats",
-    style: ({
-      backgroundImage: 'url(static/new-pats.jpg)'
-    })
-  }, [_c('div', {
-    staticClass: "hero-mobile__title"
-  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path === "/treatments"),
-      expression: "$route.path === \"/treatments\""
-    }],
-    staticClass: "hero-mobile__treatments",
-    style: ({
-      backgroundImage: 'url(static/treatments.jpg)'
-    })
-  }, [_c('div', {
-    staticClass: "hero-mobile__title"
-  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path === "/mattiacio-difference"),
-      expression: "$route.path === \"/mattiacio-difference\""
-    }],
-    staticClass: "hero-mobile__matt-diff",
-    style: ({
-      backgroundImage: 'url(static/matt-diff-bg1.jpg)'
-    })
-  }, [_c('div', {
-    staticClass: "hero-mobile__title"
-  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path === "/invisalign"),
-      expression: "$route.path === \"/invisalign\""
-    }],
-    staticClass: "hero-mobile__invisalign",
-    style: ({
-      backgroundImage: 'url(static/invisalign.jpg)'
-    })
-  }, [_c('div', {
-    staticClass: "hero-mobile__title"
-  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path === "/contact-us"),
-      expression: "$route.path === \"/contact-us\""
-    }],
-    staticClass: "hero-mobile__contact",
-    style: ({
-      backgroundImage: 'url(static/contact.jpg)'
-    })
-  }), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path.includes("/covid-19-updates")),
-      expression: "$route.path.includes(\"/covid-19-updates\")"
-    }],
-    staticClass: "hero-mobile__covid",
-    style: ({
-      backgroundImage: 'url(static/covid-19-updates.jpg)'
-    })
-  }, [_c('div', {
-    staticClass: "hero-mobile__title"
-  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path.includes("/virtual-services")),
-      expression: "$route.path.includes(\"/virtual-services\")"
-    }],
-    staticClass: "hero-mobile__virtual-services",
-    style: ({
-      backgroundImage: 'url(static/virtual-services.jpg)'
-    })
-  }, [_c('div', {
-    staticClass: "hero-mobile__title"
-  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path.includes("/videos")),
-      expression: "$route.path.includes(\"/videos\")"
-    }],
-    staticClass: "hero-mobile__videos",
-    style: ({
-      backgroundImage: 'url(static/mattiacio-videos-poster.png)'
-    })
-  }, [_c('div', {
-    staticClass: "hero-mobile__title"
-  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path.includes("/virtual-consultation")),
-      expression: "$route.path.includes(\"/virtual-consultation\")"
-    }],
-    staticClass: "hero-mobile__virtual-consultation",
-    style: ({
-      backgroundImage: 'url(static/new-pats.jpg)'
-    })
-  }, [_c('div', {
-    staticClass: "hero-mobile__title"
-  }, [_vm._v(_vm._s(_vm.$route.name))])]), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.path.includes("/7-and-up")),
-      expression: "$route.path.includes(\"/7-and-up\")"
-    }],
-    staticClass: "hero-mobile__7-and-up",
-    style: ({
-      backgroundImage: 'url(static/new-pats.jpg)'
-    })
-  }, [_c('div', {
-    staticClass: "hero-mobile__title"
-  }, [_vm._v(_vm._s(_vm.$route.name) + "    ")])])])
+  })], 1) : _vm._e()], 1)
 },staticRenderFns: []}
 
 /***/ }),
@@ -11211,8 +11290,8 @@ webpackContext.id = 742;
 /* 743 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(194);
-module.exports = __webpack_require__(193);
+__webpack_require__(196);
+module.exports = __webpack_require__(195);
 
 
 /***/ })
