@@ -12,7 +12,8 @@ export default {
       message: '',
       newPatient: '',
       postUrl: 'https://www.mattiacioortho.com/wp-json/rg-mail/v1/contact',
-      formSubmitted: false
+      formSubmitted: false,
+      agreeToTerms: false
     }
   },
   mixins: [openModal, closeModal],

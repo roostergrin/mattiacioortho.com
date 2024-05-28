@@ -53,6 +53,7 @@
         label.contact-form__label No
 
     .contact-form__group
+ 
       textarea.contact-form__textarea(
         name='message'
         v-model='message',
@@ -63,6 +64,18 @@
         placeholder='Message')
       .contact-form__error-container
         span(v-show="errors.has('message')") Send us a message!
+
+    .contact-form__group.agree
+      input.contact-form__checkbox(
+        type='checkbox'
+        name='agreeToTerms'
+        v-model='agreeToTerms',
+        v-validate="'required'"
+        :class="{ 'contact-form__checkbox--error': errors.has('agreeToTerms') }"
+      )
+      label.contact-form__label(:class="{ 'contact-form__checkbox--error': errors.has('agreeToTerms') }") I agree to receive marketing and customer service emails and text messages from Mattiacio Orthodontics. Msg/data rates may apply. Reply STOP to unsubscribe.
+      //- .contact-form__error-container(style="position: relative; width: 100%")
+      //-   span(v-show="errors.has('message')") Field required
         
     .contact-form__button-group
       button.contact-form__submit-button(type='submit', :disabled='formSubmitted') 
