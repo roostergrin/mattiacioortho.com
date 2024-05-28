@@ -2302,7 +2302,8 @@ exports.default = {
       message: '',
       newPatient: '',
       postUrl: 'https://www.mattiacioortho.com/wp-json/rg-mail/v1/contact',
-      formSubmitted: false
+      formSubmitted: false,
+      agreeToTerms: false
     };
   },
   mixins: [_methods.openModal, _methods.closeModal],
@@ -11190,6 +11191,54 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "errors.has('message')"
     }]
   }, [_vm._v("Send us a message!")])])]), _c('div', {
+    staticClass: "contact-form__group agree"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.agreeToTerms),
+      expression: "agreeToTerms"
+    }, {
+      name: "validate",
+      rawName: "v-validate",
+      value: ('required'),
+      expression: "'required'"
+    }],
+    staticClass: "contact-form__checkbox",
+    class: {
+      'contact-form__checkbox--error': _vm.errors.has('agreeToTerms')
+    },
+    attrs: {
+      "type": "checkbox",
+      "name": "agreeToTerms"
+    },
+    domProps: {
+      "checked": Array.isArray(_vm.agreeToTerms) ? _vm._i(_vm.agreeToTerms, null) > -1 : (_vm.agreeToTerms)
+    },
+    on: {
+      "change": function($event) {
+        var $$a = _vm.agreeToTerms,
+          $$el = $event.target,
+          $$c = $$el.checked ? (true) : (false);
+        if (Array.isArray($$a)) {
+          var $$v = null,
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && (_vm.agreeToTerms = $$a.concat([$$v]))
+          } else {
+            $$i > -1 && (_vm.agreeToTerms = $$a.slice(0, $$i).concat($$a.slice($$i + 1)))
+          }
+        } else {
+          _vm.agreeToTerms = $$c
+        }
+      }
+    }
+  }), _c('label', {
+    staticClass: "contact-form__label",
+    class: {
+      'contact-form__checkbox--error': _vm.errors.has('agreeToTerms')
+    }
+  }, [_vm._v("I agree to receive marketing and customer service emails and text messages from Mattiacio Orthodontics. Msg/data rates may apply. Reply STOP to unsubscribe.")])]), _c('div', {
     staticClass: "contact-form__button-group"
   }, [_c('button', {
     staticClass: "contact-form__submit-button",
