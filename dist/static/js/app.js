@@ -7490,7 +7490,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "page-family-fun-event"
-  })
+  }, [_c('FunEvent', {
+    attrs: {
+      "props": _vm.props
+    }
+  })], 1)
 },staticRenderFns: []}
 
 /***/ }),
@@ -10657,7 +10661,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     attrs: {
       "name": "selected",
-      "type": "selected",
       "required": ""
     },
     on: {
@@ -10684,7 +10687,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('option', {
     staticClass: "family-fun-form__label"
-  }, [_vm._v("Please Select One")])]), _vm._m(1), _vm._m(2), _vm._m(3), _vm._m(4), _vm._m(5), _vm._m(6), _vm._m(7), _vm._m(8), _vm._m(9), _vm._m(10), _vm._m(11), _vm._m(12), _vm._m(13), _vm._m(14), _vm._m(15), _vm._m(16), _vm._m(17), _vm._m(18), _vm._m(19), _vm._m(20)]), _c('div', {
+  }, [_vm._v("Please Select One")])]), _vm._m(1), _vm._m(2)]), _c('div', {
     staticClass: "family-fun-form__error-container"
   }, [_c('span', {
     directives: [{
@@ -10709,165 +10712,137 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "family-fun-form__group-inline-center"
   }, [_c('p', [_vm._v("Which Session Will you be Attending?")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
+  return _c('optgroup', {
     attrs: {
-      "value": "Saturday, March 9th | Mercy | 10:30am"
+      "label": "Saturday, March 8th | Brighton Location"
+    }
+  }, [_c('option', {
+    attrs: {
+      "value": "Saturday, March 8th | Brighton Location | 9:00-9:30"
     }
   }, [_c('option', {
     staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 9th | Mercy | 10:30am")])])
+  }, [_vm._v("Brighton | 9:00-9:30")])]), _c('option', {
+    attrs: {
+      "value": "Saturday, March 8th | Brighton Location | Hilton | 9:00-9:30"
+    }
+  }, [_c('option', {
+    staticClass: "family-fun-form__label"
+  }, [_vm._v("Hilton | 9:00-9:30")])]), _c('option', {
+    attrs: {
+      "value": "Saturday, March 8th | Brighton Location | Churchville-Chili | 9:30-10:00"
+    }
+  }, [_c('option', {
+    staticClass: "family-fun-form__label"
+  }, [_vm._v("Churchville-Chili | 9:30-10:00")])]), _c('option', {
+    attrs: {
+      "value": "Saturday, March 8th | Brighton Location | Rush Henrietta | 9:30-10:00"
+    }
+  }, [_c('option', {
+    staticClass: "family-fun-form__label"
+  }, [_vm._v("Rush Henrietta | 9:30-10:00")])]), _c('option', {
+    attrs: {
+      "value": "Saturday, March 8th | Brighton Location | Fairport | 10:00-10:30"
+    }
+  }, [_c('option', {
+    staticClass: "family-fun-form__label"
+  }, [_vm._v("Fairport | 10:00-10:30")])]), _c('option', {
+    attrs: {
+      "value": "Saturday, March 8th | Brighton Location | Pittsford | 10:00-10:30"
+    }
+  }, [_c('option', {
+    staticClass: "family-fun-form__label"
+  }, [_vm._v("Pittsford | 10:00-10:30")])]), _c('option', {
+    attrs: {
+      "value": "Saturday, March 8th | Brighton Location | Penfield | 10:30-11:00"
+    }
+  }, [_c('option', {
+    staticClass: "family-fun-form__label"
+  }, [_vm._v("Penfield | 10:30-11:00")])]), _c('option', {
+    attrs: {
+      "value": "Saturday, March 8th | Brighton Location | Spencerport | 10:30-11:00"
+    }
+  }, [_c('option', {
+    staticClass: "family-fun-form__label"
+  }, [_vm._v("Spencerport | 10:30-11:00")])]), _c('option', {
+    attrs: {
+      "value": "Saturday, March 8th | Brighton Location | Webster | 10:30-11:00"
+    }
+  }, [_c('option', {
+    staticClass: "family-fun-form__label"
+  }, [_vm._v("Webster | 10:30-11:00")])]), _c('option', {
+    attrs: {
+      "value": "Saturday, March 8th | Brighton Location | Individual (team not listed) | 11:00-11:30"
+    }
+  }, [_c('option', {
+    staticClass: "family-fun-form__label"
+  }, [_vm._v("Individual (team not listed) | 11:00-11:30")])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
+  return _c('optgroup', {
     attrs: {
-      "value": "Saturday, March 9th | Brighton | 9:00am"
+      "label": "Saturday, March 22nd | Farmington Location"
+    }
+  }, [_c('option', {
+    attrs: {
+      "value": "Saturday, March 22nd | Farmington Location | Victor Girls | 9:00-9:45"
     }
   }, [_c('option', {
     staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 9th | Brighton | 9:00am")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
+  }, [_vm._v("Victor Girls | 9:00-9:45")])]), _c('option', {
     attrs: {
-      "value": "Saturday, March 9th | Churchville-Chili | 9:45am"
+      "value": "Saturday, March 22nd | Farmington Location | Victor Boys | 9:45-10:30"
     }
   }, [_c('option', {
     staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 9th | Churchville-Chili | 9:45am")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
+  }, [_vm._v("Victor Boys | 9:45-10:30")])]), _c('option', {
     attrs: {
-      "value": "Saturday, March 9th | Hilton | 10:30am"
+      "value": "Saturday, March 22nd | Farmington Location | Canandaigua Boys and Girls | 10:30-11:00"
     }
   }, [_c('option', {
     staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 9th | Hilton | 10:30am")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
+  }, [_vm._v("Canandaigua Boys and Girls | 10:30-11:00")])]), _c('option', {
     attrs: {
-      "value": "Saturday, March 9th | Spencerport | 10:30am"
+      "value": "Saturday, March 22nd | Farmington Location | Marcus Whitman Boys and Girls | 10:30-11:00"
     }
   }, [_c('option', {
     staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 9th | Spencerport | 10:30am")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
+  }, [_vm._v("Marcus Whitman Boys and Girls | 10:30-11:00")])]), _c('option', {
     attrs: {
-      "value": "Saturday, March 9th | Webster | 11:15am"
+      "value": "Saturday, March 22nd | Farmington Location | Penn Yan Boys and Girls | 11:00-11:30"
     }
   }, [_c('option', {
     staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 9th | Webster | 11:15am")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
+  }, [_vm._v("Penn Yan Boys and Girls | 11:00-11:30")])]), _c('option', {
     attrs: {
-      "value": "Saturday, March 9th | Pittsford | 11:15am"
+      "value": "Saturday, March 22nd | Farmington Location | Bloomfield/Honeoye Girls and Boys | 11:00-11:30"
     }
   }, [_c('option', {
     staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 9th | Pittsford | 11:15am")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
+  }, [_vm._v("Bloomfield/Honeoye Girls and Boys | 11:00-11:30")])]), _c('option', {
     attrs: {
-      "value": "Saturday, March 9th | Fairport | 12:00pm"
+      "value": "Saturday, March 22nd | Farmington Location | Phelps Community Center | 11:30-12:00"
     }
   }, [_c('option', {
     staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 9th | Fairport | 12:00pm")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
+  }, [_vm._v("Phelps Community Center | 11:30-12:00")])]), _c('option', {
     attrs: {
-      "value": "Saturday, March 9th | Penfield | 12:00pm"
+      "value": "Saturday, March 22nd | Farmington Location | Clifton Springs YMCA | 12:00-12:30"
     }
   }, [_c('option', {
     staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 9th | Penfield | 12:00pm")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
+  }, [_vm._v("Clifton Springs YMCA | 12:00-12:30")])]), _c('option', {
     attrs: {
-      "value": "Saturday, March 9th | Rush-Henrietta | 12:30pm"
+      "value": "Saturday, March 22nd | Farmington Location | Midlakes school program | 12:00-12:30"
     }
   }, [_c('option', {
     staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 9th | Rush-Henrietta | 12:30pm")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
+  }, [_vm._v("Midlakes school program | 12:00-12:30")])]), _c('option', {
     attrs: {
-      "value": "Saturday, March 9th | Individual (Team not listed) | 12:30pm"
+      "value": "Saturday, March 22nd | Farmington Location | Individual (team not listed) | 12:30-1:00"
     }
   }, [_c('option', {
     staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 9th | Individual (Team not listed) | 12:30pm")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
-    attrs: {
-      "value": "Saturday, March 23rd | Victor Boys | 9:00am"
-    }
-  }, [_c('option', {
-    staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 23rd | Victor Boys | 9:00am")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
-    attrs: {
-      "value": "Saturday, March 23rd | Victor Girls | 9:30am"
-    }
-  }, [_c('option', {
-    staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 23rd | Victor Girls | 9:30am")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
-    attrs: {
-      "value": "Saturday, March 23rd | Canandaigua | 10:15am"
-    }
-  }, [_c('option', {
-    staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 23rd | Canandaigua | 10:15am")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
-    attrs: {
-      "value": "Saturday, March 23rd | BH Pride | 11:00am"
-    }
-  }, [_c('option', {
-    staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 23rd | BH Pride | 11:00am")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
-    attrs: {
-      "value": "Saturday, March 23rd | Penn Yan | 11:00am"
-    }
-  }, [_c('option', {
-    staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 23rd | Penn Yan | 11:00am")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
-    attrs: {
-      "value": "Saturday, March 23rd | Phelps Community Center | 11:45am"
-    }
-  }, [_c('option', {
-    staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 23rd | Phelps Community Center | 11:45am")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
-    attrs: {
-      "value": "Saturday, March 23rd | Midlakes | 11:45am"
-    }
-  }, [_c('option', {
-    staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 23rd | Midlakes | 11:45am")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
-    attrs: {
-      "value": "Saturday, March 23rd | Marcus Whitman | 12:15pm"
-    }
-  }, [_c('option', {
-    staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 23rd | Marcus Whitman | 12:15pm")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('option', {
-    attrs: {
-      "value": "Saturday, March 23rd | Individual (Team not listed) | 12:30pm"
-    }
-  }, [_c('option', {
-    staticClass: "family-fun-form__label"
-  }, [_vm._v("Saturday, March 23rd | Individual (Team not listed) | 12:30pm")])])
+  }, [_vm._v("Individual (team not listed) | 12:30-1:00")])])])
 }]}
 
 /***/ }),
