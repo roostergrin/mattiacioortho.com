@@ -9450,7 +9450,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     domProps: {
       "innerHTML": _vm._s(_vm.props.text)
     }
-  })])])])
+  }), _c('a', {
+    staticClass: "custom-home-welcome__button",
+    attrs: {
+      "href": "/mouth-guard-registration",
+      "target": "_blank"
+    }
+  }, [_vm._v("Mouth Guard Event Registration")])])])])
 },staticRenderFns: []}
 
 /***/ }),
