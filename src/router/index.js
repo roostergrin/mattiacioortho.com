@@ -15,6 +15,7 @@ import Treatments from '@/pages/treatments/treatments'
 import FamilyFunEvent from '@/pages/family-fun-event/family-fun-event'
 import ThankYou from '@/pages/thank-you/thank-you'
 import MouthGuardThankYou from '@/pages/mouth-guard-thank-you/mouth-guard-thank-you'
+import Feedback from '@/pages/feedback/feedback'
 import exitInterview from '@/pages/exit-interview/exit-interview'
 import smileAssuranceProgram from '@/pages/smile-assurance-program/smile-assurance-program'
 import retainerProgram from '@/pages/retainer-program/retainer-program'
@@ -305,6 +306,12 @@ const router = new VueRouter({
       component: MouthGuardThankYou
     },
     {
+      path: '/feedback',
+      name: 'Feedback',
+      navigation: false,
+      component: Feedback
+    },
+    {
       path: '/accessibility',
       name: 'Accessibility',
       navigation: false,
@@ -337,7 +344,7 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
   if (to.meta.auth) {
     var person = prompt('Please enter password')
-    if (person === 'bWF0dGlhY2lvb3J0aG9zY2Fu') {
+    if (person === 'Ortho2007!') {
       next()
     } else if (person === null || person === '') {
       next('/')

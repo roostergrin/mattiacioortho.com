@@ -47,17 +47,6 @@
 
     .family-fun-form__group
       input.family-fun-form__input(
-        name='dob2'
-        v-model='dob2'
-        v-validate="'required'"
-        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('dob2') }"
-        type='text'
-        placeholder="Parent/Guardian's Date of Birth")
-      .family-fun-form__error-container
-        span(v-show="errors.has('dob2')") Parent/Guardian's date of birth is required.
-
-    .family-fun-form__group
-      input.family-fun-form__input(
         name='phone'
         v-model='phone'
         v-validate='{regex: /^\\D?(\\d{3})\\D?\\D?(\\d{3})\\D?(\\d{4})$/}'
@@ -91,68 +80,19 @@
           :value='null'
           :class="{ 'input': true, 'family-fun-form__input--error': errors.has('selected') }")
           option.family-fun-form__label Please Select One
-        optgroup(label='Saturday, March 8th | Brighton Location')
+        optgroup(label='Friday, July 11th | Farmington Location')
           option(
-            value='Saturday, March 8th | Brighton Location | 9:00-9:30')
-            option.family-fun-form__label Brighton | 9:00-9:30
+            value='Friday, July 11th | Farmington Location | Flag - 4:00-4:30')
+            option.family-fun-form__label Flag - 4:00-4:30
           option(
-            value='Saturday, March 8th | Brighton Location | Hilton | 9:00-9:30')
-            option.family-fun-form__label Hilton | 9:00-9:30
+            value='Friday, July 11th | Farmington Location | C Teams - 4:30-5:00')
+            option.family-fun-form__label C Teams - 4:30-5:00
           option(
-            value='Saturday, March 8th | Brighton Location | Churchville-Chili | 9:30-10:00')
-            option.family-fun-form__label Churchville-Chili | 9:30-10:00
+            value='Friday, July 11th | Farmington Location | B Teams - 5:00-5:30')
+            option.family-fun-form__label B Teams - 5:00-5:30
           option(
-            value='Saturday, March 8th | Brighton Location | Rush Henrietta | 9:30-10:00')
-            option.family-fun-form__label Rush Henrietta | 9:30-10:00
-          option(
-            value='Saturday, March 8th | Brighton Location | Fairport | 10:00-10:30')
-            option.family-fun-form__label Fairport | 10:00-10:30
-          option(
-            value='Saturday, March 8th | Brighton Location | Pittsford | 10:00-10:30')
-            option.family-fun-form__label Pittsford | 10:00-10:30
-          option(
-            value='Saturday, March 8th | Brighton Location | Penfield | 10:30-11:00')
-            option.family-fun-form__label Penfield | 10:30-11:00
-          option(
-            value='Saturday, March 8th | Brighton Location | Spencerport | 10:30-11:00')
-            option.family-fun-form__label Spencerport | 10:30-11:00
-          option(
-            value='Saturday, March 8th | Brighton Location | Webster | 10:30-11:00')
-            option.family-fun-form__label Webster | 10:30-11:00
-          option(
-            value='Saturday, March 8th | Brighton Location | Individual (team not listed) | 11:00-11:30')
-            option.family-fun-form__label Individual (team not listed) | 11:00-11:30
-        optgroup(label='Saturday, March 22nd | Farmington Location')
-          option(
-            value='Saturday, March 22nd | Farmington Location | Victor Girls | 9:00-9:45')
-            option.family-fun-form__label Victor Girls | 9:00-9:45
-          option(
-            value='Saturday, March 22nd | Farmington Location | Victor Boys | 9:45-10:30')
-            option.family-fun-form__label Victor Boys | 9:45-10:30
-          option(
-            value='Saturday, March 22nd | Farmington Location | Canandaigua Boys and Girls | 10:30-11:00')
-            option.family-fun-form__label Canandaigua Boys and Girls | 10:30-11:00
-          option(
-            value='Saturday, March 22nd | Farmington Location | Marcus Whitman Boys and Girls | 10:30-11:00')
-            option.family-fun-form__label Marcus Whitman Boys and Girls | 10:30-11:00
-          option(
-            value='Saturday, March 22nd | Farmington Location | Penn Yan Boys and Girls | 11:00-11:30')
-            option.family-fun-form__label Penn Yan Boys and Girls | 11:00-11:30
-          option(
-            value='Saturday, March 22nd | Farmington Location | Bloomfield/Honeoye Girls and Boys | 11:00-11:30')
-            option.family-fun-form__label Bloomfield/Honeoye Girls and Boys | 11:00-11:30
-          option(
-            value='Saturday, March 22nd | Farmington Location | Phelps Community Center | 11:30-12:00')
-            option.family-fun-form__label Phelps Community Center | 11:30-12:00
-          option(
-            value='Saturday, March 22nd | Farmington Location | Clifton Springs YMCA | 12:00-12:30')
-            option.family-fun-form__label Clifton Springs YMCA | 12:00-12:30
-          option(
-            value='Saturday, March 22nd | Farmington Location | Midlakes school program | 12:00-12:30')
-            option.family-fun-form__label Midlakes school program | 12:00-12:30
-          option(
-            value='Saturday, March 22nd | Farmington Location | Individual (team not listed) | 12:30-1:00')
-            option.family-fun-form__label Individual (team not listed) | 12:30-1:00
+            value='Friday, July 11th | Farmington Location | A Team - 5:30-6')
+            option.family-fun-form__label A Team - 5:30-6
 
       .family-fun-form__error-container
         span(v-show="errors.has('selected')") Valid date is required.

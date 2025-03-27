@@ -126,11 +126,10 @@ function rg_serve_route_family_fun () {
   $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
   $message = '<html><body>';
-  $message .= '<p><h4><strong>Patient name: </strong></h4>' . $data['fullName'] . '</p>';
-  $message .= '<p><h4><strong>DOB:</strong></h4> ' . $data['dob1'] . '</p>';
-  $message .= '<p><h4><strong>Lax Program:</strong></h4> ' . $data['yourLaxProgram'] . '</p>';
+  $message .= '<p><h4><strong>Player name: </strong></h4>' . $data['fullName'] . '</p>';
+  $message .= '<p><h4><strong>Player DOB:</strong></h4> ' . $data['dob1'] . '</p>';
+  $message .= '<p><h4><strong>Name of Lax Program:</strong></h4> ' . $data['yourLaxProgram'] . '</p>';
   $message .= '<p><h4><strong>Parent/guardian name:</strong></h4> ' . $data['yourParentGuardian'] . '</p>';
-  $message .= '<p><h4><strong>DOB:</strong></h4> ' . $data['dob2'] . '</p>';
   $message .= '<p><h4><strong>Phone: </strong></h4>' . $data['phone'] . '</p>';
   $message .= '<p><h4><strong>Email: </strong></h4>' . $data['email'] . '</p>';
   $message .= '<p><h4><strong>Date Attending:</strong></h4> ' . $data['selected'] . '</p>';
@@ -151,7 +150,7 @@ function rg_serve_route_interview () {
 
   $data = json_decode(file_get_contents("php://input"), true);
   // $from = 'info@wordpress.com,';
-  $to = 'info@mattiacioortho.com';
+  $to = 'a.moore@mattiacioortho.com';
   $subject = 'Website Exit Interview Form';
   $headers = "MIME-Version: 1.0\r\n";
   $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
