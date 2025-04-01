@@ -2225,7 +2225,6 @@ exports.default = {
       email: '',
       dob1: '',
       yourParentGuardian: '',
-      yourLaxProgram: '',
       postUrl: 'https://www.mattiacioortho.com/wp-json/rg-mail/v1/family-fun',
       formSubmitted: false,
       selected: 'null'
@@ -2254,7 +2253,6 @@ exports.default = {
         email: this.email,
         dob1: this.dob1,
         yourParentGuardian: this.yourParentGuardian,
-        yourLaxProgram: this.yourLaxProgram,
         selected: this.selected
       }).then(function (res) {
         _this2.formSubmitted = false;
@@ -6672,47 +6670,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.yourLaxProgram),
-      expression: "yourLaxProgram"
-    }, {
-      name: "validate",
-      rawName: "v-validate",
-      value: ('required'),
-      expression: "'required'"
-    }],
-    staticClass: "family-fun-form__input",
-    class: {
-      'input': true, 'family-fun-form__input--error': _vm.errors.has('your-lax-program')
-    },
-    attrs: {
-      "name": "your-lax-program",
-      "type": "text",
-      "placeholder": "Name of LAX program"
-    },
-    domProps: {
-      "value": (_vm.yourLaxProgram)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.yourLaxProgram = $event.target.value
-      }
-    }
-  }), _c('div', {
-    staticClass: "family-fun-form__error-container"
-  }, [_c('span', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('your-lax-program')),
-      expression: "errors.has('your-lax-program')"
-    }]
-  }, [_vm._v("Lax program is required.")])])]), _c('div', {
-    staticClass: "family-fun-form__group"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
       value: (_vm.yourParentGuardian),
       expression: "yourParentGuardian"
     }, {
@@ -6921,11 +6878,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "family-fun-form__label"
   }, [_vm._v("B Teams - 5:00-5:30")])]), _c('option', {
     attrs: {
-      "value": "Friday, July 11th | Farmington Location | A Team - 5:30-6"
+      "value": "Friday, July 11th | Farmington Location | A Team - 5:30-6:00"
     }
   }, [_c('option', {
     staticClass: "family-fun-form__label"
-  }, [_vm._v("A Team - 5:30-6")])])])
+  }, [_vm._v("A Team - 5:30-6:00")])])])
 }]}
 
 /***/ }),

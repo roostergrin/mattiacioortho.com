@@ -25,17 +25,6 @@
 
     .family-fun-form__group
       input.family-fun-form__input(
-        name='your-lax-program'
-        v-model='yourLaxProgram'
-        v-validate="'required'"
-        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('your-lax-program') }"
-        type='text'
-        placeholder="Name of LAX program")
-      .family-fun-form__error-container
-        span(v-show="errors.has('your-lax-program')") Lax program is required.
-
-    .family-fun-form__group
-      input.family-fun-form__input(
         name='your-parent-guardian'
         v-model='yourParentGuardian'
         v-validate="'required|alpha_spaces'"
@@ -91,8 +80,8 @@
             value='Friday, July 11th | Farmington Location | B Teams - 5:00-5:30')
             option.family-fun-form__label B Teams - 5:00-5:30
           option(
-            value='Friday, July 11th | Farmington Location | A Team - 5:30-6')
-            option.family-fun-form__label A Team - 5:30-6
+            value='Friday, July 11th | Farmington Location | A Team - 5:30-6:00')
+            option.family-fun-form__label A Team - 5:30-6:00
 
       .family-fun-form__error-container
         span(v-show="errors.has('selected')") Valid date is required.

@@ -128,7 +128,6 @@ function rg_serve_route_family_fun () {
   $message = '<html><body>';
   $message .= '<p><h4><strong>Player name: </strong></h4>' . $data['fullName'] . '</p>';
   $message .= '<p><h4><strong>Player DOB:</strong></h4> ' . $data['dob1'] . '</p>';
-  $message .= '<p><h4><strong>Name of Lax Program:</strong></h4> ' . $data['yourLaxProgram'] . '</p>';
   $message .= '<p><h4><strong>Parent/guardian name:</strong></h4> ' . $data['yourParentGuardian'] . '</p>';
   $message .= '<p><h4><strong>Phone: </strong></h4>' . $data['phone'] . '</p>';
   $message .= '<p><h4><strong>Email: </strong></h4>' . $data['email'] . '</p>';
