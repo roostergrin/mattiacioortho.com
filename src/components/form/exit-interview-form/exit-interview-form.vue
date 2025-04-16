@@ -52,7 +52,7 @@ export default {
         }, 500)
         this.closeModal(2)
         // this.openModal(1)
-        window.location = '/feedback'
+        window.location = '/review?skip=1'
       })
       .catch(e => { console.log(e) })
     }

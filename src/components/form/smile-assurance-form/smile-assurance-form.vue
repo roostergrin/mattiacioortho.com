@@ -38,7 +38,7 @@ export default {
         }, 500)
         this.closeModal(2)
         // this.openModal(1)
-        window.location = '/thank-you'
+        window.location = '/feedback'
       })
       .catch(e => { console.log(e) })
     }

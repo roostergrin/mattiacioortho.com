@@ -25,6 +25,17 @@
 
     .family-fun-form__group
       input.family-fun-form__input(
+        name='your-lax-program'
+        v-model='yourLaxProgram'
+        v-validate="'required'"
+        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('your-lax-program') }"
+        type='text'
+        placeholder="Name of LAX program")
+      .family-fun-form__error-container
+        span(v-show="errors.has('your-lax-program')") Lax program is required.
+
+    .family-fun-form__group
+      input.family-fun-form__input(
         name='your-parent-guardian'
         v-model='yourParentGuardian'
         v-validate="'required|alpha_spaces'"
@@ -33,6 +44,17 @@
         placeholder="Parent/Guardian name")
       .family-fun-form__error-container
         span(v-show="errors.has('your-parent-guardian')") Parent/Guardian name is required.
+
+    .family-fun-form__group
+      input.family-fun-form__input(
+        name='dob2'
+        v-model='dob2'
+        v-validate="'required'"
+        :class="{ 'input': true, 'family-fun-form__input--error': errors.has('dob2') }"
+        type='text'
+        placeholder="Parent/Guardian's Date of Birth")
+      .family-fun-form__error-container
+        span(v-show="errors.has('dob2')") Parent/Guardian's date of birth is required.
 
     .family-fun-form__group
       input.family-fun-form__input(
@@ -61,6 +83,7 @@
       select.family-fun-form__input(
         name='selected'
         v-model='selected'
+        type='selected'
         required=''
         :class="{ 'input': true, 'family-fun-form__input--error': errors.has('selected') }")
         option(
@@ -69,19 +92,66 @@
           :value='null'
           :class="{ 'input': true, 'family-fun-form__input--error': errors.has('selected') }")
           option.family-fun-form__label Please Select One
-        optgroup(label='Friday, July 11th | Farmington Location')
-          option(
-            value='Friday, July 11th | Farmington Location | Flag - 4:00-4:30')
-            option.family-fun-form__label Flag - 4:00-4:30
-          option(
-            value='Friday, July 11th | Farmington Location | C Teams - 4:30-5:00')
-            option.family-fun-form__label C Teams - 4:30-5:00
-          option(
-            value='Friday, July 11th | Farmington Location | B Teams - 5:00-5:30')
-            option.family-fun-form__label B Teams - 5:00-5:30
-          option(
-            value='Friday, July 11th | Farmington Location | A Team - 5:30-6:00')
-            option.family-fun-form__label A Team - 5:30-6:00
+        option(
+          value='Saturday, March 9th | Mercy | 10:30am')
+          option.family-fun-form__label Saturday, March 9th | Mercy | 10:30am
+        option(
+          value='Saturday, March 9th | Brighton | 9:00am')
+          option.family-fun-form__label Saturday, March 9th | Brighton | 9:00am
+        option(
+          value='Saturday, March 9th | Churchville-Chili | 9:45am')
+          option.family-fun-form__label Saturday, March 9th | Churchville-Chili | 9:45am
+        option(
+          value='Saturday, March 9th | Hilton | 10:30am')
+          option.family-fun-form__label Saturday, March 9th | Hilton | 10:30am
+        option(
+          value='Saturday, March 9th | Spencerport | 10:30am')
+          option.family-fun-form__label Saturday, March 9th | Spencerport | 10:30am
+        option(
+          value='Saturday, March 9th | Webster | 11:15am')
+          option.family-fun-form__label Saturday, March 9th | Webster | 11:15am
+        option(
+          value='Saturday, March 9th | Pittsford | 11:15am')
+          option.family-fun-form__label Saturday, March 9th | Pittsford | 11:15am
+        option(
+          value='Saturday, March 9th | Fairport | 12:00pm')
+          option.family-fun-form__label Saturday, March 9th | Fairport | 12:00pm
+        option(
+          value='Saturday, March 9th | Penfield | 12:00pm')
+          option.family-fun-form__label Saturday, March 9th | Penfield | 12:00pm
+        option(
+          value='Saturday, March 9th | Rush-Henrietta | 12:30pm')
+          option.family-fun-form__label Saturday, March 9th | Rush-Henrietta | 12:30pm
+        option(
+          value='Saturday, March 9th | Individual (Team not listed) | 12:30pm')
+          option.family-fun-form__label Saturday, March 9th | Individual (Team not listed) | 12:30pm
+        option(
+          value='Saturday, March 23rd | Victor Boys | 9:00am')
+          option.family-fun-form__label Saturday, March 23rd | Victor Boys | 9:00am
+        option(
+          value='Saturday, March 23rd | Victor Girls | 9:30am')
+          option.family-fun-form__label Saturday, March 23rd | Victor Girls | 9:30am
+        option(
+          value='Saturday, March 23rd | Canandaigua | 10:15am')
+          option.family-fun-form__label Saturday, March 23rd | Canandaigua | 10:15am
+        option(
+          value='Saturday, March 23rd | BH Pride | 11:00am')
+          option.family-fun-form__label Saturday, March 23rd | BH Pride | 11:00am
+        option(
+          value='Saturday, March 23rd | Penn Yan | 11:00am')
+          option.family-fun-form__label Saturday, March 23rd | Penn Yan | 11:00am
+        option(
+          value='Saturday, March 23rd | Phelps Community Center | 11:45am')
+          option.family-fun-form__label Saturday, March 23rd | Phelps Community Center | 11:45am
+        option(
+          value='Saturday, March 23rd | Midlakes | 11:45am')
+          option.family-fun-form__label Saturday, March 23rd | Midlakes | 11:45am
+        option(
+          value='Saturday, March 23rd | Marcus Whitman | 12:15pm')
+          option.family-fun-form__label Saturday, March 23rd | Marcus Whitman | 12:15pm
+        option(
+          value='Saturday, March 23rd | Individual (Team not listed) | 12:30pm')
+          option.family-fun-form__label Saturday, March 23rd | Individual (Team not listed) | 12:30pm
 
       .family-fun-form__error-container
         span(v-show="errors.has('selected')") Valid date is required.

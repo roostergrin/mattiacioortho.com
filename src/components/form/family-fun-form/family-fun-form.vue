@@ -11,7 +11,9 @@ export default {
       phone: '',
       email: '',
       dob1: '',
+      dob2: '',
       yourParentGuardian: '',
+      yourLaxProgram: '',
       postUrl: 'https://www.mattiacioortho.com/wp-json/rg-mail/v1/family-fun',
       formSubmitted: false,
       selected: 'null'
@@ -37,7 +39,9 @@ export default {
         phone: this.phone,
         email: this.email,
         dob1: this.dob1,
+        dob2: this.dob2,
         yourParentGuardian: this.yourParentGuardian,
+        yourLaxProgram: this.yourLaxProgram,
         selected: this.selected
       })
       .then(res => {
