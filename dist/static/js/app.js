@@ -8808,7 +8808,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     domProps: {
       "innerHTML": _vm._s(_vm.props.text)
     }
-  })])])])
+  }), _c('a', {
+    staticClass: "custom-home-welcome__button",
+    attrs: {
+      "href": _vm.props.btn_link,
+      "target": "_blank"
+    }
+  }, [_c('span', {
+    domProps: {
+      "innerHTML": _vm._s(_vm.props.btn_name)
+    }
+  })])])])])
 },staticRenderFns: []}
 
 /***/ }),
