@@ -80,7 +80,31 @@
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
 
-  <script src="https://onlineschedulingv2.threadcommunication.com" type="text/javascript"></script> <script type="text/javascript"> OpenChair.init({ token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmlnaW4iOiJodHRwczovL3d3dy5tYXR0aWFjaW9vcnRoby5jb20vIiwicHJhY3RpY2VfaWQiOiIyNjQifQ.gjnqfJ3U9O__I7-7WZ8BaPGEVdiVIOoifZ9giYcdY9k", mainButtonLeft: true, specificLocations: ["264-3c21f535-fc23-4eec-b5f6-9de1bf33a0a2","264-cd684daf-9796-4cd5-acc3-c1ffd8c3fd3d"], }) </script>
+  <script src="https://onlineschedulingv2.threadcommunication.com" type="text/javascript"></script>
+  <script type="text/javascript">
+    OpenChair.init({
+    token: "eyJhbGciOiJIUzI1NiJ9.eyJvcmlnaW4iOiJodHRwczovL3d3dy5tYXR0aWFjaW9vcnRoby5jb20vIiwicHJhY3RpY2VfaWQiOiIyNjQifQ.bdp7VSQ0fil4wzSEv7fIwLolUqJhvvbi8GWzJYTmJrc",
+    mainButtonLeft: true,
+    hideTooltipHeader: true,
+    floatDownLocsWithoutBookings: true,
+    filterOptions: {
+    "New Child (7-17)": ["264-d821707c-78b0-4d2e-bf66-2ab182f7b37f"],
+    "New Adult": ["264-8e92b56b-c883-4ef6-aac1-9fe12f95c259"],
+    },
+    extraQuestions: [{
+    question: "Do you have insurance?",
+    keyname: "has_insurance",
+    option1: "No",
+    option2: "Yes (please call the office directly)",
+    }, {
+    question: "Do you have a Dentist?",
+    keyname: "has_dentist",
+    option1: "No",
+    option2: "Yes (please provide the name below)",
+    }],
+    textAreaLabel: "Message/Dentist Name",
+    })
+  </script>
 
   <script type="text/javascript">
 

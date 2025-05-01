@@ -5,7 +5,6 @@ import ContactUs from '@/pages/contact-us/contact-us'
 // import COVID19Updates from '@/pages/covid-19-updates/covid-19-updates'
 import Home from '@/pages/home/home'
 import Invisalign from '@/pages/invisalign/invisalign'
-import feedback from '@/pages/feedback/feedback'
 import Mattiacio from '@/pages/mattiacio-difference/mattiacio-difference'
 import NewPatients from '@/pages/new-patients/new-patients'
 import VirtualServices from '@/pages/virtual-services/virtual-services'
@@ -16,6 +15,7 @@ import Treatments from '@/pages/treatments/treatments'
 import FamilyFunEvent from '@/pages/family-fun-event/family-fun-event'
 import ThankYou from '@/pages/thank-you/thank-you'
 import MouthGuardThankYou from '@/pages/mouth-guard-thank-you/mouth-guard-thank-you'
+import Feedback from '@/pages/feedback/feedback'
 import exitInterview from '@/pages/exit-interview/exit-interview'
 import smileAssuranceProgram from '@/pages/smile-assurance-program/smile-assurance-program'
 import retainerProgram from '@/pages/retainer-program/retainer-program'
@@ -55,13 +55,6 @@ const router = new VueRouter({
       navigation: false,
       mobile: false,
       component: Home
-    },
-    {
-      path: '/feedback',
-      name: 'feedback',
-      navigation: false,
-      mobile: false,
-      component: feedback
     },
     {
       path: '/about-us',
@@ -311,6 +304,12 @@ const router = new VueRouter({
       name: 'Mouth Guard Thank You',
       navigation: false,
       component: MouthGuardThankYou
+    },
+    {
+      path: '/feedback',
+      name: 'Feedback',
+      navigation: false,
+      component: Feedback
     },
     {
       path: '/accessibility',
