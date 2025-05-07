@@ -6584,7 +6584,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "to": "/admin-links"
     }
-  }, [_vm._v("Admin use only    ")])], 1)])])]) : _vm._e()
+  }, [_vm._v("Admin use only")])], 1), _c('div', {
+    staticClass: "footer__floatingcontact"
+  }, [_c('router-link', {
+    attrs: {
+      "to": "/contact-us"
+    }
+  }, [_vm._v("Ask A Question")])], 1)])])]) : _vm._e()
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "footer__bottom--third"
@@ -6611,7 +6617,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "height": "124px"
     },
     attrs: {
-      "src": "https://interpret.cyracom.com/wp-content/themes/cyra/dist/images/logo.svg",
+      "src": "https://www.mattiacioortho.com/wp-content/uploads/cyracom-white.png",
       "alt": "Cyracom interpretation services"
     }
   })])])

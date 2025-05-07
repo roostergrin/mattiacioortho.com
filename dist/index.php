@@ -61,7 +61,7 @@
     catch(e){window.attachEvent("onload", $buo_f)}
   </script>
   <!-- Ruby Chat Code -->
-  <script>window.rubyApi={l:[],t:[],on:function(){this.l.push(arguments)},trigger:function(){this.t.push(arguments)}};(function(){var e="1c922a92-3c62-4e84-8b62-b93f46c3b681";var a=false;var t=document.createElement("script");t.async=true;t.type="text/javascript";t.src="https://chatwidget.ruby.com/"+e;document.getElementsByTagName("HEAD").item(0).appendChild(t);t.onreadystatechange=t.onload=function(t){if(!a&&(!this.readyState||this.readyState=="loaded"||this.readyState=="complete")){if(window.RubyChat)window.RubyChat({c:e});a=true}}})();</script>
+  <!-- <script>window.rubyApi={l:[],t:[],on:function(){this.l.push(arguments)},trigger:function(){this.t.push(arguments)}};(function(){var e="1c922a92-3c62-4e84-8b62-b93f46c3b681";var a=false;var t=document.createElement("script");t.async=true;t.type="text/javascript";t.src="https://chatwidget.ruby.com/"+e;document.getElementsByTagName("HEAD").item(0).appendChild(t);t.onreadystatechange=t.onload=function(t){if(!a&&(!this.readyState||this.readyState=="loaded"||this.readyState=="complete")){if(window.RubyChat)window.RubyChat({c:e});a=true}}})();</script> -->
   <!-- Ruby Chat Code -->
 
   <!-- Google Tag Manager (noscript) -->
@@ -69,7 +69,7 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <!-- Hotjar Tracking Code for https://mattiacioortho.com -->
-  <script>
+  <!-- <script>
       (function(h,o,t,j,a,r){
           h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
           h._hjSettings={hjid:1354868,hjsv:6};
@@ -78,7 +78,7 @@
           r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
           a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  </script>
+  </script> -->
 
   <script src="https://onlineschedulingv2.threadcommunication.com" type="text/javascript"></script>
   <script type="text/javascript">

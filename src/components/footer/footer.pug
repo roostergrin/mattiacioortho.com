@@ -39,13 +39,15 @@ footer.footer(v-if='props')
       .footer__bottom--third
         a.footer__badge(href='https://interpret.cyracom.com/' target='_blank')
           img.footer__svg(
-            src='https://interpret.cyracom.com/wp-content/themes/cyra/dist/images/logo.svg'
+            src='https://www.mattiacioortho.com/wp-content/uploads/cyracom-white.png'
             alt='Cyracom interpretation services'
             style='width:200px; height:124px;'
           )
     .footer__roostergrin
       | Powered by RoosterGrin
 
-          
       .footer__adminuse
-        router-link(to='/admin-links') Admin use only    
+        router-link(to='/admin-links') Admin use only
+
+      .footer__floatingcontact
+        router-link(to='/contact-us') Ask A Question
